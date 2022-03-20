@@ -80,7 +80,31 @@
 				</MakeCommands>
 			</Target>
 		</Build>
+		<Unit filename="/Users/mariemloukil/Graph_creation/Sequential/Sequential_Graph.cpp">
+			<Option target="Sequential"/>
+		</Unit>
+		<Unit filename="/Users/mariemloukil/Graph_creation/Sequential/Sequential_Graph.h">
+			<Option target="Sequential"/>
+		</Unit>
+		<Unit filename="/Users/mariemloukil/Graph_creation/Sequential/Split_Sequential_Graph.cpp">
+			<Option target="Sequential"/>
+		</Unit>
+		<Unit filename="/Users/mariemloukil/Graph_creation/Sequential/Split_Sequential_Graph.h">
+			<Option target="Sequential"/>
+		</Unit>
 		<Unit filename="/Users/mariemloukil/Graph_creation/Sequential/main.cpp">
+			<Option target="Sequential"/>
+		</Unit>
+		<Unit filename="/Users/mariemloukil/Graph_creation/Sequential/methods.cpp">
+			<Option target="Sequential"/>
+		</Unit>
+		<Unit filename="/Users/mariemloukil/Graph_creation/Sequential/methods.h">
+			<Option target="Sequential"/>
+		</Unit>
+		<Unit filename="/Users/mariemloukil/Graph_creation/Sequential/metrics.cpp">
+			<Option target="Sequential"/>
+		</Unit>
+		<Unit filename="/Users/mariemloukil/Graph_creation/Sequential/metrics.h">
 			<Option target="Sequential"/>
 		</Unit>
 		<Unit filename="/Users/mariemloukil/Graph_creation/Sequential/CMakeLists.txt">

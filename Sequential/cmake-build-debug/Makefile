@@ -143,6 +143,60 @@ Sequential/fast:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/Sequential.dir/build.make CMakeFiles/Sequential.dir/build
 .PHONY : Sequential/fast
 
+Sequential_Graph.o: Sequential_Graph.cpp.o
+
+.PHONY : Sequential_Graph.o
+
+# target to build an object file
+Sequential_Graph.cpp.o:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/Sequential.dir/build.make CMakeFiles/Sequential.dir/Sequential_Graph.cpp.o
+.PHONY : Sequential_Graph.cpp.o
+
+Sequential_Graph.i: Sequential_Graph.cpp.i
+
+.PHONY : Sequential_Graph.i
+
+# target to preprocess a source file
+Sequential_Graph.cpp.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/Sequential.dir/build.make CMakeFiles/Sequential.dir/Sequential_Graph.cpp.i
+.PHONY : Sequential_Graph.cpp.i
+
+Sequential_Graph.s: Sequential_Graph.cpp.s
+
+.PHONY : Sequential_Graph.s
+
+# target to generate assembly for a file
+Sequential_Graph.cpp.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/Sequential.dir/build.make CMakeFiles/Sequential.dir/Sequential_Graph.cpp.s
+.PHONY : Sequential_Graph.cpp.s
+
+Split_Sequential_Graph.o: Split_Sequential_Graph.cpp.o
+
+.PHONY : Split_Sequential_Graph.o
+
+# target to build an object file
+Split_Sequential_Graph.cpp.o:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/Sequential.dir/build.make CMakeFiles/Sequential.dir/Split_Sequential_Graph.cpp.o
+.PHONY : Split_Sequential_Graph.cpp.o
+
+Split_Sequential_Graph.i: Split_Sequential_Graph.cpp.i
+
+.PHONY : Split_Sequential_Graph.i
+
+# target to preprocess a source file
+Split_Sequential_Graph.cpp.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/Sequential.dir/build.make CMakeFiles/Sequential.dir/Split_Sequential_Graph.cpp.i
+.PHONY : Split_Sequential_Graph.cpp.i
+
+Split_Sequential_Graph.s: Split_Sequential_Graph.cpp.s
+
+.PHONY : Split_Sequential_Graph.s
+
+# target to generate assembly for a file
+Split_Sequential_Graph.cpp.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/Sequential.dir/build.make CMakeFiles/Sequential.dir/Split_Sequential_Graph.cpp.s
+.PHONY : Split_Sequential_Graph.cpp.s
+
 main.o: main.cpp.o
 
 .PHONY : main.o
@@ -170,6 +224,60 @@ main.cpp.s:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/Sequential.dir/build.make CMakeFiles/Sequential.dir/main.cpp.s
 .PHONY : main.cpp.s
 
+methods.o: methods.cpp.o
+
+.PHONY : methods.o
+
+# target to build an object file
+methods.cpp.o:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/Sequential.dir/build.make CMakeFiles/Sequential.dir/methods.cpp.o
+.PHONY : methods.cpp.o
+
+methods.i: methods.cpp.i
+
+.PHONY : methods.i
+
+# target to preprocess a source file
+methods.cpp.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/Sequential.dir/build.make CMakeFiles/Sequential.dir/methods.cpp.i
+.PHONY : methods.cpp.i
+
+methods.s: methods.cpp.s
+
+.PHONY : methods.s
+
+# target to generate assembly for a file
+methods.cpp.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/Sequential.dir/build.make CMakeFiles/Sequential.dir/methods.cpp.s
+.PHONY : methods.cpp.s
+
+metrics.o: metrics.cpp.o
+
+.PHONY : metrics.o
+
+# target to build an object file
+metrics.cpp.o:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/Sequential.dir/build.make CMakeFiles/Sequential.dir/metrics.cpp.o
+.PHONY : metrics.cpp.o
+
+metrics.i: metrics.cpp.i
+
+.PHONY : metrics.i
+
+# target to preprocess a source file
+metrics.cpp.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/Sequential.dir/build.make CMakeFiles/Sequential.dir/metrics.cpp.i
+.PHONY : metrics.cpp.i
+
+metrics.s: metrics.cpp.s
+
+.PHONY : metrics.s
+
+# target to generate assembly for a file
+metrics.cpp.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/Sequential.dir/build.make CMakeFiles/Sequential.dir/metrics.cpp.s
+.PHONY : metrics.cpp.s
+
 # Help Target
 help:
 	@echo "The following are some of the valid targets for this Makefile:"
@@ -179,9 +287,21 @@ help:
 	@echo "... edit_cache"
 	@echo "... rebuild_cache"
 	@echo "... Sequential"
+	@echo "... Sequential_Graph.o"
+	@echo "... Sequential_Graph.i"
+	@echo "... Sequential_Graph.s"
+	@echo "... Split_Sequential_Graph.o"
+	@echo "... Split_Sequential_Graph.i"
+	@echo "... Split_Sequential_Graph.s"
 	@echo "... main.o"
 	@echo "... main.i"
 	@echo "... main.s"
+	@echo "... methods.o"
+	@echo "... methods.i"
+	@echo "... methods.s"
+	@echo "... metrics.o"
+	@echo "... metrics.i"
+	@echo "... metrics.s"
 .PHONY : help
 
 

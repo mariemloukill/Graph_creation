@@ -94,12 +94,12 @@ clean: CMakeFiles/Sequential.dir/clean
 CMakeFiles/Sequential.dir/all:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/Sequential.dir/build.make CMakeFiles/Sequential.dir/depend
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/Sequential.dir/build.make CMakeFiles/Sequential.dir/build
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=/Users/mariemloukil/Graph_creation/Sequential/cmake-build-debug/CMakeFiles --progress-num=1,2 "Built target Sequential"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=/Users/mariemloukil/Graph_creation/Sequential/cmake-build-debug/CMakeFiles --progress-num=1,2,3,4,5,6 "Built target Sequential"
 .PHONY : CMakeFiles/Sequential.dir/all
 
 # Build rule for subdir invocation for target.
 CMakeFiles/Sequential.dir/rule: cmake_check_build_system
-	$(CMAKE_COMMAND) -E cmake_progress_start /Users/mariemloukil/Graph_creation/Sequential/cmake-build-debug/CMakeFiles 2
+	$(CMAKE_COMMAND) -E cmake_progress_start /Users/mariemloukil/Graph_creation/Sequential/cmake-build-debug/CMakeFiles 6
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 CMakeFiles/Sequential.dir/all
 	$(CMAKE_COMMAND) -E cmake_progress_start /Users/mariemloukil/Graph_creation/Sequential/cmake-build-debug/CMakeFiles 0
 .PHONY : CMakeFiles/Sequential.dir/rule

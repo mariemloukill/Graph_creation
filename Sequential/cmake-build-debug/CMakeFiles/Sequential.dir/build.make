@@ -90,17 +90,77 @@ CMakeFiles/Sequential.dir/main.cpp.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/Sequential.dir/main.cpp.s"
 	/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /Users/mariemloukil/Graph_creation/Sequential/main.cpp -o CMakeFiles/Sequential.dir/main.cpp.s
 
+CMakeFiles/Sequential.dir/methods.cpp.o: CMakeFiles/Sequential.dir/flags.make
+CMakeFiles/Sequential.dir/methods.cpp.o: ../methods.cpp
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/Users/mariemloukil/Graph_creation/Sequential/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_2) "Building CXX object CMakeFiles/Sequential.dir/methods.cpp.o"
+	/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/c++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/Sequential.dir/methods.cpp.o -c /Users/mariemloukil/Graph_creation/Sequential/methods.cpp
+
+CMakeFiles/Sequential.dir/methods.cpp.i: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/Sequential.dir/methods.cpp.i"
+	/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /Users/mariemloukil/Graph_creation/Sequential/methods.cpp > CMakeFiles/Sequential.dir/methods.cpp.i
+
+CMakeFiles/Sequential.dir/methods.cpp.s: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/Sequential.dir/methods.cpp.s"
+	/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /Users/mariemloukil/Graph_creation/Sequential/methods.cpp -o CMakeFiles/Sequential.dir/methods.cpp.s
+
+CMakeFiles/Sequential.dir/metrics.cpp.o: CMakeFiles/Sequential.dir/flags.make
+CMakeFiles/Sequential.dir/metrics.cpp.o: ../metrics.cpp
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/Users/mariemloukil/Graph_creation/Sequential/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_3) "Building CXX object CMakeFiles/Sequential.dir/metrics.cpp.o"
+	/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/c++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/Sequential.dir/metrics.cpp.o -c /Users/mariemloukil/Graph_creation/Sequential/metrics.cpp
+
+CMakeFiles/Sequential.dir/metrics.cpp.i: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/Sequential.dir/metrics.cpp.i"
+	/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /Users/mariemloukil/Graph_creation/Sequential/metrics.cpp > CMakeFiles/Sequential.dir/metrics.cpp.i
+
+CMakeFiles/Sequential.dir/metrics.cpp.s: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/Sequential.dir/metrics.cpp.s"
+	/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /Users/mariemloukil/Graph_creation/Sequential/metrics.cpp -o CMakeFiles/Sequential.dir/metrics.cpp.s
+
+CMakeFiles/Sequential.dir/Sequential_Graph.cpp.o: CMakeFiles/Sequential.dir/flags.make
+CMakeFiles/Sequential.dir/Sequential_Graph.cpp.o: ../Sequential_Graph.cpp
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/Users/mariemloukil/Graph_creation/Sequential/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_4) "Building CXX object CMakeFiles/Sequential.dir/Sequential_Graph.cpp.o"
+	/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/c++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/Sequential.dir/Sequential_Graph.cpp.o -c /Users/mariemloukil/Graph_creation/Sequential/Sequential_Graph.cpp
+
+CMakeFiles/Sequential.dir/Sequential_Graph.cpp.i: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/Sequential.dir/Sequential_Graph.cpp.i"
+	/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /Users/mariemloukil/Graph_creation/Sequential/Sequential_Graph.cpp > CMakeFiles/Sequential.dir/Sequential_Graph.cpp.i
+
+CMakeFiles/Sequential.dir/Sequential_Graph.cpp.s: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/Sequential.dir/Sequential_Graph.cpp.s"
+	/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /Users/mariemloukil/Graph_creation/Sequential/Sequential_Graph.cpp -o CMakeFiles/Sequential.dir/Sequential_Graph.cpp.s
+
+CMakeFiles/Sequential.dir/Split_Sequential_Graph.cpp.o: CMakeFiles/Sequential.dir/flags.make
+CMakeFiles/Sequential.dir/Split_Sequential_Graph.cpp.o: ../Split_Sequential_Graph.cpp
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/Users/mariemloukil/Graph_creation/Sequential/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_5) "Building CXX object CMakeFiles/Sequential.dir/Split_Sequential_Graph.cpp.o"
+	/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/c++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/Sequential.dir/Split_Sequential_Graph.cpp.o -c /Users/mariemloukil/Graph_creation/Sequential/Split_Sequential_Graph.cpp
+
+CMakeFiles/Sequential.dir/Split_Sequential_Graph.cpp.i: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/Sequential.dir/Split_Sequential_Graph.cpp.i"
+	/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /Users/mariemloukil/Graph_creation/Sequential/Split_Sequential_Graph.cpp > CMakeFiles/Sequential.dir/Split_Sequential_Graph.cpp.i
+
+CMakeFiles/Sequential.dir/Split_Sequential_Graph.cpp.s: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/Sequential.dir/Split_Sequential_Graph.cpp.s"
+	/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /Users/mariemloukil/Graph_creation/Sequential/Split_Sequential_Graph.cpp -o CMakeFiles/Sequential.dir/Split_Sequential_Graph.cpp.s
+
 # Object files for target Sequential
 Sequential_OBJECTS = \
-"CMakeFiles/Sequential.dir/main.cpp.o"
+"CMakeFiles/Sequential.dir/main.cpp.o" \
+"CMakeFiles/Sequential.dir/methods.cpp.o" \
+"CMakeFiles/Sequential.dir/metrics.cpp.o" \
+"CMakeFiles/Sequential.dir/Sequential_Graph.cpp.o" \
+"CMakeFiles/Sequential.dir/Split_Sequential_Graph.cpp.o"
 
 # External object files for target Sequential
 Sequential_EXTERNAL_OBJECTS =
 
 Sequential: CMakeFiles/Sequential.dir/main.cpp.o
+Sequential: CMakeFiles/Sequential.dir/methods.cpp.o
+Sequential: CMakeFiles/Sequential.dir/metrics.cpp.o
+Sequential: CMakeFiles/Sequential.dir/Sequential_Graph.cpp.o
+Sequential: CMakeFiles/Sequential.dir/Split_Sequential_Graph.cpp.o
 Sequential: CMakeFiles/Sequential.dir/build.make
 Sequential: CMakeFiles/Sequential.dir/link.txt
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --bold --progress-dir=/Users/mariemloukil/Graph_creation/Sequential/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_2) "Linking CXX executable Sequential"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --bold --progress-dir=/Users/mariemloukil/Graph_creation/Sequential/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_6) "Linking CXX executable Sequential"
 	$(CMAKE_COMMAND) -E cmake_link_script CMakeFiles/Sequential.dir/link.txt --verbose=$(VERBOSE)
 
 # Rule to build all files generated by this target.
