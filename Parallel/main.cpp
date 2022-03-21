@@ -98,7 +98,7 @@ int main(int argc, char *argv[]) {
     Graph temp;
 
 
-    vector<string> files = globVector("/home/user/Code/CPP/split_files_parallel/splitfiles/*");
+    vector<string> files = globVector("/home/user/Code/Graph_creation/Parallel/splitfiles/*");
     //vector<Graph *> graphs(files.size());
 
 
