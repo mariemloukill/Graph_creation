@@ -8,5 +8,5 @@
 int main(int argc, char** argv) 
 {
     Tester tester(10);
-    tester.testGraphsInFolder("datasets");
+    tester.testGraphsInFolder("../datasets");
 }

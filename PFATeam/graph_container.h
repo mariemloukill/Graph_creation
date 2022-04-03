@@ -7,9 +7,9 @@
 #include <unordered_set>
 
 template<typename Container>
-concept EdgeContainer = requires(Container &C)
+concept EdgeContainer = requires(Container &C,int a,int b)
 {
-    C.addEdge(int, int);
+    C.addEdge(a, b);
 };
 
 class VectorVectorContainer: public std::vector<std::vector<int>>

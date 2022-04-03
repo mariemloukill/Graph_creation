@@ -1,9 +1,9 @@
 #include "tester.h"
 #include <iostream>
+#include <filesystem>
 
 
 Tester::Tester(int numberOfTrials):numberOfTrials(numberOfTrials)  {}
-Tester::Tester(std::string path, int numberOfTrials=10):numberOfTrials(numberOfTrials),path(path) {}
 
 void Tester::printAvgTestResult(std::string type, double avg){
         std::cout << std::left << std::setfill('.') << std::setw(40) << type << std::right << std::setfill('.') << std::setw(40) << avg << " ms" << std::endl;
