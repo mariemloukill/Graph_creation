@@ -17,11 +17,15 @@ class Graph
         int numberOfVertices;
         Container adjacencyList;
         Graph():numberOfVertices(0){}
-        Graph(int numberOfVertices): numberOfVertices(numberOfVertices)
-        {
-            
-        }
-    
+        Graph(int numberOfVertices): numberOfVertices(numberOfVertices) {}
+
+  
+        /**
+         * @brief Create a Graph From a file
+         * 
+         * @param path path of the graph file
+         * @return Graph 
+         */
         static Graph createGraphFromFile(std::string path)
         {
             std::ifstream file(path);
@@ -35,6 +39,11 @@ class Graph
             return G;
         }
         
+        /**
+         * @brief Save a graph to a file
+         * 
+         * @param path 
+         */
         void saveToFile(std::string path)
         {
             std::ofstream file(path);
@@ -45,11 +54,23 @@ class Graph
             }
         }
 
+        /**
+         * @brief Add an edge to the adjacency list
+         * 
+         * @param a first vertex
+         * @param b second vertex
+         */
         void addEdge(int a, int b)
         { 
             adjacencyList.addEdge(a,b);
         }
 
+        /**
+         * @brief Get the Neighbors of a vertex
+         * 
+         * @param a vertex
+         * @return auto& neighbors of the vertex
+         */
         auto& getAdjacentNeighbors(int a)
         {
             return adjacencyList[a];
