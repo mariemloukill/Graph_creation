@@ -1,23 +1,23 @@
 #ifndef __GRAPH_HEADER__
 #define __GRAPH_HEADER__
 #include <fstream>
+#include "graph_container.h"
 
 /**
  * @brief The Graph class
  * @details This class is used to represent a graph.
  * @author PFA Team
  * @param numberOfVertices Number of vertices
- * @tparam Container
+ * @tparam Container having a method addEdge(int,int)
  */
-template<typename Container>
+template<EdgeContainer Container>
 class Graph
 {
-
     public:
         int numberOfVertices;
         Container adjacencyList;
         Graph():numberOfVertices(0){}
-        Graph(int numberOfVertices): numberOfVertices(numberOfVertices)
+        explicit Graph(int numberOfVertices): numberOfVertices(numberOfVertices)
         {
             
         }
