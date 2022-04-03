@@ -1,0 +1,1 @@
+/usr/bin/c++  -std=c++14 -pthread -g CMakeFiles/Parallel.dir/main.cpp.o CMakeFiles/Parallel.dir/Graph.cpp.o CMakeFiles/Parallel.dir/methods.cpp.o -o Parallel 
