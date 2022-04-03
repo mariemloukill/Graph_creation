@@ -13,6 +13,13 @@ class Tester {
     public:  
         Tester(int numberOfTrials=10);
 
+        /**
+         * @brief Test the creation of a graph and return the time it took.
+         * 
+         * @tparam Container Container type
+         * @param path path to the graph file
+         * @return double time in milliseconds
+         */
         template<typename Container>
         double testGraphCreation(std::string path) {
             std::ios_base::sync_with_stdio(false);
@@ -23,6 +30,13 @@ class Tester {
             return std::chrono::duration_cast<std::chrono::microseconds>(end - start).count()/1000.0;
         }
 
+        /**
+         * @brief Test the creation of a graph  multiple times and return the average result
+         * 
+         * @tparam Container Container type
+         * @param path path to the graph file
+         * @return double average time in milliseconds
+         */
         template<typename Container>
         double testAvgGraphCreation(std::string path) {
             int avg = 0 ;
@@ -32,6 +46,13 @@ class Tester {
             return avg/numberOfTrials;
         }
         
+        /**
+         * @brief Test the creation of the graph multiple times and return the results in a vector
+         * 
+         * @tparam Container Container type
+         * @param path path to the graph file
+         * @return std::vector<double> the results of the test
+         */
         template<typename Container>
         std::vector<double> testMultipleGraphCreation(std::string path) {
             std::vector<double> avg;
@@ -41,10 +62,25 @@ class Tester {
             return avg;
         }
 
+        /**
+         * @brief Print out the results of the test
+         * 
+         * @param type The Container Type ( Vector of vectors, Map of vectors, etc)
+         * @param avg The average test result 
+         */
         void printAvgTestResult(std::string type, double avg);
 
+        /**
+         * @brief Test container on all available implementations and print out the results
+         * 
+         * @param path path to the graph file
+         */
         void testAllImplementationsSequential(std::string path);
         
+        /**
+         * @brief Test all graphs in the provided directory
+         * @param dir directory containing the graphs
+         */
         void testGraphsInFolder(std::string dir);
 };
 
