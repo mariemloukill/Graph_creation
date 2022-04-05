@@ -12,10 +12,9 @@ StreamWriter::StreamWriter(std::ostream &out): out(out) {}
 
 CSVWriter::CSVWriter(std::ostream &out, char sep): StreamWriter(out), separator(sep)
 {
-    writeHeader();
 }
 
-void CSVWriter::writeHeader() {
+void CSVWriter::initialize() {
     out << "\"Algorithm Name\"" << separator << "Type" << separator << "\"Graph Name\"" << separator
     << "\"Average Time\"" << separator << "\"Average Memory\"" << std::endl;
 
@@ -83,11 +82,10 @@ void JSONWriter::finalize() {
 }
 
 JSONWriter::JSONWriter(std::ostream &out) : StreamWriter(out) {
-    writeHeader();
 
 }
 
-void JSONWriter::writeHeader() {
+void JSONWriter::initialize() {
     out << "[" << std::endl;
 }
 
@@ -96,6 +94,10 @@ void Writer::finalize() {
 }
 
 void Writer::write(const std::string &) {
+
+}
+
+void Writer::initialize() {
 
 }
 
@@ -122,4 +124,9 @@ void MultipleWriter::addWriter(Writer *writerPtr) {
 
 void MultipleWriter::addWriter(Writer &writer) {
     writers.push_back(&writer);
+}
+
+void MultipleWriter::initialize() {
+    for(auto writer : writers)
+        writer->initialize();
 }

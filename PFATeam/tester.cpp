@@ -39,38 +39,91 @@ void Tester::testGraphsInFolder(std::string dir) {
         }
 }
 
-void Tester::writeGraphCreationAllImplementationsSequential(const std::string &dir, Writer &writer)
+void Tester::writeGraphCreationAllImplementationsSequential(const std::string &dir, Writer &writer,int skip)
 {
+    constexpr int numberOfImplementations = 9;
+    if(skip==0)
+        writer.initialize();
+    else skip--;
     for (const auto& dirEntry : std::filesystem::directory_iterator(dir))
     {
-        writer.write(dirEntry.path().filename().string());
-        writer.write(AlgorithmTest( "VectorVectorContainer","Sequential",dirEntry.path().filename(),numberOfTrials,
-                                        this->testMultipleGraphCreation<VectorVectorContainer<ProfilableAllocator>>(dirEntry.path().string())));
-        GlobalAllocator::resetMax();
+        if(skip < numberOfImplementations)
+            writer.write(dirEntry.path().filename().string());
+        if(skip==0) {
+            writer.write(
+                    AlgorithmTest("VectorVectorContainer", "Sequential", dirEntry.path().filename(), numberOfTrials,
+                                  this->testMultipleGraphCreation<VectorVectorContainer<ProfilableAllocator>>(
+                                          dirEntry.path().string())));
+            GlobalAllocator::resetMax();
+        }
+        else
+            skip--;
 
-        writer.write(AlgorithmTest( "VectorSetContainer","Sequential",dirEntry.path().filename(),numberOfTrials,
-                                        this->testMultipleGraphCreation<VectorSetContainer<ProfilableAllocator>>(dirEntry.path().string())));
-        GlobalAllocator::resetMax();
-            writer.write(AlgorithmTest( "VectorUnorderedSetContainer","Sequential",dirEntry.path().filename(),numberOfTrials,
-                                        this->testMultipleGraphCreation<VectorUnorderedSetContainer<ProfilableAllocator>>(dirEntry.path().string())));
-        GlobalAllocator::resetMax();
-            writer.write(AlgorithmTest( "MapVectorContainer","Sequential",dirEntry.path().filename(),numberOfTrials,
-                                        this->testMultipleGraphCreation<MapVectorContainer<ProfilableAllocator>>(dirEntry.path().string())));
-            writer.write(AlgorithmTest( "MapSetContainer","Sequential",dirEntry.path().filename(),numberOfTrials,
-                                        this->testMultipleGraphCreation<MapSetContainer<ProfilableAllocator>>(dirEntry.path().string())));
-        GlobalAllocator::resetMax();
-            writer.write(AlgorithmTest( "MapUnorderedSetContainer","Sequential",dirEntry.path().filename(),numberOfTrials,
-                                        this->testMultipleGraphCreation<MapUnorderedSetContainer<ProfilableAllocator>>(dirEntry.path().string())));
-        GlobalAllocator::resetMax();
-            writer.write(AlgorithmTest( "UnorderedMapVectorContainer","Sequential",dirEntry.path().filename(),numberOfTrials,
-                                        this->testMultipleGraphCreation<UnorderedMapVectorContainer<ProfilableAllocator>>(dirEntry.path().string())));
-        GlobalAllocator::resetMax();
-            writer.write(AlgorithmTest( "UnorderedMapSetContainer","Sequential",dirEntry.path().filename(),numberOfTrials,
-                                        this->testMultipleGraphCreation<UnorderedMapSetContainer<ProfilableAllocator>>(dirEntry.path().string())));
-        GlobalAllocator::resetMax();
-            writer.write(AlgorithmTest( "UnorderedMapUnorderedSetContainer","Sequential",dirEntry.path().filename(),numberOfTrials,
-                                        this->testMultipleGraphCreation<UnorderedMapUnorderedSetContainer<ProfilableAllocator>>(dirEntry.path().string())));
-        GlobalAllocator::resetMax();
+        if(skip==0) {
+            writer.write(AlgorithmTest("VectorSetContainer", "Sequential", dirEntry.path().filename(), numberOfTrials,
+                                       this->testMultipleGraphCreation<VectorSetContainer<ProfilableAllocator>>(
+                                               dirEntry.path().string())));
+            GlobalAllocator::resetMax();
+        }
+        else skip--;
+
+        if(skip==0) {
+            writer.write(AlgorithmTest("VectorUnorderedSetContainer", "Sequential", dirEntry.path().filename(),
+                                       numberOfTrials,
+                                       this->testMultipleGraphCreation<VectorUnorderedSetContainer<ProfilableAllocator>>(
+                                               dirEntry.path().string())));
+            GlobalAllocator::resetMax();
+        }
+        else skip--;
+
+        if(skip==0) {
+            writer.write(AlgorithmTest("MapVectorContainer", "Sequential", dirEntry.path().filename(), numberOfTrials,
+                                       this->testMultipleGraphCreation<MapVectorContainer<ProfilableAllocator>>(
+                                               dirEntry.path().string())));
+            GlobalAllocator::resetMax();
+        }
+        else skip--;
+
+        if(skip==0){
+            writer.write(AlgorithmTest("MapSetContainer", "Sequential", dirEntry.path().filename(), numberOfTrials,
+                                       this->testMultipleGraphCreation<MapSetContainer<ProfilableAllocator>>(
+                                               dirEntry.path().string())));
+            GlobalAllocator::resetMax();
+        }
+        else skip--;
+
+        if(skip==0) {
+            writer.write(
+                    AlgorithmTest("MapUnorderedSetContainer", "Sequential", dirEntry.path().filename(), numberOfTrials,
+                                  this->testMultipleGraphCreation<MapUnorderedSetContainer<ProfilableAllocator>>(
+                                          dirEntry.path().string())));
+            GlobalAllocator::resetMax();
+        }
+        else skip--;
+        if(skip==0) {
+            writer.write(AlgorithmTest("UnorderedMapVectorContainer", "Sequential", dirEntry.path().filename(),
+                                       numberOfTrials,
+                                       this->testMultipleGraphCreation<UnorderedMapVectorContainer<ProfilableAllocator>>(
+                                               dirEntry.path().string())));
+            GlobalAllocator::resetMax();
+        }
+        else skip--;
+        if(skip==0) {
+            writer.write(
+                    AlgorithmTest("UnorderedMapSetContainer", "Sequential", dirEntry.path().filename(), numberOfTrials,
+                                  this->testMultipleGraphCreation<UnorderedMapSetContainer<ProfilableAllocator>>(
+                                          dirEntry.path().string())));
+            GlobalAllocator::resetMax();
+        }
+        else skip--;
+        if(skip==0) {
+            writer.write(AlgorithmTest("UnorderedMapUnorderedSetContainer", "Sequential", dirEntry.path().filename(),
+                                       numberOfTrials,
+                                       this->testMultipleGraphCreation<UnorderedMapUnorderedSetContainer<ProfilableAllocator>>(
+                                               dirEntry.path().string())));
+            GlobalAllocator::resetMax();
+        }
+        else skip--;
     }
     writer.finalize();
 }

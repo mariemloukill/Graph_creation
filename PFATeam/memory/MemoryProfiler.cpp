@@ -13,7 +13,8 @@
 using namespace PFA;
 void StandardMemoryProfiler::run()
 {
-    out << R"(Time,Current Memory, Max Memory)" << std::endl;
+    if(writeHeader)
+        out << R"(Time,Current Memory, Max Memory)" << std::endl;
     constexpr int MAX_TIME_SIZE=30;
     char time_representation[MAX_TIME_SIZE];
     std::fill_n(time_representation, MAX_TIME_SIZE, '\0');
@@ -45,10 +46,12 @@ void ExteriorMemoryProfiler::run()
     }
 }
 
-MemoryProfiler::MemoryProfiler(std::ostream &out,std::chrono::milliseconds interval):out(out),std::thread(&MemoryProfiler::run,this),interval(interval){}
+MemoryProfiler::MemoryProfiler(std::ostream &out,std::chrono::milliseconds interval,bool writeHeader):out(out),
+std::thread(&MemoryProfiler::run,this),interval(interval),writeHeader(writeHeader){}
 
 
-MemoryProfiler::MemoryProfiler(std::chrono::milliseconds interval):interval(interval), std::thread(&MemoryProfiler::run, this),out(std::cout)
+MemoryProfiler::MemoryProfiler(std::chrono::milliseconds interval,bool writeHeader):interval(interval),
+std::thread(&MemoryProfiler::run, this),out(std::cout),writeHeader(writeHeader)
 {
 }
 

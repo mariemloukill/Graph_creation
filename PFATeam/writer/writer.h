@@ -34,6 +34,7 @@ namespace PFA
          * @details This method is called after finishing writing all the tests.
          */
         virtual void finalize();
+        virtual void initialize();
     };
 
     /**
@@ -67,10 +68,10 @@ namespace PFA
      */
     class CSVWriter :public StreamWriter{
         char separator;
-        void writeHeader();
     public:
         CSVWriter(std::ostream& out,char sep=',');
         void write(const AlgorithmTest& data) override;
+        void initialize() override;
     };
 
     /**
@@ -81,10 +82,10 @@ namespace PFA
     class JSONWriter :public StreamWriter{
         bool finalized;
         bool firstWrite=true;
-        void writeHeader();
     public:
         JSONWriter(std::ostream& out);
         void write(const AlgorithmTest& data) override;
+        void initialize() override;
         void finalize() override;
     };
 
@@ -101,6 +102,7 @@ namespace PFA
         void write(const AlgorithmTest&) override;
         void write(const std::string &) override;
         void finalize() override;
+        void initialize() override;
         void addWriter(Writer*);
         void addWriter(Writer&);
     };

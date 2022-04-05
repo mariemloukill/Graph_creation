@@ -19,12 +19,13 @@ namespace PFA {
          * @brief The main thread for profiling.
          * */
         virtual void run()=0;
+        bool writeHeader;
         std::ostream& out;
         std::chrono::milliseconds interval;
     public:
         std::atomic<bool> endProfiler = false;
-        MemoryProfiler(std::ostream &out,std::chrono::milliseconds interval=std::chrono::milliseconds(1000));
-        MemoryProfiler(std::chrono::milliseconds interval=std::chrono::milliseconds(1000));
+        MemoryProfiler(std::ostream &out,std::chrono::milliseconds interval=std::chrono::milliseconds(1000),bool writeHeader=true);
+        MemoryProfiler(std::chrono::milliseconds interval=std::chrono::milliseconds(1000), bool writeHeader=true);
     };
     /**
      * @brief a class for profiling using OS dependent features.

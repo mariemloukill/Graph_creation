@@ -110,7 +110,7 @@ namespace PFA
          * @brief Test the time & memory taken to create a graph using all implementations and return the results
          * @param dir directory containing the graph files
          * */
-        void writeGraphCreationAllImplementationsSequential(const std::string& dir, Writer &writer);
+        void writeGraphCreationAllImplementationsSequential(const std::string& dir, Writer &writer,int skip=0);
 
 
 
