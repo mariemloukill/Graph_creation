@@ -35,6 +35,8 @@ namespace PFA
         std::vector<double> memoryResults;
         AlgorithmTest(std::string name, std::string type, std::string graphName, int numberOfTrials,
                       std::vector<double> timeResults, std::vector<double> memoryResults);
+        AlgorithmTest(std::string name, std::string type, std::string graphName, int numberOfTrials,
+                      const std::vector<std::pair<double,double>>& timeMemoryResults);
     };
 
     class TestResult : public std::vector<AlgorithmTest>
@@ -94,10 +96,11 @@ namespace PFA
          * @return std::vector<double> the results of the test
          */
         template<typename Container>
-        std::vector<double> testMultipleGraphCreation(std::string path) {
-            std::vector<double> avg;
+        std::vector<std::pair<double,double>> testMultipleGraphCreation(std::string path) {
+            std::vector<std::pair<double,double>> avg;
             for (int i=0 ; i<numberOfTrials ; i++) {
-                avg.push_back(testGraphCreation<Container>(path));
+                double time=testGraphCreation<Container>(path);
+                avg.emplace_back(time,GlobalAllocator::max_memory);
             }
             return avg;
         }

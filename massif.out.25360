@@ -1,0 +1,918 @@
+desc: (none)
+cmd: PFATeam/cmake-build-release/PFAProject
+time_unit: i
+#-----------
+snapshot=0
+#-----------
+time=0
+mem_heap_B=0
+mem_heap_extra_B=0
+mem_stacks_B=0
+heap_tree=empty
+#-----------
+snapshot=1
+#-----------
+time=1065166635
+mem_heap_B=9268655
+mem_heap_extra_B=933257
+mem_stacks_B=0
+heap_tree=empty
+#-----------
+snapshot=2
+#-----------
+time=2206416068
+mem_heap_B=18339815
+mem_heap_extra_B=1993481
+mem_stacks_B=0
+heap_tree=empty
+#-----------
+snapshot=3
+#-----------
+time=3887060196
+mem_heap_B=34456943
+mem_heap_extra_B=3311729
+mem_stacks_B=0
+heap_tree=empty
+#-----------
+snapshot=4
+#-----------
+time=5712644108
+mem_heap_B=39607131
+mem_heap_extra_B=11907573
+mem_stacks_B=0
+heap_tree=empty
+#-----------
+snapshot=5
+#-----------
+time=7324591166
+mem_heap_B=92869515
+mem_heap_extra_B=29372341
+mem_stacks_B=0
+heap_tree=empty
+#-----------
+snapshot=6
+#-----------
+time=8344970552
+mem_heap_B=139334003
+mem_heap_extra_B=40277765
+mem_stacks_B=0
+heap_tree=empty
+#-----------
+snapshot=7
+#-----------
+time=10249841584
+mem_heap_B=25071843
+mem_heap_extra_B=4430861
+mem_stacks_B=0
+heap_tree=empty
+#-----------
+snapshot=8
+#-----------
+time=11441384532
+mem_heap_B=59619371
+mem_heap_extra_B=12417133
+mem_stacks_B=0
+heap_tree=empty
+#-----------
+snapshot=9
+#-----------
+time=13162505024
+mem_heap_B=118608067
+mem_heap_extra_B=24288005
+mem_stacks_B=0
+heap_tree=detailed
+n4: 118608067 (heap allocation functions) malloc/new/new[], --alloc-fns, etc.
+ n1: 44803920 0x411F34: std::vector<std::unordered_set<int, std::hash<int>, std::equal_to<int>, PFA::ProfilableAllocator<int> >, PFA::ProfilableAllocator<std::unordered_set<int, std::hash<int>, std::equal_to<int>, PFA::ProfilableAllocator<int> > > >::_M_default_append(unsigned long) (in /home/ramizouari/CLionProjects/PFAProject/PFATeam/cmake-build-release/PFAProject)
+  n1: 44803920 0x40ADAF: double PFA::Tester::testGraphCreation<PFA::VectorUnorderedSetContainer<PFA::ProfilableAllocator> >(std::__cxx11::basic_string<char, std::char_traits<char>, std::allocator<char> >) [clone .isra.0] (in /home/ramizouari/CLionProjects/PFAProject/PFATeam/cmake-build-release/PFAProject)
+   n1: 44803920 0x40C641: PFA::Tester::writeGraphCreationAllImplementationsSequential(std::__cxx11::basic_string<char, std::char_traits<char>, std::allocator<char> > const&, PFA::Writer&) (in /home/ramizouari/CLionProjects/PFAProject/PFATeam/cmake-build-release/PFAProject)
+    n0: 44803920 0x406CCB: main (in /home/ramizouari/CLionProjects/PFAProject/PFATeam/cmake-build-release/PFAProject)
+ n1: 38373952 0x40A78C: std::pair<std::__detail::_Node_iterator<int, true, false>, bool> std::_Hashtable<int, int, PFA::ProfilableAllocator<int>, std::__detail::_Identity, std::equal_to<int>, std::hash<int>, std::__detail::_Mod_range_hashing, std::__detail::_Default_ranged_hash, std::__detail::_Prime_rehash_policy, std::__detail::_Hashtable_traits<false, true, true> >::_M_insert<int const&, std::__detail::_AllocNode<PFA::ProfilableAllocator<std::__detail::_Hash_node<int, false> > > >(int const&, std::__detail::_AllocNode<PFA::ProfilableAllocator<std::__detail::_Hash_node<int, false> > > const&, std::integral_constant<bool, true>) [clone .isra.0] (in /home/ramizouari/CLionProjects/PFAProject/PFATeam/cmake-build-release/PFAProject)
+  n1: 38373952 0x40AA4D: double PFA::Tester::testGraphCreation<PFA::VectorUnorderedSetContainer<PFA::ProfilableAllocator> >(std::__cxx11::basic_string<char, std::char_traits<char>, std::allocator<char> >) [clone .isra.0] (in /home/ramizouari/CLionProjects/PFAProject/PFATeam/cmake-build-release/PFAProject)
+   n1: 38373952 0x40C641: PFA::Tester::writeGraphCreationAllImplementationsSequential(std::__cxx11::basic_string<char, std::char_traits<char>, std::allocator<char> > const&, PFA::Writer&) (in /home/ramizouari/CLionProjects/PFAProject/PFATeam/cmake-build-release/PFAProject)
+    n0: 38373952 0x406CCB: main (in /home/ramizouari/CLionProjects/PFAProject/PFATeam/cmake-build-release/PFAProject)
+ n1: 35191752 0x412C79: std::_Hashtable<int, int, PFA::ProfilableAllocator<int>, std::__detail::_Identity, std::equal_to<int>, std::hash<int>, std::__detail::_Mod_range_hashing, std::__detail::_Default_ranged_hash, std::__detail::_Prime_rehash_policy, std::__detail::_Hashtable_traits<false, true, true> >::_M_rehash(unsigned long, unsigned long const&) (in /home/ramizouari/CLionProjects/PFAProject/PFATeam/cmake-build-release/PFAProject)
+  n1: 35191752 0x40A844: std::pair<std::__detail::_Node_iterator<int, true, false>, bool> std::_Hashtable<int, int, PFA::ProfilableAllocator<int>, std::__detail::_Identity, std::equal_to<int>, std::hash<int>, std::__detail::_Mod_range_hashing, std::__detail::_Default_ranged_hash, std::__detail::_Prime_rehash_policy, std::__detail::_Hashtable_traits<false, true, true> >::_M_insert<int const&, std::__detail::_AllocNode<PFA::ProfilableAllocator<std::__detail::_Hash_node<int, false> > > >(int const&, std::__detail::_AllocNode<PFA::ProfilableAllocator<std::__detail::_Hash_node<int, false> > > const&, std::integral_constant<bool, true>) [clone .isra.0] (in /home/ramizouari/CLionProjects/PFAProject/PFATeam/cmake-build-release/PFAProject)
+   n1: 35191752 0x40AA4D: double PFA::Tester::testGraphCreation<PFA::VectorUnorderedSetContainer<PFA::ProfilableAllocator> >(std::__cxx11::basic_string<char, std::char_traits<char>, std::allocator<char> >) [clone .isra.0] (in /home/ramizouari/CLionProjects/PFAProject/PFATeam/cmake-build-release/PFAProject)
+    n1: 35191752 0x40C641: PFA::Tester::writeGraphCreationAllImplementationsSequential(std::__cxx11::basic_string<char, std::char_traits<char>, std::allocator<char> > const&, PFA::Writer&) (in /home/ramizouari/CLionProjects/PFAProject/PFATeam/cmake-build-release/PFAProject)
+     n0: 35191752 0x406CCB: main (in /home/ramizouari/CLionProjects/PFAProject/PFATeam/cmake-build-release/PFAProject)
+ n0: 238443 in 21 places, all below massif's threshold (1.00%)
+#-----------
+snapshot=10
+#-----------
+time=14486443895
+mem_heap_B=129434447
+mem_heap_extra_B=28475697
+mem_stacks_B=0
+heap_tree=detailed
+n4: 129434447 (heap allocation functions) malloc/new/new[], --alloc-fns, etc.
+ n1: 46110240 0x40A78C: std::pair<std::__detail::_Node_iterator<int, true, false>, bool> std::_Hashtable<int, int, PFA::ProfilableAllocator<int>, std::__detail::_Identity, std::equal_to<int>, std::hash<int>, std::__detail::_Mod_range_hashing, std::__detail::_Default_ranged_hash, std::__detail::_Prime_rehash_policy, std::__detail::_Hashtable_traits<false, true, true> >::_M_insert<int const&, std::__detail::_AllocNode<PFA::ProfilableAllocator<std::__detail::_Hash_node<int, false> > > >(int const&, std::__detail::_AllocNode<PFA::ProfilableAllocator<std::__detail::_Hash_node<int, false> > > const&, std::integral_constant<bool, true>) [clone .isra.0] (in /home/ramizouari/CLionProjects/PFAProject/PFATeam/cmake-build-release/PFAProject)
+  n1: 46110240 0x40AA4D: double PFA::Tester::testGraphCreation<PFA::VectorUnorderedSetContainer<PFA::ProfilableAllocator> >(std::__cxx11::basic_string<char, std::char_traits<char>, std::allocator<char> >) [clone .isra.0] (in /home/ramizouari/CLionProjects/PFAProject/PFATeam/cmake-build-release/PFAProject)
+   n1: 46110240 0x40C641: PFA::Tester::writeGraphCreationAllImplementationsSequential(std::__cxx11::basic_string<char, std::char_traits<char>, std::allocator<char> > const&, PFA::Writer&) (in /home/ramizouari/CLionProjects/PFAProject/PFATeam/cmake-build-release/PFAProject)
+    n0: 46110240 0x406CCB: main (in /home/ramizouari/CLionProjects/PFAProject/PFATeam/cmake-build-release/PFAProject)
+ n1: 44803920 0x411F34: std::vector<std::unordered_set<int, std::hash<int>, std::equal_to<int>, PFA::ProfilableAllocator<int> >, PFA::ProfilableAllocator<std::unordered_set<int, std::hash<int>, std::equal_to<int>, PFA::ProfilableAllocator<int> > > >::_M_default_append(unsigned long) (in /home/ramizouari/CLionProjects/PFAProject/PFATeam/cmake-build-release/PFAProject)
+  n1: 44803920 0x40ADAF: double PFA::Tester::testGraphCreation<PFA::VectorUnorderedSetContainer<PFA::ProfilableAllocator> >(std::__cxx11::basic_string<char, std::char_traits<char>, std::allocator<char> >) [clone .isra.0] (in /home/ramizouari/CLionProjects/PFAProject/PFATeam/cmake-build-release/PFAProject)
+   n1: 44803920 0x40C641: PFA::Tester::writeGraphCreationAllImplementationsSequential(std::__cxx11::basic_string<char, std::char_traits<char>, std::allocator<char> > const&, PFA::Writer&) (in /home/ramizouari/CLionProjects/PFAProject/PFATeam/cmake-build-release/PFAProject)
+    n0: 44803920 0x406CCB: main (in /home/ramizouari/CLionProjects/PFAProject/PFATeam/cmake-build-release/PFAProject)
+ n1: 38290536 0x412C79: std::_Hashtable<int, int, PFA::ProfilableAllocator<int>, std::__detail::_Identity, std::equal_to<int>, std::hash<int>, std::__detail::_Mod_range_hashing, std::__detail::_Default_ranged_hash, std::__detail::_Prime_rehash_policy, std::__detail::_Hashtable_traits<false, true, true> >::_M_rehash(unsigned long, unsigned long const&) (in /home/ramizouari/CLionProjects/PFAProject/PFATeam/cmake-build-release/PFAProject)
+  n1: 38290536 0x40A844: std::pair<std::__detail::_Node_iterator<int, true, false>, bool> std::_Hashtable<int, int, PFA::ProfilableAllocator<int>, std::__detail::_Identity, std::equal_to<int>, std::hash<int>, std::__detail::_Mod_range_hashing, std::__detail::_Default_ranged_hash, std::__detail::_Prime_rehash_policy, std::__detail::_Hashtable_traits<false, true, true> >::_M_insert<int const&, std::__detail::_AllocNode<PFA::ProfilableAllocator<std::__detail::_Hash_node<int, false> > > >(int const&, std::__detail::_AllocNode<PFA::ProfilableAllocator<std::__detail::_Hash_node<int, false> > > const&, std::integral_constant<bool, true>) [clone .isra.0] (in /home/ramizouari/CLionProjects/PFAProject/PFATeam/cmake-build-release/PFAProject)
+   n1: 38290536 0x40AA4D: double PFA::Tester::testGraphCreation<PFA::VectorUnorderedSetContainer<PFA::ProfilableAllocator> >(std::__cxx11::basic_string<char, std::char_traits<char>, std::allocator<char> >) [clone .isra.0] (in /home/ramizouari/CLionProjects/PFAProject/PFATeam/cmake-build-release/PFAProject)
+    n1: 38290536 0x40C641: PFA::Tester::writeGraphCreationAllImplementationsSequential(std::__cxx11::basic_string<char, std::char_traits<char>, std::allocator<char> > const&, PFA::Writer&) (in /home/ramizouari/CLionProjects/PFAProject/PFATeam/cmake-build-release/PFAProject)
+     n0: 38290536 0x406CCB: main (in /home/ramizouari/CLionProjects/PFAProject/PFATeam/cmake-build-release/PFAProject)
+ n0: 229751 in 21 places, all below massif's threshold (1.00%)
+#-----------
+snapshot=11
+#-----------
+time=16080645729
+mem_heap_B=12500707
+mem_heap_extra_B=2007885
+mem_stacks_B=0
+heap_tree=empty
+#-----------
+snapshot=12
+#-----------
+time=16915905123
+mem_heap_B=20052623
+mem_heap_extra_B=3376241
+mem_stacks_B=0
+heap_tree=empty
+#-----------
+snapshot=13
+#-----------
+time=18230132880
+mem_heap_B=31233643
+mem_heap_extra_B=5328053
+mem_stacks_B=0
+heap_tree=empty
+#-----------
+snapshot=14
+#-----------
+time=19106294380
+mem_heap_B=37413235
+mem_heap_extra_B=6196461
+mem_stacks_B=0
+heap_tree=empty
+#-----------
+snapshot=15
+#-----------
+time=20420517397
+mem_heap_B=12369499
+mem_heap_extra_B=4068573
+mem_stacks_B=0
+heap_tree=empty
+#-----------
+snapshot=16
+#-----------
+time=21515702193
+mem_heap_B=44429155
+mem_heap_extra_B=15569757
+mem_stacks_B=0
+heap_tree=empty
+#-----------
+snapshot=17
+#-----------
+time=22610891542
+mem_heap_B=78034619
+mem_heap_extra_B=27258093
+mem_stacks_B=0
+heap_tree=empty
+#-----------
+snapshot=18
+#-----------
+time=24363190370
+mem_heap_B=129879299
+mem_heap_extra_B=45526141
+mem_stacks_B=0
+heap_tree=empty
+#-----------
+snapshot=19
+#-----------
+time=25717732224
+mem_heap_B=169134147
+mem_heap_extra_B=59636269
+mem_stacks_B=0
+heap_tree=detailed
+n3: 169134147 (heap allocation functions) malloc/new/new[], --alloc-fns, etc.
+ n2: 132584440 0x411BF3: std::pair<std::_Rb_tree_iterator<int>, bool> std::_Rb_tree<int, int, std::_Identity<int>, std::less<int>, PFA::ProfilableAllocator<int> >::_M_insert_unique<int const&>(int const&) (in /home/ramizouari/CLionProjects/PFAProject/PFATeam/cmake-build-release/PFAProject)
+  n1: 132584440 0x4095C2: double PFA::Tester::testGraphCreation<PFA::MapSetContainer<PFA::ProfilableAllocator> >(std::__cxx11::basic_string<char, std::char_traits<char>, std::allocator<char> >) [clone .isra.0] (in /home/ramizouari/CLionProjects/PFAProject/PFATeam/cmake-build-release/PFAProject)
+   n1: 132584440 0x40CF91: PFA::Tester::writeGraphCreationAllImplementationsSequential(std::__cxx11::basic_string<char, std::char_traits<char>, std::allocator<char> > const&, PFA::Writer&) (in /home/ramizouari/CLionProjects/PFAProject/PFATeam/cmake-build-release/PFAProject)
+    n0: 132584440 0x406CCB: main (in /home/ramizouari/CLionProjects/PFAProject/PFATeam/cmake-build-release/PFAProject)
+  n0: 0 in 1 place, below massif's threshold (1.00%)
+ n1: 36311264 0x409526: double PFA::Tester::testGraphCreation<PFA::MapSetContainer<PFA::ProfilableAllocator> >(std::__cxx11::basic_string<char, std::char_traits<char>, std::allocator<char> >) [clone .isra.0] (in /home/ramizouari/CLionProjects/PFAProject/PFATeam/cmake-build-release/PFAProject)
+  n1: 36311264 0x40CF91: PFA::Tester::writeGraphCreationAllImplementationsSequential(std::__cxx11::basic_string<char, std::char_traits<char>, std::allocator<char> > const&, PFA::Writer&) (in /home/ramizouari/CLionProjects/PFAProject/PFATeam/cmake-build-release/PFAProject)
+   n0: 36311264 0x406CCB: main (in /home/ramizouari/CLionProjects/PFAProject/PFATeam/cmake-build-release/PFAProject)
+ n0: 238443 in 24 places, all below massif's threshold (1.00%)
+#-----------
+snapshot=20
+#-----------
+time=26812916187
+mem_heap_B=25340987
+mem_heap_extra_B=6407077
+mem_stacks_B=0
+heap_tree=empty
+#-----------
+snapshot=21
+#-----------
+time=28223217081
+mem_heap_B=61078771
+mem_heap_extra_B=15711557
+mem_stacks_B=0
+heap_tree=detailed
+n4: 61078771 (heap allocation functions) malloc/new/new[], --alloc-fns, etc.
+ n2: 22246304 0x40A78C: std::pair<std::__detail::_Node_iterator<int, true, false>, bool> std::_Hashtable<int, int, PFA::ProfilableAllocator<int>, std::__detail::_Identity, std::equal_to<int>, std::hash<int>, std::__detail::_Mod_range_hashing, std::__detail::_Default_ranged_hash, std::__detail::_Prime_rehash_policy, std::__detail::_Hashtable_traits<false, true, true> >::_M_insert<int const&, std::__detail::_AllocNode<PFA::ProfilableAllocator<std::__detail::_Hash_node<int, false> > > >(int const&, std::__detail::_AllocNode<PFA::ProfilableAllocator<std::__detail::_Hash_node<int, false> > > const&, std::integral_constant<bool, true>) [clone .isra.0] (in /home/ramizouari/CLionProjects/PFAProject/PFATeam/cmake-build-release/PFAProject)
+  n1: 22246304 0x40B6EC: double PFA::Tester::testGraphCreation<PFA::MapUnorderedSetContainer<PFA::ProfilableAllocator> >(std::__cxx11::basic_string<char, std::char_traits<char>, std::allocator<char> >) [clone .isra.0] (in /home/ramizouari/CLionProjects/PFAProject/PFATeam/cmake-build-release/PFAProject)
+   n1: 22246304 0x40D409: PFA::Tester::writeGraphCreationAllImplementationsSequential(std::__cxx11::basic_string<char, std::char_traits<char>, std::allocator<char> > const&, PFA::Writer&) (in /home/ramizouari/CLionProjects/PFAProject/PFATeam/cmake-build-release/PFAProject)
+    n0: 22246304 0x406CCB: main (in /home/ramizouari/CLionProjects/PFAProject/PFATeam/cmake-build-release/PFAProject)
+  n0: 0 in 1 place, below massif's threshold (1.00%)
+ n1: 20550152 0x412C79: std::_Hashtable<int, int, PFA::ProfilableAllocator<int>, std::__detail::_Identity, std::equal_to<int>, std::hash<int>, std::__detail::_Mod_range_hashing, std::__detail::_Default_ranged_hash, std::__detail::_Prime_rehash_policy, std::__detail::_Hashtable_traits<false, true, true> >::_M_rehash(unsigned long, unsigned long const&) (in /home/ramizouari/CLionProjects/PFAProject/PFATeam/cmake-build-release/PFAProject)
+  n2: 20550152 0x40A844: std::pair<std::__detail::_Node_iterator<int, true, false>, bool> std::_Hashtable<int, int, PFA::ProfilableAllocator<int>, std::__detail::_Identity, std::equal_to<int>, std::hash<int>, std::__detail::_Mod_range_hashing, std::__detail::_Default_ranged_hash, std::__detail::_Prime_rehash_policy, std::__detail::_Hashtable_traits<false, true, true> >::_M_insert<int const&, std::__detail::_AllocNode<PFA::ProfilableAllocator<std::__detail::_Hash_node<int, false> > > >(int const&, std::__detail::_AllocNode<PFA::ProfilableAllocator<std::__detail::_Hash_node<int, false> > > const&, std::integral_constant<bool, true>) [clone .isra.0] (in /home/ramizouari/CLionProjects/PFAProject/PFATeam/cmake-build-release/PFAProject)
+   n1: 20550152 0x40B6EC: double PFA::Tester::testGraphCreation<PFA::MapUnorderedSetContainer<PFA::ProfilableAllocator> >(std::__cxx11::basic_string<char, std::char_traits<char>, std::allocator<char> >) [clone .isra.0] (in /home/ramizouari/CLionProjects/PFAProject/PFATeam/cmake-build-release/PFAProject)
+    n1: 20550152 0x40D409: PFA::Tester::writeGraphCreationAllImplementationsSequential(std::__cxx11::basic_string<char, std::char_traits<char>, std::allocator<char> > const&, PFA::Writer&) (in /home/ramizouari/CLionProjects/PFAProject/PFATeam/cmake-build-release/PFAProject)
+     n0: 20550152 0x406CCB: main (in /home/ramizouari/CLionProjects/PFAProject/PFATeam/cmake-build-release/PFAProject)
+   n0: 0 in 1 place, below massif's threshold (1.00%)
+ n1: 18043872 0x40B646: double PFA::Tester::testGraphCreation<PFA::MapUnorderedSetContainer<PFA::ProfilableAllocator> >(std::__cxx11::basic_string<char, std::char_traits<char>, std::allocator<char> >) [clone .isra.0] (in /home/ramizouari/CLionProjects/PFAProject/PFATeam/cmake-build-release/PFAProject)
+  n1: 18043872 0x40D409: PFA::Tester::writeGraphCreationAllImplementationsSequential(std::__cxx11::basic_string<char, std::char_traits<char>, std::allocator<char> > const&, PFA::Writer&) (in /home/ramizouari/CLionProjects/PFAProject/PFATeam/cmake-build-release/PFAProject)
+   n0: 18043872 0x406CCB: main (in /home/ramizouari/CLionProjects/PFAProject/PFATeam/cmake-build-release/PFAProject)
+ n0: 238443 in 24 places, all below massif's threshold (1.00%)
+#-----------
+snapshot=22
+#-----------
+time=29195443699
+mem_heap_B=87534859
+mem_heap_extra_B=22244093
+mem_stacks_B=0
+heap_tree=empty
+#-----------
+snapshot=23
+#-----------
+time=30491747421
+mem_heap_B=115502995
+mem_heap_extra_B=30185173
+mem_stacks_B=0
+heap_tree=empty
+#-----------
+snapshot=24
+#-----------
+time=31788048692
+mem_heap_B=1918527
+mem_heap_extra_B=593081
+mem_stacks_B=0
+heap_tree=empty
+#-----------
+snapshot=25
+#-----------
+time=33084351779
+mem_heap_B=12095259
+mem_heap_extra_B=3114541
+mem_stacks_B=0
+heap_tree=empty
+#-----------
+snapshot=26
+#-----------
+time=33732505408
+mem_heap_B=18759695
+mem_heap_extra_B=4988825
+mem_stacks_B=0
+heap_tree=empty
+#-----------
+snapshot=27
+#-----------
+time=35028807071
+mem_heap_B=28499727
+mem_heap_extra_B=8041489
+mem_stacks_B=0
+heap_tree=empty
+#-----------
+snapshot=28
+#-----------
+time=36325114507
+mem_heap_B=40163155
+mem_heap_extra_B=10472949
+mem_stacks_B=0
+heap_tree=empty
+#-----------
+snapshot=29
+#-----------
+time=37621415892
+mem_heap_B=42279035
+mem_heap_extra_B=14363669
+mem_stacks_B=0
+heap_tree=empty
+#-----------
+snapshot=30
+#-----------
+time=38593642547
+mem_heap_B=75577859
+mem_heap_extra_B=25492837
+mem_stacks_B=0
+heap_tree=empty
+#-----------
+snapshot=31
+#-----------
+time=39565869036
+mem_heap_B=107613587
+mem_heap_extra_B=36671381
+mem_stacks_B=0
+heap_tree=empty
+#-----------
+snapshot=32
+#-----------
+time=40862170845
+mem_heap_B=150425699
+mem_heap_extra_B=51168941
+mem_stacks_B=0
+heap_tree=empty
+#-----------
+snapshot=33
+#-----------
+time=41834397671
+mem_heap_B=13055635
+mem_heap_extra_B=3492645
+mem_stacks_B=0
+heap_tree=empty
+#-----------
+snapshot=34
+#-----------
+time=43454776364
+mem_heap_B=57240627
+mem_heap_extra_B=16498765
+mem_stacks_B=0
+heap_tree=empty
+#-----------
+snapshot=35
+#-----------
+time=44889958341
+mem_heap_B=95884403
+mem_heap_extra_B=28174277
+mem_stacks_B=0
+heap_tree=detailed
+n5: 95884403 (heap allocation functions) malloc/new/new[], --alloc-fns, etc.
+ n2: 36638096 0x40A78C: std::pair<std::__detail::_Node_iterator<int, true, false>, bool> std::_Hashtable<int, int, PFA::ProfilableAllocator<int>, std::__detail::_Identity, std::equal_to<int>, std::hash<int>, std::__detail::_Mod_range_hashing, std::__detail::_Default_ranged_hash, std::__detail::_Prime_rehash_policy, std::__detail::_Hashtable_traits<false, true, true> >::_M_insert<int const&, std::__detail::_AllocNode<PFA::ProfilableAllocator<std::__detail::_Hash_node<int, false> > > >(int const&, std::__detail::_AllocNode<PFA::ProfilableAllocator<std::__detail::_Hash_node<int, false> > > const&, std::integral_constant<bool, true>) [clone .isra.0] (in /home/ramizouari/CLionProjects/PFAProject/PFATeam/cmake-build-release/PFAProject)
+  n1: 36638096 0x40B04E: double PFA::Tester::testGraphCreation<PFA::UnorderedMapUnorderedSetContainer<PFA::ProfilableAllocator> >(std::__cxx11::basic_string<char, std::char_traits<char>, std::allocator<char> >) [clone .isra.0] (in /home/ramizouari/CLionProjects/PFAProject/PFATeam/cmake-build-release/PFAProject)
+   n1: 36638096 0x40E161: PFA::Tester::writeGraphCreationAllImplementationsSequential(std::__cxx11::basic_string<char, std::char_traits<char>, std::allocator<char> > const&, PFA::Writer&) (in /home/ramizouari/CLionProjects/PFAProject/PFATeam/cmake-build-release/PFAProject)
+    n0: 36638096 0x406CCB: main (in /home/ramizouari/CLionProjects/PFAProject/PFATeam/cmake-build-release/PFAProject)
+  n0: 0 in 2 places, all below massif's threshold (1.00%)
+ n1: 34026328 0x412C79: std::_Hashtable<int, int, PFA::ProfilableAllocator<int>, std::__detail::_Identity, std::equal_to<int>, std::hash<int>, std::__detail::_Mod_range_hashing, std::__detail::_Default_ranged_hash, std::__detail::_Prime_rehash_policy, std::__detail::_Hashtable_traits<false, true, true> >::_M_rehash(unsigned long, unsigned long const&) (in /home/ramizouari/CLionProjects/PFAProject/PFATeam/cmake-build-release/PFAProject)
+  n2: 34026328 0x40A844: std::pair<std::__detail::_Node_iterator<int, true, false>, bool> std::_Hashtable<int, int, PFA::ProfilableAllocator<int>, std::__detail::_Identity, std::equal_to<int>, std::hash<int>, std::__detail::_Mod_range_hashing, std::__detail::_Default_ranged_hash, std::__detail::_Prime_rehash_policy, std::__detail::_Hashtable_traits<false, true, true> >::_M_insert<int const&, std::__detail::_AllocNode<PFA::ProfilableAllocator<std::__detail::_Hash_node<int, false> > > >(int const&, std::__detail::_AllocNode<PFA::ProfilableAllocator<std::__detail::_Hash_node<int, false> > > const&, std::integral_constant<bool, true>) [clone .isra.0] (in /home/ramizouari/CLionProjects/PFAProject/PFATeam/cmake-build-release/PFAProject)
+   n1: 34026328 0x40B04E: double PFA::Tester::testGraphCreation<PFA::UnorderedMapUnorderedSetContainer<PFA::ProfilableAllocator> >(std::__cxx11::basic_string<char, std::char_traits<char>, std::allocator<char> >) [clone .isra.0] (in /home/ramizouari/CLionProjects/PFAProject/PFATeam/cmake-build-release/PFAProject)
+    n1: 34026328 0x40E161: PFA::Tester::writeGraphCreationAllImplementationsSequential(std::__cxx11::basic_string<char, std::char_traits<char>, std::allocator<char> > const&, PFA::Writer&) (in /home/ramizouari/CLionProjects/PFAProject/PFATeam/cmake-build-release/PFAProject)
+     n0: 34026328 0x406CCB: main (in /home/ramizouari/CLionProjects/PFAProject/PFATeam/cmake-build-release/PFAProject)
+   n0: 0 in 2 places, all below massif's threshold (1.00%)
+ n1: 22173048 0x412A8C: std::__detail::_Map_base<int, std::pair<int const, std::unordered_set<int, std::hash<int>, std::equal_to<int>, PFA::ProfilableAllocator<int> > >, PFA::ProfilableAllocator<std::pair<int const, std::unordered_set<int, std::hash<int>, std::equal_to<int>, PFA::ProfilableAllocator<int> > > >, std::__detail::_Select1st, std::equal_to<int>, std::hash<int>, std::__detail::_Mod_range_hashing, std::__detail::_Default_ranged_hash, std::__detail::_Prime_rehash_policy, std::__detail::_Hashtable_traits<false, false, true>, true>::operator[](int const&) (in /home/ramizouari/CLionProjects/PFAProject/PFATeam/cmake-build-release/PFAProject)
+  n1: 22173048 0x40B041: double PFA::Tester::testGraphCreation<PFA::UnorderedMapUnorderedSetContainer<PFA::ProfilableAllocator> >(std::__cxx11::basic_string<char, std::char_traits<char>, std::allocator<char> >) [clone .isra.0] (in /home/ramizouari/CLionProjects/PFAProject/PFATeam/cmake-build-release/PFAProject)
+   n1: 22173048 0x40E161: PFA::Tester::writeGraphCreationAllImplementationsSequential(std::__cxx11::basic_string<char, std::char_traits<char>, std::allocator<char> > const&, PFA::Writer&) (in /home/ramizouari/CLionProjects/PFAProject/PFATeam/cmake-build-release/PFAProject)
+    n0: 22173048 0x406CCB: main (in /home/ramizouari/CLionProjects/PFAProject/PFATeam/cmake-build-release/PFAProject)
+ n1: 2808488 0x4128E9: std::_Hashtable<int, std::pair<int const, std::unordered_set<int, std::hash<int>, std::equal_to<int>, PFA::ProfilableAllocator<int> > >, PFA::ProfilableAllocator<std::pair<int const, std::unordered_set<int, std::hash<int>, std::equal_to<int>, PFA::ProfilableAllocator<int> > > >, std::__detail::_Select1st, std::equal_to<int>, std::hash<int>, std::__detail::_Mod_range_hashing, std::__detail::_Default_ranged_hash, std::__detail::_Prime_rehash_policy, std::__detail::_Hashtable_traits<false, false, true> >::_M_rehash(unsigned long, unsigned long const&) (in /home/ramizouari/CLionProjects/PFAProject/PFATeam/cmake-build-release/PFAProject)
+  n1: 2808488 0x412B6C: std::__detail::_Map_base<int, std::pair<int const, std::unordered_set<int, std::hash<int>, std::equal_to<int>, PFA::ProfilableAllocator<int> > >, PFA::ProfilableAllocator<std::pair<int const, std::unordered_set<int, std::hash<int>, std::equal_to<int>, PFA::ProfilableAllocator<int> > > >, std::__detail::_Select1st, std::equal_to<int>, std::hash<int>, std::__detail::_Mod_range_hashing, std::__detail::_Default_ranged_hash, std::__detail::_Prime_rehash_policy, std::__detail::_Hashtable_traits<false, false, true>, true>::operator[](int const&) (in /home/ramizouari/CLionProjects/PFAProject/PFATeam/cmake-build-release/PFAProject)
+   n1: 2808488 0x40B041: double PFA::Tester::testGraphCreation<PFA::UnorderedMapUnorderedSetContainer<PFA::ProfilableAllocator> >(std::__cxx11::basic_string<char, std::char_traits<char>, std::allocator<char> >) [clone .isra.0] (in /home/ramizouari/CLionProjects/PFAProject/PFATeam/cmake-build-release/PFAProject)
+    n1: 2808488 0x40E161: PFA::Tester::writeGraphCreationAllImplementationsSequential(std::__cxx11::basic_string<char, std::char_traits<char>, std::allocator<char> > const&, PFA::Writer&) (in /home/ramizouari/CLionProjects/PFAProject/PFATeam/cmake-build-release/PFAProject)
+     n0: 2808488 0x406CCB: main (in /home/ramizouari/CLionProjects/PFAProject/PFATeam/cmake-build-release/PFAProject)
+ n0: 238443 in 29 places, all below massif's threshold (1.00%)
+#-----------
+snapshot=36
+#-----------
+time=46803531081
+mem_heap_B=798300
+mem_heap_extra_B=118548
+mem_stacks_B=0
+heap_tree=empty
+#-----------
+snapshot=37
+#-----------
+time=48238713951
+mem_heap_B=4807702
+mem_heap_extra_B=1515986
+mem_stacks_B=0
+heap_tree=empty
+#-----------
+snapshot=38
+#-----------
+time=50152311797
+mem_heap_B=8246686
+mem_heap_extra_B=88210
+mem_stacks_B=0
+heap_tree=empty
+#-----------
+snapshot=39
+#-----------
+time=51587511045
+mem_heap_B=14389770
+mem_heap_extra_B=273814
+mem_stacks_B=0
+heap_tree=empty
+#-----------
+snapshot=40
+#-----------
+time=52544311221
+mem_heap_B=18643710
+mem_heap_extra_B=353314
+mem_stacks_B=0
+heap_tree=empty
+#-----------
+snapshot=41
+#-----------
+time=53979517811
+mem_heap_B=24815894
+mem_heap_extra_B=551626
+mem_stacks_B=0
+heap_tree=empty
+#-----------
+snapshot=42
+#-----------
+time=54936464985
+mem_heap_B=28985890
+mem_heap_extra_B=673254
+mem_stacks_B=0
+heap_tree=empty
+#-----------
+snapshot=43
+#-----------
+time=56850093216
+mem_heap_B=41963326
+mem_heap_extra_B=972114
+mem_stacks_B=0
+heap_tree=empty
+#-----------
+snapshot=44
+#-----------
+time=58763714384
+mem_heap_B=50151046
+mem_heap_extra_B=1284594
+mem_stacks_B=0
+heap_tree=empty
+#-----------
+snapshot=45
+#-----------
+time=60677367819
+mem_heap_B=58386350
+mem_heap_extra_B=1639010
+mem_stacks_B=0
+heap_tree=empty
+#-----------
+snapshot=46
+#-----------
+time=62590950394
+mem_heap_B=66564270
+mem_heap_extra_B=2112570
+mem_stacks_B=0
+heap_tree=empty
+#-----------
+snapshot=47
+#-----------
+time=64026139302
+mem_heap_B=72607522
+mem_heap_extra_B=2652654
+mem_stacks_B=0
+heap_tree=detailed
+n3: 72607522 (heap allocation functions) malloc/new/new[], --alloc-fns, etc.
+ n2: 62768940 0x411835: void std::vector<int, PFA::ProfilableAllocator<int> >::_M_realloc_insert<int const&>(__gnu_cxx::__normal_iterator<int*, std::vector<int, PFA::ProfilableAllocator<int> > >, int const&) (in /home/ramizouari/CLionProjects/PFAProject/PFATeam/cmake-build-release/PFAProject)
+  n1: 62768940 0x408621: double PFA::Tester::testGraphCreation<PFA::VectorVectorContainer<PFA::ProfilableAllocator> >(std::__cxx11::basic_string<char, std::char_traits<char>, std::allocator<char> >) [clone .isra.0] (in /home/ramizouari/CLionProjects/PFAProject/PFATeam/cmake-build-release/PFAProject)
+   n1: 62768940 0x40BD51: PFA::Tester::writeGraphCreationAllImplementationsSequential(std::__cxx11::basic_string<char, std::char_traits<char>, std::allocator<char> > const&, PFA::Writer&) (in /home/ramizouari/CLionProjects/PFAProject/PFATeam/cmake-build-release/PFAProject)
+    n0: 62768940 0x406CCB: main (in /home/ramizouari/CLionProjects/PFAProject/PFATeam/cmake-build-release/PFAProject)
+  n0: 0 in 2 places, all below massif's threshold (1.00%)
+ n1: 9600144 0x41162F: std::vector<std::vector<int, PFA::ProfilableAllocator<int> >, PFA::ProfilableAllocator<std::vector<int, PFA::ProfilableAllocator<int> > > >::_M_default_append(unsigned long) (in /home/ramizouari/CLionProjects/PFAProject/PFATeam/cmake-build-release/PFAProject)
+  n1: 9600144 0x4087D2: double PFA::Tester::testGraphCreation<PFA::VectorVectorContainer<PFA::ProfilableAllocator> >(std::__cxx11::basic_string<char, std::char_traits<char>, std::allocator<char> >) [clone .isra.0] (in /home/ramizouari/CLionProjects/PFAProject/PFATeam/cmake-build-release/PFAProject)
+   n1: 9600144 0x40BD51: PFA::Tester::writeGraphCreationAllImplementationsSequential(std::__cxx11::basic_string<char, std::char_traits<char>, std::allocator<char> > const&, PFA::Writer&) (in /home/ramizouari/CLionProjects/PFAProject/PFATeam/cmake-build-release/PFAProject)
+    n0: 9600144 0x406CCB: main (in /home/ramizouari/CLionProjects/PFAProject/PFATeam/cmake-build-release/PFAProject)
+ n0: 238438 in 31 places, all below massif's threshold (1.00%)
+#-----------
+snapshot=48
+#-----------
+time=65461371172
+mem_heap_B=88320670
+mem_heap_extra_B=3496626
+mem_stacks_B=0
+heap_tree=empty
+#-----------
+snapshot=49
+#-----------
+time=67374979099
+mem_heap_B=97210330
+mem_heap_extra_B=3698502
+mem_stacks_B=0
+heap_tree=empty
+#-----------
+snapshot=50
+#-----------
+time=68023139043
+mem_heap_B=100211086
+mem_heap_extra_B=3785458
+mem_stacks_B=0
+heap_tree=empty
+#-----------
+snapshot=51
+#-----------
+time=68671319366
+mem_heap_B=103271922
+mem_heap_extra_B=3836398
+mem_stacks_B=0
+heap_tree=empty
+#-----------
+snapshot=52
+#-----------
+time=69319478330
+mem_heap_B=106304262
+mem_heap_extra_B=3908506
+mem_stacks_B=0
+heap_tree=detailed
+n3: 106304262 (heap allocation functions) malloc/new/new[], --alloc-fns, etc.
+ n2: 86865488 0x411835: void std::vector<int, PFA::ProfilableAllocator<int> >::_M_realloc_insert<int const&>(__gnu_cxx::__normal_iterator<int*, std::vector<int, PFA::ProfilableAllocator<int> > >, int const&) (in /home/ramizouari/CLionProjects/PFAProject/PFATeam/cmake-build-release/PFAProject)
+  n1: 86865488 0x408621: double PFA::Tester::testGraphCreation<PFA::VectorVectorContainer<PFA::ProfilableAllocator> >(std::__cxx11::basic_string<char, std::char_traits<char>, std::allocator<char> >) [clone .isra.0] (in /home/ramizouari/CLionProjects/PFAProject/PFATeam/cmake-build-release/PFAProject)
+   n1: 86865488 0x40BD51: PFA::Tester::writeGraphCreationAllImplementationsSequential(std::__cxx11::basic_string<char, std::char_traits<char>, std::allocator<char> > const&, PFA::Writer&) (in /home/ramizouari/CLionProjects/PFAProject/PFATeam/cmake-build-release/PFAProject)
+    n0: 86865488 0x406CCB: main (in /home/ramizouari/CLionProjects/PFAProject/PFATeam/cmake-build-release/PFAProject)
+  n0: 0 in 2 places, all below massif's threshold (1.00%)
+ n1: 19200336 0x41162F: std::vector<std::vector<int, PFA::ProfilableAllocator<int> >, PFA::ProfilableAllocator<std::vector<int, PFA::ProfilableAllocator<int> > > >::_M_default_append(unsigned long) (in /home/ramizouari/CLionProjects/PFAProject/PFATeam/cmake-build-release/PFAProject)
+  n1: 19200336 0x4087D2: double PFA::Tester::testGraphCreation<PFA::VectorVectorContainer<PFA::ProfilableAllocator> >(std::__cxx11::basic_string<char, std::char_traits<char>, std::allocator<char> >) [clone .isra.0] (in /home/ramizouari/CLionProjects/PFAProject/PFATeam/cmake-build-release/PFAProject)
+   n1: 19200336 0x40BD51: PFA::Tester::writeGraphCreationAllImplementationsSequential(std::__cxx11::basic_string<char, std::char_traits<char>, std::allocator<char> > const&, PFA::Writer&) (in /home/ramizouari/CLionProjects/PFAProject/PFATeam/cmake-build-release/PFAProject)
+    n0: 19200336 0x406CCB: main (in /home/ramizouari/CLionProjects/PFAProject/PFATeam/cmake-build-release/PFAProject)
+ n0: 238438 in 31 places, all below massif's threshold (1.00%)
+#-----------
+snapshot=53
+#-----------
+time=69967663491
+mem_heap_B=109250410
+mem_heap_extra_B=3981798
+mem_stacks_B=0
+heap_tree=empty
+#-----------
+snapshot=54
+#-----------
+time=70615817653
+mem_heap_B=17527934
+mem_heap_extra_B=3076858
+mem_stacks_B=0
+heap_tree=empty
+#-----------
+snapshot=55
+#-----------
+time=71263972673
+mem_heap_B=34491814
+mem_heap_extra_B=9862410
+mem_stacks_B=0
+heap_tree=empty
+#-----------
+snapshot=56
+#-----------
+time=71912126416
+mem_heap_B=51546294
+mem_heap_extra_B=16684202
+mem_stacks_B=0
+heap_tree=empty
+#-----------
+snapshot=57
+#-----------
+time=72560280913
+mem_heap_B=68566574
+mem_heap_extra_B=23492314
+mem_stacks_B=0
+heap_tree=empty
+#-----------
+snapshot=58
+#-----------
+time=73208435977
+mem_heap_B=85674774
+mem_heap_extra_B=30335594
+mem_stacks_B=0
+heap_tree=empty
+#-----------
+snapshot=59
+#-----------
+time=73856589723
+mem_heap_B=102765414
+mem_heap_extra_B=37171850
+mem_stacks_B=0
+heap_tree=empty
+#-----------
+snapshot=60
+#-----------
+time=74504744144
+mem_heap_B=119848054
+mem_heap_extra_B=44004906
+mem_stacks_B=0
+heap_tree=empty
+#-----------
+snapshot=61
+#-----------
+time=75152897882
+mem_heap_B=136932654
+mem_heap_extra_B=50838746
+mem_stacks_B=0
+heap_tree=empty
+#-----------
+snapshot=62
+#-----------
+time=75801052670
+mem_heap_B=154094574
+mem_heap_extra_B=57703514
+mem_stacks_B=0
+heap_tree=detailed
+n3: 154094574 (heap allocation functions) malloc/new/new[], --alloc-fns, etc.
+ n2: 144256040 0x411BF3: std::pair<std::_Rb_tree_iterator<int>, bool> std::_Rb_tree<int, int, std::_Identity<int>, std::less<int>, PFA::ProfilableAllocator<int> >::_M_insert_unique<int const&>(int const&) (in /home/ramizouari/CLionProjects/PFAProject/PFATeam/cmake-build-release/PFAProject)
+  n1: 144256040 0x4089C9: double PFA::Tester::testGraphCreation<PFA::VectorSetContainer<PFA::ProfilableAllocator> >(std::__cxx11::basic_string<char, std::char_traits<char>, std::allocator<char> >) [clone .isra.0] (in /home/ramizouari/CLionProjects/PFAProject/PFATeam/cmake-build-release/PFAProject)
+   n1: 144256040 0x40C1D1: PFA::Tester::writeGraphCreationAllImplementationsSequential(std::__cxx11::basic_string<char, std::char_traits<char>, std::allocator<char> > const&, PFA::Writer&) (in /home/ramizouari/CLionProjects/PFAProject/PFATeam/cmake-build-release/PFAProject)
+    n0: 144256040 0x406CCB: main (in /home/ramizouari/CLionProjects/PFAProject/PFATeam/cmake-build-release/PFAProject)
+  n0: 0 in 2 places, all below massif's threshold (1.00%)
+ n1: 9600096 0x411B1C: std::vector<std::set<int, std::less<int>, PFA::ProfilableAllocator<int> >, PFA::ProfilableAllocator<std::set<int, std::less<int>, PFA::ProfilableAllocator<int> > > >::_M_default_append(unsigned long) (in /home/ramizouari/CLionProjects/PFAProject/PFATeam/cmake-build-release/PFAProject)
+  n1: 9600096 0x408C7F: double PFA::Tester::testGraphCreation<PFA::VectorSetContainer<PFA::ProfilableAllocator> >(std::__cxx11::basic_string<char, std::char_traits<char>, std::allocator<char> >) [clone .isra.0] (in /home/ramizouari/CLionProjects/PFAProject/PFATeam/cmake-build-release/PFAProject)
+   n1: 9600096 0x40C1D1: PFA::Tester::writeGraphCreationAllImplementationsSequential(std::__cxx11::basic_string<char, std::char_traits<char>, std::allocator<char> > const&, PFA::Writer&) (in /home/ramizouari/CLionProjects/PFAProject/PFATeam/cmake-build-release/PFAProject)
+    n0: 9600096 0x406CCB: main (in /home/ramizouari/CLionProjects/PFAProject/PFATeam/cmake-build-release/PFAProject)
+ n0: 238438 in 31 places, all below massif's threshold (1.00%)
+#-----------
+snapshot=63
+#-----------
+time=76449206782
+mem_heap_B=171219934
+mem_heap_extra_B=64553658
+mem_stacks_B=0
+heap_tree=empty
+#-----------
+snapshot=64
+#-----------
+time=77097360767
+mem_heap_B=188257414
+mem_heap_extra_B=71368650
+mem_stacks_B=0
+heap_tree=empty
+#-----------
+snapshot=65
+#-----------
+time=77745515423
+mem_heap_B=205303614
+mem_heap_extra_B=78187130
+mem_stacks_B=0
+heap_tree=empty
+#-----------
+snapshot=66
+#-----------
+time=78393669748
+mem_heap_B=222436614
+mem_heap_extra_B=85040330
+mem_stacks_B=0
+heap_tree=empty
+#-----------
+snapshot=67
+#-----------
+time=78794377365
+mem_heap_B=252136542
+mem_heap_extra_B=89241890
+mem_stacks_B=0
+heap_tree=detailed
+n3: 252136542 (heap allocation functions) malloc/new/new[], --alloc-fns, etc.
+ n2: 223097720 0x411BF3: std::pair<std::_Rb_tree_iterator<int>, bool> std::_Rb_tree<int, int, std::_Identity<int>, std::less<int>, PFA::ProfilableAllocator<int> >::_M_insert_unique<int const&>(int const&) (in /home/ramizouari/CLionProjects/PFAProject/PFATeam/cmake-build-release/PFAProject)
+  n1: 223097720 0x4089C9: double PFA::Tester::testGraphCreation<PFA::VectorSetContainer<PFA::ProfilableAllocator> >(std::__cxx11::basic_string<char, std::char_traits<char>, std::allocator<char> >) [clone .isra.0] (in /home/ramizouari/CLionProjects/PFAProject/PFATeam/cmake-build-release/PFAProject)
+   n1: 223097720 0x40C1D1: PFA::Tester::writeGraphCreationAllImplementationsSequential(std::__cxx11::basic_string<char, std::char_traits<char>, std::allocator<char> > const&, PFA::Writer&) (in /home/ramizouari/CLionProjects/PFAProject/PFATeam/cmake-build-release/PFAProject)
+    n0: 223097720 0x406CCB: main (in /home/ramizouari/CLionProjects/PFAProject/PFATeam/cmake-build-release/PFAProject)
+  n0: 0 in 2 places, all below massif's threshold (1.00%)
+ n1: 28800384 0x411B1C: std::vector<std::set<int, std::less<int>, PFA::ProfilableAllocator<int> >, PFA::ProfilableAllocator<std::set<int, std::less<int>, PFA::ProfilableAllocator<int> > > >::_M_default_append(unsigned long) (in /home/ramizouari/CLionProjects/PFAProject/PFATeam/cmake-build-release/PFAProject)
+  n1: 28800384 0x408C7F: double PFA::Tester::testGraphCreation<PFA::VectorSetContainer<PFA::ProfilableAllocator> >(std::__cxx11::basic_string<char, std::char_traits<char>, std::allocator<char> >) [clone .isra.0] (in /home/ramizouari/CLionProjects/PFAProject/PFATeam/cmake-build-release/PFAProject)
+   n1: 28800384 0x40C1D1: PFA::Tester::writeGraphCreationAllImplementationsSequential(std::__cxx11::basic_string<char, std::char_traits<char>, std::allocator<char> > const&, PFA::Writer&) (in /home/ramizouari/CLionProjects/PFAProject/PFATeam/cmake-build-release/PFAProject)
+    n0: 28800384 0x406CCB: main (in /home/ramizouari/CLionProjects/PFAProject/PFATeam/cmake-build-release/PFAProject)
+ n0: 238438 in 31 places, all below massif's threshold (1.00%)
+#-----------
+snapshot=68
+#-----------
+time=79442531265
+mem_heap_B=259685166
+mem_heap_extra_B=96100506
+mem_stacks_B=0
+heap_tree=empty
+#-----------
+snapshot=69
+#-----------
+time=80090685303
+mem_heap_B=276756566
+mem_heap_extra_B=102929066
+mem_stacks_B=0
+heap_tree=empty
+#-----------
+snapshot=70
+#-----------
+time=80738839851
+mem_heap_B=293897806
+mem_heap_extra_B=109785562
+mem_stacks_B=0
+heap_tree=empty
+#-----------
+snapshot=71
+#-----------
+time=81386994463
+mem_heap_B=311091886
+mem_heap_extra_B=116663194
+mem_stacks_B=0
+heap_tree=empty
+#-----------
+snapshot=72
+#-----------
+time=82035148967
+mem_heap_B=328292806
+mem_heap_extra_B=123543562
+mem_stacks_B=0
+heap_tree=empty
+#-----------
+snapshot=73
+#-----------
+time=82683303742
+mem_heap_B=345586366
+mem_heap_extra_B=130460986
+mem_stacks_B=0
+heap_tree=empty
+#-----------
+snapshot=74
+#-----------
+time=83331458232
+mem_heap_B=362860046
+mem_heap_extra_B=137370458
+mem_stacks_B=0
+heap_tree=empty
+#-----------
+snapshot=75
+#-----------
+time=83979612732
+mem_heap_B=380148206
+mem_heap_extra_B=144285722
+mem_stacks_B=0
+heap_tree=empty
+#-----------
+snapshot=76
+#-----------
+time=84627767010
+mem_heap_B=397493046
+mem_heap_extra_B=151223658
+mem_stacks_B=0
+heap_tree=empty
+#-----------
+snapshot=77
+#-----------
+time=85275921242
+mem_heap_B=414857286
+mem_heap_extra_B=158169354
+mem_stacks_B=0
+heap_tree=detailed
+n3: 414857286 (heap allocation functions) malloc/new/new[], --alloc-fns, etc.
+ n2: 395418560 0x411BF3: std::pair<std::_Rb_tree_iterator<int>, bool> std::_Rb_tree<int, int, std::_Identity<int>, std::less<int>, PFA::ProfilableAllocator<int> >::_M_insert_unique<int const&>(int const&) (in /home/ramizouari/CLionProjects/PFAProject/PFATeam/cmake-build-release/PFAProject)
+  n1: 395418560 0x4089C9: double PFA::Tester::testGraphCreation<PFA::VectorSetContainer<PFA::ProfilableAllocator> >(std::__cxx11::basic_string<char, std::char_traits<char>, std::allocator<char> >) [clone .isra.0] (in /home/ramizouari/CLionProjects/PFAProject/PFATeam/cmake-build-release/PFAProject)
+   n1: 395418560 0x40C1D1: PFA::Tester::writeGraphCreationAllImplementationsSequential(std::__cxx11::basic_string<char, std::char_traits<char>, std::allocator<char> > const&, PFA::Writer&) (in /home/ramizouari/CLionProjects/PFAProject/PFATeam/cmake-build-release/PFAProject)
+    n0: 395418560 0x406CCB: main (in /home/ramizouari/CLionProjects/PFAProject/PFATeam/cmake-build-release/PFAProject)
+  n0: 0 in 2 places, all below massif's threshold (1.00%)
+ n1: 19200288 0x411B1C: std::vector<std::set<int, std::less<int>, PFA::ProfilableAllocator<int> >, PFA::ProfilableAllocator<std::set<int, std::less<int>, PFA::ProfilableAllocator<int> > > >::_M_default_append(unsigned long) (in /home/ramizouari/CLionProjects/PFAProject/PFATeam/cmake-build-release/PFAProject)
+  n1: 19200288 0x408C7F: double PFA::Tester::testGraphCreation<PFA::VectorSetContainer<PFA::ProfilableAllocator> >(std::__cxx11::basic_string<char, std::char_traits<char>, std::allocator<char> >) [clone .isra.0] (in /home/ramizouari/CLionProjects/PFAProject/PFATeam/cmake-build-release/PFAProject)
+   n1: 19200288 0x40C1D1: PFA::Tester::writeGraphCreationAllImplementationsSequential(std::__cxx11::basic_string<char, std::char_traits<char>, std::allocator<char> > const&, PFA::Writer&) (in /home/ramizouari/CLionProjects/PFAProject/PFATeam/cmake-build-release/PFAProject)
+    n0: 19200288 0x406CCB: main (in /home/ramizouari/CLionProjects/PFAProject/PFATeam/cmake-build-release/PFAProject)
+ n0: 238438 in 31 places, all below massif's threshold (1.00%)
+#-----------
+snapshot=78
+#-----------
+time=85924075733
+mem_heap_B=432306006
+mem_heap_extra_B=165148842
+mem_stacks_B=0
+heap_tree=empty
+#-----------
+snapshot=79
+#-----------
+time=86572230531
+mem_heap_B=449804286
+mem_heap_extra_B=172148154
+mem_stacks_B=0
+heap_tree=empty
+#-----------
+snapshot=80
+#-----------
+time=87220384957
+mem_heap_B=467369446
+mem_heap_extra_B=179174218
+mem_stacks_B=0
+heap_tree=empty
+#-----------
+snapshot=81
+#-----------
+time=87749577280
+mem_heap_B=519861838
+mem_heap_extra_B=184814274
+mem_stacks_B=0
+heap_tree=detailed
+n3: 519861838 (heap allocation functions) malloc/new/new[], --alloc-fns, etc.
+ n2: 462022440 0x411BF3: std::pair<std::_Rb_tree_iterator<int>, bool> std::_Rb_tree<int, int, std::_Identity<int>, std::less<int>, PFA::ProfilableAllocator<int> >::_M_insert_unique<int const&>(int const&) (in /home/ramizouari/CLionProjects/PFAProject/PFATeam/cmake-build-release/PFAProject)
+  n1: 462022440 0x4089C9: double PFA::Tester::testGraphCreation<PFA::VectorSetContainer<PFA::ProfilableAllocator> >(std::__cxx11::basic_string<char, std::char_traits<char>, std::allocator<char> >) [clone .isra.0] (in /home/ramizouari/CLionProjects/PFAProject/PFATeam/cmake-build-release/PFAProject)
+   n1: 462022440 0x40C1D1: PFA::Tester::writeGraphCreationAllImplementationsSequential(std::__cxx11::basic_string<char, std::char_traits<char>, std::allocator<char> > const&, PFA::Writer&) (in /home/ramizouari/CLionProjects/PFAProject/PFATeam/cmake-build-release/PFAProject)
+    n0: 462022440 0x406CCB: main (in /home/ramizouari/CLionProjects/PFAProject/PFATeam/cmake-build-release/PFAProject)
+  n0: 0 in 2 places, all below massif's threshold (1.00%)
+ n1: 57600960 0x411B1C: std::vector<std::set<int, std::less<int>, PFA::ProfilableAllocator<int> >, PFA::ProfilableAllocator<std::set<int, std::less<int>, PFA::ProfilableAllocator<int> > > >::_M_default_append(unsigned long) (in /home/ramizouari/CLionProjects/PFAProject/PFATeam/cmake-build-release/PFAProject)
+  n1: 57600960 0x408C7F: double PFA::Tester::testGraphCreation<PFA::VectorSetContainer<PFA::ProfilableAllocator> >(std::__cxx11::basic_string<char, std::char_traits<char>, std::allocator<char> >) [clone .isra.0] (in /home/ramizouari/CLionProjects/PFAProject/PFATeam/cmake-build-release/PFAProject)
+   n1: 57600960 0x40C1D1: PFA::Tester::writeGraphCreationAllImplementationsSequential(std::__cxx11::basic_string<char, std::char_traits<char>, std::allocator<char> > const&, PFA::Writer&) (in /home/ramizouari/CLionProjects/PFAProject/PFATeam/cmake-build-release/PFAProject)
+    n0: 57600960 0x406CCB: main (in /home/ramizouari/CLionProjects/PFAProject/PFATeam/cmake-build-release/PFAProject)
+ n0: 238438 in 31 places, all below massif's threshold (1.00%)
+#-----------
+snapshot=82
+#-----------
+time=88397731557
+mem_heap_B=518528830
+mem_heap_extra_B=191959482
+mem_stacks_B=0
+heap_tree=empty
+#-----------
+snapshot=83
+#-----------
+time=89045885611
+mem_heap_B=536513590
+mem_heap_extra_B=199153386
+mem_stacks_B=0
+heap_tree=empty
+#-----------
+snapshot=84
+#-----------
+time=89694039886
+mem_heap_B=554449950
+mem_heap_extra_B=206327930
+mem_stacks_B=0
+heap_tree=empty
+#-----------
+snapshot=85
+#-----------
+time=90342194328
+mem_heap_B=572374070
+mem_heap_extra_B=213497578
+mem_stacks_B=0
+heap_tree=empty
+#-----------
+snapshot=86
+#-----------
+time=90990348298
+mem_heap_B=590422950
+mem_heap_extra_B=220717130
+mem_stacks_B=0
+heap_tree=empty
+#-----------
+snapshot=87
+#-----------
+time=91638503359
+mem_heap_B=608555990
+mem_heap_extra_B=227970346
+mem_stacks_B=0
+heap_tree=empty
+#-----------
+snapshot=88
+#-----------
+time=92286658182
+mem_heap_B=626230950
+mem_heap_extra_B=235040330
+mem_stacks_B=0
+heap_tree=empty
+#-----------
+snapshot=89
+#-----------
+time=92934812607
+mem_heap_B=644234830
+mem_heap_extra_B=242241882
+mem_stacks_B=0
+heap_tree=empty
+#-----------
+snapshot=90
+#-----------
+time=93582966933
+mem_heap_B=662177910
+mem_heap_extra_B=249419114
+mem_stacks_B=0
+heap_tree=empty
+#-----------
+snapshot=91
+#-----------
+time=94227875810
+mem_heap_B=680107910
+mem_heap_extra_B=256591114
+mem_stacks_B=0
+heap_tree=peak
+n3: 680107910 (heap allocation functions) malloc/new/new[], --alloc-fns, etc.
+ n2: 641468800 0x411BF3: std::pair<std::_Rb_tree_iterator<int>, bool> std::_Rb_tree<int, int, std::_Identity<int>, std::less<int>, PFA::ProfilableAllocator<int> >::_M_insert_unique<int const&>(int const&) (in /home/ramizouari/CLionProjects/PFAProject/PFATeam/cmake-build-release/PFAProject)
+  n1: 641468800 0x4089C9: double PFA::Tester::testGraphCreation<PFA::VectorSetContainer<PFA::ProfilableAllocator> >(std::__cxx11::basic_string<char, std::char_traits<char>, std::allocator<char> >) [clone .isra.0] (in /home/ramizouari/CLionProjects/PFAProject/PFATeam/cmake-build-release/PFAProject)
+   n1: 641468800 0x40C1D1: PFA::Tester::writeGraphCreationAllImplementationsSequential(std::__cxx11::basic_string<char, std::char_traits<char>, std::allocator<char> > const&, PFA::Writer&) (in /home/ramizouari/CLionProjects/PFAProject/PFATeam/cmake-build-release/PFAProject)
+    n0: 641468800 0x406CCB: main (in /home/ramizouari/CLionProjects/PFAProject/PFATeam/cmake-build-release/PFAProject)
+  n0: 0 in 2 places, all below massif's threshold (1.00%)
+ n1: 38400672 0x411B1C: std::vector<std::set<int, std::less<int>, PFA::ProfilableAllocator<int> >, PFA::ProfilableAllocator<std::set<int, std::less<int>, PFA::ProfilableAllocator<int> > > >::_M_default_append(unsigned long) (in /home/ramizouari/CLionProjects/PFAProject/PFATeam/cmake-build-release/PFAProject)
+  n1: 38400672 0x408C7F: double PFA::Tester::testGraphCreation<PFA::VectorSetContainer<PFA::ProfilableAllocator> >(std::__cxx11::basic_string<char, std::char_traits<char>, std::allocator<char> >) [clone .isra.0] (in /home/ramizouari/CLionProjects/PFAProject/PFATeam/cmake-build-release/PFAProject)
+   n1: 38400672 0x40C1D1: PFA::Tester::writeGraphCreationAllImplementationsSequential(std::__cxx11::basic_string<char, std::char_traits<char>, std::allocator<char> > const&, PFA::Writer&) (in /home/ramizouari/CLionProjects/PFAProject/PFATeam/cmake-build-release/PFAProject)
+    n0: 38400672 0x406CCB: main (in /home/ramizouari/CLionProjects/PFAProject/PFATeam/cmake-build-release/PFAProject)
+ n0: 238438 in 31 places, all below massif's threshold (1.00%)
+#-----------
+snapshot=92
+#-----------
+time=94876029452
+mem_heap_B=53276299
+mem_heap_extra_B=5861909
+mem_stacks_B=0
+heap_tree=empty
+#-----------
+snapshot=93
+#-----------
+time=95524183946
+mem_heap_B=23403806
+mem_heap_extra_B=3570346
+mem_stacks_B=0
+heap_tree=empty
+#-----------
+snapshot=94
+#-----------
+time=96172338706
+mem_heap_B=35790918
+mem_heap_extra_B=7273298
+mem_stacks_B=0
+heap_tree=empty

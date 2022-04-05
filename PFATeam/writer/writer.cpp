@@ -27,16 +27,19 @@ void CSVWriter::writeHeader() {
 void CSVWriter::write(const AlgorithmTest &test)
 {
     double timeAvg= std::reduce(test.timeResults.begin(), test.timeResults.end()) / test.timeResults.size();
+    double memoryAvg= std::reduce(test.memoryResults.begin(), test.memoryResults.end()) / test.memoryResults.size();
     out << '"' << test.name << '"'
     << separator << test.type << separator
     << '"' << test.graphName << '"'
-    << separator << timeAvg << separator << "" << std::endl;
+    << separator << timeAvg << separator << memoryAvg << std::endl;
 }
 
 void StandardWriter::write(const AlgorithmTest &test) {
     double timeAvg= std::reduce(test.timeResults.begin(), test.timeResults.end(), 0.0) / test.timeResults.size();
     out << std::left << std::setfill('.') << std::setw(40) << test.name
     << std::right << std::setfill('.') << std::setw(40) << timeAvg << " ms" << std::endl;
+    out << "Memory usage: " << GlobalAllocator::max_memory << " bytes" << std::endl;
+
 }
 
 void StandardWriter::write(const std::string &graphFile)
@@ -57,14 +60,18 @@ void JSONWriter::write(const AlgorithmTest &test)
     bool firstWriteTime = true;
     for (auto time : test.timeResults) {
         if(!firstWriteTime)
-            out << ",";
-        out << time << std::endl;
+            out << ", ";
+        out << time;
         firstWriteTime=false;
     }
     out << "]," << std::endl;
     out << R"("Test Memories": [)" << std::endl;
+    firstWriteTime=true;
     for (auto memory : test.memoryResults) {
-        out << memory << "," << std::endl;
+        if(!firstWriteTime)
+            out << ", ";
+        out << memory;
+        firstWriteTime=false;
     }
     out << "]" << std::endl;
     out << "}" << std::endl;

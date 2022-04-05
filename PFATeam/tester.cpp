@@ -45,50 +45,31 @@ void Tester::writeGraphCreationAllImplementationsSequential(const std::string &d
     {
         writer.write(dirEntry.path().filename().string());
         writer.write(AlgorithmTest( "VectorVectorContainer","Sequential",dirEntry.path().filename(),numberOfTrials,
-                                        this->testMultipleGraphCreation<VectorVectorContainer<ProfilableAllocator>>(dirEntry.path().string()),
-                                                std::vector<double>{}));
-        std::cout << "Memory usage: " << GlobalAllocator::max_memory << " bytes" << std::endl;
+                                        this->testMultipleGraphCreation<VectorVectorContainer<ProfilableAllocator>>(dirEntry.path().string())));
         GlobalAllocator::resetMax();
 
         writer.write(AlgorithmTest( "VectorSetContainer","Sequential",dirEntry.path().filename(),numberOfTrials,
-                                        this->testMultipleGraphCreation<VectorSetContainer<ProfilableAllocator>>(dirEntry.path().string()),
-                                        std::vector<double>{}));
-        std::cout << "Memory usage: " << GlobalAllocator::max_memory << " bytes" << std::endl;
+                                        this->testMultipleGraphCreation<VectorSetContainer<ProfilableAllocator>>(dirEntry.path().string())));
         GlobalAllocator::resetMax();
             writer.write(AlgorithmTest( "VectorUnorderedSetContainer","Sequential",dirEntry.path().filename(),numberOfTrials,
-                                        this->testMultipleGraphCreation<VectorUnorderedSetContainer<ProfilableAllocator>>(dirEntry.path().string()),
-                                        std::vector<double>{}));
-        std::cout << "Memory usage: " << GlobalAllocator::max_memory << " bytes" << std::endl;
+                                        this->testMultipleGraphCreation<VectorUnorderedSetContainer<ProfilableAllocator>>(dirEntry.path().string())));
         GlobalAllocator::resetMax();
             writer.write(AlgorithmTest( "MapVectorContainer","Sequential",dirEntry.path().filename(),numberOfTrials,
-                                        this->testMultipleGraphCreation<MapVectorContainer<ProfilableAllocator>>(dirEntry.path().string()),
-                                        std::vector<double>{}));
-        std::cout << "Memory usage: " << GlobalAllocator::max_memory << " bytes" << std::endl;
-        std::cout << "Current Memory: " << GlobalAllocator::allocated_memory << " bytes" << std::endl;
+                                        this->testMultipleGraphCreation<MapVectorContainer<ProfilableAllocator>>(dirEntry.path().string())));
             writer.write(AlgorithmTest( "MapSetContainer","Sequential",dirEntry.path().filename(),numberOfTrials,
-                                        this->testMultipleGraphCreation<MapSetContainer<ProfilableAllocator>>(dirEntry.path().string()),
-                                        std::vector<double>{}));
-        std::cout << "Memory usage: " << GlobalAllocator::max_memory << " bytes" << std::endl;
+                                        this->testMultipleGraphCreation<MapSetContainer<ProfilableAllocator>>(dirEntry.path().string())));
         GlobalAllocator::resetMax();
             writer.write(AlgorithmTest( "MapUnorderedSetContainer","Sequential",dirEntry.path().filename(),numberOfTrials,
-                                        this->testMultipleGraphCreation<MapUnorderedSetContainer<ProfilableAllocator>>(dirEntry.path().string()),
-                                        std::vector<double>{}));
-        std::cout << "Memory usage: " << GlobalAllocator::max_memory << " bytes" << std::endl;
+                                        this->testMultipleGraphCreation<MapUnorderedSetContainer<ProfilableAllocator>>(dirEntry.path().string())));
         GlobalAllocator::resetMax();
             writer.write(AlgorithmTest( "UnorderedMapVectorContainer","Sequential",dirEntry.path().filename(),numberOfTrials,
-                                        this->testMultipleGraphCreation<UnorderedMapVectorContainer<ProfilableAllocator>>(dirEntry.path().string()),
-                                        std::vector<double>{}));
-        std::cout << "Memory usage: " << GlobalAllocator::max_memory << " bytes" << std::endl;
+                                        this->testMultipleGraphCreation<UnorderedMapVectorContainer<ProfilableAllocator>>(dirEntry.path().string())));
         GlobalAllocator::resetMax();
             writer.write(AlgorithmTest( "UnorderedMapSetContainer","Sequential",dirEntry.path().filename(),numberOfTrials,
-                                        this->testMultipleGraphCreation<UnorderedMapSetContainer<ProfilableAllocator>>(dirEntry.path().string()),
-                                        std::vector<double>{}));
-        std::cout << "Memory usage: " << GlobalAllocator::max_memory << " bytes" << std::endl;
+                                        this->testMultipleGraphCreation<UnorderedMapSetContainer<ProfilableAllocator>>(dirEntry.path().string())));
         GlobalAllocator::resetMax();
             writer.write(AlgorithmTest( "UnorderedMapUnorderedSetContainer","Sequential",dirEntry.path().filename(),numberOfTrials,
-                                        this->testMultipleGraphCreation<UnorderedMapUnorderedSetContainer<ProfilableAllocator>>(dirEntry.path().string()),
-                                        std::vector<double>{}));
-        std::cout << "Memory usage: " << GlobalAllocator::max_memory << " bytes" << std::endl;
+                                        this->testMultipleGraphCreation<UnorderedMapUnorderedSetContainer<ProfilableAllocator>>(dirEntry.path().string())));
         GlobalAllocator::resetMax();
     }
     writer.finalize();
@@ -103,6 +84,16 @@ AlgorithmTest::AlgorithmTest(std::string name, std::string type, std::string gra
                                                                   timeResults(std::move(timeResults)),
                                                                   memoryResults(std::move(memoryResults)),
                                                                   graphName(std::move(graphName)){}
+
+AlgorithmTest::AlgorithmTest(std::string name, std::string type, std::string graphName, int numberOfTrials,
+                             const std::vector<std::pair<double,double>>& timeMemoryResults): name(std::move(name)), type(std::move(type)),
+                                                                                     numberOfTrials(numberOfTrials),
+                                                                                     graphName(std::move(graphName)){
+for(auto&& [time,memory] : timeMemoryResults){
+    this->timeResults.push_back(time);
+    this->memoryResults.push_back(memory);
+}
+}
 
 
 TestResult::TestResult(std::string type):type(std::move(type)) {}

@@ -9,7 +9,7 @@
 
 int main(int argc, char** argv) 
 {
-    PFA::Tester tester(10);
+    PFA::Tester tester(3);
     PFA::MultipleWriter writers;
     PFA::StandardWriter stdWriter(std::cout);
     writers.addWriter(stdWriter);
@@ -24,8 +24,10 @@ int main(int argc, char** argv)
         writers.addWriter(JSONWriter);
         writers.addWriter(CSVWriter);
         using  namespace std::chrono_literals;
-        PFA::MemoryProfiler profiler(profileFile,200ms);
-        tester.writeGraphCreationAllImplementationsSequential("datasets",writers);
+ //       PFA::StandardMemoryProfiler profiler(profileFile,200ms);
+        tester.writeGraphCreationAllImplementationsSequential("datasets/sample",writers);
+//        profiler.endProfiler=true;
+//        profiler.join();
     }
     else tester.writeGraphCreationAllImplementationsSequential("datasets",writers);
 }

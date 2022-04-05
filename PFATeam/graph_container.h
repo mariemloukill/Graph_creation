@@ -9,17 +9,42 @@
 
 namespace PFA
 {
+    /**
+     * @brief A vector using a profilable allocator.
+     * @tparam T The type of the elements.
+     * */
     template<typename T>
     using pvector=std::vector<T,ProfilableAllocator<T>>;
+
+    /**
+    * @brief A set using a profilable allocator.
+    * @tparam Key The type of the keys.
+    * @tparam Compare The type of the comparison function.
+    * */
     template<
             class Key,
             class Compare = std::less<Key>
     > using pset = std::set<Key, Compare, ProfilableAllocator<Key>>;
+
+    /**
+    * @brief A map using a profilable allocator.
+    * @tparam Key The type of the keys.
+    * @tparam T The type of the associated value.
+    * @tparam Compare The type of the comparison relation.
+    * */
     template<
             class Key,
             class T,
             class Compare = std::less<Key>
             > using pmap = std::map<Key, T, Compare, ProfilableAllocator<std::pair<const Key, T>>>;
+
+    /**
+    * @brief An unordered map using a profilable allocator.
+    * @tparam Key The type of the keys.
+    * @tparam T The type of the associated value.
+    * @tparam Hash a hash function for the keys.
+    * @tparam KeyEqual an equivalence relation between the keys.
+    * */
     template<
             class Key,
             class T,
@@ -27,6 +52,12 @@ namespace PFA
             class KeyEqual = std::equal_to<Key>
     > using punordered_map= std::unordered_map<Key,T,Hash,KeyEqual,ProfilableAllocator<std::pair<const Key, T>>>;
 
+    /**
+    * @brief An unordered set using a profilable allocator.
+    * @tparam Key The type of the keys.
+    * @tparam Hash a hash function for the keys.
+    * @tparam KeyEqual an equivalence relation between the keys.
+    * */
     template<
             class Key,
             class Hash = std::hash<Key>,
@@ -34,13 +65,23 @@ namespace PFA
     > using punordered_set= std::unordered_set<Key,Hash,KeyEqual,ProfilableAllocator<Key>>;
 
 
-
+/**
+ * @brief Any type that contains edges.
+ * @details This concept describes the requirements for a container that contains edges.
+ * @tparam Container Any container.
+ * */
     template<typename Container>
     concept EdgeContainer = requires(Container &C,int a,int b)
     {
         C.addEdge(a, b);
     };
 
+    /**
+    * @brief A 2D vector used to store adjacency lists.
+    * @details This container is used to store adjacency lists.
+    * @requires a Graph having positive integers as vertices, whose largest vertex is on the order of magnitude of the number of vertices.
+    * @tparam Allocator the allocator used to allocate the memory.
+    * */
 template<template <typename > typename Allocator=std::allocator>
 class VectorVectorContainer: public std::vector<std::vector<int,Allocator<int>>,Allocator<std::vector<int,Allocator<int>>>>
     {
@@ -54,6 +95,12 @@ class VectorVectorContainer: public std::vector<std::vector<int,Allocator<int>>,
         }
     };
 
+    /**
+    * @brief A vector over a set used to store adjacency lists.
+    * @details This container is used to store adjacency lists.
+    * @requires a Graph having positive integers as vertices, whose largest vertex is on the order of magnitude of the number of vertices.
+    * @tparam Allocator the allocator used to allocate the memory.
+    * */
 template<template <typename > typename Allocator=std::allocator>
 class VectorSetContainer: public std::vector<std::set<int,std::less<int>,Allocator<int>>,Allocator<std::set<int,std::less<int>,Allocator<int>>>>
     {
@@ -67,6 +114,13 @@ class VectorSetContainer: public std::vector<std::set<int,std::less<int>,Allocat
         }
     };
 
+
+    /**
+    * @brief A vector over an unordered set used to store adjacency lists.
+    * @details This container is used to store adjacency lists.
+    * @requires a Graph having positive integers as vertices, whose largest vertex is on the order of magnitude of the number of vertices.
+    * @tparam Allocator the allocator used to allocate the memory.
+    * */
     template<template <typename > typename Allocator=std::allocator>
 class VectorUnorderedSetContainer: public std::vector<std::unordered_set<int,std::hash<int>,std::equal_to<int>,Allocator<int>>,
         Allocator<std::unordered_set<int,std::hash<int>,std::equal_to<int>,Allocator<int>>>>
@@ -82,7 +136,12 @@ class VectorUnorderedSetContainer: public std::vector<std::unordered_set<int,std
         }
     };
 
-
+    /**
+    * @brief A map over a vector used to store adjacency lists.
+    * @details This container is used to store adjacency lists.
+    * @requires Integer vertices.
+    * @tparam Allocator the allocator used to allocate the memory.
+    * */
 template<template <typename > typename Allocator=std::allocator>
 class MapVectorContainer: public std::map<int,std::vector<int,Allocator<int>>,std::less<int>,
         Allocator<std::pair<const int,std::vector<int,Allocator<int>>>>>
@@ -96,6 +155,12 @@ class MapVectorContainer: public std::map<int,std::vector<int,Allocator<int>>,st
         }
     };
 
+    /**
+    * @brief A map over a set used to store adjacency lists.
+    * @details This container is used to store adjacency lists.
+    * @requires Integer vertices.
+    * @tparam Allocator the allocator used to allocate the memory.
+    * */
 template<template <typename > typename Allocator=std::allocator>
 class MapSetContainer: public std::map<int,std::set<int,std::less<int>,Allocator<int>>,std::less<int>,
         Allocator<std::pair<const int,std::set<int,std::less<int>,Allocator<int>>>>>
@@ -109,6 +174,12 @@ class MapSetContainer: public std::map<int,std::set<int,std::less<int>,Allocator
         }
     };
 
+    /**
+    * @brief A map over an unordered used to store adjacency lists.
+    * @details This container is used to store adjacency lists.
+    * @requires Integer vertices.
+    * @tparam Allocator the allocator used to allocate the memory.
+    * */
 template<template <typename > typename Allocator=std::allocator>
 class MapUnorderedSetContainer: public std::map<int,std::unordered_set<int,std::hash<int>,std::equal_to<int>,Allocator<int>>,std::less<int>,
         Allocator<std::pair<const int,std::unordered_set<int,std::hash<int>,std::equal_to<int>,Allocator<int>>>>>
@@ -122,6 +193,13 @@ class MapUnorderedSetContainer: public std::map<int,std::unordered_set<int,std::
         }
     };
 
+
+    /**
+    * @brief An unordered map over a vector used to store adjacency lists.
+    * @details This container is used to store adjacency lists.
+    * @requires Integer vertices.
+    * @tparam Allocator the allocator used to allocate the memory.
+    * */
 template<template <typename > typename Allocator=std::allocator>
 class UnorderedMapVectorContainer: public std::unordered_map<int,std::vector<int,Allocator<int>>,std::hash<int>,std::equal_to<int>,
         Allocator<std::pair<const int,std::vector<int,Allocator<int>>>>>
@@ -135,6 +213,12 @@ class UnorderedMapVectorContainer: public std::unordered_map<int,std::vector<int
         }
     };
 
+    /**
+    * @brief An unordered map over a set used to store adjacency lists.
+    * @details This container is used to store adjacency lists.
+    * @requires Integer vertices.
+    * @tparam Allocator the allocator used to allocate the memory.
+    * */
 template<template <typename > typename Allocator=std::allocator>
 class UnorderedMapSetContainer: public std::unordered_map<int,std::set<int,std::less<int>,Allocator<int>>,std::hash<int>,std::equal_to<int>,
         Allocator<std::pair<const int,std::set<int,std::less<int>,Allocator<int>>>>>
@@ -148,6 +232,12 @@ public:
     }
 };
 
+    /**
+    * @brief An unordered map over an unordered set used to store adjacency lists.
+    * @details This container is used to store adjacency lists.
+    * @requires Integer vertices.
+    * @tparam Allocator the allocator used to allocate the memory.
+    * */
 template<template <typename > typename Allocator=std::allocator>
 class UnorderedMapUnorderedSetContainer: public std::unordered_map<int,std::unordered_set<int,std::hash<int>,std::equal_to<int>,Allocator<int>>,std::hash<int>,
         std::equal_to<int>,Allocator<std::pair<const int,std::unordered_set<int,std::hash<int>,std::equal_to<int>,Allocator<int>>>>>

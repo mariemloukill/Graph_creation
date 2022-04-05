@@ -7,10 +7,26 @@
 #include "cmemory.h"
 #include <ctime>
 #include "boost/date_time/posix_time/posix_time.hpp"
+#include "ProfilableAllocator.h"
 
 
 using namespace PFA;
-void MemoryProfiler::run()
+void StandardMemoryProfiler::run()
+{
+    out << R"(Time,Current Memory, Max Memory)" << std::endl;
+    constexpr int MAX_TIME_SIZE=30;
+    char time_representation[MAX_TIME_SIZE];
+    std::fill_n(time_representation, MAX_TIME_SIZE, '\0');
+    while(!endProfiler){
+        auto t1=std::chrono::high_resolution_clock::now();
+        out << boost::posix_time::microsec_clock::local_time() << ", " << GlobalAllocator::allocated_memory << ", " << GlobalAllocator::max_memory << std::endl;
+        auto t2=std::chrono::high_resolution_clock::now();
+        std::this_thread::sleep_for(interval-(t2-t1));
+
+    }
+}
+
+void ExteriorMemoryProfiler::run()
 {
     out << R"(Time,Current Memory, Max Memory)" << std::endl;
     constexpr int MAX_TIME_SIZE=30;
