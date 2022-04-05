@@ -2,8 +2,8 @@
 // Created by ramizouari on 05/04/2022.
 //
 
-#ifndef PFAPROJECT_MEMORY_H
-#define PFAPROJECT_MEMORY_H
+#ifndef PFAPROJECT_CMEMORY_H
+#define PFAPROJECT_CMEMORY_H
 
 /*
  * Author:  David Robert Nadeau
@@ -135,4 +135,4 @@ size_t getCurrentRSS( )
 }
 #endif
 
-#endif //PFAPROJECT_MEMORY_H
+#endif //PFAPROJECT_CMEMORY_H

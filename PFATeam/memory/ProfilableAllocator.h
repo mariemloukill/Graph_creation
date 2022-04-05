@@ -2,8 +2,8 @@
 // Created by ramizouari on 05/04/2022.
 //
 
-#ifndef PFAPROJECT_ALLOCATOR_H
-#define PFAPROJECT_ALLOCATOR_H
+#ifndef PFAPROJECT_PROFILABLEALLOCATOR_H
+#define PFAPROJECT_PROFILABLEALLOCATOR_H
 #include <memory>
 #include <iostream>
 
@@ -14,10 +14,14 @@ namespace PFA
     {
         inline static int allocated_memory=0;
         inline static int max_memory=0;
+        static void resetMax()
+        {
+            max_memory=0;
+        }
     };
 
     template <class T>
-class Allocator : public GlobalAllocator, public std::allocator<T>
+class ProfilableAllocator : public GlobalAllocator, public std::allocator<T>
     {
     public:
         typedef size_t    size_type;
@@ -27,9 +31,7 @@ class Allocator : public GlobalAllocator, public std::allocator<T>
         typedef T&        reference;
         typedef const T&  const_reference;
         typedef T         value_type;
-
-        Allocator() =default;
-        Allocator(const Allocator&) =default;
+        using std::allocator<T>::allocator;
 
         pointer   allocate(size_type n)
         {
@@ -47,4 +49,4 @@ class Allocator : public GlobalAllocator, public std::allocator<T>
         }
     };
 }
-#endif //PFAPROJECT_ALLOCATOR_H
+#endif //PFAPROJECT_PROFILABLEALLOCATOR_H
