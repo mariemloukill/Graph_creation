@@ -3,19 +3,59 @@
 
 #include "graph.h"
 #include "graph_container.h"
+#include "writer/writer.h"
 #include <iomanip>
 #include <chrono>
-class Tester {
+#include <iostream>
+
+namespace PFA
+{
+    struct AlgorithmTest
+    {
+        /**
+         * @brief The name of the algorithm
+         */
+        std::string name;
+        /**
+         * @brief Type of test: sequential or parallel
+         */
+        std::string type;
+        /**
+         * @brief The name of the graph
+         */
+        std::string graphName;
+        /**
+         * @brief Number of trials for this test
+         */
+        int numberOfTrials;
+        /**
+         * @brief Execution time of each trial, in milliseconds
+         */
+        std::vector<double> timeResults;
+        std::vector<double> memoryResults;
+        AlgorithmTest(std::string name, std::string type, std::string graphName, int numberOfTrials,
+                      std::vector<double> timeResults, std::vector<double> memoryResults);
+    };
+
+    class TestResult : public std::vector<AlgorithmTest>
+    {
+    private:
+        std::string type;
+    public:
+        std::string getType() { return type; }
+        explicit TestResult(std::string type);
+    };
+
+    class Tester {
 
     private:
         int numberOfTrials;
-
-    public:  
+    public:
         Tester(int numberOfTrials=10);
 
         /**
          * @brief Test the creation of a graph and return the time it took.
-         * 
+         *
          * @tparam Container Container type
          * @param path path to the graph file
          * @return double time in milliseconds
@@ -32,7 +72,7 @@ class Tester {
 
         /**
          * @brief Test the creation of a graph  multiple times and return the average result
-         * 
+         *
          * @tparam Container Container type
          * @param path path to the graph file
          * @return double average time in milliseconds
@@ -45,10 +85,10 @@ class Tester {
             }
             return avg/numberOfTrials;
         }
-        
+
         /**
          * @brief Test the creation of the graph multiple times and return the results in a vector
-         * 
+         *
          * @tparam Container Container type
          * @param path path to the graph file
          * @return std::vector<double> the results of the test
@@ -62,27 +102,36 @@ class Tester {
             return avg;
         }
 
+
+        /**
+         * @brief Test the time & memory taken to create a graph using all implementations and return the results
+         * @param dir directory containing the graph files
+         * */
+        void writeGraphCreationAllImplementationsSequential(const std::string& dir, Writer &writer);
+
+
+
         /**
          * @brief Print out the results of the test
-         * 
+         *
          * @param type The Container Type ( Vector of vectors, Map of vectors, etc)
-         * @param avg The average test result 
+         * @param avg The average test result
          */
         void printAvgTestResult(std::string type, double avg);
 
         /**
          * @brief Test container on all available implementations and print out the results
-         * 
+         *
          * @param path path to the graph file
          */
         void testAllImplementationsSequential(std::string path);
-        
+
         /**
          * @brief Test all graphs in the provided directory
          * @param dir directory containing the graphs
          */
         void testGraphsInFolder(std::string dir);
-};
-
+    };
+}
 
 #endif

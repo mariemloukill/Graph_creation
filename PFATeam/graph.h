@@ -3,16 +3,19 @@
 #include <fstream>
 #include "graph_container.h"
 
-/**
+
+
+namespace PFA {
+    /**
  * @brief The Graph class
  * @details This class is used to represent a graph.
  * @author PFA Team
  * @param numberOfVertices Number of vertices
  * @tparam Container having a method addEdge(int,int)
  */
-template<EdgeContainer Container>
-class Graph
-{
+    template<EdgeContainer Container>
+    class Graph
+    {
     public:
         int numberOfVertices;
         Container adjacencyList;
@@ -33,13 +36,13 @@ class Graph
             Graph G;
             int a,b;
             while(file >> a >> b)
-                {
-                    G.addEdge(a,b);
-                    G.numberOfVertices=std::max(G.numberOfVertices,std::max(a,b));
-                }
+            {
+                G.addEdge(a,b);
+                G.numberOfVertices=std::max(G.numberOfVertices,std::max(a,b));
+            }
             return G;
         }
-        
+
         /**
          * @brief Save a graph to a file
          *
@@ -62,7 +65,7 @@ class Graph
          * @param b second vertex
          */
         void addEdge(int a, int b)
-        { 
+        {
             adjacencyList.addEdge(a,b);
         }
 
@@ -76,5 +79,6 @@ class Graph
         {
             return adjacencyList[a];
         }
+    };
 };
 #endif
