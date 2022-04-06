@@ -1,8 +1,8 @@
 #ifndef __TESTER_HEADER__
 #define __TESTER_HEADER__
 
-#include "graph.h"
-#include "graph_container.h"
+#include "graph/graph.h"
+#include "graph/graph_container.h"
 #include "writer/writer.h"
 #include <iomanip>
 #include <chrono>

@@ -1,6 +1,6 @@
 #include <iostream>
-#include "graph.h"
-#include "graph_container.h"
+#include "graph/graph.h"
+#include "graph/graph_container.h"
 #include <chrono>
 #include "tester.h"
 #include <filesystem>
@@ -33,6 +33,10 @@ int main(int argc, char** argv)
             if(modeStr == "resume")
                 mode = RESUME;
         }
+        /*
+         * Number of iterations to skip
+         * Works only in resume mode
+         * */
         int skip=0;
         std::ios::openmode openMode=std::ios::out;
         if(mode==RESUME)
