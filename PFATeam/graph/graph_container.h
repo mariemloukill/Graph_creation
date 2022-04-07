@@ -74,6 +74,8 @@ namespace PFA
     concept EdgeContainer = requires(Container &C,int a,int b)
     {
         C.addEdge(a, b);
+        C.removeEdge(a, b);
+        C.clearVertex(a);
     };
 
     /**
@@ -93,6 +95,23 @@ class VectorVectorContainer: public std::vector<std::vector<int,Allocator<int>>,
                 this->resize(2*a+2);
             this->operator[](a).push_back(b);
         }
+
+        void removeEdge(int a,int b)
+        {
+            if(this->size()<a+1)
+                return;
+            auto &v=this->operator[](a);
+            auto it=std::find(v.begin(),v.end(),b);
+            if(it!=v.end())
+                v.erase(it);
+        }
+
+        void clearVertex(int a)
+        {
+            if(this->size()<a+1)
+                return;
+            this->operator[](a).clear();
+        }
     };
 
     /**
@@ -111,6 +130,20 @@ class VectorSetContainer: public std::vector<std::set<int,std::less<int>,Allocat
             if(this->size()<a+1)
                 this->resize(2*a+2);
             this->operator[](a).insert(b);
+        }
+
+        void removeEdge(int a,int b)
+        {
+            if(this->size()<a+1)
+                return;
+            this->operator[](a).erase(b);
+        }
+
+        void clearVertex(int a)
+        {
+            if(this->size()<a+1)
+                return;
+            this->operator[](a).clear();
         }
     };
 
@@ -134,6 +167,17 @@ class VectorUnorderedSetContainer: public std::vector<std::unordered_set<int,std
                 this->resize(2*a+2);
             this->operator[](a).insert(b);
         }
+        void removeEdge(int a,int b)
+        {
+            if(this->size()<a+1)
+                return;
+            this->operator[](a).erase(b);
+        }
+
+        void clearVertex(int a)
+        {
+            this->erase(a);
+        }
     };
 
     /**
@@ -152,6 +196,20 @@ class MapVectorContainer: public std::map<int,std::vector<int,Allocator<int>>,st
         void addEdge(int a,int b)
         {
             this->operator[](a).push_back(b);
+        }
+        void removeEdge(int a,int b)
+        {
+            if(!this->count(a))
+                return;
+            auto &v=this->operator[](a);
+            auto it=std::find(v.begin(),v.end(),b);
+            if(it!=v.end())
+                v.erase(it);
+        }
+
+        void clearVertex(int a)
+        {
+            this->erase(a);
         }
     };
 
@@ -172,6 +230,17 @@ class MapSetContainer: public std::map<int,std::set<int,std::less<int>,Allocator
         {
             this->operator[](a).insert(b);
         }
+
+        void removeEdge(int a,int b)
+        {
+            if(this->count(a))
+                this->operator[](a).erase(b);
+        }
+
+        void clearVertex(int a)
+        {
+            this->erase(a);
+        }
     };
 
     /**
@@ -191,6 +260,17 @@ class MapUnorderedSetContainer: public std::map<int,std::unordered_set<int,std::
         {
             this->operator[](a).insert(b);
         }
+
+    void removeEdge(int a,int b)
+    {
+        if(this->count(a))
+            this->operator[](a).erase(b);
+    }
+
+    void clearVertex(int a)
+    {
+        this->erase(a);
+    }
     };
 
 
@@ -200,9 +280,9 @@ class MapUnorderedSetContainer: public std::map<int,std::unordered_set<int,std::
     * @requires Integer vertices.
     * @tparam Allocator the allocator used to allocate the memory.
     * */
-template<template <typename > typename Allocator=std::allocator>
-class UnorderedMapVectorContainer: public std::unordered_map<int,std::vector<int,Allocator<int>>,std::hash<int>,std::equal_to<int>,
-        Allocator<std::pair<const int,std::vector<int,Allocator<int>>>>>
+    template<template <typename > typename Allocator=std::allocator>
+    class UnorderedMapVectorContainer: public std::unordered_map<int,std::vector<int,Allocator<int>>,std::hash<int>,std::equal_to<int>,
+            Allocator<std::pair<const int,std::vector<int,Allocator<int>>>>>
     {
     public:
         using std::unordered_map<int,std::vector<int,Allocator<int>>,std::hash<int>,std::equal_to<int>,
@@ -211,6 +291,22 @@ class UnorderedMapVectorContainer: public std::unordered_map<int,std::vector<int
         {
             this->operator[](a).push_back(b);
         }
+
+        void removeEdge(int a,int b)
+        {
+            if(!this->count(a))
+                return;
+            auto &v=this->operator[](a);
+            auto it=std::find(v.begin(),v.end(),b);
+            if(it!=v.end())
+                v.erase(it);
+        }
+
+        void clearVertex(int a)
+        {
+            this->erase(a);
+        }
+
     };
 
     /**
@@ -219,18 +315,30 @@ class UnorderedMapVectorContainer: public std::unordered_map<int,std::vector<int
     * @requires Integer vertices.
     * @tparam Allocator the allocator used to allocate the memory.
     * */
-template<template <typename > typename Allocator=std::allocator>
-class UnorderedMapSetContainer: public std::unordered_map<int,std::set<int,std::less<int>,Allocator<int>>,std::hash<int>,std::equal_to<int>,
-        Allocator<std::pair<const int,std::set<int,std::less<int>,Allocator<int>>>>>
-{
-public:
-    using std::unordered_map<int,std::set<int,std::less<int>,Allocator<int>>,std::hash<int>,std::equal_to<int>,
-            Allocator<std::pair<const int,std::set<int,std::less<int>,Allocator<int>>>>>::unordered_map;
-    void addEdge(int a,int b)
+    template<template <typename > typename Allocator=std::allocator>
+    class UnorderedMapSetContainer: public std::unordered_map<int,std::set<int,std::less<int>,Allocator<int>>,std::hash<int>,std::equal_to<int>,
+            Allocator<std::pair<const int,std::set<int,std::less<int>,Allocator<int>>>>>
     {
-        this->operator[](a).insert(b);
-    }
-};
+    public:
+        using std::unordered_map<int,std::set<int,std::less<int>,Allocator<int>>,std::hash<int>,std::equal_to<int>,
+                Allocator<std::pair<const int,std::set<int,std::less<int>,Allocator<int>>>>>::unordered_map;
+        void addEdge(int a,int b)
+        {
+            this->operator[](a).insert(b);
+        }
+
+        void removeEdge(int a,int b)
+        {
+            if(this->count(a))
+                this->operator[](a).erase(b);
+        }
+
+        void clearVertex(int a)
+        {
+            this->erase(a);
+        }
+
+    };
 
     /**
     * @brief An unordered map over an unordered set used to store adjacency lists.
@@ -238,18 +346,29 @@ public:
     * @requires Integer vertices.
     * @tparam Allocator the allocator used to allocate the memory.
     * */
-template<template <typename > typename Allocator=std::allocator>
-class UnorderedMapUnorderedSetContainer: public std::unordered_map<int,std::unordered_set<int,std::hash<int>,std::equal_to<int>,Allocator<int>>,std::hash<int>,
-        std::equal_to<int>,Allocator<std::pair<const int,std::unordered_set<int,std::hash<int>,std::equal_to<int>,Allocator<int>>>>>
-{
-public:
-    using std::unordered_map<int,std::unordered_set<int,std::hash<int>,std::equal_to<int>,Allocator<int>>,std::hash<int>,
-            std::equal_to<int>,Allocator<std::pair<const int,std::unordered_set<int,std::hash<int>,std::equal_to<int>,Allocator<int>>>>>::unordered_map;
-    void addEdge(int a,int b)
+    template<template <typename > typename Allocator=std::allocator>
+    class UnorderedMapUnorderedSetContainer: public std::unordered_map<int,std::unordered_set<int,std::hash<int>,std::equal_to<int>,Allocator<int>>,std::hash<int>,
+            std::equal_to<int>,Allocator<std::pair<const int,std::unordered_set<int,std::hash<int>,std::equal_to<int>,Allocator<int>>>>>
     {
-        this->operator[](a).insert(b);
-    }
-};
+    public:
+        using std::unordered_map<int,std::unordered_set<int,std::hash<int>,std::equal_to<int>,Allocator<int>>,std::hash<int>,
+                std::equal_to<int>,Allocator<std::pair<const int,std::unordered_set<int,std::hash<int>,std::equal_to<int>,Allocator<int>>>>>::unordered_map;
+        void addEdge(int a,int b)
+        {
+            this->operator[](a).insert(b);
+        }
+
+        void removeEdge(int a,int b)
+        {
+            if(this->count(a))
+                this->operator[](a).erase(b);
+        }
+
+        void clearVertex(int a)
+        {
+            this->erase(a);
+        }
+    };
 }
 
 #endif

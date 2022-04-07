@@ -1,6 +1,7 @@
 #include <iostream>
 #include "graph/parallel_graph.h"
 #include "graph/graph_container.h"
+#include "graph/sequential_split.h"
 #include <chrono>
 #include "tester.h"
 #include <filesystem>
@@ -20,7 +21,7 @@ enum Mode
 int main(int argc, char** argv)
 {
     std::chrono::high_resolution_clock::time_point t1 = std::chrono::high_resolution_clock::now();
-    auto graphs=PFA::createFromFiles<PFA::Graph<PFA::VectorVectorContainer<PFA::ProfilableAllocator>>,PFA::ProfilableAllocator>("datasets/parallel/x.+",3);
+    auto graphs=PFA::sequential::createFromFiles<PFA::VectorVectorContainer<PFA::ProfilableAllocator>,PFA::ProfilableAllocator>("datasets/parallel/x.+",3);
     std::chrono::high_resolution_clock::time_point t2 = std::chrono::high_resolution_clock::now();
     std::cout << "Memory: " << PFA::GlobalAllocator::max_memory << '\n';
     std::cout << "Time: " << std::chrono::duration_cast<std::chrono::microseconds>(t2 - t1).count()/1000 << "ms" << '\n';

@@ -47,6 +47,7 @@ namespace PFA {
 
         for(auto &future:futures)
             graphs.push_back(std::move(future.get()));
+        PFA::punordered_map<int,PFA::punordered_set<int>> mapper;
 
         return graphs;
     }

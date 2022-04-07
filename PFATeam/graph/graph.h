@@ -70,6 +70,27 @@ namespace PFA {
         }
 
         /**
+ * @brief Removes an edge to the adjacency list
+ *
+ * @param a first vertex
+ * @param b second vertex
+ */
+        void removeEdge(int a, int b)
+        {
+            adjacencyList.removeEdge(a,b);
+        }
+
+        /**
+     * @brief Clears the adjacency list of a vertex.
+     * @param a vertex
+     */
+        void clearVertex(int a)
+        {
+            adjacencyList.clearVertex(a);
+        }
+
+
+        /**
          * @brief Get the Neighbors of a vertex
          *
          * @param a vertex
