@@ -2,8 +2,8 @@
 // Created by ramizouari on 07/04/2022.
 //
 
-#ifndef PFAPROJECT_SEQUENTIAL_SPLIT_H
-#define PFAPROJECT_SEQUENTIAL_SPLIT_H
+#ifndef PFAPROJECT_GRAPHSPLIT_H
+#define PFAPROJECT_GRAPHSPLIT_H
 
 #include "graph.h"
 #include <filesystem>
@@ -13,17 +13,21 @@
 #include <future>
 
 namespace PFA {
-    /**
- * @brief The Graph class
- * @details This class is used to represent a graph.
- * @author PFA Team
- * @param numberOfVertices Number of vertices
- * @tparam Container having a method addEdge(int,int)
- */
-    namespace sequential
+
+
+    template<EdgeContainer Container,template <typename> typename Allocator=std::allocator>
+    class GraphSplit
     {
-        template<EdgeContainer Container, template <typename T>typename  Allocator=std::allocator>
-        std::vector<Graph<Container>,Allocator<Graph<Container>>> createFromFiles(std::string fileRegEx,int k)
+    public:
+        std::vector<Graph<Container>,Allocator<Graph<Container>>> graphs;
+        std::unordered_map<int,std::vector<int>,std::hash<int>,std::equal_to<int>,Allocator<std::pair<const int,std::vector<int>>>> keyGraphs;
+        /**
+         * @brief create graph splits from files
+         * @details This function is used to create graph splits from files, Each file will be affected to its own graph-split. Then graph split will be rearrenged
+         * adequately to avoid memory overflow.
+         * @param fileRegEx regular expression matching the files to be read
+         * */
+        static std::vector<Graph<Container>,Allocator<Graph<Container>>> createGraphsFromFiles(std::string fileRegEx)
         {
             std::regex regex(fileRegEx);
             std::vector<std::string> fileNames;
@@ -54,7 +58,7 @@ namespace PFA {
 
             return graphs;
         }
-    }
+    };
 };
 
-#endif //PFAPROJECT_SEQUENTIAL_SPLIT_H
+#endif //PFAPROJECT_GRAPHSPLIT_H

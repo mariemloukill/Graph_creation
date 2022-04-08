@@ -78,6 +78,60 @@ namespace PFA
         C.clearVertex(a);
     };
 
+    template<typename T>
+    class VectorIterator
+    {
+        int index;
+        T *container;
+    public:
+        VectorIterator(T *c, int i=0) : index(i), container(c) {}
+        VectorIterator(const VectorIterator &other) : index(other.index), container(other.container) {}
+        VectorIterator &operator=(const VectorIterator &other)
+        {
+            index = other.index;
+            container = other.container;
+            return *this;
+        }
+        VectorIterator &operator++()
+        {
+            index++;
+            return *this;
+        }
+        VectorIterator operator++(int)
+        {
+            VectorIterator tmp(*this);
+            index++;
+            return tmp;
+        }
+        VectorIterator &operator--()
+        {
+            index--;
+            return *this;
+        }
+        VectorIterator operator--(int)
+        {
+            VectorIterator tmp(*this);
+            index--;
+            return tmp;
+        }
+        bool operator==(const VectorIterator &other) const
+        {
+            return index == other.index;
+        }
+        bool operator!=(const VectorIterator &other) const
+        {
+            return index != other.index;
+        }
+        std::pair<int,T&&>operator*()
+        {
+            return std::make_pair(index,std::forward<T>(container[index]));
+        }
+        std::pair<int,T*>operator->()
+        {
+            return std::make_pair(index,&container[index]);
+        }
+    };
+
     /**
     * @brief A 2D vector used to store adjacency lists.
     * @details This container is used to store adjacency lists.
@@ -87,6 +141,7 @@ namespace PFA
 template<template <typename > typename Allocator=std::allocator>
 class VectorVectorContainer: public std::vector<std::vector<int,Allocator<int>>,Allocator<std::vector<int,Allocator<int>>>>
     {
+        using val_type=std::vector<int,Allocator<int>>;
     public:
         using std::vector<std::vector<int,Allocator<int>>,Allocator<std::vector<int,Allocator<int>>>>::vector;
         void addEdge(int a,int b)
@@ -112,6 +167,26 @@ class VectorVectorContainer: public std::vector<std::vector<int,Allocator<int>>,
                 return;
             this->operator[](a).clear();
         }
+
+        auto begin()
+        {
+            return VectorIterator<val_type>(this->data());
+        }
+
+        auto end()
+        {
+            return VectorIterator<val_type>(this->data(),this->size());
+        }
+
+        auto begin() const
+        {
+            return VectorIterator<val_type>(this->data());
+        }
+
+        auto end() const
+        {
+            return VectorIterator<val_type>(this->data(),this->size());
+        }
     };
 
     /**
@@ -123,7 +198,8 @@ class VectorVectorContainer: public std::vector<std::vector<int,Allocator<int>>,
 template<template <typename > typename Allocator=std::allocator>
 class VectorSetContainer: public std::vector<std::set<int,std::less<int>,Allocator<int>>,Allocator<std::set<int,std::less<int>,Allocator<int>>>>
     {
-    public:
+    using val_type=std::vector<int,Allocator<int>>;
+public:
         using std::vector<std::set<int,std::less<int>,Allocator<int>>,Allocator<std::set<int,std::less<int>,Allocator<int>>>>::vector;
         void addEdge(int a,int b)
         {
@@ -145,6 +221,25 @@ class VectorSetContainer: public std::vector<std::set<int,std::less<int>,Allocat
                 return;
             this->operator[](a).clear();
         }
+        auto begin()
+        {
+            return VectorIterator<val_type>(this->data());
+        }
+
+        auto end()
+        {
+            return VectorIterator<val_type>(this->data(),this->size());
+        }
+
+        auto begin() const
+        {
+            return VectorIterator<val_type>(this->data());
+        }
+
+        auto end() const
+        {
+            return VectorIterator<val_type>(this->data(),this->size());
+        }
     };
 
 
@@ -158,7 +253,8 @@ class VectorSetContainer: public std::vector<std::set<int,std::less<int>,Allocat
 class VectorUnorderedSetContainer: public std::vector<std::unordered_set<int,std::hash<int>,std::equal_to<int>,Allocator<int>>,
         Allocator<std::unordered_set<int,std::hash<int>,std::equal_to<int>,Allocator<int>>>>
     {
-    public:
+    using val_type=std::vector<int,Allocator<int>>;
+public:
         using std::vector<std::unordered_set<int,std::hash<int>,std::equal_to<int>,Allocator<int>>,
                 Allocator<std::unordered_set<int,std::hash<int>,std::equal_to<int>,Allocator<int>>>>::vector;
         void addEdge(int a,int b)
@@ -177,6 +273,25 @@ class VectorUnorderedSetContainer: public std::vector<std::unordered_set<int,std
         void clearVertex(int a)
         {
             this->erase(a);
+        }
+        auto begin()
+        {
+            return VectorIterator<val_type>(this->data());
+        }
+
+        auto end()
+        {
+            return VectorIterator<val_type>(this->data(),this->size());
+        }
+
+        auto begin() const
+        {
+            return VectorIterator<val_type>(this->data());
+        }
+
+        auto end() const
+        {
+            return VectorIterator<val_type>(this->data(),this->size());
         }
     };
 
