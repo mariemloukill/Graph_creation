@@ -1,14 +1,14 @@
-#!/bin/sh
+#!/bin/bash
 
 # Getting the datasets folder
-path="/home/user/Code/datasets"
+path="/datadrive/dataset"
 # Deleting the older results
 
 # putting the filenames into an array
 arr=()
 while IFS= read -r line; do
    arr+=("$line")
-done < /home/user/Code/datasets/data_files.txt
+done < /datadrive/dataset/data_files.txt
 echo ${arr[@]}
 
 # looping through the list of files
