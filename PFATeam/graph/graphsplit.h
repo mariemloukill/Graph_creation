@@ -19,6 +19,8 @@ namespace PFA {
     class GraphSplit
     {
     public:
+        GraphSplit() = default;
+        GraphSplit(std::vector<Graph<Container>,Allocator<Graph<Container>>> _graphs) : graphs(std::move(_graphs)) {}
         std::vector<Graph<Container>,Allocator<Graph<Container>>> graphs;
         std::unordered_map<int,std::vector<int>,std::hash<int>,std::equal_to<int>,Allocator<std::pair<const int,std::vector<int>>>> keyGraphs;
         /**

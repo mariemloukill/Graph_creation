@@ -198,7 +198,7 @@ class VectorVectorContainer: public std::vector<std::vector<int,Allocator<int>>,
 template<template <typename > typename Allocator=std::allocator>
 class VectorSetContainer: public std::vector<std::set<int,std::less<int>,Allocator<int>>,Allocator<std::set<int,std::less<int>,Allocator<int>>>>
     {
-    using val_type=std::vector<int,Allocator<int>>;
+    using val_type=std::set<int,std::less<int>,Allocator<int>>;
 public:
         using std::vector<std::set<int,std::less<int>,Allocator<int>>,Allocator<std::set<int,std::less<int>,Allocator<int>>>>::vector;
         void addEdge(int a,int b)
@@ -253,7 +253,7 @@ public:
 class VectorUnorderedSetContainer: public std::vector<std::unordered_set<int,std::hash<int>,std::equal_to<int>,Allocator<int>>,
         Allocator<std::unordered_set<int,std::hash<int>,std::equal_to<int>,Allocator<int>>>>
     {
-    using val_type=std::vector<int,Allocator<int>>;
+    using val_type=std::unordered_set<int,std::hash<int>,std::equal_to<int>,Allocator<int>>;
 public:
         using std::vector<std::unordered_set<int,std::hash<int>,std::equal_to<int>,Allocator<int>>,
                 Allocator<std::unordered_set<int,std::hash<int>,std::equal_to<int>,Allocator<int>>>>::vector;
@@ -272,7 +272,9 @@ public:
 
         void clearVertex(int a)
         {
-            this->erase(a);
+            if(this->size()<a+1)
+                return;
+            this->operator[](a).clear();
         }
         auto begin()
         {
