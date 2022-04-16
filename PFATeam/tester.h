@@ -7,6 +7,8 @@
 #include <iomanip>
 #include <chrono>
 #include <iostream>
+#include "graph/splitcreator.h"
+#include "graph/splitmerger.h"
 
 namespace PFA
 {
@@ -63,6 +65,25 @@ namespace PFA
          * @return double time in milliseconds
          */
         template<typename Container>
+        double testGraphCreationParallel(std::string path,SplitCreator<Container,ProfilableAllocator>& splitCreator,
+                                         SplitMerger<Container,ProfilableAllocator>& splitMerger)
+        {
+            std::ios_base::sync_with_stdio(false);
+            auto start = std::chrono::system_clock::now();
+            auto graphs=splitCreator.createSplitsFromFileRegex(path);
+            splitMerger.merge(graphs);
+            auto end=std::chrono::system_clock::now();
+            return std::chrono::duration_cast<std::chrono::microseconds>(end - start).count()/1000.0;
+        }
+
+        /**
+ * @brief Test the creation of a graph and return the time it took.
+ *
+ * @tparam Container Container type
+ * @param path path to the graph file
+ * @return double time in milliseconds
+ */
+        template<typename Container>
         double testGraphCreation(std::string path) {
             std::ios_base::sync_with_stdio(false);
             Graph<Container> G;
@@ -71,6 +92,8 @@ namespace PFA
             auto end=std::chrono::system_clock::now();
             return std::chrono::duration_cast<std::chrono::microseconds>(end - start).count()/1000.0;
         }
+
+
 
         /**
          * @brief Test the creation of a graph  multiple times and return the average result
@@ -87,6 +110,8 @@ namespace PFA
             }
             return avg/numberOfTrials;
         }
+
+
 
         /**
          * @brief Test the creation of the graph multiple times and return the results in a vector
@@ -105,12 +130,34 @@ namespace PFA
             return avg;
         }
 
+        template<typename Container>
+        std::vector<std::pair<double,double>> testMultipleGraphCreationParallel(std::string path,SplitCreator<Container,ProfilableAllocator>& splitCreator,
+                                                                                SplitMerger<Container,ProfilableAllocator>& splitMerger) {
+            std::vector<std::pair<double,double>> avg;
+            for (int i=0 ; i<numberOfTrials ; i++) {
+                double time=testGraphCreationParallel<Container>(path,splitCreator,splitMerger);
+                avg.emplace_back(time,GlobalAllocator::max_memory);
+            }
+            return avg;
+        }
+
+
+
+
 
         /**
          * @brief Test the time & memory taken to create a graph using all implementations and return the results
          * @param dir directory containing the graph files
          * */
         void writeGraphCreationAllImplementationsSequential(const std::string& dir, Writer &writer,int skip=0);
+
+        /**
+ * @brief Test the time & memory taken to create a graph using all implementations and return the results
+ * @param dir directory containing the graph files
+ * */
+        void writeGraphCreationAllImplementationsParallel(const std::string& dir, Writer &writer,int skip=0);
+
+
 
 
 

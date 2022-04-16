@@ -1,8 +1,38 @@
 #include "tester.h"
 #include <iostream>
 #include <filesystem>
+#include "boost/mp11/mpl.hpp"
 
 using namespace PFA;
+using TestTypes=boost::mp11::mp_list<VectorVectorContainer<ProfilableAllocator>,
+        VectorSetContainer<ProfilableAllocator>,
+        VectorUnorderedSetContainer<ProfilableAllocator>,
+        MapVectorContainer<ProfilableAllocator>,
+        MapSetContainer<ProfilableAllocator>,
+        MapUnorderedSetContainer<ProfilableAllocator>,
+        UnorderedMapVectorContainer<ProfilableAllocator>,
+        UnorderedMapSetContainer<ProfilableAllocator>,
+        UnorderedMapUnorderedSetContainer<ProfilableAllocator>>;
+template<typename T>
+std::string testTypeName;
+template<>
+std::string testTypeName<VectorVectorContainer<ProfilableAllocator>> = "VectorVectorContainer";
+template<>
+std::string testTypeName<VectorSetContainer<ProfilableAllocator>> = "VectorSetContainer";
+template<>
+std::string testTypeName<VectorUnorderedSetContainer<ProfilableAllocator>> = "VectorUnorderedSetContainer";
+template<>
+std::string testTypeName<MapVectorContainer<ProfilableAllocator>> = "MapVectorContainer";
+template<>
+std::string testTypeName<MapSetContainer<ProfilableAllocator>> = "MapSetContainer";
+template<>
+std::string testTypeName<MapUnorderedSetContainer<ProfilableAllocator>> = "MapUnorderedSetContainer";
+template<>
+std::string testTypeName<UnorderedMapVectorContainer<ProfilableAllocator>> = "UnorderedMapVectorContainer";
+template<>
+std::string testTypeName<UnorderedMapSetContainer<ProfilableAllocator>> = "UnorderedMapSetContainer";
+template<>
+std::string testTypeName<UnorderedMapUnorderedSetContainer<ProfilableAllocator>> = "UnorderedMapUnorderedSetContainer";
 Tester::Tester(int numberOfTrials):numberOfTrials(numberOfTrials)  {}
 
 void Tester::printAvgTestResult(std::string type, double avg){
@@ -10,25 +40,11 @@ void Tester::printAvgTestResult(std::string type, double avg){
 }
 
 void Tester::testAllImplementationsSequential(std::string path){
-
-            printAvgTestResult("VectorVectorContainer", this->testAvgGraphCreation<VectorVectorContainer<ProfilableAllocator>>(path));
-
-            printAvgTestResult("VectorSetContainer", this->testAvgGraphCreation<VectorSetContainer<ProfilableAllocator>>(path));
-
-            printAvgTestResult("VectorUnorderedSetContainer", this->testAvgGraphCreation<VectorUnorderedSetContainer<ProfilableAllocator>>(path));
-
-            printAvgTestResult("MapVectorContainer", this->testAvgGraphCreation<MapVectorContainer<ProfilableAllocator>>(path));
-
-            printAvgTestResult("MapSetContainer", this->testAvgGraphCreation<MapSetContainer<ProfilableAllocator>>(path));
-
-            printAvgTestResult("MapUnorderedSetContainer", this->testAvgGraphCreation<MapUnorderedSetContainer<ProfilableAllocator>>(path));
-
-            printAvgTestResult("UnorderedMapVectorContainer", this->testAvgGraphCreation<UnorderedMapVectorContainer<ProfilableAllocator>>(path));
-
-            printAvgTestResult("UnorderedMapSetContainer", this->testAvgGraphCreation<UnorderedMapSetContainer<ProfilableAllocator>>(path));
-
-            printAvgTestResult("UnorderedMapUnorderedSetContainer", this->testAvgGraphCreation<UnorderedMapUnorderedSetContainer<ProfilableAllocator>>(path));
-
+        boost::mp11::mp_for_each<TestTypes>([&](auto type)
+        {
+            using Container = decltype(type);
+            printAvgTestResult(testTypeName<Container>, this->testAvgGraphCreation<Container>(path));
+        });
     }
 
 void Tester::testGraphsInFolder(std::string dir) {
@@ -47,87 +63,66 @@ void Tester::writeGraphCreationAllImplementationsSequential(const std::string &d
     else skip--;
     for (const auto& dirEntry : std::filesystem::directory_iterator(dir))
     {
-        if(skip < numberOfImplementations)
-            writer.write(dirEntry.path().filename().string());
-        if(skip==0) {
-            writer.write(
-                    AlgorithmTest("VectorVectorContainer", "Sequential", dirEntry.path().filename(), numberOfTrials,
-                                  this->testMultipleGraphCreation<VectorVectorContainer<ProfilableAllocator>>(
-                                          dirEntry.path().string())));
-            GlobalAllocator::resetMax();
+        if(skip>numberOfImplementations)
+        {
+            skip-=numberOfImplementations;
+            continue;
         }
         else
-            skip--;
-
-        if(skip==0) {
-            writer.write(AlgorithmTest("VectorSetContainer", "Sequential", dirEntry.path().filename(), numberOfTrials,
-                                       this->testMultipleGraphCreation<VectorSetContainer<ProfilableAllocator>>(
-                                               dirEntry.path().string())));
+            writer.write(dirEntry.path().filename().string());
+        boost::mp11::mp_for_each<TestTypes>([&](auto type)
+        {
+            using Container = decltype(type);
+            writer.write( AlgorithmTest(testTypeName<Container>, "Sequential", dirEntry.path().filename(), numberOfTrials,
+                                        this->testMultipleGraphCreation<Container>(dirEntry.path().string())));
             GlobalAllocator::resetMax();
-        }
-        else skip--;
-
-        if(skip==0) {
-            writer.write(AlgorithmTest("VectorUnorderedSetContainer", "Sequential", dirEntry.path().filename(),
-                                       numberOfTrials,
-                                       this->testMultipleGraphCreation<VectorUnorderedSetContainer<ProfilableAllocator>>(
-                                               dirEntry.path().string())));
-            GlobalAllocator::resetMax();
-        }
-        else skip--;
-
-        if(skip==0) {
-            writer.write(AlgorithmTest("MapVectorContainer", "Sequential", dirEntry.path().filename(), numberOfTrials,
-                                       this->testMultipleGraphCreation<MapVectorContainer<ProfilableAllocator>>(
-                                               dirEntry.path().string())));
-            GlobalAllocator::resetMax();
-        }
-        else skip--;
-
-        if(skip==0){
-            writer.write(AlgorithmTest("MapSetContainer", "Sequential", dirEntry.path().filename(), numberOfTrials,
-                                       this->testMultipleGraphCreation<MapSetContainer<ProfilableAllocator>>(
-                                               dirEntry.path().string())));
-            GlobalAllocator::resetMax();
-        }
-        else skip--;
-
-        if(skip==0) {
-            writer.write(
-                    AlgorithmTest("MapUnorderedSetContainer", "Sequential", dirEntry.path().filename(), numberOfTrials,
-                                  this->testMultipleGraphCreation<MapUnorderedSetContainer<ProfilableAllocator>>(
-                                          dirEntry.path().string())));
-            GlobalAllocator::resetMax();
-        }
-        else skip--;
-        if(skip==0) {
-            writer.write(AlgorithmTest("UnorderedMapVectorContainer", "Sequential", dirEntry.path().filename(),
-                                       numberOfTrials,
-                                       this->testMultipleGraphCreation<UnorderedMapVectorContainer<ProfilableAllocator>>(
-                                               dirEntry.path().string())));
-            GlobalAllocator::resetMax();
-        }
-        else skip--;
-        if(skip==0) {
-            writer.write(
-                    AlgorithmTest("UnorderedMapSetContainer", "Sequential", dirEntry.path().filename(), numberOfTrials,
-                                  this->testMultipleGraphCreation<UnorderedMapSetContainer<ProfilableAllocator>>(
-                                          dirEntry.path().string())));
-            GlobalAllocator::resetMax();
-        }
-        else skip--;
-        if(skip==0) {
-            writer.write(AlgorithmTest("UnorderedMapUnorderedSetContainer", "Sequential", dirEntry.path().filename(),
-                                       numberOfTrials,
-                                       this->testMultipleGraphCreation<UnorderedMapUnorderedSetContainer<ProfilableAllocator>>(
-                                               dirEntry.path().string())));
-            GlobalAllocator::resetMax();
-        }
-        else skip--;
+        });
     }
     writer.finalize();
 }
 
+
+void Tester::writeGraphCreationAllImplementationsParallel(const std::string &dir, Writer &writer,int skip)
+{
+    constexpr int numberOfImplementations = 9;
+    if(skip==0)
+        writer.initialize();
+    else skip--;
+    for (const auto& dirEntry : std::filesystem::directory_iterator(dir))
+    {
+        std::string fileRegex = dirEntry.path().string();
+        auto sep_index=fileRegex.find_last_of('#');
+        if(fileRegex.substr(sep_index+1)!="01")
+            continue;
+        if(skip>numberOfImplementations)
+        {
+            skip-=numberOfImplementations;
+            continue;
+        }
+
+        std::string fileName=fileRegex.substr(0,sep_index);
+        writer.write(fileName);
+        fileRegex=fileName+"#[0-9]*";
+        boost::mp11::mp_for_each<TestTypes>(
+                [&](auto F)
+                {
+                    using Container=decltype(F);
+                    if(skip==0) {
+                        RandomizedSplitMerger<Container, ProfilableAllocator> randomizedSplitMerger;
+                        writer.write(
+                                AlgorithmTest(testTypeName<Container>, "Parallel", dirEntry.path().filename(), numberOfTrials,
+                                              this->testMultipleGraphCreationParallel<Container>(
+                                                      fileRegex,
+                                                      parallelSplitCreator<Container,ProfilableAllocator>,
+                                                      randomizedSplitMerger)));
+                        GlobalAllocator::resetMax();
+                    }
+                    else
+                        skip--;
+                });
+    }
+    writer.finalize();
+}
 
 
 
