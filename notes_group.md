@@ -38,9 +38,7 @@ Data strcture possibility for adjacency list :
     unordered_map<int,vector<int>>
     unordered_map<int,set<int>>
     unordered_map<int,unordered_set<int>>
-
 ```
-
 
 
 ---
