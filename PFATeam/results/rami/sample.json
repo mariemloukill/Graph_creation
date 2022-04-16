@@ -2,414 +2,9 @@
 {
 "Algorithm Name": "VectorVectorContainer",
 "Type": "Sequential",
-"Graph Name": "bn-7k-50k.edges",
-"Test Times": [
-5.219, 5.145, 4.984],
-"Test Memories": [
-460404, 460404, 460404]
-}
-,{
-"Algorithm Name": "VectorSetContainer",
-"Type": "Sequential",
-"Graph Name": "bn-7k-50k.edges",
-"Test Times": [
-7.153, 7.467, 7.01],
-"Test Memories": [
-2.37619e+06, 2.37619e+06, 2.37619e+06]
-}
-,{
-"Algorithm Name": "VectorUnorderedSetContainer",
-"Type": "Sequential",
-"Graph Name": "bn-7k-50k.edges",
-"Test Times": [
-7.102, 7.123, 6.447],
-"Test Memories": [
-2.2285e+06, 2.2285e+06, 2.2285e+06]
-}
-,{
-"Algorithm Name": "MapVectorContainer",
-"Type": "Sequential",
-"Graph Name": "bn-7k-50k.edges",
-"Test Times": [
-6.224, 6.362, 6.308],
-"Test Memories": [
-733604, 733604, 733604]
-}
-,{
-"Algorithm Name": "MapSetContainer",
-"Type": "Sequential",
-"Graph Name": "bn-7k-50k.edges",
-"Test Times": [
-7.875, 8.329, 8.317],
-"Test Memories": [
-2.63163e+06, 2.63163e+06, 2.63163e+06]
-}
-,{
-"Algorithm Name": "MapUnorderedSetContainer",
-"Type": "Sequential",
-"Graph Name": "bn-7k-50k.edges",
-"Test Times": [
-8.332, 8.27, 8.125],
-"Test Memories": [
-2.47802e+06, 2.47802e+06, 2.47802e+06]
-}
-,{
-"Algorithm Name": "UnorderedMapVectorContainer",
-"Type": "Sequential",
-"Graph Name": "bn-7k-50k.edges",
-"Test Times": [
-6.112, 5.295, 5.34],
-"Test Memories": [
-641212, 641212, 641212]
-}
-,{
-"Algorithm Name": "UnorderedMapSetContainer",
-"Type": "Sequential",
-"Graph Name": "bn-7k-50k.edges",
-"Test Times": [
-6.958, 6.92, 6.936],
-"Test Memories": [
-2.53924e+06, 2.53924e+06, 2.53924e+06]
-}
-,{
-"Algorithm Name": "UnorderedMapUnorderedSetContainer",
-"Type": "Sequential",
-"Graph Name": "bn-7k-50k.edges",
-"Test Times": [
-6.875, 7.778, 6.748],
-"Test Memories": [
-2.38562e+06, 2.38562e+06, 2.38562e+06]
-}
-,{
-"Algorithm Name": "VectorVectorContainer",
-"Type": "Sequential",
-"Graph Name": "bn-34k-181k.edges",
-"Test Times": [
-19.206, 20.048, 21.607],
-"Test Memories": [
-1.92114e+06, 1.92114e+06, 1.92114e+06]
-}
-,{
-"Algorithm Name": "VectorSetContainer",
-"Type": "Sequential",
-"Graph Name": "bn-34k-181k.edges",
-"Test Times": [
-26.411, 29.454, 24.917],
-"Test Memories": [
-9.15273e+06, 9.15273e+06, 9.15273e+06]
-}
-,{
-"Algorithm Name": "VectorUnorderedSetContainer",
-"Type": "Sequential",
-"Graph Name": "bn-34k-181k.edges",
-"Test Times": [
-24.948, 30.226, 39.782],
-"Test Memories": [
-9.34242e+06, 9.34242e+06, 9.34242e+06]
-}
-,{
-"Algorithm Name": "MapVectorContainer",
-"Type": "Sequential",
-"Graph Name": "bn-34k-181k.edges",
-"Test Times": [
-25.681, 26.313, 26.353],
-"Test Memories": [
-3.11581e+06, 3.11581e+06, 3.11581e+06]
-}
-,{
-"Algorithm Name": "MapSetContainer",
-"Type": "Sequential",
-"Graph Name": "bn-34k-181k.edges",
-"Test Times": [
-31.327, 34.565, 34.584],
-"Test Memories": [
-1.01953e+07, 1.01953e+07, 1.01953e+07]
-}
-,{
-"Algorithm Name": "MapUnorderedSetContainer",
-"Type": "Sequential",
-"Graph Name": "bn-34k-181k.edges",
-"Test Times": [
-34.6, 35.737, 35.649],
-"Test Memories": [
-1.03343e+07, 1.03343e+07, 1.03343e+07]
-}
-,{
-"Algorithm Name": "UnorderedMapVectorContainer",
-"Type": "Sequential",
-"Graph Name": "bn-34k-181k.edges",
-"Test Times": [
-26.848, 20.276, 20.302],
-"Test Memories": [
-2.6441e+06, 2.6441e+06, 2.6441e+06]
-}
-,{
-"Algorithm Name": "UnorderedMapSetContainer",
-"Type": "Sequential",
-"Graph Name": "bn-34k-181k.edges",
-"Test Times": [
-26.477, 26.21, 26.303],
-"Test Memories": [
-9.7236e+06, 9.7236e+06, 9.7236e+06]
-}
-,{
-"Algorithm Name": "UnorderedMapUnorderedSetContainer",
-"Type": "Sequential",
-"Graph Name": "bn-34k-181k.edges",
-"Test Times": [
-25.85, 25.975, 26.021],
-"Test Memories": [
-9.8626e+06, 9.8626e+06, 9.8626e+06]
-}
-,{
-"Algorithm Name": "VectorVectorContainer",
-"Type": "Sequential",
-"Graph Name": "bn-65-1K.edges",
-"Test Times": [
-0.146, 0.105, 0.105],
-"Test Memories": [
-8424, 8424, 8424]
-}
-,{
-"Algorithm Name": "VectorSetContainer",
-"Type": "Sequential",
-"Graph Name": "bn-65-1K.edges",
-"Test Times": [
-0.15, 0.157, 0.152],
-"Test Memories": [
-50072, 50072, 50072]
-}
-,{
-"Algorithm Name": "VectorUnorderedSetContainer",
-"Type": "Sequential",
-"Graph Name": "bn-65-1K.edges",
-"Test Times": [
-0.147, 0.152, 0.139],
-"Test Memories": [
-37624, 37624, 37624]
-}
-,{
-"Algorithm Name": "MapVectorContainer",
-"Type": "Sequential",
-"Graph Name": "bn-65-1K.edges",
-"Test Times": [
-0.126, 0.113, 0.112],
-"Test Memories": [
-10328, 10328, 10328]
-}
-,{
-"Algorithm Name": "MapSetContainer",
-"Type": "Sequential",
-"Graph Name": "bn-65-1K.edges",
-"Test Times": [
-0.157, 0.174, 0.165],
-"Test Memories": [
-51280, 51280, 51280]
-}
-,{
-"Algorithm Name": "MapUnorderedSetContainer",
-"Type": "Sequential",
-"Graph Name": "bn-65-1K.edges",
-"Test Times": [
-0.159, 0.148, 0.145],
-"Test Memories": [
-38600, 38600, 38600]
-}
-,{
-"Algorithm Name": "UnorderedMapVectorContainer",
-"Type": "Sequential",
-"Graph Name": "bn-65-1K.edges",
-"Test Times": [
-0.12, 0.116, 0.106],
-"Test Memories": [
-9784, 9784, 9784]
-}
-,{
-"Algorithm Name": "UnorderedMapSetContainer",
-"Type": "Sequential",
-"Graph Name": "bn-65-1K.edges",
-"Test Times": [
-0.153, 0.165, 0.163],
-"Test Memories": [
-50736, 50736, 50736]
-}
-,{
-"Algorithm Name": "UnorderedMapUnorderedSetContainer",
-"Type": "Sequential",
-"Graph Name": "bn-65-1K.edges",
-"Test Times": [
-0.152, 0.165, 0.151],
-"Test Memories": [
-38056, 38056, 38056]
-}
-,{
-"Algorithm Name": "VectorVectorContainer",
-"Type": "Sequential",
-"Graph Name": "bn-100k-662k.edges",
-"Test Times": [
-74.449, 74.307, 73.768],
-"Test Memories": [
-8.3899e+06, 8.3899e+06, 8.3899e+06]
-}
-,{
-"Algorithm Name": "VectorSetContainer",
-"Type": "Sequential",
-"Graph Name": "bn-100k-662k.edges",
-"Test Times": [
-97.196, 104.773, 90.128],
-"Test Memories": [
-3.41787e+07, 3.41787e+07, 3.41787e+07]
-}
-,{
-"Algorithm Name": "VectorUnorderedSetContainer",
-"Type": "Sequential",
-"Graph Name": "bn-100k-662k.edges",
-"Test Times": [
-87.943, 87.339, 88.148],
-"Test Memories": [
-2.9579e+07, 2.9579e+07, 2.9579e+07]
-}
-,{
-"Algorithm Name": "MapVectorContainer",
-"Type": "Sequential",
-"Graph Name": "bn-100k-662k.edges",
-"Test Times": [
-93.674, 99.511, 96.834],
-"Test Memories": [
-9.67378e+06, 9.67378e+06, 9.67378e+06]
-}
-,{
-"Algorithm Name": "MapSetContainer",
-"Type": "Sequential",
-"Graph Name": "bn-100k-662k.edges",
-"Test Times": [
-107.881, 119.498, 119.585],
-"Test Memories": [
-3.49452e+07, 3.49452e+07, 3.49452e+07]
-}
-,{
-"Algorithm Name": "MapUnorderedSetContainer",
-"Type": "Sequential",
-"Graph Name": "bn-100k-662k.edges",
-"Test Times": [
-116.788, 117.919, 118.315],
-"Test Memories": [
-2.98333e+07, 2.98333e+07, 2.98333e+07]
-}
-,{
-"Algorithm Name": "UnorderedMapVectorContainer",
-"Type": "Sequential",
-"Graph Name": "bn-100k-662k.edges",
-"Test Times": [
-95.2, 78.582, 78.575],
-"Test Memories": [
-8.75326e+06, 8.75326e+06, 8.75326e+06]
-}
-,{
-"Algorithm Name": "UnorderedMapSetContainer",
-"Type": "Sequential",
-"Graph Name": "bn-100k-662k.edges",
-"Test Times": [
-99.513, 99.704, 99.682],
-"Test Memories": [
-3.40246e+07, 3.40246e+07, 3.40246e+07]
-}
-,{
-"Algorithm Name": "UnorderedMapUnorderedSetContainer",
-"Type": "Sequential",
-"Graph Name": "bn-100k-662k.edges",
-"Test Times": [
-97.202, 97.327, 97.128],
-"Test Memories": [
-2.89127e+07, 2.89127e+07, 2.89127e+07]
-}
-,{
-"Algorithm Name": "VectorVectorContainer",
-"Type": "Sequential",
-"Graph Name": "bn-434k-16M.edges",
-"Test Times": [
-1586.04, 1577.29, 1565.14],
-"Test Memories": [
-1.1059e+08, 1.1059e+08, 1.1059e+08]
-}
-{
-"Algorithm Name": "VectorSetContainer",
-"Type": "Sequential",
-"Graph Name": "bn-434k-16M.edges",
-"Test Times": [
-2560.63, 2632.79, 2618.09],
-"Test Memories": [
-6.79869e+08, 6.79869e+08, 6.79869e+08]
-}
-,{
-"Algorithm Name": "VectorUnorderedSetContainer",
-"Type": "Sequential",
-"Graph Name": "bn-434k-16M.edges",
-"Test Times": [
-2445.95, 2467.79, 2152.1],
-"Test Memories": [
-4.96098e+08, 4.96098e+08, 4.96098e+08]
-}
-,{
-"Algorithm Name": "MapVectorContainer",
-"Type": "Sequential",
-"Graph Name": "bn-434k-16M.edges",
-"Test Times": [
-2017.12, 2014.57, 2007.05],
-"Test Memories": [
-1.18804e+08, 1.18804e+08, 1.18804e+08]
-}
-,{
-"Algorithm Name": "MapSetContainer",
-"Type": "Sequential",
-"Graph Name": "bn-434k-16M.edges",
-"Test Times": [
-2750.87, 2933.02, 2943.72],
-"Test Memories": [
-6.79162e+08, 6.79162e+08, 6.79162e+08]
-}
-,{
-"Algorithm Name": "MapUnorderedSetContainer",
-"Type": "Sequential",
-"Graph Name": "bn-434k-16M.edges",
-"Test Times": [
-2758.72, 2847.61, 2857.25],
-"Test Memories": [
-4.92417e+08, 4.92417e+08, 4.92417e+08]
-}
-,{
-"Algorithm Name": "UnorderedMapVectorContainer",
-"Type": "Sequential",
-"Graph Name": "bn-434k-16M.edges",
-"Test Times": [
-1932.63, 1649.76, 1651.39],
-"Test Memories": [
-1.14225e+08, 1.14225e+08, 1.14225e+08]
-}
-,{
-"Algorithm Name": "UnorderedMapSetContainer",
-"Type": "Sequential",
-"Graph Name": "bn-434k-16M.edges",
-"Test Times": [
-2424.77, 2416.5, 2403.79],
-"Test Memories": [
-6.74584e+08, 6.74584e+08, 6.74584e+08]
-}
-,{
-"Algorithm Name": "UnorderedMapUnorderedSetContainer",
-"Type": "Sequential",
-"Graph Name": "bn-434k-16M.edges",
-"Test Times": [
-2263.5, 2266.35, 2277.25],
-"Test Memories": [
-4.87839e+08, 4.87839e+08, 4.87839e+08]
-}
-,{
-"Algorithm Name": "VectorVectorContainer",
-"Type": "Sequential",
 "Graph Name": "bn-449k-3.3M.edges",
 "Test Times": [
-393.536, 384.517, 382.713],
+429.497, 440.087, 413.898],
 "Test Memories": [
 4.13662e+07, 4.13662e+07, 4.13662e+07]
 }
@@ -418,7 +13,7 @@
 "Type": "Sequential",
 "Graph Name": "bn-449k-3.3M.edges",
 "Test Times": [
-473.764, 474.927, 473.935],
+527.13, 557.978, 550.468],
 "Test Memories": [
 1.70988e+08, 1.70988e+08, 1.70988e+08]
 }
@@ -427,7 +22,7 @@
 "Type": "Sequential",
 "Graph Name": "bn-449k-3.3M.edges",
 "Test Times": [
-466.641, 464.673, 467.469],
+561.998, 578.726, 557.815],
 "Test Memories": [
 1.4463e+08, 1.4463e+08, 1.4463e+08]
 }
@@ -436,7 +31,7 @@
 "Type": "Sequential",
 "Graph Name": "bn-449k-3.3M.edges",
 "Test Times": [
-493.934, 516.927, 517.216],
+577.839, 540.662, 528.83],
 "Test Memories": [
 4.42885e+07, 4.42885e+07, 4.42885e+07]
 }
@@ -445,7 +40,7 @@
 "Type": "Sequential",
 "Graph Name": "bn-449k-3.3M.edges",
 "Test Times": [
-595.695, 635.046, 630.273],
+610.455, 637.919, 637.71],
 "Test Memories": [
 1.68896e+08, 1.68896e+08, 1.68896e+08]
 }
@@ -454,7 +49,7 @@
 "Type": "Sequential",
 "Graph Name": "bn-449k-3.3M.edges",
 "Test Times": [
-618.311, 629.828, 628.53],
+626.169, 644.333, 666.214],
 "Test Memories": [
 1.39439e+08, 1.39439e+08, 1.39439e+08]
 }
@@ -463,7 +58,7 @@
 "Type": "Sequential",
 "Graph Name": "bn-449k-3.3M.edges",
 "Test Times": [
-493.202, 413.413, 413.63],
+528.786, 434.934, 444.151],
 "Test Memories": [
 4.0087e+07, 4.0087e+07, 4.0087e+07]
 }
@@ -472,7 +67,7 @@
 "Type": "Sequential",
 "Graph Name": "bn-449k-3.3M.edges",
 "Test Times": [
-537.648, 535.768, 536.995],
+545.718, 550.473, 538.471],
 "Test Memories": [
 1.64694e+08, 1.64694e+08, 1.64694e+08]
 }
@@ -481,106 +76,214 @@
 "Type": "Sequential",
 "Graph Name": "bn-449k-3.3M.edges",
 "Test Times": [
-527.705, 529.254, 529.869],
+564.592, 603.263, 550.041],
 "Test Memories": [
 1.35237e+08, 1.35237e+08, 1.35237e+08]
 }
 ,{
 "Algorithm Name": "VectorVectorContainer",
 "Type": "Sequential",
-"Graph Name": "bn-800-19k.edges",
+"Graph Name": "bn-7k-50k.edges",
 "Test Times": [
-1.758, 1.74, 1.685],
+5.359, 5.277, 5.153],
 "Test Memories": [
-129996, 129996, 129996]
+460404, 460404, 460404]
 }
 ,{
 "Algorithm Name": "VectorSetContainer",
 "Type": "Sequential",
-"Graph Name": "bn-800-19k.edges",
+"Graph Name": "bn-7k-50k.edges",
 "Test Times": [
-2.524, 2.674, 2.668],
+6.552, 6.599, 6.794],
 "Test Memories": [
-806112, 806112, 806112]
+2.37619e+06, 2.37619e+06, 2.37619e+06]
 }
 ,{
 "Algorithm Name": "VectorUnorderedSetContainer",
 "Type": "Sequential",
-"Graph Name": "bn-800-19k.edges",
+"Graph Name": "bn-7k-50k.edges",
 "Test Times": [
-2.531, 2.556, 2.572],
+6.717, 6.597, 6.694],
 "Test Memories": [
-580104, 580104, 580104]
+2.2285e+06, 2.2285e+06, 2.2285e+06]
 }
 ,{
 "Algorithm Name": "MapVectorContainer",
 "Type": "Sequential",
-"Graph Name": "bn-800-19k.edges",
+"Graph Name": "bn-7k-50k.edges",
 "Test Times": [
-2.11, 1.888, 1.912],
+6.526, 6.495, 6.643],
 "Test Memories": [
-160312, 160312, 160312]
+733604, 733604, 733604]
 }
 ,{
 "Algorithm Name": "MapSetContainer",
 "Type": "Sequential",
-"Graph Name": "bn-800-19k.edges",
+"Graph Name": "bn-7k-50k.edges",
 "Test Times": [
-2.733, 2.876, 2.865],
+7.849, 8.255, 8.256],
 "Test Memories": [
-835592, 835592, 835592]
+2.63163e+06, 2.63163e+06, 2.63163e+06]
 }
 ,{
 "Algorithm Name": "MapUnorderedSetContainer",
 "Type": "Sequential",
-"Graph Name": "bn-800-19k.edges",
+"Graph Name": "bn-7k-50k.edges",
 "Test Times": [
-2.725, 2.581, 2.781],
+8.197, 8.298, 8.299],
 "Test Memories": [
-609304, 609304, 609304]
+2.47802e+06, 2.47802e+06, 2.47802e+06]
 }
 ,{
 "Algorithm Name": "UnorderedMapVectorContainer",
 "Type": "Sequential",
-"Graph Name": "bn-800-19k.edges",
+"Graph Name": "bn-7k-50k.edges",
 "Test Times": [
-1.96, 1.732, 1.747],
+6.308, 5.427, 5.418],
 "Test Memories": [
-150488, 150488, 150488]
+641212, 641212, 641212]
 }
 ,{
 "Algorithm Name": "UnorderedMapSetContainer",
 "Type": "Sequential",
-"Graph Name": "bn-800-19k.edges",
+"Graph Name": "bn-7k-50k.edges",
 "Test Times": [
-2.559, 2.739, 2.743],
+6.859, 6.858, 7.064],
 "Test Memories": [
-825768, 825768, 825768]
+2.53924e+06, 2.53924e+06, 2.53924e+06]
 }
 ,{
 "Algorithm Name": "UnorderedMapUnorderedSetContainer",
 "Type": "Sequential",
-"Graph Name": "bn-800-19k.edges",
+"Graph Name": "bn-7k-50k.edges",
 "Test Times": [
-2.638, 2.531, 2.635],
+7.192, 7.122, 7.864],
 "Test Memories": [
-599480, 599480, 599480]
+2.38562e+06, 2.38562e+06, 2.38562e+06]
 }
 ,{
 "Algorithm Name": "VectorVectorContainer",
 "Type": "Sequential",
-"Graph Name": "bn-human-BNU_1_0025868_session_1-bg_150M.edges",
+"Graph Name": "bn-34k-181k.edges",
 "Test Times": [
-30926.3, 15299.7, 15132.8],
+20.75, 20.508, 20.11],
 "Test Memories": [
-9.21439e+08, 9.21439e+08, 9.21439e+08]
+1.92114e+06, 1.92114e+06, 1.92114e+06]
 }
 ,{
 "Algorithm Name": "VectorSetContainer",
 "Type": "Sequential",
-"Graph Name": "bn-human-BNU_1_0025868_session_1-bg_150M.edges",
+"Graph Name": "bn-34k-181k.edges",
 "Test Times": [
-24867.6, 26390.8, 26281.2],
+25.27, 25.268, 26.904],
 "Test Memories": [
-6.12817e+09, 6.12817e+09, 6.12817e+09]
+9.15273e+06, 9.15273e+06, 9.15273e+06]
+}
+,{
+"Algorithm Name": "VectorUnorderedSetContainer",
+"Type": "Sequential",
+"Graph Name": "bn-34k-181k.edges",
+"Test Times": [
+27.142, 27.257, 27.247],
+"Test Memories": [
+9.34242e+06, 9.34242e+06, 9.34242e+06]
+}
+,{
+"Algorithm Name": "MapVectorContainer",
+"Type": "Sequential",
+"Graph Name": "bn-34k-181k.edges",
+"Test Times": [
+27.061, 28.32, 27.137],
+"Test Memories": [
+3.11581e+06, 3.11581e+06, 3.11581e+06]
+}
+,{
+"Algorithm Name": "MapSetContainer",
+"Type": "Sequential",
+"Graph Name": "bn-34k-181k.edges",
+"Test Times": [
+33.056, 37.407, 37.83],
+"Test Memories": [
+1.01953e+07, 1.01953e+07, 1.01953e+07]
+}
+,{
+"Algorithm Name": "MapUnorderedSetContainer",
+"Type": "Sequential",
+"Graph Name": "bn-34k-181k.edges",
+"Test Times": [
+36.262, 36.112, 29.841],
+"Test Memories": [
+1.03343e+07, 1.03343e+07, 1.03343e+07]
+}
+,{
+"Algorithm Name": "UnorderedMapVectorContainer",
+"Type": "Sequential",
+"Graph Name": "bn-34k-181k.edges",
+"Test Times": [
+21.41, 21.332, 21.931],
+"Test Memories": [
+2.6441e+06, 2.6441e+06, 2.6441e+06]
+}
+,{
+"Algorithm Name": "UnorderedMapSetContainer",
+"Type": "Sequential",
+"Graph Name": "bn-34k-181k.edges",
+"Test Times": [
+29.487, 27.866, 27.117],
+"Test Memories": [
+9.7236e+06, 9.7236e+06, 9.7236e+06]
+}
+,{
+"Algorithm Name": "UnorderedMapUnorderedSetContainer",
+"Type": "Sequential",
+"Graph Name": "bn-34k-181k.edges",
+"Test Times": [
+27.923, 26.953, 27.893],
+"Test Memories": [
+9.8626e+06, 9.8626e+06, 9.8626e+06]
+}
+,{
+"Algorithm Name": "VectorVectorContainer",
+"Type": "Sequential",
+"Graph Name": "bn-434k-16M.edges",
+"Test Times": [
+1679.4, 1671.19, 1670.9],
+"Test Memories": [
+1.1059e+08, 1.1059e+08, 1.1059e+08]
+}
+,{
+"Algorithm Name": "VectorSetContainer",
+"Type": "Sequential",
+"Graph Name": "bn-434k-16M.edges",
+"Test Times": [
+2567.22, 2697.41, 2693.74],
+"Test Memories": [
+6.79869e+08, 6.79869e+08, 6.79869e+08]
+}
+,{
+"Algorithm Name": "VectorUnorderedSetContainer",
+"Type": "Sequential",
+"Graph Name": "bn-434k-16M.edges",
+"Test Times": [
+2567.73, 2555, 2266.93],
+"Test Memories": [
+4.96098e+08, 4.96098e+08, 4.96098e+08]
+}
+,{
+"Algorithm Name": "MapVectorContainer",
+"Type": "Sequential",
+"Graph Name": "bn-434k-16M.edges",
+"Test Times": [
+2134.5, 2129.69, 2133.64],
+"Test Memories": [
+1.18804e+08, 1.18804e+08, 1.18804e+08]
+}
+,{
+"Algorithm Name": "MapSetContainer",
+"Type": "Sequential",
+"Graph Name": "bn-434k-16M.edges",
+"Test Times": [
+2800.88, 2972.4, 2958.41],
+"Test Memories": [
+6.79162e+08, 6.79162e+08, 6.79162e+08]
 }

@@ -9,8 +9,15 @@
 
 enum Mode
 {
-    DISCARD,RESUME
+    DISCARD,RESUME,AUTO
 };
+
+
+size_t countLines(std::istream &I)
+{
+    return std::count(std::istreambuf_iterator<char>(I),
+                      std::istreambuf_iterator<char>(), '\n');
+}
 
 /**
  * @brief main function
@@ -32,6 +39,8 @@ int main(int argc, char** argv)
             std::string modeStr = argv[2];
             if(modeStr == "resume")
                 mode = RESUME;
+            else if(modeStr == "auto")
+                mode = AUTO;
         }
         /*
          * Number of iterations to skip
@@ -47,9 +56,20 @@ int main(int argc, char** argv)
              * */
             std::ifstream inFile(fileName + ".csv");
             if (inFile) {
-                skip=std::count(std::istreambuf_iterator<char>(inFile),
-                           std::istreambuf_iterator<char>(), '\n');
+                skip= countLines(inFile);
                 inFile.close();
+            }
+        }
+        else if(mode ==AUTO)
+        {
+            std::filesystem::path path(fileName+".csv");
+            if(std::filesystem::exists(path))
+            {
+                std::ifstream inFile(path);
+                if (inFile) {
+                    skip= countLines(inFile);
+                    inFile.close();
+                }
             }
         }
         std::ofstream JSONFile(fileName+".json",openMode);
@@ -61,7 +81,7 @@ int main(int argc, char** argv)
         writers.addWriter(CSVWriter);
         using  namespace std::chrono_literals;
         PFA::StandardMemoryProfiler profiler(profileFile,200ms);
-        tester.writeGraphCreationAllImplementationsSequential("datasets/sample",writers,skip);
+        tester.writeGraphCreationAllImplementationsSequential("datasets",writers,skip);
         profiler.endProfiler=true;
         profiler.join();
     }
