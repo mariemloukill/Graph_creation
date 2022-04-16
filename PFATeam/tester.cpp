@@ -72,6 +72,11 @@ void Tester::writeGraphCreationAllImplementationsSequential(const std::string &d
             writer.write(dirEntry.path().filename().string());
         boost::mp11::mp_for_each<TestTypes>([&](auto type)
         {
+            if(skip)
+            {
+                skip--;
+                return;
+            }
             using Container = decltype(type);
             writer.write( AlgorithmTest(testTypeName<Container>, "Sequential", dirEntry.path().filename(), numberOfTrials,
                                         this->testMultipleGraphCreation<Container>(dirEntry.path().string())));
@@ -124,6 +129,39 @@ void Tester::writeGraphCreationAllImplementationsParallel(const std::string &dir
     writer.finalize();
 }
 
+void Tester::writeGraphCreationAllImplementationsParallelInplace(const std::string &dir, Writer &writer,int count, int skip) {
+
+    constexpr int numberOfImplementations = 9;
+    if(skip==0)
+        writer.initialize();
+    else skip--;
+    for (const auto& dirEntry : std::filesystem::directory_iterator(dir))
+    {
+        if(skip>numberOfImplementations)
+        {
+            skip-=numberOfImplementations;
+            continue;
+        }
+        else
+            writer.write(dirEntry.path().filename().string());
+        boost::mp11::mp_for_each<TestTypes>([&](auto type)
+                    {
+                        if(skip)
+                        {
+                            skip--;
+                            return;
+                        }
+                        using Container = decltype(type);
+                        RandomizedSplitMerger<Container, ProfilableAllocator> randomizedSplitMerger;
+                        writer.write( AlgorithmTest(testTypeName<Container>, "ParallelInplace", dirEntry.path().filename(), numberOfTrials,
+                                                    this->testMultipleGraphCreationParallelInplace<Container>(dirEntry.path().string(),count,
+                                                                                                                parallelSplitCreator<Container,ProfilableAllocator>,
+                                                                                                                randomizedSplitMerger)));
+                        GlobalAllocator::resetMax();
+                    });
+    }
+    writer.finalize();
+}
 
 
 AlgorithmTest::AlgorithmTest(std::string name, std::string type, std::string graphName, int numberOfTrials, std::vector<double> timeResults,

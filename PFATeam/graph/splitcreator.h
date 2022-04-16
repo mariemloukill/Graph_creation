@@ -5,6 +5,7 @@
 #ifndef PFAPROJECT_SPLITCREATOR_H
 #define PFAPROJECT_SPLITCREATOR_H
 #include "graph.h"
+#include "reader/ParallelReader.h"
 #include <future>
 #include <regex>
 #include <filesystem>
@@ -55,6 +56,22 @@ namespace PFA
                     fileNames.push_back(name);
             }
             return createSplitsFromFiles(fileNames);
+        }
+
+        /**
+* @brief create graph splits from files defined by regex.
+* @details This function is used to create graph splits from files, Each file will be affected to its own graph-split. Then graph split will be rearrenged
+* adequately to avoid memory overflow.
+* @param fileRegEx regular expression matching the files to be read
+* */
+        std::vector<Graph<Container>,Allocator<Graph<Container>>> createSplitsFromFile(const std::string &fileName,int count) const
+        {
+            ParallelReader<Container,Allocator> reader(fileName,count,strategy);
+            std::vector<Graph<Container>,Allocator<Graph<Container>>> graphs;
+            auto futures=reader.read();
+            for(auto &future:futures)
+                graphs.push_back(std::move(future.get()));
+            return graphs;
         }
     };
 

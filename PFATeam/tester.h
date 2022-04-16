@@ -84,6 +84,25 @@ namespace PFA
  * @return double time in milliseconds
  */
         template<typename Container>
+        double testGraphCreationParallelInplace(std::string path,int count,SplitCreator<Container,ProfilableAllocator>& splitCreator,
+                                         SplitMerger<Container,ProfilableAllocator>& splitMerger)
+        {
+            std::ios_base::sync_with_stdio(false);
+            auto start = std::chrono::system_clock::now();
+            auto graphs=splitCreator.createSplitsFromFile(path,count);
+            splitMerger.merge(graphs);
+            auto end=std::chrono::system_clock::now();
+            return std::chrono::duration_cast<std::chrono::microseconds>(end - start).count()/1000.0;
+        }
+
+        /**
+ * @brief Test the creation of a graph and return the time it took.
+ *
+ * @tparam Container Container type
+ * @param path path to the graph file
+ * @return double time in milliseconds
+ */
+        template<typename Container>
         double testGraphCreation(std::string path) {
             std::ios_base::sync_with_stdio(false);
             Graph<Container> G;
@@ -141,6 +160,18 @@ namespace PFA
             return avg;
         }
 
+        template<typename Container>
+        std::vector<std::pair<double,double>> testMultipleGraphCreationParallelInplace(std::string path,int count,SplitCreator<Container,ProfilableAllocator>& splitCreator,
+                                                                                SplitMerger<Container,ProfilableAllocator>& splitMerger) {
+            std::vector<std::pair<double,double>> avg;
+            for (int i=0 ; i<numberOfTrials ; i++) {
+                double time=testGraphCreationParallelInplace<Container>(path,count,splitCreator,splitMerger);
+                avg.emplace_back(time,GlobalAllocator::max_memory);
+            }
+            return avg;
+        }
+
+
 
 
 
@@ -157,6 +188,12 @@ namespace PFA
  * */
         void writeGraphCreationAllImplementationsParallel(const std::string& dir, Writer &writer,int skip=0);
 
+
+        /**
+ * @brief Test the time & memory taken to create a graph using all implementations and return the results
+ * @param dir directory containing the graph files
+ * */
+        void writeGraphCreationAllImplementationsParallelInplace(const std::string& dir, Writer &writer,int count=5,int skip=0);
 
 
 
