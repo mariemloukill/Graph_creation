@@ -4,5 +4,23 @@
 
 #ifndef PFAPROJECT_UTILS_H
 #define PFAPROJECT_UTILS_H
+#include "boost/mp11/mpl.hpp"
+#include "memory/ProfilableAllocator.h"
+#include "graph/graph_container.h"
+
+namespace PFA
+{
+    using TestTypes=boost::mp11::mp_list<VectorVectorContainer<ProfilableAllocator>,
+    VectorSetContainer<ProfilableAllocator>,
+    VectorUnorderedSetContainer<ProfilableAllocator>,
+    MapVectorContainer<ProfilableAllocator>,
+    MapSetContainer<ProfilableAllocator>,
+    MapUnorderedSetContainer<ProfilableAllocator>,
+    UnorderedMapVectorContainer<ProfilableAllocator>,
+    UnorderedMapSetContainer<ProfilableAllocator>,
+    UnorderedMapUnorderedSetContainer<ProfilableAllocator>>;
+
+    using CurrentType=boost::mp11::mp_list<VectorVectorContainer<ProfilableAllocator>>;
+}
 
 #endif //PFAPROJECT_UTILS_H

@@ -9,9 +9,15 @@
 #include <iostream>
 #include "graph/splitcreator.h"
 #include "graph/splitmerger.h"
+#include "boost/mp11/mpl.hpp"
+
 
 namespace PFA
 {
+    template<typename T>
+    extern std::string testTypeName;
+
+
     struct AlgorithmTest
     {
         /**
@@ -172,29 +178,116 @@ namespace PFA
         }
 
 
+        template<typename TestTypes>
+        void writeGraphCreationAllImplementationsSequential(const std::string &dir, Writer &writer,int skip=0)
+        {
+            constexpr int numberOfImplementations = 9;
+            if(skip==0)
+                writer.initialize();
+            else skip--;
+            for (const auto& dirEntry : std::filesystem::directory_iterator(dir))
+            {
+                if(skip>numberOfImplementations)
+                {
+                    skip-=numberOfImplementations;
+                    continue;
+                }
+                else
+                    writer.write(dirEntry.path().filename().string());
+                boost::mp11::mp_for_each<TestTypes>([&](auto type)
+                                                    {
+                                                        if(skip)
+                                                        {
+                                                            skip--;
+                                                            return;
+                                                        }
+                                                        using Container = decltype(type);
+                                                        writer.write( AlgorithmTest(testTypeName<Container>, "Sequential", dirEntry.path().filename(), numberOfTrials,
+                                                                                    this->testMultipleGraphCreation<Container>(dirEntry.path().string())));
+                                                        GlobalAllocator::resetMax();
+                                                    });
+            }
+            writer.finalize();
+        }
 
 
+        template<typename TestTypes>
+        void writeGraphCreationAllImplementationsParallel(const std::string &dir, Writer &writer,int skip=0)
+        {
+            constexpr int numberOfImplementations = 9;
+            if(skip==0)
+                writer.initialize();
+            else skip--;
+            for (const auto& dirEntry : std::filesystem::directory_iterator(dir))
+            {
+                std::string fileRegex = dirEntry.path().string();
+                auto sep_index=fileRegex.find_last_of('#');
+                if(fileRegex.substr(sep_index+1)!="01")
+                    continue;
+                if(skip>numberOfImplementations)
+                {
+                    skip-=numberOfImplementations;
+                    continue;
+                }
 
+                std::string fileName=fileRegex.substr(0,sep_index);
+                writer.write(fileName);
+                fileRegex=fileName+"#[0-9]*";
+                boost::mp11::mp_for_each<TestTypes>(
+                        [&](auto F)
+                        {
+                            using Container=decltype(F);
+                            if(skip==0) {
+                                RandomizedSplitMerger<Container, ProfilableAllocator> randomizedSplitMerger;
+                                writer.write(
+                                        AlgorithmTest(testTypeName<Container>, "Parallel", dirEntry.path().filename(), numberOfTrials,
+                                                      this->testMultipleGraphCreationParallel<Container>(
+                                                              fileRegex,
+                                                              parallelSplitCreator<Container,ProfilableAllocator>,
+                                                              randomizedSplitMerger)));
+                                GlobalAllocator::resetMax();
+                            }
+                            else
+                                skip--;
+                        });
+            }
+            writer.finalize();
+        }
 
-        /**
-         * @brief Test the time & memory taken to create a graph using all implementations and return the results
-         * @param dir directory containing the graph files
-         * */
-        void writeGraphCreationAllImplementationsSequential(const std::string& dir, Writer &writer,int skip=0);
+        template<typename TestTypes>
+        void writeGraphCreationAllImplementationsParallelInplace(const std::string &dir, Writer &writer,int count, int skip=0) {
 
-        /**
- * @brief Test the time & memory taken to create a graph using all implementations and return the results
- * @param dir directory containing the graph files
- * */
-        void writeGraphCreationAllImplementationsParallel(const std::string& dir, Writer &writer,int skip=0);
-
-
-        /**
- * @brief Test the time & memory taken to create a graph using all implementations and return the results
- * @param dir directory containing the graph files
- * */
-        void writeGraphCreationAllImplementationsParallelInplace(const std::string& dir, Writer &writer,int count=5,int skip=0);
-
+            constexpr int numberOfImplementations = 9;
+            if(skip==0)
+                writer.initialize();
+            else skip--;
+            for (const auto& dirEntry : std::filesystem::directory_iterator(dir))
+            {
+                if(skip>numberOfImplementations)
+                {
+                    skip-=numberOfImplementations;
+                    continue;
+                }
+                else
+                    writer.write(dirEntry.path().filename().string());
+                boost::mp11::mp_for_each<TestTypes>([&](auto type)
+                                                    {
+                                                        if(skip)
+                                                        {
+                                                            skip--;
+                                                            return;
+                                                        }
+                                                        using Container = decltype(type);
+                                                        RandomizedSplitMerger<Container, ProfilableAllocator> randomizedSplitMerger;
+                                                        writer.write( AlgorithmTest(testTypeName<Container>, "ParallelInplace", dirEntry.path().filename(), numberOfTrials,
+                                                                                    this->testMultipleGraphCreationParallelInplace<Container>(dirEntry.path().string(),count,
+                                                                                                                                              parallelSplitCreator<Container,ProfilableAllocator>,
+                                                                                                                                              randomizedSplitMerger)));
+                                                        GlobalAllocator::resetMax();
+                                                    });
+            }
+            writer.finalize();
+        }
 
 
 
@@ -211,8 +304,14 @@ namespace PFA
          *
          * @param path path to the graph file
          */
-        void testAllImplementationsSequential(std::string path);
-
+        template<typename TestTypes>
+        void testAllImplementationsSequential(std::string path){
+            boost::mp11::mp_for_each<TestTypes>([&](auto type)
+                                                {
+                                                    using Container = decltype(type);
+                                                    printAvgTestResult(testTypeName<Container>, this->testAvgGraphCreation<Container>(path));
+                                                });
+        }
         /**
          * @brief Test all graphs in the provided directory
          * @param dir directory containing the graphs

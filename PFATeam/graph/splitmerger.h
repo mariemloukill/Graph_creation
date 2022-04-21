@@ -99,6 +99,43 @@ namespace PFA
         }
     };
 
+
+    template<EdgeContainer Container, template<typename> typename Allocator=std::allocator>
+    class OneGraphSplitMerger
+    {
+        int graphRepresentative;
+    public:
+        OneGraphSplitMerger(int representative=0):graphRepresentative(representative){}
+        Graph<Container>& merge(std::vector<Graph<Container>, Allocator<Graph<Container>>> &graphs)
+        {
+//            std::unordered_map<int,std::vector<int,Allocator<int>>,
+//                    std::hash<int>,std::equal_to<int>,
+//                            Allocator<std::pair<const int,std::vector<int,Allocator<int>>>>> mapper;
+            for(int graphId=0;graphId<graphs.size();graphId++)
+            {
+                if(graphId == graphRepresentative) // don't go through the representative graph
+                    continue;
+                for(auto &&outwardAdjacent:graphs[graphId].adjacencyList) for(auto &&adjacent:outwardAdjacent.second)
+                    graphs[graphRepresentative].addEdge(outwardAdjacent.first,adjacent);
+                graphs[graphId].clear();
+            }
+
+
+//            for(auto &&[vertex,subGraphs]:mapper)
+//            {
+//                for(const auto &graphNumber:subGraphs)
+//                {
+//                    if(graphNumber == graphRepresentative)
+//                        continue;
+//                    for(const auto &adjacentVertex:graphs[graphNumber].adjacencyList[vertex])
+//                        graphs[graphRepresentative].addEdge(vertex,adjacentVertex);
+//                    graphs[graphNumber].clearVertex(vertex);
+//                }
+//            }
+            return graphs[graphRepresentative];
+        }
+    };
+
 }
 
 #endif //PFAPROJECT_SPLITMERGER_H

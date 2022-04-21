@@ -89,6 +89,12 @@ namespace PFA {
             adjacencyList.clearVertex(a);
         }
 
+        void clear()
+        {
+            numberOfVertices=0;
+            adjacencyList.clear();
+        }
+
 
         /**
          * @brief Get the Neighbors of a vertex

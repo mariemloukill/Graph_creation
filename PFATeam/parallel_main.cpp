@@ -1,11 +1,13 @@
 #include <iostream>
 #include "graph/graph.h"
 #include "graph/graph_container.h"
+#include "graph/graphsplit.h"
 #include <chrono>
 #include "tester.h"
 #include <filesystem>
 #include "writer/writer.h"
 #include "memory/MemoryProfiler.h"
+#include "utils.h"
 
 enum Mode
 {
@@ -19,6 +21,7 @@ size_t countLines(std::istream &I)
                       std::istreambuf_iterator<char>(), '\n');
 }
 
+using namespace PFA;
 /**
  * @brief main function
  * @param  filename name of the file to be generated.
@@ -81,9 +84,9 @@ int main(int argc, char** argv)
         writers.addWriter(CSVWriter);
         using  namespace std::chrono_literals;
         PFA::StandardMemoryProfiler profiler(profileFile,200ms);
-        tester.writeGraphCreationAllImplementationsParallel("datasets/parallel",writers,skip);
+        tester.writeGraphCreationAllImplementationsParallel<TestTypes>("datasets/parallel",writers,skip);
         profiler.endProfiler=true;
         profiler.join();
     }
-    else tester.writeGraphCreationAllImplementationsParallel("datasets",writers);
+    else tester.writeGraphCreationAllImplementationsParallel<TestTypes>("datasets",writers);
 }

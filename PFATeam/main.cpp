@@ -6,6 +6,9 @@
 #include <filesystem>
 #include "writer/writer.h"
 #include "memory/MemoryProfiler.h"
+#include "utils.h"
+
+using namespace PFA;
 
 enum Mode
 {
@@ -26,6 +29,7 @@ size_t countLines(std::istream &I)
  * */
 int main(int argc, char** argv) 
 {
+    std::cout;
     PFA::Tester tester(3);
     PFA::MultipleWriter writers;
     PFA::StandardWriter stdWriter(std::cout);
@@ -81,9 +85,9 @@ int main(int argc, char** argv)
         writers.addWriter(CSVWriter);
         using  namespace std::chrono_literals;
         PFA::StandardMemoryProfiler profiler(profileFile,200ms);
-        tester.writeGraphCreationAllImplementationsSequential("datasets",writers,skip);
+        tester.writeGraphCreationAllImplementationsSequential<TestTypes>("datasets",writers,skip);
         profiler.endProfiler=true;
         profiler.join();
     }
-    else tester.writeGraphCreationAllImplementationsSequential("datasets",writers);
+    else tester.writeGraphCreationAllImplementationsSequential<TestTypes>("datasets",writers);
 }
