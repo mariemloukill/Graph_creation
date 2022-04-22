@@ -162,6 +162,6 @@ void MultipleWriter::write(const AlgorithmTestError &testError) {
 }
 
 StandardFileWriter::StandardFileWriter(const std::string& fileName): StandardWriter(file),file(fileName) {
-    if(file.exceptions() | std::ofstream::failbit)
+    if(file.exceptions() & std::ofstream::failbit)
         throw std::runtime_error("Could not open file '" + fileName + "'");
 }

@@ -36,20 +36,28 @@ namespace PFA {
     class ParallelReader {
         std::vector<std::ifstream,Allocator<std::ifstream>> files;
         size_t file_size;
-        std::vector<size_t> pos;
+        std::vector<size_t,Allocator<size_t>> pos;
         std::launch strategy;
+        std::exception_ptr thread_exception;
         Graph<Container> read_chunk(int id)
         {
             size_t chunk_size=pos[id+1]-pos[id];
             size_t current_pos=pos[id];
             constexpr int line_size_upper_bound=18;
-            auto tellg_ignore=chunk_size/line_size_upper_bound;
             Graph<Container> G;
             int a,b;
-            while((files[id] >> a >> b) && current_pos<pos[id+1])
+            try {
+                while ((files[id] >> a >> b) && current_pos < pos[id + 1] && !thread_exception) {
+                    current_pos += fast_digit_count(a) + fast_digit_count(b) + 2;
+                    G.adjacencyList.addEdge(a, b);
+                }
+                if(thread_exception)
+                    return {};
+            }
+            catch(...)
             {
-                current_pos+= fast_digit_count(a)+fast_digit_count(b)+2;
-                G.adjacencyList.addEdge(a, b);
+                thread_exception=std::current_exception();
+                std::rethrow_exception(thread_exception);
             }
             return G;
         }
@@ -73,12 +81,13 @@ namespace PFA {
         virtual ~ParallelReader() = default;
         auto read()
         {
-
+            thread_exception=nullptr;
             // Allocator<std::future<std::vector<Graph<Container>,Allocator<Graph<Container>>>>>
             std::vector<std::future<Graph<Container>>,Allocator<std::future<Graph<Container>>>> futures;
-            for(int i=0;i<files.size()-1;i++)
+            for(int i=0;i<files.size();i++)
                 futures.emplace_back(std::async(strategy,&ParallelReader::read_chunk,this,i));
-            futures.emplace_back(std::async(strategy,&ParallelReader::read_chunk,this,files.size()-1));
+            if(thread_exception)
+                std::rethrow_exception(thread_exception);
             return futures;
         }
     };
