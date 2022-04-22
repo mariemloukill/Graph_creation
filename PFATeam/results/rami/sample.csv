@@ -1,8 +1,1 @@
 "Algorithm Name",Type,"Graph Name","Average Time","Average Memory"
-"VectorVectorContainer",Parallel,"bn-1.8M-166M.edges#01",4289.34,1.33941e+09
-"VectorSetContainer",Parallel,"bn-1.8M-166M.edges#01",9811.74,7.30256e+09
-"VectorUnorderedSetContainer",Parallel,"bn-1.8M-166M.edges#01",9735.42,5.41721e+09
-"MapVectorContainer",Parallel,"bn-1.8M-166M.edges#01",3554.38,1.05126e+09
-"MapSetContainer",Parallel,"bn-1.8M-166M.edges#01",7274.33,6.73844e+09
-"MapUnorderedSetContainer",Parallel,"bn-1.8M-166M.edges#01",7473.08,4.73311e+09
-"UnorderedMapVectorContainer",Parallel,"bn-1.8M-166M.edges#01",3594.52,1.04307e+09

@@ -7,7 +7,7 @@
 #include <filesystem>
 #include "writer/writer.h"
 #include "memory/MemoryProfiler.h"
-#include "utils.h"
+#include "utils/types.h"
 
 enum Mode
 {

@@ -34,8 +34,8 @@ namespace PFA
         {
             std::unordered_map<int,std::vector<int,Allocator<int>>,std::hash<int>,std::equal_to<int>,Allocator<std::pair<const int,std::vector<int,Allocator<int>>>>> mapper;
             for(int graphId=0;graphId<graphs.size();graphId++)
-                for(auto &&edge:graphs[graphId].adjacencyList)
-                    mapper[edge.first].push_back(graphId);
+                for(auto &&outwardAdjacent:graphs[graphId].adjacencyList)
+                    mapper[outwardAdjacent.first].push_back(graphId);
 
             for(auto &&[vertex,subGraphs]:mapper)
             {
@@ -77,8 +77,8 @@ namespace PFA
         {
             std::unordered_map<int,std::vector<int,Allocator<int>>,std::hash<int>,std::equal_to<int>,Allocator<std::pair<const int,std::vector<int,Allocator<int>>>>> mapper;
             for(int graphId=0;graphId<graphs.size();graphId++)
-                for(auto &&edge:graphs[graphId].adjacencyList)
-                    mapper[edge.first].push_back(graphId);
+                for(auto &&outwardAdjacent:graphs[graphId].adjacencyList)
+                    mapper[outwardAdjacent.first].push_back(graphId);
 
             for(auto &&[vertex,subGraphs]:mapper)
             {

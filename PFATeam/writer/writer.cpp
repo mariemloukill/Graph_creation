@@ -81,9 +81,7 @@ void JSONWriter::finalize() {
     StreamWriter::finalize();
 }
 
-JSONWriter::JSONWriter(std::ostream &out) : StreamWriter(out) {
-
-}
+JSONWriter::JSONWriter(std::ostream &out,bool firstWrite) : StreamWriter(out),firstWrite(firstWrite) {}
 
 void JSONWriter::initialize() {
     out << "[" << std::endl;
@@ -129,4 +127,9 @@ void MultipleWriter::addWriter(Writer &writer) {
 void MultipleWriter::initialize() {
     for(auto writer : writers)
         writer->initialize();
+}
+
+StandardFileWriter::StandardFileWriter(const std::string& fileName): StandardWriter(file),file(fileName) {
+    if(file.exceptions() | std::ofstream::failbit)
+        throw std::runtime_error("Could not open file '" + fileName + "'");
 }

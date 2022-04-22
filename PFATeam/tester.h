@@ -181,13 +181,13 @@ namespace PFA
         template<typename TestTypes>
         void writeGraphCreationAllImplementationsSequential(const std::string &dir, Writer &writer,int skip=0)
         {
-            constexpr int numberOfImplementations = 9;
+            constexpr int numberOfImplementations = boost::mp11::mp_size<TestTypes>::value;
             if(skip==0)
                 writer.initialize();
             else skip--;
             for (const auto& dirEntry : std::filesystem::directory_iterator(dir))
             {
-                if(skip>numberOfImplementations)
+                if(skip>=numberOfImplementations)
                 {
                     skip-=numberOfImplementations;
                     continue;
@@ -195,17 +195,20 @@ namespace PFA
                 else
                     writer.write(dirEntry.path().filename().string());
                 boost::mp11::mp_for_each<TestTypes>([&](auto type)
-                                                    {
-                                                        if(skip)
-                                                        {
-                                                            skip--;
-                                                            return;
-                                                        }
-                                                        using Container = decltype(type);
-                                                        writer.write( AlgorithmTest(testTypeName<Container>, "Sequential", dirEntry.path().filename(), numberOfTrials,
-                                                                                    this->testMultipleGraphCreation<Container>(dirEntry.path().string())));
-                                                        GlobalAllocator::resetMax();
-                                                    });
+                    {
+                        if(skip)
+                        {
+                            skip--;
+                            return;
+                        }
+                        using Container = decltype(type);
+                            writer.write(
+                                    AlgorithmTest(testTypeName<Container>, "Sequential", dirEntry.path().filename(),
+                                                  numberOfTrials,
+                                                  this->testMultipleGraphCreation<Container>(
+                                                          dirEntry.path().string())));
+                            GlobalAllocator::resetMax();
+                    });
             }
             writer.finalize();
         }
@@ -214,7 +217,7 @@ namespace PFA
         template<typename TestTypes>
         void writeGraphCreationAllImplementationsParallel(const std::string &dir, Writer &writer,int skip=0)
         {
-            constexpr int numberOfImplementations = 9;
+            constexpr int numberOfImplementations = boost::mp11::mp_size<TestTypes>::value;
             if(skip==0)
                 writer.initialize();
             else skip--;
@@ -224,7 +227,7 @@ namespace PFA
                 auto sep_index=fileRegex.find_last_of('#');
                 if(fileRegex.substr(sep_index+1)!="01")
                     continue;
-                if(skip>numberOfImplementations)
+                if(skip>=numberOfImplementations)
                 {
                     skip-=numberOfImplementations;
                     continue;
@@ -257,13 +260,13 @@ namespace PFA
         template<typename TestTypes>
         void writeGraphCreationAllImplementationsParallelInplace(const std::string &dir, Writer &writer,int count, int skip=0) {
 
-            constexpr int numberOfImplementations = 9;
+            constexpr int numberOfImplementations = boost::mp11::mp_size<TestTypes>::value;
             if(skip==0)
                 writer.initialize();
             else skip--;
             for (const auto& dirEntry : std::filesystem::directory_iterator(dir))
             {
-                if(skip>numberOfImplementations)
+                if(skip>=numberOfImplementations)
                 {
                     skip-=numberOfImplementations;
                     continue;
@@ -271,20 +274,20 @@ namespace PFA
                 else
                     writer.write(dirEntry.path().filename().string());
                 boost::mp11::mp_for_each<TestTypes>([&](auto type)
-                                                    {
-                                                        if(skip)
-                                                        {
-                                                            skip--;
-                                                            return;
-                                                        }
-                                                        using Container = decltype(type);
-                                                        RandomizedSplitMerger<Container, ProfilableAllocator> randomizedSplitMerger;
-                                                        writer.write( AlgorithmTest(testTypeName<Container>, "ParallelInplace", dirEntry.path().filename(), numberOfTrials,
-                                                                                    this->testMultipleGraphCreationParallelInplace<Container>(dirEntry.path().string(),count,
-                                                                                                                                              parallelSplitCreator<Container,ProfilableAllocator>,
-                                                                                                                                              randomizedSplitMerger)));
-                                                        GlobalAllocator::resetMax();
-                                                    });
+                    {
+                        if(skip)
+                        {
+                            skip--;
+                            return;
+                        }
+                        using Container = decltype(type);
+                        RandomizedSplitMerger<Container, ProfilableAllocator> randomizedSplitMerger;
+                        writer.write( AlgorithmTest(testTypeName<Container>, "ParallelInplace", dirEntry.path().filename(), numberOfTrials,
+                                                    this->testMultipleGraphCreationParallelInplace<Container>(dirEntry.path().string(),count,
+                                                                                                              parallelSplitCreator<Container,ProfilableAllocator>,
+                                                                                                              randomizedSplitMerger)));
+                        GlobalAllocator::resetMax();
+                    });
             }
             writer.finalize();
         }

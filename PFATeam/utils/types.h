@@ -2,8 +2,8 @@
 // Created by ramizouari on 21/04/22.
 //
 
-#ifndef PFAPROJECT_UTILS_H
-#define PFAPROJECT_UTILS_H
+#ifndef PFAPROJECT_TYPES_H
+#define PFAPROJECT_TYPES_H
 #include "boost/mp11/mpl.hpp"
 #include "memory/ProfilableAllocator.h"
 #include "graph/graph_container.h"
@@ -23,4 +23,4 @@ namespace PFA
     using CurrentType=boost::mp11::mp_list<VectorVectorContainer<ProfilableAllocator>>;
 }
 
-#endif //PFAPROJECT_UTILS_H
+#endif //PFAPROJECT_TYPES_H

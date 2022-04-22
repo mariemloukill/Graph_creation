@@ -6,6 +6,7 @@
 #define PFAPROJECT_WRITER_H
 #include <ios>
 #include <vector>
+#include <fstream>
 
 namespace PFA
 {
@@ -61,6 +62,12 @@ namespace PFA
         void write(const std::string &) override;
     };
 
+    class StandardFileWriter:public StandardWriter{
+        std::ofstream file;
+    public:
+        explicit StandardFileWriter(const std::string& fileName);
+    };
+
     /**
      * @brief StreamWriter with a CSV Format
      * @details This class is used to write test results with a CSV format.
@@ -80,10 +87,9 @@ namespace PFA
      * @author PFA Team
      */
     class JSONWriter :public StreamWriter{
-        bool finalized;
-        bool firstWrite=true;
+        bool firstWrite;
     public:
-        JSONWriter(std::ostream& out);
+        JSONWriter(std::ostream& out,bool firstWrite=true);
         void write(const AlgorithmTest& data) override;
         void initialize() override;
         void finalize() override;

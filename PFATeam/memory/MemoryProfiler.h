@@ -26,6 +26,7 @@ namespace PFA {
         std::atomic<bool> endProfiler = false;
         MemoryProfiler(std::ostream &out,std::chrono::milliseconds interval=std::chrono::milliseconds(1000),bool writeHeader=true);
         MemoryProfiler(std::chrono::milliseconds interval=std::chrono::milliseconds(1000), bool writeHeader=true);
+        virtual ~MemoryProfiler()=default;
     };
     /**
      * @brief a class for profiling using OS dependent features.
