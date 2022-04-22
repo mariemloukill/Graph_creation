@@ -47,6 +47,26 @@ namespace PFA
                       const std::vector<std::pair<double,double>>& timeMemoryResults);
     };
 
+    struct AlgorithmTestError
+    {
+        /**
+         * @brief The name of the algorithm
+         */
+        std::string name;
+        /**
+         * @brief Type of test: sequential or parallel
+         */
+        std::string type;
+        /**
+         * @brief The name of the graph
+         */
+        std::string graphName;
+
+        std::exception &error;
+
+        AlgorithmTestError(std::string name, std::string type, std::string graphName,std::exception &error);
+    };
+
     class TestResult : public std::vector<AlgorithmTest>
     {
     private:
@@ -61,7 +81,7 @@ namespace PFA
     private:
         int numberOfTrials;
     public:
-        Tester(int numberOfTrials=10);
+        explicit Tester(int numberOfTrials=10);
 
         /**
          * @brief Test the creation of a graph and return the time it took.
@@ -196,20 +216,29 @@ namespace PFA
                     writer.write(dirEntry.path().filename().string());
                 boost::mp11::mp_for_each<TestTypes>([&](auto type)
                     {
-                        if(skip)
-                        {
+                        using Container = decltype(type);
+                        if (skip) {
                             skip--;
                             return;
                         }
-                        using Container = decltype(type);
+                        try
+                        {
                             writer.write(
-                                    AlgorithmTest(testTypeName<Container>, "Sequential", dirEntry.path().filename(),
-                                                  numberOfTrials,
-                                                  this->testMultipleGraphCreation<Container>(
-                                                          dirEntry.path().string())));
-                            GlobalAllocator::resetMax();
-                    });
-            }
+                                AlgorithmTest(testTypeName<Container>, "Sequential", dirEntry.path().filename(),
+                                              numberOfTrials,
+                                              this->testMultipleGraphCreation<Container>(
+                                                      dirEntry.path().string())));
+                        }
+                        catch (std::exception &e) {
+                            AlgorithmTestError testError(testTypeName<Container>, "Sequential", dirEntry.path().filename(), e);
+                            std::cerr << "Error while creating " << testError.name << "with strategy " << testError.type
+                                      << " on graph" << testError.graphName << ". Algorithm crashed." << std::endl;
+                            std::cerr << "Reason: " << e.what() << std::endl;
+                            writer.write(testError);
+                        }
+                         GlobalAllocator::resetMax();
+                        });
+                }
             writer.finalize();
         }
 
@@ -240,18 +269,30 @@ namespace PFA
                         [&](auto F)
                         {
                             using Container=decltype(F);
-                            if(skip==0) {
+                            if (skip) {
+                                skip--;
+                                return;
+                            }
+                            try {
                                 RandomizedSplitMerger<Container, ProfilableAllocator> randomizedSplitMerger;
                                 writer.write(
-                                        AlgorithmTest(testTypeName<Container>, "Parallel", dirEntry.path().filename(), numberOfTrials,
+                                        AlgorithmTest(testTypeName<Container>, "Parallel", dirEntry.path().filename(),
+                                                      numberOfTrials,
                                                       this->testMultipleGraphCreationParallel<Container>(
                                                               fileRegex,
-                                                              parallelSplitCreator<Container,ProfilableAllocator>,
+                                                              parallelSplitCreator<Container, ProfilableAllocator>,
                                                               randomizedSplitMerger)));
-                                GlobalAllocator::resetMax();
                             }
-                            else
-                                skip--;
+                            catch(std::exception &e)
+                            {
+                                AlgorithmTestError testError(testTypeName<Container>, "Parallel", dirEntry.path().filename(), e);
+                                std::cerr << "Error while creating " << testError.name << "with strategy " << testError.type
+                                    << " on graph" << testError.graphName << ". Algorithm crashed." << std::endl;
+                                std::cerr << "Reason: " << e.what() << std::endl;
+                                writer.write(testError);
+                            }
+                            GlobalAllocator::resetMax();
+
                         });
             }
             writer.finalize();
@@ -281,11 +322,23 @@ namespace PFA
                             return;
                         }
                         using Container = decltype(type);
-                        RandomizedSplitMerger<Container, ProfilableAllocator> randomizedSplitMerger;
-                        writer.write( AlgorithmTest(testTypeName<Container>, "ParallelInplace", dirEntry.path().filename(), numberOfTrials,
-                                                    this->testMultipleGraphCreationParallelInplace<Container>(dirEntry.path().string(),count,
-                                                                                                              parallelSplitCreator<Container,ProfilableAllocator>,
-                                                                                                              randomizedSplitMerger)));
+                        try {
+                            RandomizedSplitMerger<Container, ProfilableAllocator> randomizedSplitMerger;
+                            writer.write(AlgorithmTest(testTypeName<Container>, "ParallelInplace",
+                                                       dirEntry.path().filename(), numberOfTrials,
+                                                       this->testMultipleGraphCreationParallelInplace<Container>(
+                                                               dirEntry.path().string(), count,
+                                                               parallelSplitCreator<Container, ProfilableAllocator>,
+                                                               randomizedSplitMerger)));
+                        }
+                        catch(std::exception &e)
+                        {
+                            AlgorithmTestError testError(testTypeName<Container>, "ParallelInplace", dirEntry.path().filename(), e);
+                            std::cerr << "Error while creating " << testError.name << "with strategy " << testError.type
+                                      << " on graph" << testError.graphName << ". Algorithm crashed." << std::endl;
+                            std::cerr << "Reason: " << e.what() << std::endl;
+                            writer.write(testError);
+                        }
                         GlobalAllocator::resetMax();
                     });
             }

@@ -34,6 +34,9 @@ for(auto&& [time,memory] : timeMemoryResults){
 }
 
 
+AlgorithmTestError::AlgorithmTestError(std::string name, std::string type, std::string graphName,std::exception &error) :
+        name(std::move(name)), type(std::move(type)), graphName(std::move(graphName)), error(error){}
+
 TestResult::TestResult(std::string type):type(std::move(type)) {}
 
 namespace PFA

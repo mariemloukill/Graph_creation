@@ -1,0 +1,8 @@
+"Algorithm Name"	Type	"Graph Name"	"Average Time"	"Average Memory"
+"VectorVectorContainer"	ParallelInplace	"bn-7k-50k.edges"	13.699	998860
+"VectorVectorContainer"	ParallelInplace	"bn-34k-181k.edges"	31.682	4.31811e+06
+"VectorVectorContainer"	ParallelInplace	"bn-65-1K.edges"	1.437	13332
+"VectorVectorContainer"	ParallelInplace	"bn-100k-662k.edges"	121.55	1.63358e+07
+"VectorVectorContainer"	ParallelInplace	"bn-434k-16M.edges"	1237.96	1.21666e+08
+"VectorVectorContainer"	ParallelInplace	"bn-449k-3.3M.edges"	647.694	9.24397e+07
+"VectorVectorContainer"	ParallelInplace	"bn-800-19k.edges"	7.228	194288

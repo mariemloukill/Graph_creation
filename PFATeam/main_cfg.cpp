@@ -248,9 +248,9 @@ int main(int argc, char** argv)
         {
             if(vm["test-types"].as<std::string>()=="one")
                 tester.writeGraphCreationAllImplementationsParallelInplace<CurrentType>(
-                    vm["graphs-folder"].as<std::filesystem::path>(), writers, 8, skip);
+                    vm["graphs-folder"].as<std::filesystem::path>(), writers, 3, skip);
             else tester.writeGraphCreationAllImplementationsParallelInplace<TestTypes>(
-                    vm["graphs-folder"].as<std::filesystem::path>(), writers, 8, skip);
+                    vm["graphs-folder"].as<std::filesystem::path>(), writers, 3, skip);
         }
         else {
             if(vm["test-types"].as<std::string>()=="one")

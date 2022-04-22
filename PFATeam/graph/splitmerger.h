@@ -111,13 +111,13 @@ namespace PFA
 //            std::unordered_map<int,std::vector<int,Allocator<int>>,
 //                    std::hash<int>,std::equal_to<int>,
 //                            Allocator<std::pair<const int,std::vector<int,Allocator<int>>>>> mapper;
-            for(int graphId=0;graphId<graphs.size();graphId++)
+            for(int graphId=graphs.size()-1;graphId>=0;graphId--)
             {
                 if(graphId == graphRepresentative) // don't go through the representative graph
                     continue;
                 for(auto &&outwardAdjacent:graphs[graphId].adjacencyList) for(auto &&adjacent:outwardAdjacent.second)
                     graphs[graphRepresentative].addEdge(outwardAdjacent.first,adjacent);
-                graphs[graphId].clear();
+                graphs.pop_back();
             }
 
 

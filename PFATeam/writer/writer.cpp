@@ -33,6 +33,13 @@ void CSVWriter::write(const AlgorithmTest &test)
     << separator << timeAvg << separator << memoryAvg << std::endl;
 }
 
+void CSVWriter::write(const AlgorithmTestError &testError) {
+    out << '"' << testError.name << '"'
+        << separator << testError.type << separator
+        << '"' << testError.graphName << '"'
+        << separator << "CRASHED" << separator << "CRASHED" << std::endl;
+}
+
 void StandardWriter::write(const AlgorithmTest &test) {
     double timeAvg= std::reduce(test.timeResults.begin(), test.timeResults.end(), 0.0) / test.timeResults.size();
     out << std::left << std::setfill('.') << std::setw(40) << test.name
@@ -44,6 +51,12 @@ void StandardWriter::write(const AlgorithmTest &test) {
 void StandardWriter::write(const std::string &graphFile)
 {
     out << "Testing on graph file '" << graphFile << "':" << std::endl;
+}
+
+void StandardWriter::write(const AlgorithmTestError &testError) {
+    out << std::left << std::setfill('.') << std::setw(40) << testError.name
+        << std::right << std::setfill('.') << std::setw(40)  << "CRASHED" << std::endl;
+    out << "Reason: " << testError.error.what() << std::endl;
 }
 
 void JSONWriter::write(const AlgorithmTest &test)
@@ -87,6 +100,20 @@ void JSONWriter::initialize() {
     out << "[" << std::endl;
 }
 
+void JSONWriter::write(const AlgorithmTestError &testError) {
+    if(!firstWrite)
+        out << ",";
+    firstWrite=false;
+    out << "{" << std::endl;
+    out << R"("Algorithm Name": ")" << testError.name << "\"," << std::endl;
+    out << R"("Type": ")" << testError.type << "\"," << std::endl;
+    out << R"("Graph Name": ")" << testError.graphName << "\"," << std::endl;
+    out << R"("Test Times": ["CRASHED"],)" << std::endl;
+    out << R"("Test Memories": ["CRASHED"])" << std::endl;
+    out << R"("Error": ")" << testError.error.what() << '"' << std::endl;
+    out << "}" << std::endl;
+}
+
 void Writer::finalize() {
     finalized = true;
 }
@@ -127,6 +154,11 @@ void MultipleWriter::addWriter(Writer &writer) {
 void MultipleWriter::initialize() {
     for(auto writer : writers)
         writer->initialize();
+}
+
+void MultipleWriter::write(const AlgorithmTestError &testError) {
+    for(auto writer : writers)
+        writer->write(testError);
 }
 
 StandardFileWriter::StandardFileWriter(const std::string& fileName): StandardWriter(file),file(fileName) {

@@ -1,0 +1,64 @@
+[
+{
+"Algorithm Name": "VectorVectorContainer",
+"Type": "ParallelInplace",
+"Graph Name": "bn-7k-50k.edges",
+"Test Times": [
+13.699],
+"Test Memories": [
+998860]
+}
+,{
+"Algorithm Name": "VectorVectorContainer",
+"Type": "ParallelInplace",
+"Graph Name": "bn-34k-181k.edges",
+"Test Times": [
+31.682],
+"Test Memories": [
+4.31811e+06]
+}
+,{
+"Algorithm Name": "VectorVectorContainer",
+"Type": "ParallelInplace",
+"Graph Name": "bn-65-1K.edges",
+"Test Times": [
+1.437],
+"Test Memories": [
+13332]
+}
+,{
+"Algorithm Name": "VectorVectorContainer",
+"Type": "ParallelInplace",
+"Graph Name": "bn-100k-662k.edges",
+"Test Times": [
+121.55],
+"Test Memories": [
+1.63358e+07]
+}
+,{
+"Algorithm Name": "VectorVectorContainer",
+"Type": "ParallelInplace",
+"Graph Name": "bn-434k-16M.edges",
+"Test Times": [
+1237.96],
+"Test Memories": [
+1.21666e+08]
+}
+,{
+"Algorithm Name": "VectorVectorContainer",
+"Type": "ParallelInplace",
+"Graph Name": "bn-449k-3.3M.edges",
+"Test Times": [
+647.694],
+"Test Memories": [
+9.24397e+07]
+}
+,{
+"Algorithm Name": "VectorVectorContainer",
+"Type": "ParallelInplace",
+"Graph Name": "bn-800-19k.edges",
+"Test Times": [
+7.228],
+"Test Memories": [
+194288]
+}

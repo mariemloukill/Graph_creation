@@ -11,6 +11,7 @@
 namespace PFA
 {
     class AlgorithmTest;
+    class AlgorithmTestError;
     /**
      * @brief The Writer base class
      * @details This class is used to write test results.
@@ -25,6 +26,7 @@ namespace PFA
      * @details This method is used to write a test result.
      */
         virtual void write(const AlgorithmTest&)=0;
+        virtual void write(const AlgorithmTestError&)=0;
         /**
          * @brief Write a comment
          * @details This method is used to write a human readable comment, It is ignored unless the instance is a StandardWriter.
@@ -59,6 +61,7 @@ namespace PFA
     public:
         using StreamWriter::StreamWriter;
         void write(const AlgorithmTest&) override;
+        void write(const AlgorithmTestError&) override;
         void write(const std::string &) override;
     };
 
@@ -78,6 +81,7 @@ namespace PFA
     public:
         CSVWriter(std::ostream& out,char sep=',');
         void write(const AlgorithmTest& data) override;
+        void write(const AlgorithmTestError&) override;
         void initialize() override;
     };
 
@@ -91,6 +95,7 @@ namespace PFA
     public:
         JSONWriter(std::ostream& out,bool firstWrite=true);
         void write(const AlgorithmTest& data) override;
+        void write(const AlgorithmTestError&) override;
         void initialize() override;
         void finalize() override;
     };
@@ -106,6 +111,7 @@ namespace PFA
     public:
         MultipleWriter(std::vector<Writer*> writers={});
         void write(const AlgorithmTest&) override;
+        void write(const AlgorithmTestError&) override;
         void write(const std::string &) override;
         void finalize() override;
         void initialize() override;
