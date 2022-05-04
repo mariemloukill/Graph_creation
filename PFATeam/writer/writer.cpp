@@ -16,7 +16,7 @@ CSVWriter::CSVWriter(std::ostream &out, char sep): StreamWriter(out), separator(
 
 void CSVWriter::initialize() {
     out << "\"Algorithm Name\"" << separator << "Type" << separator << "\"Graph Name\"" << separator
-    << "\"Average Time\"" << separator << "\"Average Memory\"" << std::endl;
+    << "\"Average Time\"" << separator << "\"Average Memory\"" << separator << "\"Start Time\"" << separator << "\"End Time\"" <<  std::endl;
 
 }
 
@@ -30,7 +30,7 @@ void CSVWriter::write(const AlgorithmTest &test)
     out << '"' << test.name << '"'
     << separator << test.type << separator
     << '"' << test.graphName << '"'
-    << separator << timeAvg << separator << memoryAvg << std::endl;
+    << separator << timeAvg << separator << memoryAvg << separator << test.startTime << separator << test.endTime << std::endl;
 }
 
 void CSVWriter::write(const AlgorithmTestError &testError) {
@@ -85,7 +85,9 @@ void JSONWriter::write(const AlgorithmTest &test)
         out << memory;
         firstWriteTime=false;
     }
-    out << "]" << std::endl;
+    out << "]," << std::endl;
+    out << R"("Start Time" : ")" << test.startTime << "\"," << std::endl;
+    out << R"("End Time" : ")" << test.endTime << "\"" << std::endl;
     out << "}" << std::endl;
 }
 

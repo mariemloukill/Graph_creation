@@ -1,0 +1,6 @@
+"Algorithm Name"	Type	"Graph Name"	"Average Time"	"Average Memory"	"Start Time"	"End Time"
+"VectorVectorContainer"	ParallelInplace#2	"soc-orkut-dir_120M.edges"	9805.51	8.7866e+08	2022-Apr-30 00:52:42.417405	2022-Apr-30 00:53:12.295475
+"VectorVectorContainer"	ParallelInplace#4	"soc-orkut-dir_120M.edges"	8969.48	1.07584e+09	2022-Apr-30 00:53:12.295650	2022-Apr-30 00:53:39.687744
+"VectorVectorContainer"	ParallelInplace#8	"soc-orkut-dir_120M.edges"	4881.89	1.07101e+09	2022-Apr-30 00:53:39.687875	2022-Apr-30 00:53:54.812804
+"VectorVectorContainer"	ParallelInplace#12	"soc-orkut-dir_120M.edges"	3663.07	1.26162e+09	2022-Apr-30 00:53:54.812984	2022-Apr-30 00:54:06.235381
+"VectorVectorContainer"	ParallelInplace#16	"soc-orkut-dir_120M.edges"	3246.61	1.44929e+09	2022-Apr-30 00:54:06.235731	2022-Apr-30 00:54:16.443596

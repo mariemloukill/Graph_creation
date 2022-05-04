@@ -6,10 +6,12 @@
 #include "writer/writer.h"
 #include <iomanip>
 #include <chrono>
+#include <boost/chrono.hpp>
 #include <iostream>
 #include "graph/splitcreator.h"
 #include "graph/splitmerger.h"
 #include "boost/mp11/mpl.hpp"
+#include "boost/date_time/posix_time/posix_time.hpp"
 
 
 namespace PFA
@@ -41,10 +43,11 @@ namespace PFA
          */
         std::vector<double> timeResults;
         std::vector<double> memoryResults;
+        boost::posix_time::ptime  startTime, endTime;
         AlgorithmTest(std::string name, std::string type, std::string graphName, int numberOfTrials,
-                      std::vector<double> timeResults, std::vector<double> memoryResults);
+                      std::vector<double> timeResults, std::vector<double> memoryResults,boost::posix_time::ptime startTime);
         AlgorithmTest(std::string name, std::string type, std::string graphName, int numberOfTrials,
-                      const std::vector<std::pair<double,double>>& timeMemoryResults);
+                      const std::vector<std::pair<double,double>>& timeMemoryResults, boost::posix_time::ptime startTime);
     };
 
     struct AlgorithmTestError
@@ -110,8 +113,46 @@ namespace PFA
  * @return double time in milliseconds
  */
         template<typename Container>
+        double testGraphCreationParallel(std::string path,SplitCreator<Container,ProfilableAllocator>& splitCreator,
+                                         OneGraphSplitMerger<Container,ProfilableAllocator>& splitMerger)
+        {
+            std::ios_base::sync_with_stdio(false);
+            auto start = std::chrono::system_clock::now();
+            auto graphs=splitCreator.createSplitsFromFileRegex(path);
+            splitMerger.merge(graphs);
+            auto end=std::chrono::system_clock::now();
+            return std::chrono::duration_cast<std::chrono::microseconds>(end - start).count()/1000.0;
+        }
+
+        /**
+ * @brief Test the creation of a graph and return the time it took.
+ *
+ * @tparam Container Container type
+ * @param path path to the graph file
+ * @return double time in milliseconds
+ */
+        template<typename Container>
         double testGraphCreationParallelInplace(std::string path,int count,SplitCreator<Container,ProfilableAllocator>& splitCreator,
                                          SplitMerger<Container,ProfilableAllocator>& splitMerger)
+        {
+            std::ios_base::sync_with_stdio(false);
+            auto start = std::chrono::system_clock::now();
+            auto graphs=splitCreator.createSplitsFromFile(path,count);
+            splitMerger.merge(graphs);
+            auto end=std::chrono::system_clock::now();
+            return std::chrono::duration_cast<std::chrono::microseconds>(end - start).count()/1000.0;
+        }
+
+        /**
+* @brief Test the creation of a graph and return the time it took.
+*
+* @tparam Container Container type
+* @param path path to the graph file
+* @return double time in milliseconds
+*/
+        template<typename Container>
+        double testGraphCreationParallelInplace(std::string path,int count,SplitCreator<Container,ProfilableAllocator>& splitCreator,
+                                                OneGraphSplitMerger<Container,ProfilableAllocator>& splitMerger)
         {
             std::ios_base::sync_with_stdio(false);
             auto start = std::chrono::system_clock::now();
@@ -187,6 +228,17 @@ namespace PFA
         }
 
         template<typename Container>
+        std::vector<std::pair<double,double>> testMultipleGraphCreationParallel(std::string path,SplitCreator<Container,ProfilableAllocator>& splitCreator,
+                                                                                OneGraphSplitMerger<Container,ProfilableAllocator>& splitMerger) {
+            std::vector<std::pair<double,double>> avg;
+            for (int i=0 ; i<numberOfTrials ; i++) {
+                double time=testGraphCreationParallel<Container>(path,splitCreator,splitMerger);
+                avg.emplace_back(time,GlobalAllocator::max_memory);
+            }
+            return avg;
+        }
+
+        template<typename Container>
         std::vector<std::pair<double,double>> testMultipleGraphCreationParallelInplace(std::string path,int count,SplitCreator<Container,ProfilableAllocator>& splitCreator,
                                                                                 SplitMerger<Container,ProfilableAllocator>& splitMerger) {
             std::vector<std::pair<double,double>> avg;
@@ -197,9 +249,20 @@ namespace PFA
             return avg;
         }
 
+        template<typename Container>
+        std::vector<std::pair<double,double>> testMultipleGraphCreationParallelInplace(std::string path,int count,SplitCreator<Container,ProfilableAllocator>& splitCreator,
+                                                                                       OneGraphSplitMerger<Container,ProfilableAllocator>& splitMerger) {
+            std::vector<std::pair<double,double>> avg;
+            for (int i=0 ; i<numberOfTrials ; i++) {
+                double time=testGraphCreationParallelInplace<Container>(path,count,splitCreator,splitMerger);
+                avg.emplace_back(time,GlobalAllocator::max_memory);
+            }
+            return avg;
+        }
+
 
         template<typename TestTypes>
-        void writeGraphCreationAllImplementationsSequential(const std::string &dir, Writer &writer,int skip=0)
+        int writeGraphCreationAllImplementationsSequential(const std::string &dir, Writer &writer,int skip=0,bool finalize=true)
         {
             constexpr int numberOfImplementations = boost::mp11::mp_size<TestTypes>::value;
             if(skip==0)
@@ -223,11 +286,12 @@ namespace PFA
                         }
                         try
                         {
+                            boost::posix_time::ptime start = boost::posix_time::microsec_clock::local_time();
                             writer.write(
                                 AlgorithmTest(testTypeName<Container>, "Sequential", dirEntry.path().filename(),
                                               numberOfTrials,
                                               this->testMultipleGraphCreation<Container>(
-                                                      dirEntry.path().string())));
+                                                      dirEntry.path().string()),start));
                         }
                         catch (std::exception &e) {
                             AlgorithmTestError testError(testTypeName<Container>, "Sequential", dirEntry.path().filename(), e);
@@ -239,12 +303,14 @@ namespace PFA
                          GlobalAllocator::resetMax();
                         });
                 }
-            writer.finalize();
+            if(finalize)
+                writer.finalize();
+            return skip+1;
         }
 
 
         template<typename TestTypes>
-        void writeGraphCreationAllImplementationsParallel(const std::string &dir, Writer &writer,int skip=0)
+        int writeGraphCreationAllImplementationsParallel(const std::string &dir, Writer &writer,int skip=0,bool finalize=true)
         {
             constexpr int numberOfImplementations = boost::mp11::mp_size<TestTypes>::value;
             if(skip==0)
@@ -274,14 +340,15 @@ namespace PFA
                                 return;
                             }
                             try {
-                                RandomizedSplitMerger<Container, ProfilableAllocator> randomizedSplitMerger;
+                                OneGraphSplitMerger<Container, ProfilableAllocator> oneGraphSplitMerger;
+                                boost::posix_time::ptime start = boost::posix_time::microsec_clock::local_time();
                                 writer.write(
                                         AlgorithmTest(testTypeName<Container>, "Parallel", dirEntry.path().filename(),
                                                       numberOfTrials,
                                                       this->testMultipleGraphCreationParallel<Container>(
                                                               fileRegex,
                                                               parallelSplitCreator<Container, ProfilableAllocator>,
-                                                              randomizedSplitMerger)));
+                                                              oneGraphSplitMerger),start));
                             }
                             catch(std::exception &e)
                             {
@@ -295,13 +362,17 @@ namespace PFA
 
                         });
             }
-            writer.finalize();
+            if(finalize)
+                writer.finalize();
+            return skip+1;
         }
 
         template<typename TestTypes>
-        void writeGraphCreationAllImplementationsParallelInplace(const std::string &dir, Writer &writer,int count, int skip=0) {
-
+        int writeGraphCreationAllImplementationsParallelInplace(const std::string &dir, Writer &writer,int count, int skip=0,bool finalize=true)
+        {
             constexpr int numberOfImplementations = boost::mp11::mp_size<TestTypes>::value;
+            std::string strategyName = "ParallelInplace#";
+            strategyName+=std::to_string(count);
             if(skip==0)
                 writer.initialize();
             else skip--;
@@ -323,17 +394,18 @@ namespace PFA
                         }
                         using Container = decltype(type);
                         try {
-                            RandomizedSplitMerger<Container, ProfilableAllocator> randomizedSplitMerger;
-                            writer.write(AlgorithmTest(testTypeName<Container>, "ParallelInplace",
+                            OneGraphSplitMerger<Container, ProfilableAllocator> oneGraphSplitMerger;
+                            boost::posix_time::ptime start = boost::posix_time::microsec_clock::local_time();
+                            writer.write(AlgorithmTest(testTypeName<Container>, strategyName,
                                                        dirEntry.path().filename(), numberOfTrials,
                                                        this->testMultipleGraphCreationParallelInplace<Container>(
                                                                dirEntry.path().string(), count,
                                                                parallelSplitCreator<Container, ProfilableAllocator>,
-                                                               randomizedSplitMerger)));
+                                                               oneGraphSplitMerger),start));
                         }
                         catch(std::exception &e)
                         {
-                            AlgorithmTestError testError(testTypeName<Container>, "ParallelInplace", dirEntry.path().filename(), e);
+                            AlgorithmTestError testError(testTypeName<Container>, strategyName, dirEntry.path().filename(), e);
                             std::cerr << "Error while creating " << testError.name << "with strategy " << testError.type
                                       << " on graph" << testError.graphName << ". Algorithm crashed." << std::endl;
                             std::cerr << "Reason: " << e.what() << std::endl;
@@ -342,7 +414,9 @@ namespace PFA
                         GlobalAllocator::resetMax();
                     });
             }
-            writer.finalize();
+            if(finalize)
+                writer.finalize();
+            return skip+1;
         }
 
 
