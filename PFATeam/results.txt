@@ -1,0 +1,92 @@
+[
+{
+"Algorithm Name": "VectorVectorContainer",
+"Type": "Sequential",
+"Graph Name": "Link to bn-1.8M-166M.edges",
+"Test Times": [
+22887.9
+],
+"Test Memories": [
+]
+}
+,{
+"Algorithm Name": "VectorSetContainer",
+"Type": "Sequential",
+"Graph Name": "Link to bn-1.8M-166M.edges",
+"Test Times": [
+27300.1
+],
+"Test Memories": [
+]
+}
+,{
+"Algorithm Name": "VectorUnorderedSetContainer",
+"Type": "Sequential",
+"Graph Name": "Link to bn-1.8M-166M.edges",
+"Test Times": [
+26273.9
+],
+"Test Memories": [
+]
+}
+,{
+"Algorithm Name": "MapVectorContainer",
+"Type": "Sequential",
+"Graph Name": "Link to bn-1.8M-166M.edges",
+"Test Times": [
+21164.9
+],
+"Test Memories": [
+]
+}
+,{
+"Algorithm Name": "MapSetContainer",
+"Type": "Sequential",
+"Graph Name": "Link to bn-1.8M-166M.edges",
+"Test Times": [
+30014.2
+],
+"Test Memories": [
+]
+}
+,{
+"Algorithm Name": "MapUnorderedSetContainer",
+"Type": "Sequential",
+"Graph Name": "Link to bn-1.8M-166M.edges",
+"Test Times": [
+30582
+],
+"Test Memories": [
+]
+}
+,{
+"Algorithm Name": "UnorderedMapVectorContainer",
+"Type": "Sequential",
+"Graph Name": "Link to bn-1.8M-166M.edges",
+"Test Times": [
+17024.3
+],
+"Test Memories": [
+]
+}
+,{
+"Algorithm Name": "UnorderedMapSetContainer",
+"Type": "Sequential",
+"Graph Name": "Link to bn-1.8M-166M.edges",
+"Test Times": [
+26028.9
+],
+"Test Memories": [
+]
+}
+,{
+"Algorithm Name": "UnorderedMapUnorderedSetContainer",
+"Type": "Sequential",
+"Graph Name": "Link to bn-1.8M-166M.edges",
+"Test Times": [
+26809.6
+],
+"Test Memories": [
+]
+}
+]

@@ -1,0 +1,34 @@
+[
+{
+"Algorithm Name": "VectorVectorContainer",
+"Type": "ParallelInplace#2",
+"Graph Name": "bn-449k-3.3M.edges",
+"Test Times": [
+378.517, 481.276, 474.152, 477.469, 432.874],
+"Test Memories": [
+6.10743e+07, 6.10743e+07, 6.10743e+07, 6.10743e+07, 6.10743e+07],
+"Start Time" : "2022-Apr-24 22:25:52.016052",
+"End Time" : "2022-Apr-24 22:25:54.316645"
+}
+,{
+"Algorithm Name": "VectorVectorContainer",
+"Type": "ParallelInplace#2",
+"Graph Name": "bn-7k-50k.edges",
+"Test Times": [
+22.611, 9.775, 9.693, 9.676, 15.234],
+"Test Memories": [
+734524, 734524, 734524, 734524, 734524],
+"Start Time" : "2022-Apr-24 22:25:54.316796",
+"End Time" : "2022-Apr-24 22:25:54.385354"
+}
+,{
+"Algorithm Name": "VectorVectorContainer",
+"Type": "ParallelInplace#2",
+"Graph Name": "bn-34k-181k.edges",
+"Test Times": [
+46.152, 43.287, 38.969, 49.242, 38.539],
+"Test Memories": [
+3.26592e+06, 3.26592e+06, 3.26592e+06, 3.26592e+06, 3.52148e+06],
+"Start Time" : "2022-Apr-24 22:25:54.385606",
+"End Time" : "2022-Apr-24 22:25:54.610634"
+}
