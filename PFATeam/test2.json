@@ -1,0 +1,532 @@
+[
+{
+"Algorithm Name": "VectorVectorContainer",
+"Type": "ParallelInplace",
+"Graph Name": "bn-1.8M-166M.edges",
+"Test Times": [
+27584.8, 35112.4, 34930.7, 35081.1, 35061.3, 34887.6, 35052.9, 35042.3, 34930.4, 34923.3],
+"Test Memories": [
+1.15665e+09, 1.15665e+09, 1.15665e+09, 1.15665e+09, 1.15665e+09, 1.15665e+09, 1.15665e+09, 1.15665e+09, 1.15665e+09, 1.15665e+09]
+}
+,{
+"Algorithm Name": "VectorVectorContainer",
+"Type": "ParallelInplace",
+"Graph Name": "bn-7k-50k.edges",
+"Test Times": [
+44.551, 31.985, 31.872, 31.971, 32.022, 32.062, 31.972, 32.074, 31.949, 32.225],
+"Test Memories": [
+998860, 998860, 998860, 998860, 998860, 998860, 998860, 998860, 998860, 998860]
+}
+,{
+"Algorithm Name": "VectorVectorContainer",
+"Type": "ParallelInplace",
+"Graph Name": "bn-34k-181k.edges",
+"Test Times": [
+129.631, 130.002, 128.041, 129.026, 129.357, 128.564, 129.891, 129.637, 128.126, 129.788],
+"Test Memories": [
+4.31811e+06, 4.31811e+06, 4.31811e+06, 4.31811e+06, 4.31811e+06, 4.31811e+06, 4.31811e+06, 4.31811e+06, 4.31811e+06, 4.31811e+06]
+}
+,{
+"Algorithm Name": "VectorVectorContainer",
+"Type": "ParallelInplace",
+"Graph Name": "bn-65-1K.edges",
+"Test Times": [
+0.736, 0.622, 0.631, 0.649, 0.674, 0.625, 0.645, 0.61, 0.627, 1.1],
+"Test Memories": [
+13380, 13380, 13380, 13380, 13380, 13380, 13380, 13380, 13380, 13380]
+}
+,{
+"Algorithm Name": "VectorVectorContainer",
+"Type": "ParallelInplace",
+"Graph Name": "bn-100k-662k.edges",
+"Test Times": [
+499.715, 490.391, 492.75, 492.607, 492.195, 493.879, 491.723, 493.14, 493.062, 491],
+"Test Memories": [
+1.63358e+07, 1.63358e+07, 1.63358e+07, 1.63358e+07, 1.63358e+07, 1.63358e+07, 1.63358e+07, 1.63358e+07, 1.63358e+07, 1.63358e+07]
+}
+,{
+"Algorithm Name": "VectorVectorContainer",
+"Type": "ParallelInplace",
+"Graph Name": "bn-434k-16M.edges",
+"Test Times": [
+3756.44, 3721.75, 3720.75, 3712.26, 3715.84, 3711.18, 3717.47, 3712.93, 3715.99, 3715.34],
+"Test Memories": [
+1.21666e+08, 1.21666e+08, 1.21666e+08, 1.21666e+08, 1.21666e+08, 1.21666e+08, 1.21666e+08, 1.21666e+08, 1.21666e+08, 1.21666e+08]
+}
+,{
+"Algorithm Name": "VectorVectorContainer",
+"Type": "ParallelInplace",
+"Graph Name": "bn-449k-3.3M.edges",
+"Test Times": [
+2671.44, 2655.95, 2640.34, 2651.71, 2661.85, 2646.54, 2630.32, 2651.36, 2648.49, 2646.87],
+"Test Memories": [
+9.24397e+07, 9.24397e+07, 9.24397e+07, 9.24397e+07, 9.24397e+07, 9.24397e+07, 9.24397e+07, 9.24397e+07, 9.24397e+07, 9.24397e+07]
+}
+,{
+"Algorithm Name": "VectorVectorContainer",
+"Type": "ParallelInplace",
+"Graph Name": "bn-800-19k.edges",
+"Test Times": [
+6.992, 6.907, 6.912, 6.982, 6.885, 6.905, 6.819, 6.78, 6.922, 6.976],
+"Test Memories": [
+194288, 194288, 194288, 194288, 194288, 194288, 194288, 194288, 194288, 194288]
+}
+,{
+"Algorithm Name": "VectorVectorContainer",
+"Type": "ParallelInplace",
+"Graph Name": "bn-human-BNU_1_0025868_session_1-bg_150M.edges",
+"Test Times": [
+30523.8, 30427.4, 30354.9, 30379.8, 30495.9, 30252.5, 30311.6, 30398.8, 30705.2, 30391.6],
+"Test Memories": [
+9.86372e+08, 9.86372e+08, 9.86372e+08, 9.86372e+08, 9.86372e+08, 9.86372e+08, 9.86372e+08, 9.86372e+08, 9.86372e+08, 9.86372e+08]
+}
+,{
+"Algorithm Name": "VectorVectorContainer",
+"Type": "ParallelInplace",
+"Graph Name": "bn-human-BNU_1_0025869_session_2-bg_150M.edges",
+"Test Times": [
+30500, 29723.5, 29621.7, 29614, 29711.7, 29721.2, 29776.8, 29743.8, 29657.4, 29641.3],
+"Test Memories": [
+9.6734e+08, 9.6734e+08, 9.6734e+08, 9.6734e+08, 9.6734e+08, 9.6734e+08, 9.6734e+08, 9.6734e+08, 9.6734e+08, 9.6734e+08]
+}
+,{
+"Algorithm Name": "VectorVectorContainer",
+"Type": "ParallelInplace",
+"Graph Name": "bn-human-BNU_1_0025871_session_1-bg_170M.edges",
+"Test Times": [
+33488.7, 32821, 32966.4, 32716.9, 32989.4, 32635.4, 32824.8, 32845, 32908, 32703.5],
+"Test Memories": [
+1.07148e+09, 1.07148e+09, 1.07148e+09, 1.07148e+09, 1.07148e+09, 1.07148e+09, 1.07148e+09, 1.07148e+09, 1.07148e+09, 1.07148e+09]
+}
+,{
+"Algorithm Name": "VectorVectorContainer",
+"Type": "ParallelInplace",
+"Graph Name": "bn-human-BNU_1_0025876_session_2-bg_140M.edges",
+"Test Times": [
+28761, 28997.9, 27708.6, 27849.3, 27741.5, 27723, 27683.7, 27721.8, 27829.5, 27772.7],
+"Test Memories": [
+9.02658e+08, 9.02658e+08, 9.02658e+08, 9.02658e+08, 9.02658e+08, 9.02658e+08, 9.02658e+08, 9.02658e+08, 9.02658e+08, 9.02658e+08]
+}
+,{
+"Algorithm Name": "VectorVectorContainer",
+"Type": "ParallelInplace",
+"Graph Name": "bn-human-BNU_1_0025889_session_2_130M.edges",
+"Test Times": [
+28388.5, 28017.7, 27460.5, 27710.5, 27837.4, 27995.3, 27964.8, 27723.2, 27978, 27890.2],
+"Test Memories": [
+9.15718e+08, 9.15718e+08, 9.15718e+08, 9.15718e+08, 9.15718e+08, 9.15718e+08, 9.15718e+08, 9.15718e+08, 9.15718e+08, 9.15718e+08]
+}
+,{
+"Algorithm Name": "VectorVectorContainer",
+"Type": "ParallelInplace",
+"Graph Name": "bn-human-BNU_1_0025914_session_2_100M.edges",
+"Test Times": [
+23623.7, 23230.6, 23082.6, 23032.1, 22955.6, 23143.3, 23152.3, 23051.3, 23135.7, 23082],
+"Test Memories": [
+7.21738e+08, 7.22022e+08, 7.22022e+08, 7.22022e+08, 7.22022e+08, 7.22022e+08, 7.22022e+08, 7.22022e+08, 7.22022e+08, 7.22022e+08]
+}
+,{
+"Algorithm Name": "VectorVectorContainer",
+"Type": "ParallelInplace",
+"Graph Name": "bn-human-BNU_1_0025916_session_1_110M.edges",
+"Test Times": [
+24847.1, 24253.8, 24562.7, 24125.1, 24042.4, 24133.8, 24245.6, 24178.4, 24272.5, 24175.4],
+"Test Memories": [
+7.65345e+08, 7.65345e+08, 7.65345e+08, 7.65345e+08, 7.65345e+08, 7.65345e+08, 7.65345e+08, 7.65345e+08, 7.65345e+08, 7.65345e+08]
+}
+,{
+"Algorithm Name": "VectorVectorContainer",
+"Type": "ParallelInplace",
+"Graph Name": "bn-human-Jung2015_M7101234.edges",
+"Test Times": [
+12556.9, 12158.6, 12068.3, 12088.4, 12069.3, 12026.8, 12035.7, 11925.6, 12050.1, 11980.9],
+"Test Memories": [
+4.07038e+08, 4.07038e+08, 4.07038e+08, 4.07038e+08, 4.07038e+08, 4.07038e+08, 4.07038e+08, 4.07038e+08, 4.07038e+08, 4.07038e+08]
+}
+,{
+"Algorithm Name": "VectorVectorContainer",
+"Type": "ParallelInplace",
+"Graph Name": "bn-human-Jung2015_M8703600.edges",
+"Test Times": [
+16111.9, 15870.3, 13922.5, 15898, 15750.8, 13918.5, 13944.4, 13939.8, 13937.3, 13966.5],
+"Test Memories": [
+4.91309e+08, 4.91309e+08, 4.91309e+08, 4.91309e+08, 4.91309e+08, 4.91309e+08, 4.91309e+08, 4.91309e+08, 4.91309e+08, 4.91309e+08]
+}
+,{
+"Algorithm Name": "VectorVectorContainer",
+"Type": "ParallelInplace",
+"Graph Name": "bn-human-Jung2015_M87101049_190M.edges",
+"Test Times": [
+30981.3, 38206.9, 37086.5, 36979, 37214.2, 37088.4, 37268.8, 37110.2, 36941.4, 37099.5],
+"Test Memories": [
+1.22564e+09, 1.22564e+09, 1.22564e+09, 1.22564e+09, 1.22564e+09, 1.22564e+09, 1.22564e+09, 1.22564e+09, 1.22564e+09, 1.22564e+09]
+}
+,{
+"Algorithm Name": "VectorVectorContainer",
+"Type": "ParallelInplace",
+"Graph Name": "bn-human-Jung2015_M87101705_200M.edges",
+"Test Times": [
+39281.5, 38566.7, 38680.8, 38556.6, 38648.3, 38761.4, 38829.1, 38663.8, 38570, 38744.2],
+"Test Memories": [
+1.27752e+09, 1.27752e+09, 1.27752e+09, 1.27752e+09, 1.27752e+09, 1.27752e+09, 1.27752e+09, 1.27752e+09, 1.27752e+09, 1.27752e+09]
+}
+,{
+"Algorithm Name": "VectorVectorContainer",
+"Type": "ParallelInplace",
+"Graph Name": "bn-human-Jung2015_M87104201_190M.edges",
+"Test Times": [
+37932.6, 37499.2, 37411.7, 37102.8, 37164, 37196.7, 37181.6, 37419.4, 28848.2, 37188.5],
+"Test Memories": [
+1.22437e+09, 1.22437e+09, 1.22437e+09, 1.22437e+09, 1.22437e+09, 1.22437e+09, 1.22437e+09, 1.22437e+09, 1.22437e+09, 1.22437e+09]
+}
+,{
+"Algorithm Name": "VectorVectorContainer",
+"Type": "ParallelInplace",
+"Graph Name": "bn-human-Jung2015_M87104300_70M.edges",
+"Test Times": [
+16776, 16436.7, 16279.7, 16312.1, 16416.3, 16354, 16259.5, 16392.7, 16360, 16383.7],
+"Test Memories": [
+4.82151e+08, 4.82151e+08, 4.82151e+08, 4.82151e+08, 4.82151e+08, 4.82151e+08, 4.82151e+08, 4.82151e+08, 4.82151e+08, 4.82151e+08]
+}
+,{
+"Algorithm Name": "VectorVectorContainer",
+"Type": "ParallelInplace",
+"Graph Name": "bn-human-Jung2015_M87104509_50M.edges",
+"Test Times": [
+14955.3, 14547, 14620.1, 14703.3, 14635.3, 14704.7, 14679.1, 14638.6, 14576.8, 14622.3],
+"Test Memories": [
+4.06508e+08, 4.06508e+08, 4.06508e+08, 4.06508e+08, 4.06508e+08, 4.06508e+08, 4.06508e+08, 4.06508e+08, 4.06508e+08, 4.06508e+08]
+}
+,{
+"Algorithm Name": "VectorVectorContainer",
+"Type": "ParallelInplace",
+"Graph Name": "bn-human-Jung2015_M87107781_70M.edges",
+"Test Times": [
+19649, 19695.6, 19615.8, 19579.8, 19637.4, 19678.4, 19569.7, 19596.2, 19672.3, 19691.4],
+"Test Memories": [
+5.59448e+08, 5.59448e+08, 5.59448e+08, 5.59448e+08, 5.59448e+08, 5.59448e+08, 5.59448e+08, 5.59448e+08, 5.59448e+08, 5.59448e+08]
+}
+,{
+"Algorithm Name": "VectorVectorContainer",
+"Type": "ParallelInplace",
+"Graph Name": "bn-human-Jung2015_M87110148_140M.edges",
+"Test Times": [
+29742.7, 29738.2, 28975, 29528.3, 28944.8, 28972.6, 29101.6, 29072.8, 28718.4, 28851.3],
+"Test Memories": [
+9.30001e+08, 9.30001e+08, 9.30001e+08, 9.30001e+08, 9.30001e+08, 9.30001e+08, 9.30001e+08, 9.30001e+08, 9.30001e+08, 9.30001e+08]
+}
+,{
+"Algorithm Name": "VectorVectorContainer",
+"Type": "ParallelInplace",
+"Graph Name": "bn-human-Jung2015_M87110650_40M.edges",
+"Test Times": [
+13075.2, 12837.5, 12851.2, 12862.5, 13046, 12911.5, 12971.8, 12932.9, 12963.5, 12893.8],
+"Test Memories": [
+3.55327e+08, 3.55327e+08, 3.55327e+08, 3.55327e+08, 3.55327e+08, 3.55327e+08, 3.55327e+08, 3.55327e+08, 3.55327e+08, 3.55327e+08]
+}
+,{
+"Algorithm Name": "VectorVectorContainer",
+"Type": "ParallelInplace",
+"Graph Name": "bn-human-Jung2015_M87112427_170M.edges",
+"Test Times": [
+35129.6, 34418.7, 34115, 34200.6, 34388.3, 34315.9, 34363.1, 34543.7, 34350.7, 34342.7],
+"Test Memories": [
+1.14427e+09, 1.14427e+09, 1.14427e+09, 1.14427e+09, 1.14427e+09, 1.14427e+09, 1.14427e+09, 1.14427e+09, 1.14427e+09, 1.14427e+09]
+}
+,{
+"Algorithm Name": "VectorVectorContainer",
+"Type": "ParallelInplace",
+"Graph Name": "bn-human-Jung2015_M87113679_60M.edges",
+"Test Times": [
+16499.6, 16494.1, 16370.6, 16446.9, 16377.2, 16374.2, 16400.1, 16554.2, 16305.5, 16481.3],
+"Test Memories": [
+4.72266e+08, 4.72266e+08, 4.72266e+08, 4.72266e+08, 4.72266e+08, 4.72266e+08, 4.72266e+08, 4.72266e+08, 4.72266e+08, 4.72266e+08]
+}
+,{
+"Algorithm Name": "VectorVectorContainer",
+"Type": "ParallelInplace",
+"Graph Name": "bn-human-Jung2015_M87113878.edges",
+"Test Times": [
+49958.1, 49771.4, 49261.5, 49105.8, 49164.2, 49219.9, 49044.5, 49286.6, 49199.4, 48969.3],
+"Test Memories": [
+1.66198e+09, 1.66198e+09, 1.66198e+09, 1.66198e+09, 1.66198e+09, 1.66198e+09, 1.66198e+09, 1.66198e+09, 1.66198e+09, 1.66198e+09]
+}
+,{
+"Algorithm Name": "VectorVectorContainer",
+"Type": "ParallelInplace",
+"Graph Name": "bn-human-Jung2015_M87116523_80M.edges",
+"Test Times": [
+15043.2, 14573.9, 14504.9, 14600.6, 14514.4, 14502.3, 14508.3, 14655, 14553.8, 14406.2],
+"Test Memories": [
+4.92216e+08, 4.92216e+08, 4.92216e+08, 4.92216e+08, 4.92216e+08, 4.92216e+08, 4.92216e+08, 4.92216e+08, 4.92216e+08, 4.92216e+08]
+}
+,{
+"Algorithm Name": "VectorVectorContainer",
+"Type": "ParallelInplace",
+"Graph Name": "bn-human-Jung2015_M87117093_120M.edges",
+"Test Times": [
+26498.8, 26065.5, 26126.3, 26101.2, 26019.8, 26167.5, 25900.5, 25968.8, 25914.8, 26086.2],
+"Test Memories": [
+8.30043e+08, 8.30043e+08, 8.30043e+08, 8.30043e+08, 8.30043e+08, 8.30043e+08, 8.30043e+08, 8.30043e+08, 8.30043e+08, 8.30043e+08]
+}
+,{
+"Algorithm Name": "VectorVectorContainer",
+"Type": "ParallelInplace",
+"Graph Name": "bn-human-Jung2015_M87118347_80M.edges",
+"Test Times": [
+15327.1, 14896.6, 14772.3, 14926.9, 14890.2, 14828.3, 14803, 14737.3, 14771.4, 14923.6],
+"Test Memories": [
+5.02295e+08, 5.02295e+08, 5.02295e+08, 5.02295e+08, 5.02295e+08, 5.02295e+08, 5.02295e+08, 5.02295e+08, 5.02295e+08, 5.02295e+08]
+}
+,{
+"Algorithm Name": "VectorVectorContainer",
+"Type": "ParallelInplace",
+"Graph Name": "bn-human-Jung2015_M87118465_180M.edges",
+"Test Times": [
+35770.4, 35485.7, 35256.8, 35020, 34965.4, 35146.4, 34975.3, 35105.4, 35168.9, 34944.2],
+"Test Memories": [
+1.16817e+09, 1.16817e+09, 1.16817e+09, 1.16817e+09, 1.16817e+09, 1.16817e+09, 1.16817e+09, 1.16817e+09, 1.16817e+09, 1.16817e+09]
+}
+,{
+"Algorithm Name": "VectorVectorContainer",
+"Type": "ParallelInplace",
+"Graph Name": "bn-human-Jung2015_M87119472_60M.edges",
+"Test Times": [
+16319.9, 16207.1, 16121.7, 16160.5, 16087.8, 16053.1, 16234.9, 16243.6, 16195.6, 16021.1],
+"Test Memories": [
+4.6582e+08, 4.6582e+08, 4.6582e+08, 4.6582e+08, 4.6582e+08, 4.6582e+08, 4.6582e+08, 4.6582e+08, 4.6582e+08, 4.6582e+08]
+}
+,{
+"Algorithm Name": "VectorVectorContainer",
+"Type": "ParallelInplace",
+"Graph Name": "bn-human-Jung2015_M87124563_160M.edges",
+"Test Times": [
+32715.3, 32545, 32191.3, 31880.1, 32119.2, 32300.2, 32204.7, 32184.5, 32069.1, 32250],
+"Test Memories": [
+1.05154e+09, 1.05154e+09, 1.05154e+09, 1.05154e+09, 1.05154e+09, 1.05154e+09, 1.05154e+09, 1.05154e+09, 1.05154e+09, 1.05154e+09]
+}
+,{
+"Algorithm Name": "VectorVectorContainer",
+"Type": "ParallelInplace",
+"Graph Name": "bn-human-Jung2015_M87125286_210M.edges",
+"Test Times": [
+41270.9, 40141.6, 40110.4, 40112.5, 40188, 39849.2, 40029, 40106.8, 40270.3, 39882.3],
+"Test Memories": [
+1.34852e+09, 1.34852e+09, 1.34852e+09, 1.34852e+09, 1.34852e+09, 1.34852e+09, 1.34852e+09, 1.34852e+09, 1.34852e+09, 1.34852e+09]
+}
+,{
+"Algorithm Name": "VectorVectorContainer",
+"Type": "ParallelInplace",
+"Graph Name": "bn-human-Jung2015_M87125334_40M.edges",
+"Test Times": [
+13635.3, 13324.4, 13339.5, 13359.4, 13386.2, 13479.1, 13487.4, 13447.9, 13370.1, 13360.1],
+"Test Memories": [
+3.66453e+08, 3.66453e+08, 3.66453e+08, 3.66453e+08, 3.66453e+08, 3.66453e+08, 3.66453e+08, 3.66453e+08, 3.66453e+08, 3.66453e+08]
+}
+,{
+"Algorithm Name": "VectorVectorContainer",
+"Type": "ParallelInplace",
+"Graph Name": "bn-human-Jung2015_M87127677_210M.edges",
+"Test Times": [
+40322.4, 40175.1, 38988.2, 38900.1, 39202.1, 38748.8, 39124.9, 39059.2, 39169.8, 38846.3],
+"Test Memories": [
+1.3016e+09, 1.3016e+09, 1.3016e+09, 1.3016e+09, 1.3016e+09, 1.3016e+09, 1.3016e+09, 1.3016e+09, 1.3016e+09, 1.3016e+09]
+}
+,{
+"Algorithm Name": "VectorVectorContainer",
+"Type": "ParallelInplace",
+"Graph Name": "C2000-9.edges",
+"Test Times": [
+282.965, 266.939, 270.812, 271.206, 260.538, 269.042, 268.679, 266.446, 261.017, 260.263],
+"Test Memories": [
+1.04203e+07, 1.04203e+07, 1.04203e+07, 1.04203e+07, 1.04203e+07, 1.04203e+07, 1.04203e+07, 1.04203e+07, 1.04203e+07, 1.04203e+07]
+}
+,{
+"Algorithm Name": "VectorVectorContainer",
+"Type": "ParallelInplace",
+"Graph Name": "ca-hollywood-2009.edges",
+"Test Times": [
+14761.8, 12337.7, 12330.9, 14473.6, 12301, 14658.7, 12328.9, 12300.9, 14681, 12316.6],
+"Test Memories": [
+4.3821e+08, 4.3821e+08, 4.3821e+08, 4.3821e+08, 4.3821e+08, 4.3821e+08, 4.3821e+08, 4.3821e+08, 4.3821e+08, 4.3821e+08]
+}
+,{
+"Algorithm Name": "VectorVectorContainer",
+"Type": "ParallelInplace",
+"Graph Name": "ca-IMDB.edges",
+"Test Times": [
+2515.76, 2621.05, 2583.9, 2611.06, 2610.53, 2580.22, 2602.66, 2604.91, 2609.4, 2618.37],
+"Test Memories": [
+9.16146e+07, 9.16146e+07, 9.16146e+07, 9.16146e+07, 9.16146e+07, 9.16146e+07, 9.16146e+07, 9.16146e+07, 9.16146e+07, 9.16146e+07]
+}
+,{
+"Algorithm Name": "VectorVectorContainer",
+"Type": "ParallelInplace",
+"Graph Name": "cit-patent1.edges",
+"Test Times": [
+21490.1, 21367, 21341.8, 21564.3, 21361.8, 21476, 21394.9, 21522.2, 21433.1, 21388.7],
+"Test Memories": [
+8.32089e+08, 8.32089e+08, 8.32089e+08, 8.32089e+08, 8.32089e+08, 8.32089e+08, 8.32089e+08, 8.32089e+08, 8.32089e+08, 8.32089e+08]
+}
+,{
+"Algorithm Name": "VectorVectorContainer",
+"Type": "ParallelInplace",
+"Graph Name": "data_files.txt",
+"Test Times": [
+176.565, 1.306, 1.177, 1.102, 1.082, 0.978, 0.164, 0.154, 0.161, 0.155],
+"Test Memories": [
+1864, 1864, 1864, 1864, 1864, 1864, 1864, 1864, 1864, 1864]
+}
+,{
+"Algorithm Name": "VectorVectorContainer",
+"Type": "ParallelInplace",
+"Graph Name": "data_files_test.txt",
+"Test Times": [
+0.763, 0.161, 0.156, 0.164, 0.163, 0.161, 0.151, 0.158, 0.156, 0.158],
+"Test Memories": [
+1864, 1864, 1864, 1864, 1864, 1864, 1864, 1864, 1864, 1864]
+}
+,{
+"Algorithm Name": "VectorVectorContainer",
+"Type": "ParallelInplace",
+"Graph Name": "datafiles_par.txt",
+"Test Times": [
+1.004, 0.152, 0.161, 0.151, 0.15, 0.149, 0.149, 0.16, 0.149, 0.163],
+"Test Memories": [
+1864, 1864, 1864, 1864, 1864, 1864, 1864, 1864, 1864, 1864]
+}
+,{
+"Algorithm Name": "VectorVectorContainer",
+"Type": "ParallelInplace",
+"Graph Name": "datafiles_seq.txt",
+"Test Times": [
+2.763, 0.154, 0.161, 0.147, 0.166, 0.162, 0.152, 0.158, 0.148, 0.164],
+"Test Memories": [
+1864, 1864, 1864, 1864, 1864, 1864, 1864, 1864, 1864, 1864]
+}
+,{
+"Algorithm Name": "VectorVectorContainer",
+"Type": "ParallelInplace",
+"Graph Name": "delaunay_n24_50M.edges",
+"Test Times": [
+92596.5, 91876.1, 91875, 92392.1, 91737.4, 91786.4, 91660.9, 91842.8, 91850.4, 91734.5],
+"Test Memories": [
+3.53257e+09, 3.53257e+09, 3.53257e+09, 3.53257e+09, 3.53257e+09, 3.53257e+09, 3.53257e+09, 3.53257e+09, 3.53257e+09, 3.53257e+09]
+}
+,{
+"Algorithm Name": "VectorVectorContainer",
+"Type": "ParallelInplace",
+"Graph Name": "graph500-scale20-ef16_adj_30M.edges",
+"Test Times": [
+11810.1, 10518.1, 10471.8, 10504.1, 10648.5, 10417.5, 10676.6, 10546.2, 10459.4, 10468.1],
+"Test Memories": [
+2.62307e+08, 2.62307e+08, 2.62307e+08, 2.62307e+08, 2.62307e+08, 2.62307e+08, 2.62307e+08, 2.62307e+08, 2.62307e+08, 2.62307e+08]
+}
+,{
+"Algorithm Name": "VectorVectorContainer",
+"Type": "ParallelInplace",
+"Graph Name": "graph500-scale22-ef16_adj_130M.edges",
+"Test Times": [
+43609.5, 43324.4, 43281.8, 43985, 43595.8, 43268.5, 43449.6, 43567.7, 43254.9, 43287.9],
+"Test Memories": [
+9.78655e+08, 9.78655e+08, 9.78655e+08, 9.78655e+08, 9.78655e+08, 9.78655e+08, 9.78655e+08, 9.78655e+08, 9.78655e+08, 9.78655e+08]
+}
+,{
+"Algorithm Name": "VectorVectorContainer",
+"Type": "ParallelInplace",
+"Graph Name": "hugetric-00010_10M.mtx",
+"Test Times": [
+39579.1, 39943, 40035.2, 40032.7, 40160.6, 39931.6, 40068.3, 40051, 40195.1, 39919.3],
+"Test Memories": [
+1.58236e+09, 1.58236e+09, 1.58236e+09, 1.58236e+09, 1.58236e+09, 1.58236e+09, 1.58236e+09, 1.58236e+09, 1.58236e+09, 1.58236e+09]
+}
+,{
+"Algorithm Name": "VectorVectorContainer",
+"Type": "ParallelInplace",
+"Graph Name": "livejournal_160M.edges",
+"Test Times": [
+46056.9, 45666.7, 45117.5, 45133.3, 45149, 45002.3, 45219.3, 45096.2, 45182.3, 45251.7],
+"Test Memories": [
+1.33946e+09, 1.33946e+09, 1.33946e+09, 1.33946e+09, 1.33946e+09, 1.33946e+09, 1.33946e+09, 1.33946e+09, 1.33946e+09, 1.33946e+09]
+}
+,{
+"Algorithm Name": "VectorVectorContainer",
+"Type": "ParallelInplace",
+"Graph Name": "rgg_n_2_22_s0_30M.edges",
+"Test Times": [
+27404.5, 27324.3, 27311.9, 27224.9, 27213.3, 27391.9, 27189.2, 27260.8, 27325.2, 27300.9],
+"Test Memories": [
+9.14435e+08, 9.14435e+08, 9.14435e+08, 9.14435e+08, 9.14435e+08, 9.14435e+08, 9.14435e+08, 9.14435e+08, 9.14435e+08, 9.14435e+08]
+}
+,{
+"Algorithm Name": "VectorVectorContainer",
+"Type": "ParallelInplace",
+"Graph Name": "sc-ldoor_20M.edges",
+"Test Times": [
+9161.62, 8954.41, 9003.72, 9020.78, 8984.26, 9039.59, 8974.46, 9033.46, 9011.45, 9047.46],
+"Test Memories": [
+2.84399e+08, 2.84399e+08, 2.84399e+08, 2.84399e+08, 2.84399e+08, 2.84399e+08, 2.84399e+08, 2.84399e+08, 2.84399e+08, 2.84399e+08]
+}
+,{
+"Algorithm Name": "VectorVectorContainer",
+"Type": "ParallelInplace",
+"Graph Name": "scc_fb-messages.mtx",
+"Test Times": [
+90.956, 87.404, 86.928, 86.517, 83.581, 86.626, 88.657, 86.458, 86.877, 85.304],
+"Test Memories": [
+3.28429e+06, 3.28429e+06, 3.28429e+06, 3.28429e+06, 3.28429e+06, 3.28429e+06, 3.28429e+06, 3.28429e+06, 3.28429e+06, 3.28429e+06]
+}
+,{
+"Algorithm Name": "VectorVectorContainer",
+"Type": "ParallelInplace",
+"Graph Name": "soc-google-plus.txt",
+"Test Times": [
+1076.81, 1067.52, 1059.65, 1060.83, 1063.45, 1051.56, 1057.16, 1063.98, 1058.92, 1064.3],
+"Test Memories": [
+3.61464e+07, 3.61464e+07, 3.61464e+07, 3.61464e+07, 3.61464e+07, 3.61464e+07, 3.61464e+07, 3.61464e+07, 3.61464e+07, 3.61464e+07]
+}
+,{
+"Algorithm Name": "VectorVectorContainer",
+"Type": "ParallelInplace",
+"Graph Name": "soc-livejournal.mtx",
+"Test Times": [
+22209.1, 22077.2, 22034, 22102.7, 22282.1, 22103.4, 22047.3, 22251.8, 22117.6, 21996.5],
+"Test Memories": [
+7.4213e+08, 7.4213e+08, 7.4213e+08, 7.4213e+08, 7.4213e+08, 7.4213e+08, 7.4213e+08, 7.4213e+08, 7.4213e+08, 7.4213e+08]
+}
+,{
+"Algorithm Name": "VectorVectorContainer",
+"Type": "ParallelInplace",
+"Graph Name": "soc-orkut.edges",
+"Test Times": [
+32148.4, 31758.6, 31600.6, 31454.9, 31498.4, 31392.9, 31585.6, 31418.1, 31605.8, 31534],
+"Test Memories": [
+8.98407e+08, 8.98407e+08, 8.98407e+08, 8.98407e+08, 8.98407e+08, 8.98407e+08, 8.98407e+08, 8.98407e+08, 8.98407e+08, 8.98407e+08]
+}
+,{
+"Algorithm Name": "VectorVectorContainer",
+"Type": "ParallelInplace",
+"Graph Name": "soc-orkut-dir_120M.edges",
+"Test Times": [
+30959.5, 30181.3, 30325.4, 30379.7, 30252.6, 30245.1, 30130.4, 30115.6, 30166, 30161.2],
+"Test Memories": [
+8.51291e+08, 8.51291e+08, 8.51291e+08, 8.51291e+08, 8.51291e+08, 8.51291e+08, 8.51291e+08, 8.51291e+08, 8.51291e+08, 8.51291e+08]
+}
+,{
+"Algorithm Name": "VectorVectorContainer",
+"Type": "ParallelInplace",
+"Graph Name": "soc-orkut_106M.edges",
+"Test Times": [
+44094.3, 44372, 43533.8, 43454.8, 43516.1, 43441.1, 43475.2, 43414.1, 43564, 43377.9],
+"Test Memories": [
+9.10403e+08, 9.10403e+08, 9.10403e+08, 9.10403e+08, 9.10403e+08, 9.10403e+08, 9.10403e+08, 9.10403e+08, 9.10403e+08, 9.10403e+08]
+}
+,{
+"Algorithm Name": "VectorVectorContainer",
+"Type": "ParallelInplace",
+"Graph Name": "soc-pokec.mtx",
+"Test Times": [
+9484.96, 9394.68, 9421.57, 9396.24, 9402.22, 9399.35, 9322.53, 9339.33, 9350.48, 9430.91],
+"Test Memories": [
+3.00295e+08, 3.00295e+08, 3.00295e+08, 3.00295e+08, 3.00295e+08, 3.00295e+08, 3.00295e+08, 3.00295e+08, 3.00295e+08, 3.00295e+08]
+}
