@@ -21,6 +21,7 @@ namespace PFA
     UnorderedMapUnorderedSetContainer<ProfilableAllocator>>;
 
     using CurrentType=boost::mp11::mp_list<VectorVectorContainer<ProfilableAllocator>>;
+    using AlternativeType=boost::mp11::mp_list<VectorSetContainer<ProfilableAllocator>>;
 }
 
 #endif //PFAPROJECT_TYPES_H

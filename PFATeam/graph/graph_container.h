@@ -5,6 +5,7 @@
 #include <unordered_map>
 #include <set>
 #include <unordered_set>
+#include <list>
 #include "memory/ProfilableAllocator.h"
 
 namespace PFA
@@ -122,7 +123,7 @@ namespace PFA
         {
             return index != other.index;
         }
-        std::pair<int,T&&>operator*()
+        std::pair<int,T>operator*()
         {
             return std::make_pair(index,std::forward<T>(container[index]));
         }
@@ -221,7 +222,17 @@ public:
                 return;
             this->operator[](a).clear();
         }
-        auto begin()
+
+        void moveAdjacencyList(VectorSetContainer &&O,int o)
+        {
+            if(this->size()<o+1)
+                this->resize(2*o+2);
+
+            this->operator[](o).splice(this->val_type::begin(),O[o]);
+        }
+
+
+    auto begin()
         {
             return VectorIterator<val_type>(this->data());
         }
@@ -267,7 +278,71 @@ public:
         {
             if(this->size()<a+1)
                 return;
+            auto &v=this->operator[](a);
+            auto it=std::find(v.begin(),v.end(),b);
+            if(it!=v.end())
+                v.erase(it);
+        }
+
+        void clearVertex(int a)
+        {
+            if(this->size()<a+1)
+                return;
+            this->operator[](a).clear();
+        }
+        auto begin()
+        {
+            return VectorIterator<val_type>(this->data());
+        }
+
+        auto end()
+        {
+            return VectorIterator<val_type>(this->data(),this->size());
+        }
+
+        auto begin() const
+        {
+            return VectorIterator<val_type>(this->data());
+        }
+
+        auto end() const
+        {
+            return VectorIterator<val_type>(this->data(),this->size());
+        }
+    };
+
+
+    /**
+* @brief A vector over a list used to store adjacency lists.
+* @details This container is used to store adjacency lists.
+* @requires a Graph having positive integers as vertices, whose largest vertex is on the order of magnitude of the number of vertices.
+* @tparam Allocator the allocator used to allocate the memory.
+* */
+    template<template <typename > typename Allocator=std::allocator>
+    class VectorListContainer: public std::vector<std::list<int,Allocator<int>>,Allocator<std::list<int,Allocator<int>>>>
+    {
+        using val_type=std::vector<std::list<int,Allocator<int>>,Allocator<std::list<int,Allocator<int>>>>;
+    public:
+        using std::vector<std::list<int,Allocator<int>>,Allocator<std::list<int,Allocator<int>>>>::vector;
+        void addEdge(int a,int b)
+        {
+            if(this->size()<a+1)
+                this->resize(2*a+2);
+            this->operator[](a).push_front(b);
+        }
+
+        void removeEdge(int a,int b)
+        {
+            if(this->size()<a+1)
+                return;
             this->operator[](a).erase(b);
+        }
+
+        void moveAdjacencyList(VectorListContainer &&O,int o)
+        {
+            if(this->size()<o+1)
+                this->resize(2*o+2);
+            this->operator[](o).splice(this->val_type::begin(),O[o]);
         }
 
         void clearVertex(int a)

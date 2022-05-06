@@ -1,0 +1,860 @@
+[
+{
+"Algorithm Name": "VectorVectorContainer",
+"Type": "Sequential",
+"Graph Name": "bn-449k-3.3M.edges",
+"Test Times": [
+935.147, 401.483, 383.697, 381.392, 382.522],
+"Test Memories": [
+4.13662e+07, 4.13662e+07, 4.13662e+07, 4.13662e+07, 4.13662e+07],
+"Start Time" : "2022-Apr-25 13:43:16.989057",
+"End Time" : "2022-Apr-25 13:43:19.554751"
+}
+,{
+"Algorithm Name": "VectorVectorContainer",
+"Type": "Sequential",
+"Graph Name": "bn-7k-50k.edges",
+"Test Times": [
+10.586, 4.974, 4.959, 4.952, 4.928],
+"Test Memories": [
+460404, 460404, 460404, 460404, 460404],
+"Start Time" : "2022-Apr-25 13:43:19.555047",
+"End Time" : "2022-Apr-25 13:43:19.586203"
+}
+,{
+"Algorithm Name": "VectorVectorContainer",
+"Type": "Sequential",
+"Graph Name": "bn-34k-181k.edges",
+"Test Times": [
+34.622, 19.089, 19.344, 18.961, 18.956],
+"Test Memories": [
+1.92114e+06, 1.92114e+06, 1.92114e+06, 1.92114e+06, 1.92114e+06],
+"Start Time" : "2022-Apr-25 13:43:19.586276",
+"End Time" : "2022-Apr-25 13:43:19.701146"
+}
+,{
+"Algorithm Name": "VectorVectorContainer",
+"Type": "Sequential",
+"Graph Name": "bn-434k-16M.edges",
+"Test Times": [
+2893.23, 1596.62, 1584.78, 1583.61, 1577.51],
+"Test Memories": [
+1.1059e+08, 1.1059e+08, 1.1059e+08, 1.1059e+08, 1.1059e+08],
+"Start Time" : "2022-Apr-25 13:43:19.701242",
+"End Time" : "2022-Apr-25 13:43:29.061190"
+}
+,{
+"Algorithm Name": "VectorVectorContainer",
+"Type": "Sequential",
+"Graph Name": "bn-800-19k.edges",
+"Test Times": [
+6.147, 1.661, 1.627, 1.628, 1.637],
+"Test Memories": [
+129996, 129996, 129996, 129996, 129996],
+"Start Time" : "2022-Apr-25 13:43:29.061301",
+"End Time" : "2022-Apr-25 13:43:29.074077"
+}
+,{
+"Algorithm Name": "VectorVectorContainer",
+"Type": "Sequential",
+"Graph Name": "bn-human-BNU_1_0025868_session_1-bg_150M.edges",
+"Test Times": [
+32981.6, 15522.3, 15360.1, 15346.1, 15341.5],
+"Test Memories": [
+9.21439e+08, 9.21439e+08, 9.21439e+08, 9.21439e+08, 9.21439e+08],
+"Start Time" : "2022-Apr-25 13:43:29.074144",
+"End Time" : "2022-Apr-25 13:45:03.860470"
+}
+,{
+"Algorithm Name": "VectorVectorContainer",
+"Type": "Sequential",
+"Graph Name": "bn-65-1K.edges",
+"Test Times": [
+1.976, 0.144, 0.108, 0.109, 0.109],
+"Test Memories": [
+8424, 8424, 8424, 8424, 8424],
+"Start Time" : "2022-Apr-25 13:45:03.860597",
+"End Time" : "2022-Apr-25 13:45:03.899327"
+}
+,{
+"Algorithm Name": "VectorVectorContainer",
+"Type": "Sequential",
+"Graph Name": "bn-100k-662k.edges",
+"Test Times": [
+118.29, 73.625, 73.509, 73.776, 73.572],
+"Test Memories": [
+8.3899e+06, 8.3899e+06, 8.3899e+06, 8.3899e+06, 8.3899e+06],
+"Start Time" : "2022-Apr-25 13:45:03.899426",
+"End Time" : "2022-Apr-25 13:45:04.330725"
+}
+,{
+"Algorithm Name": "VectorVectorContainer",
+"Type": "Sequential",
+"Graph Name": "bn-human-BNU_1_0025869_session_2-bg_150M.edges",
+"Test Times": [
+31713.3, 15560.5, 15423, 15391.2, 15380.5],
+"Test Memories": [
+9.32549e+08, 9.32549e+08, 9.32549e+08, 9.32549e+08, 9.32549e+08],
+"Start Time" : "2022-Apr-25 13:45:04.330841",
+"End Time" : "2022-Apr-25 13:46:38.026933"
+}
+,{
+"Algorithm Name": "VectorVectorContainer",
+"Type": "Sequential",
+"Graph Name": "bn-human-BNU_1_0025871_session_1-bg_170M.edges",
+"Test Times": [
+35053.7, 17391.4, 17197.3, 17289.5, 17420.8],
+"Test Memories": [
+1.03431e+09, 1.03431e+09, 1.03431e+09, 1.03431e+09, 1.03431e+09],
+"Start Time" : "2022-Apr-25 13:46:38.027049",
+"End Time" : "2022-Apr-25 13:48:22.630105"
+}
+,{
+"Algorithm Name": "VectorVectorContainer",
+"Type": "Sequential",
+"Graph Name": "bn-human-BNU_1_0025876_session_2-bg_140M.edges",
+"Test Times": [
+31288.6, 14346, 14203.5, 14379.7, 14381.4],
+"Test Memories": [
+8.9148e+08, 8.9148e+08, 8.9148e+08, 8.9148e+08, 8.9148e+08],
+"Start Time" : "2022-Apr-25 13:48:22.630221",
+"End Time" : "2022-Apr-25 13:49:51.473398"
+}
+,{
+"Algorithm Name": "VectorVectorContainer",
+"Type": "Sequential",
+"Graph Name": "bn-human-BNU_1_0025889_session_2_130M.edges",
+"Test Times": [
+26614.5, 13610.6, 13448.3, 13430.2, 13427.7],
+"Test Memories": [
+8.80513e+08, 8.80513e+08, 8.80513e+08, 8.80513e+08, 8.80513e+08],
+"Start Time" : "2022-Apr-25 13:49:51.473995",
+"End Time" : "2022-Apr-25 13:51:12.249187"
+}
+,{
+"Algorithm Name": "VectorVectorContainer",
+"Type": "Sequential",
+"Graph Name": "bn-human-BNU_1_0025913_session_2_180M.edges",
+"Test Times": [
+37167.8, 18851.4, 18661, 18572.5, 18565.6],
+"Test Memories": [
+1.10816e+09, 1.10816e+09, 1.10816e+09, 1.10816e+09, 1.10816e+09],
+"Start Time" : "2022-Apr-25 13:51:12.249288",
+"End Time" : "2022-Apr-25 13:53:04.312767"
+}
+,{
+"Algorithm Name": "VectorVectorContainer",
+"Type": "Sequential",
+"Graph Name": "bn-human-BNU_1_0025914_session_2_100M.edges",
+"Test Times": [
+22213.4, 10653, 10531.3, 10509.2, 10501.8],
+"Test Memories": [
+6.91978e+08, 6.91978e+08, 6.91978e+08, 6.91978e+08, 6.91978e+08],
+"Start Time" : "2022-Apr-25 13:53:04.312895",
+"End Time" : "2022-Apr-25 13:54:08.944913"
+}
+,{
+"Algorithm Name": "VectorVectorContainer",
+"Type": "Sequential",
+"Graph Name": "bn-human-BNU_1_0025916_session_1_110M.edges",
+"Test Times": [
+22946.7, 11638, 11487.2, 11442.5, 11421.5],
+"Test Memories": [
+6.98224e+08, 6.98224e+08, 6.98224e+08, 6.98224e+08, 6.98224e+08],
+"Start Time" : "2022-Apr-25 13:54:08.945030",
+"End Time" : "2022-Apr-25 13:55:18.104481"
+}
+,{
+"Algorithm Name": "VectorVectorContainer",
+"Type": "Sequential",
+"Graph Name": "bn-human-BNU_1_0025919_session_1.edges",
+"Test Times": [
+41290.5, 20701.1, 20505, 20472.5, 20507.8],
+"Test Memories": [
+1.22544e+09, 1.22544e+09, 1.22544e+09, 1.22544e+09, 1.22544e+09],
+"Start Time" : "2022-Apr-25 13:55:18.104582",
+"End Time" : "2022-Apr-25 13:57:21.828317"
+}
+,{
+"Algorithm Name": "VectorVectorContainer",
+"Type": "Sequential",
+"Graph Name": "bn-human-BNU_1_0025919_session_1_200M.edges",
+"Test Times": [
+42718.1, 23319.4, 34588.8, 20535.9, 20501],
+"Test Memories": [
+1.22544e+09, 1.22544e+09, 1.22544e+09, 1.22544e+09, 1.22544e+09],
+"Start Time" : "2022-Apr-25 13:57:21.828430",
+"End Time" : "2022-Apr-25 13:59:43.738541"
+}
+,{
+"Algorithm Name": "VectorVectorContainer",
+"Type": "Sequential",
+"Graph Name": "bn-human-Jung2015_M7101234.edges",
+"Test Times": [
+14260.9, 6294.77, 6254.71, 6216.32, 6205.26],
+"Test Memories": [
+3.88581e+08, 3.88581e+08, 3.88581e+08, 3.88581e+08, 3.88581e+08],
+"Start Time" : "2022-Apr-25 13:59:43.823734",
+"End Time" : "2022-Apr-25 14:00:23.125897"
+}
+,{
+"Algorithm Name": "VectorVectorContainer",
+"Type": "Sequential",
+"Graph Name": "bn-human-Jung2015_M8703600.edges",
+"Test Times": [
+12333.9, 5280.97, 5231.58, 5216.07, 5213.77],
+"Test Memories": [
+3.382e+08, 3.382e+08, 3.382e+08, 3.382e+08, 3.382e+08],
+"Start Time" : "2022-Apr-25 14:00:23.126012",
+"End Time" : "2022-Apr-25 14:00:56.631713"
+}
+,{
+"Algorithm Name": "VectorVectorContainer",
+"Type": "Sequential",
+"Graph Name": "bn-human-Jung2015_M87101049_190M.edges",
+"Test Times": [
+41149.5, 41054.1, 19560.2, 19497, 19496.4],
+"Test Memories": [
+1.16947e+09, 1.16947e+09, 1.16947e+09, 1.16947e+09, 1.16947e+09],
+"Start Time" : "2022-Apr-25 14:00:56.631831",
+"End Time" : "2022-Apr-25 14:03:17.644986"
+}
+,{
+"Algorithm Name": "VectorVectorContainer",
+"Type": "Sequential",
+"Graph Name": "bn-human-Jung2015_M87101705_200M.edges",
+"Test Times": [
+41374.2, 20651.4, 20478.4, 20412, 20411.9],
+"Test Memories": [
+1.21049e+09, 1.21049e+09, 1.21049e+09, 1.21049e+09, 1.21049e+09],
+"Start Time" : "2022-Apr-25 14:03:17.737724",
+"End Time" : "2022-Apr-25 14:05:21.331755"
+}
+,{
+"Algorithm Name": "VectorVectorContainer",
+"Type": "Sequential",
+"Graph Name": "bn-human-Jung2015_M87104201_190M.edges",
+"Test Times": [
+40800, 19554.9, 19378.1, 19352, 19355.1],
+"Test Memories": [
+1.16131e+09, 1.16131e+09, 1.16131e+09, 1.16131e+09, 1.16131e+09],
+"Start Time" : "2022-Apr-25 14:05:21.331870",
+"End Time" : "2022-Apr-25 14:07:20.022462"
+}
+,{
+"Algorithm Name": "VectorVectorContainer",
+"Type": "Sequential",
+"Graph Name": "bn-human-Jung2015_M87104300_70M.edges",
+"Test Times": [
+14366.5, 6947.9, 6899.06, 6871.47, 6872.79],
+"Test Memories": [
+5.07506e+08, 5.07506e+08, 5.07506e+08, 5.07506e+08, 5.07506e+08],
+"Start Time" : "2022-Apr-25 14:07:20.022580",
+"End Time" : "2022-Apr-25 14:08:02.205515"
+}
+,{
+"Algorithm Name": "VectorVectorContainer",
+"Type": "Sequential",
+"Graph Name": "bn-human-Jung2015_M87104509_50M.edges",
+"Test Times": [
+10551, 5192.35, 5137.98, 5122.34, 5138.95],
+"Test Memories": [
+3.40494e+08, 3.40494e+08, 3.40494e+08, 3.40494e+08, 3.40494e+08],
+"Start Time" : "2022-Apr-25 14:08:02.205643",
+"End Time" : "2022-Apr-25 14:08:33.527808"
+}
+,{
+"Algorithm Name": "VectorVectorContainer",
+"Type": "Sequential",
+"Graph Name": "bn-human-Jung2015_M87107781_70M.edges",
+"Test Times": [
+15390.6, 7379.26, 7314.18, 7299.1, 7256.91],
+"Test Memories": [
+4.83025e+08, 4.83025e+08, 4.83025e+08, 4.83025e+08, 4.83025e+08],
+"Start Time" : "2022-Apr-25 14:08:33.527938",
+"End Time" : "2022-Apr-25 14:09:18.385431"
+}
+,{
+"Algorithm Name": "VectorVectorContainer",
+"Type": "Sequential",
+"Graph Name": "bn-human-Jung2015_M87110148_140M.edges",
+"Test Times": [
+30316.5, 27522.8, 16653.5, 14708.7, 14747.6],
+"Test Memories": [
+9.11503e+08, 9.11503e+08, 9.11503e+08, 9.11503e+08, 9.11503e+08],
+"Start Time" : "2022-Apr-25 14:09:18.385546",
+"End Time" : "2022-Apr-25 14:11:02.601989"
+}
+,{
+"Algorithm Name": "VectorVectorContainer",
+"Type": "Sequential",
+"Graph Name": "bn-human-Jung2015_M87110650_40M.edges",
+"Test Times": [
+8721.56, 4229.02, 4184.73, 4176.61, 4170.62],
+"Test Memories": [
+3.00225e+08, 3.00225e+08, 3.00225e+08, 3.00225e+08, 3.00225e+08],
+"Start Time" : "2022-Apr-25 14:11:02.690297",
+"End Time" : "2022-Apr-25 14:11:28.324638"
+}
+,{
+"Algorithm Name": "VectorVectorContainer",
+"Type": "Sequential",
+"Graph Name": "bn-human-Jung2015_M87112427_170M.edges",
+"Test Times": [
+36197.6, 17506.4, 17354.2, 17331.5, 17303.8],
+"Test Memories": [
+1.05014e+09, 1.05014e+09, 1.05014e+09, 1.05014e+09, 1.05014e+09],
+"Start Time" : "2022-Apr-25 14:11:28.324756",
+"End Time" : "2022-Apr-25 14:13:14.264815"
+}
+,{
+"Algorithm Name": "VectorVectorContainer",
+"Type": "Sequential",
+"Graph Name": "bn-human-Jung2015_M87113679_60M.edges",
+"Test Times": [
+14219.9, 6465.32, 6403.33, 6401.44, 6349.75],
+"Test Memories": [
+4.17848e+08, 4.17848e+08, 4.17848e+08, 4.17848e+08, 4.17848e+08],
+"Start Time" : "2022-Apr-25 14:13:14.264935",
+"End Time" : "2022-Apr-25 14:13:54.307257"
+}
+,{
+"Algorithm Name": "VectorVectorContainer",
+"Type": "Sequential",
+"Graph Name": "bn-human-Jung2015_M87113878.edges",
+"Test Times": [
+21857.2, 10429.5, 10328.7, 10311.6, 10312],
+"Test Memories": [
+6.33965e+08, 6.33965e+08, 6.33965e+08, 6.33965e+08, 6.33965e+08],
+"Start Time" : "2022-Apr-25 14:13:54.307372",
+"End Time" : "2022-Apr-25 14:14:57.648132"
+}
+,{
+"Algorithm Name": "VectorVectorContainer",
+"Type": "Sequential",
+"Graph Name": "bn-human-Jung2015_M87114342_90M.edges",
+"Test Times": [
+17964, 9366.38, 9287.65, 9271.27, 9267.2],
+"Test Memories": [
+5.77794e+08, 5.77794e+08, 5.77794e+08, 5.77794e+08, 5.77794e+08],
+"Start Time" : "2022-Apr-25 14:14:57.648243",
+"End Time" : "2022-Apr-25 14:15:53.039358"
+}
+,{
+"Algorithm Name": "VectorVectorContainer",
+"Type": "Sequential",
+"Graph Name": "bn-human-Jung2015_M87116523_80M.edges",
+"Test Times": [
+15699.2, 7609.58, 7626.56, 7635.11, 7632.27],
+"Test Memories": [
+4.63329e+08, 4.63329e+08, 4.63329e+08, 4.63329e+08, 4.63329e+08],
+"Start Time" : "2022-Apr-25 14:15:53.039472",
+"End Time" : "2022-Apr-25 14:16:39.322544"
+}
+,{
+"Algorithm Name": "VectorVectorContainer",
+"Type": "Sequential",
+"Graph Name": "bn-human-Jung2015_M87117093_120M.edges",
+"Test Times": [
+25000.9, 13085.5, 12663, 12646.7, 12658.2],
+"Test Memories": [
+7.76207e+08, 7.76207e+08, 7.76207e+08, 7.76207e+08, 7.76207e+08],
+"Start Time" : "2022-Apr-25 14:16:39.328883",
+"End Time" : "2022-Apr-25 14:17:55.644974"
+}
+,{
+"Algorithm Name": "VectorVectorContainer",
+"Type": "Sequential",
+"Graph Name": "bn-human-Jung2015_M87118347_80M.edges",
+"Test Times": [
+18623.8, 7784.25, 7697.78, 7689.89, 7691.59],
+"Test Memories": [
+4.86217e+08, 4.86217e+08, 4.86217e+08, 4.86217e+08, 4.86217e+08],
+"Start Time" : "2022-Apr-25 14:17:55.645257",
+"End Time" : "2022-Apr-25 14:18:45.234489"
+}
+,{
+"Algorithm Name": "VectorVectorContainer",
+"Type": "Sequential",
+"Graph Name": "bn-human-Jung2015_M87118465_180M.edges",
+"Test Times": [
+39867.8, 18481.8, 18339, 18303.9, 18315.7],
+"Test Memories": [
+1.11108e+09, 1.11108e+09, 1.11108e+09, 1.11108e+09, 1.11108e+09],
+"Start Time" : "2022-Apr-25 14:18:45.234615",
+"End Time" : "2022-Apr-25 14:20:38.802780"
+}
+,{
+"Algorithm Name": "VectorVectorContainer",
+"Type": "Sequential",
+"Graph Name": "bn-human-Jung2015_M87119472_60M.edges",
+"Test Times": [
+13179.1, 6195.26, 6141.76, 6118.47, 6117.37],
+"Test Memories": [
+3.97429e+08, 3.97429e+08, 3.97429e+08, 3.97429e+08, 3.97429e+08],
+"Start Time" : "2022-Apr-25 14:20:38.830305",
+"End Time" : "2022-Apr-25 14:21:16.784318"
+}
+,{
+"Algorithm Name": "VectorVectorContainer",
+"Type": "Sequential",
+"Graph Name": "bn-human-Jung2015_M87124563_160M.edges",
+"Test Times": [
+32600.4, 32302.9, 17045.3, 16291.8, 16304.9],
+"Test Memories": [
+1.01535e+09, 1.01535e+09, 1.01535e+09, 1.01535e+09, 1.01535e+09],
+"Start Time" : "2022-Apr-25 14:21:16.784429",
+"End Time" : "2022-Apr-25 14:23:11.679603"
+}
+,{
+"Algorithm Name": "VectorVectorContainer",
+"Type": "Sequential",
+"Graph Name": "bn-human-Jung2015_M87125286_210M.edges",
+"Test Times": [
+44422.6, 21464.2, 21286.6, 21252.5, 21249.5],
+"Test Memories": [
+1.2654e+09, 1.2654e+09, 1.2654e+09, 1.2654e+09, 1.2654e+09],
+"Start Time" : "2022-Apr-25 14:23:11.776440",
+"End Time" : "2022-Apr-25 14:25:21.716009"
+}
+,{
+"Algorithm Name": "VectorVectorContainer",
+"Type": "Sequential",
+"Graph Name": "bn-human-Jung2015_M87125334_40M.edges",
+"Test Times": [
+9519.42, 4243.92, 4200.7, 4170.92, 4172.53],
+"Test Memories": [
+3.3709e+08, 3.3709e+08, 3.3709e+08, 3.3709e+08, 3.3709e+08],
+"Start Time" : "2022-Apr-25 14:25:21.716117",
+"End Time" : "2022-Apr-25 14:25:48.211314"
+}
+,{
+"Algorithm Name": "VectorVectorContainer",
+"Type": "Sequential",
+"Graph Name": "bn-human-Jung2015_M87127677_210M.edges",
+"Test Times": [
+43911.4, 21388.9, 21200.4, 21161.6, 21067.7],
+"Test Memories": [
+1.26403e+09, 1.26403e+09, 1.26403e+09, 1.26403e+09, 1.26403e+09],
+"Start Time" : "2022-Apr-25 14:25:48.211421",
+"End Time" : "2022-Apr-25 14:27:57.214365"
+}
+,{
+"Algorithm Name": "VectorVectorContainer",
+"Type": "Sequential",
+"Graph Name": "C2000-9.edges",
+"Test Times": [
+242.97, 144.141, 143.771, 142.382, 142.173],
+"Test Memories": [
+1.02348e+07, 1.02348e+07, 1.02348e+07, 1.02348e+07, 1.02348e+07],
+"Start Time" : "2022-Apr-25 14:27:57.214472",
+"End Time" : "2022-Apr-25 14:27:58.056442"
+}
+,{
+"Algorithm Name": "VectorVectorContainer",
+"Type": "Sequential",
+"Graph Name": "ca-hollywood-2009.edges",
+"Test Times": [
+11347.4, 5715.78, 5670.89, 5640.04, 5636.8],
+"Test Memories": [
+3.70264e+08, 3.70264e+08, 3.70264e+08, 3.70264e+08, 3.70264e+08],
+"Start Time" : "2022-Apr-25 14:27:58.056541",
+"End Time" : "2022-Apr-25 14:28:32.336425"
+}
+,{
+"Algorithm Name": "VectorVectorContainer",
+"Type": "Sequential",
+"Graph Name": "ca-IMDB.edges",
+"Test Times": [
+843.569, 421.071, 419.762, 418.537, 418.05],
+"Test Memories": [
+4.48514e+07, 4.48514e+07, 4.48514e+07, 4.48514e+07, 4.48514e+07],
+"Start Time" : "2022-Apr-25 14:28:32.336537",
+"End Time" : "2022-Apr-25 14:28:34.954129"
+}
+,{
+"Algorithm Name": "VectorVectorContainer",
+"Type": "Sequential",
+"Graph Name": "cit-patent1.edges",
+"Test Times": [
+4609.24, 2063.91, 2122.81, 2129.85, 2112.04],
+"Test Memories": [
+1.85519e+08, 1.85519e+08, 1.85519e+08, 1.85519e+08, 1.85519e+08],
+"Start Time" : "2022-Apr-25 14:28:34.954233",
+"End Time" : "2022-Apr-25 14:28:48.283163"
+}
+,{
+"Algorithm Name": "VectorVectorContainer",
+"Type": "Sequential",
+"Graph Name": "delaunay_n24_50M.edges",
+"Test Times": [
+14031.7, 7649.94, 7587.41, 7633.5, 7584.7],
+"Test Memories": [
+8.27597e+08, 8.27597e+08, 8.27597e+08, 8.27597e+08, 8.27597e+08],
+"Start Time" : "2022-Apr-25 14:28:48.283267",
+"End Time" : "2022-Apr-25 14:29:34.440716"
+}
+,{
+"Algorithm Name": "VectorVectorContainer",
+"Type": "Sequential",
+"Graph Name": "graph500-scale20-ef16_adj_30M.edges",
+"Test Times": [
+10330.8, 6398.19, 6341.66, 6321.93, 6318.05],
+"Test Memories": [
+2.05565e+08, 2.05565e+08, 2.05565e+08, 2.05565e+08, 2.05565e+08],
+"Start Time" : "2022-Apr-25 14:29:34.440826",
+"End Time" : "2022-Apr-25 14:30:10.576573"
+}
+,{
+"Algorithm Name": "VectorVectorContainer",
+"Type": "Sequential",
+"Graph Name": "graph500-scale22-ef16_adj_130M.edges",
+"Test Times": [
+49270.2, 33315.8, 33198.7, 33109.6, 33202.2],
+"Test Memories": [
+7.9395e+08, 7.9395e+08, 7.9395e+08, 7.9395e+08, 7.9395e+08],
+"Start Time" : "2022-Apr-25 14:30:10.576699",
+"End Time" : "2022-Apr-25 14:33:14.580088"
+}
+,{
+"Algorithm Name": "VectorVectorContainer",
+"Type": "Sequential",
+"Graph Name": "hugetric-00010_10M.mtx",
+"Test Times": [
+3527.41, 2341.34, 2340.08, 2331.23, 2338.51],
+"Test Memories": [
+3.2024e+08, 3.2024e+08, 3.2024e+08, 3.2024e+08, 3.2024e+08],
+"Start Time" : "2022-Apr-25 14:33:14.675217",
+"End Time" : "2022-Apr-25 14:33:28.828135"
+}
+,{
+"Algorithm Name": "VectorVectorContainer",
+"Type": "Sequential",
+"Graph Name": "livejournal_160M.edges",
+"Test Times": [
+36825.2, 33810.6, 17804.6, 17123.4, 17127.3],
+"Test Memories": [
+1.09425e+09, 1.09425e+09, 1.09425e+09, 1.09425e+09, 1.09425e+09],
+"Start Time" : "2022-Apr-25 14:33:28.828474",
+"End Time" : "2022-Apr-25 14:35:32.783806"
+}
+,{
+"Algorithm Name": "VectorVectorContainer",
+"Type": "Sequential",
+"Graph Name": "rgg_n_2_22_s0_30M.edges",
+"Test Times": [
+6766.97, 3807.36, 3814.2, 3828.29, 3828.46],
+"Test Memories": [
+2.64693e+08, 2.64693e+08, 2.64693e+08, 2.64693e+08, 2.64693e+08],
+"Start Time" : "2022-Apr-25 14:35:32.791014",
+"End Time" : "2022-Apr-25 14:35:56.131899"
+}
+,{
+"Algorithm Name": "VectorVectorContainer",
+"Type": "Sequential",
+"Graph Name": "scc_fb-messages.mtx",
+"Test Times": [
+63.192, 42.849, 42.688, 42.247, 42.17],
+"Test Memories": [
+3.08872e+06, 3.08872e+06, 3.08872e+06, 3.08872e+06, 3.08872e+06],
+"Start Time" : "2022-Apr-25 14:35:56.132018",
+"End Time" : "2022-Apr-25 14:35:56.412274"
+}
+,{
+"Algorithm Name": "VectorVectorContainer",
+"Type": "Sequential",
+"Graph Name": "sc-ldoor_20M.edges",
+"Test Times": [
+3757.4, 2250.5, 2238.98, 2230.31, 2228.79],
+"Test Memories": [
+1.55565e+08, 1.55565e+08, 1.55565e+08, 1.55565e+08, 1.55565e+08],
+"Start Time" : "2022-Apr-25 14:35:56.412363",
+"End Time" : "2022-Apr-25 14:36:09.390651"
+}
+,{
+"Algorithm Name": "VectorVectorContainer",
+"Type": "Sequential",
+"Graph Name": "socfb-B-anon_20M.edges",
+"Test Times": [
+6866.89, 5046.25, 4978.51, 5016.49, 5013.42],
+"Test Memories": [
+2.18658e+08, 2.18658e+08, 2.18658e+08, 2.18658e+08, 2.18658e+08],
+"Start Time" : "2022-Apr-25 14:36:09.390757",
+"End Time" : "2022-Apr-25 14:36:37.100358"
+}
+,{
+"Algorithm Name": "VectorVectorContainer",
+"Type": "Sequential",
+"Graph Name": "socfb-Michigan23.mtx",
+"Test Times": [
+327.207, 108.404, 108.085, 108.121, 108.227],
+"Test Memories": [
+7.67162e+06, 7.67162e+06, 7.67162e+06, 7.67162e+06, 7.67162e+06],
+"Start Time" : "2022-Apr-25 14:36:37.100468",
+"End Time" : "2022-Apr-25 14:36:37.867607"
+}
+,{
+"Algorithm Name": "VectorVectorContainer",
+"Type": "Sequential",
+"Graph Name": "socfb-Texas84.mtx",
+"Test Times": [
+218.154, 147.537, 147.081, 146.544, 146.535],
+"Test Memories": [
+1.00477e+07, 1.00477e+07, 1.00477e+07, 1.00477e+07, 1.00477e+07],
+"Start Time" : "2022-Apr-25 14:36:37.867714",
+"End Time" : "2022-Apr-25 14:36:38.683524"
+}
+,{
+"Algorithm Name": "VectorVectorContainer",
+"Type": "Sequential",
+"Graph Name": "socfb-uci-uni_90M.edges",
+"Test Times": [
+33146.4, 26561.9, 26507.1, 26450.2, 26338.7],
+"Test Memories": [
+3.88519e+09, 3.88519e+09, 3.88519e+09, 3.88519e+09, 3.88519e+09],
+"Start Time" : "2022-Apr-25 14:36:38.683642",
+"End Time" : "2022-Apr-25 14:39:08.446266"
+}
+,{
+"Algorithm Name": "VectorVectorContainer",
+"Type": "Sequential",
+"Graph Name": "socfb-UIllinois20.mtx",
+"Test Times": [
+3114.21, 117.394, 117.238, 117.211, 117.332],
+"Test Memories": [
+8.16613e+06, 8.16613e+06, 8.16613e+06, 8.16613e+06, 8.16613e+06],
+"Start Time" : "2022-Apr-25 14:39:08.446382",
+"End Time" : "2022-Apr-25 14:39:12.042351"
+}
+,{
+"Algorithm Name": "VectorVectorContainer",
+"Type": "Sequential",
+"Graph Name": "socf-konect.edges",
+"Test Times": [
+22373.6, 14176.6, 14288.9, 14040.4, 14018.1],
+"Test Memories": [
+3.11959e+09, 3.11959e+09, 3.11959e+09, 3.11959e+09, 3.11959e+09],
+"Start Time" : "2022-Apr-25 14:39:12.042481",
+"End Time" : "2022-Apr-25 14:40:35.687718"
+}
+,{
+"Algorithm Name": "VectorVectorContainer",
+"Type": "Sequential",
+"Graph Name": "soc-google-plus.txt",
+"Test Times": [
+1049.36, 165.017, 164.805, 164.005, 164.337],
+"Test Memories": [
+1.86978e+07, 1.86978e+07, 1.86978e+07, 1.86978e+07, 1.86978e+07],
+"Start Time" : "2022-Apr-25 14:40:35.780023",
+"End Time" : "2022-Apr-25 14:40:37.577292"
+}
+,{
+"Algorithm Name": "VectorVectorContainer",
+"Type": "Sequential",
+"Graph Name": "soc-livejournal.mtx",
+"Test Times": [
+6889.23, 3437.27, 3594.66, 3572.31, 3570.86],
+"Test Memories": [
+4.00919e+08, 4.00919e+08, 4.00919e+08, 4.00919e+08, 4.00919e+08],
+"Start Time" : "2022-Apr-25 14:40:37.577407",
+"End Time" : "2022-Apr-25 14:40:59.226328"
+}
+,{
+"Algorithm Name": "VectorVectorContainer",
+"Type": "Sequential",
+"Graph Name": "soc-orkut.edges",
+"Test Times": [
+23504.3, 11727.3, 11584.7, 11552.2, 11546.5],
+"Test Memories": [
+7.00929e+08, 7.00929e+08, 7.00929e+08, 7.00929e+08, 7.00929e+08],
+"Start Time" : "2022-Apr-25 14:40:59.226438",
+"End Time" : "2022-Apr-25 14:42:10.225913"
+}
+,{
+"Algorithm Name": "VectorVectorContainer",
+"Type": "Sequential",
+"Graph Name": "soc-orkut_106M.edges",
+"Test Times": [
+37519.7, 25311.5, 25208.2, 25244.2, 25389.1],
+"Test Memories": [
+6.96575e+08, 6.96575e+08, 6.96575e+08, 6.96575e+08, 6.96575e+08],
+"Start Time" : "2022-Apr-25 14:42:10.226014",
+"End Time" : "2022-Apr-25 14:44:31.764335"
+}
+,{
+"Algorithm Name": "VectorVectorContainer",
+"Type": "Sequential",
+"Graph Name": "soc-orkut-dir_120M.edges",
+"Test Times": [
+25122.4, 12532.1, 12393.8, 12346.3, 12341.5],
+"Test Memories": [
+7.43494e+08, 7.43494e+08, 7.43494e+08, 7.43494e+08, 7.43494e+08],
+"Start Time" : "2022-Apr-25 14:44:31.764522",
+"End Time" : "2022-Apr-25 14:45:47.233253"
+}
+,{
+"Algorithm Name": "VectorVectorContainer",
+"Type": "Sequential",
+"Graph Name": "soc-pokec.mtx",
+"Test Times": [
+5045.33, 2486.26, 2477.84, 2471.34, 2470.67],
+"Test Memories": [
+1.72233e+08, 1.72233e+08, 1.72233e+08, 1.72233e+08, 1.72233e+08],
+"Start Time" : "2022-Apr-25 14:45:47.233363",
+"End Time" : "2022-Apr-25 14:46:02.688221"
+}
+,{
+"Algorithm Name": "VectorVectorContainer",
+"Type": "Sequential",
+"Graph Name": "soc-sinaweibo_260M.edges",
+"Test Times": [
+129801, 140063, 112224, 112052, 112601],
+"Test Memories": [
+2.86016e+09, 2.86016e+09, 2.86016e+09, 2.86016e+09, 2.86016e+09],
+"Start Time" : "2022-Apr-25 14:46:02.688331",
+"End Time" : "2022-Apr-25 14:56:36.547935"
+}
+,{
+"Algorithm Name": "VectorVectorContainer",
+"Type": "Sequential",
+"Graph Name": "soc-wiki-Talk-dir.mtx",
+"Test Times": [
+11661.6, 531.818, 520.325, 528.734, 529.194],
+"Test Memories": [
+1.55547e+08, 1.55547e+08, 1.55547e+08, 1.55547e+08, 1.55547e+08],
+"Start Time" : "2022-Apr-25 14:56:36.656865",
+"End Time" : "2022-Apr-25 14:56:50.529668"
+}
+,{
+"Algorithm Name": "VectorVectorContainer",
+"Type": "Sequential",
+"Graph Name": "tech-as-skitter.mtx",
+"Test Times": [
+2331.66, 1278.92, 1274.44, 1262.83, 1260.38],
+"Test Memories": [
+1.07637e+08, 1.07637e+08, 1.07637e+08, 1.07637e+08, 1.07637e+08],
+"Start Time" : "2022-Apr-25 14:56:50.529765",
+"End Time" : "2022-Apr-25 14:56:58.406845"
+}
+,{
+"Algorithm Name": "VectorVectorContainer",
+"Type": "Sequential",
+"Graph Name": "tech-as-skitter_10M.mtx",
+"Test Times": [
+2073, 1277.18, 1275.43, 1269.24, 1266.24],
+"Test Memories": [
+1.07637e+08, 1.07637e+08, 1.07637e+08, 1.07637e+08, 1.07637e+08],
+"Start Time" : "2022-Apr-25 14:56:58.406956",
+"End Time" : "2022-Apr-25 14:57:05.952756"
+}
+,{
+"Algorithm Name": "VectorVectorContainer",
+"Type": "Sequential",
+"Graph Name": "tech-ip.edges",
+"Test Times": [
+3924.54, 2239.83, 2226.89, 2221.76, 2220.18],
+"Test Memories": [
+2.06877e+08, 2.06877e+08, 2.06877e+08, 2.06877e+08, 2.06877e+08],
+"Start Time" : "2022-Apr-25 14:57:05.952864",
+"End Time" : "2022-Apr-25 14:57:19.114876"
+}
+,{
+"Algorithm Name": "VectorVectorContainer",
+"Type": "Sequential",
+"Graph Name": "tech-p2p-gnutella.mtx",
+"Test Times": [
+27.788, 17.415, 17.392, 17.376, 17.319],
+"Test Memories": [
+3.22223e+06, 3.22223e+06, 3.22223e+06, 3.22223e+06, 3.22223e+06],
+"Start Time" : "2022-Apr-25 14:57:19.114988",
+"End Time" : "2022-Apr-25 14:57:19.219572"
+}
+,{
+"Algorithm Name": "VectorVectorContainer",
+"Type": "Sequential",
+"Graph Name": "web-Stanford.mtx",
+"Test Times": [
+402.183, 266.941, 266.198, 265.072, 264.83],
+"Test Memories": [
+2.25416e+07, 2.25416e+07, 2.25416e+07, 2.25416e+07, 2.25416e+07],
+"Start Time" : "2022-Apr-25 14:57:19.219681",
+"End Time" : "2022-Apr-25 14:57:20.755158"
+}
+,{
+"Algorithm Name": "VectorVectorContainer",
+"Type": "Sequential",
+"Graph Name": "web-uk-2005.mtx",
+"Test Times": [
+1827.29, 1091.95, 1087.4, 1084.67, 1085.28],
+"Test Memories": [
+7.28465e+07, 7.28465e+07, 7.28465e+07, 7.28465e+07, 7.28465e+07],
+"Start Time" : "2022-Apr-25 14:57:20.755265",
+"End Time" : "2022-Apr-25 14:57:26.968206"
+}
+,{
+"Algorithm Name": "VectorVectorContainer",
+"Type": "Sequential",
+"Graph Name": "web-wikipedia2009.mtx",
+"Test Times": [
+962.218, 581.609, 579.645, 581.967, 581.994],
+"Test Memories": [
+6.98149e+07, 6.98149e+07, 6.98149e+07, 6.98149e+07, 6.98149e+07],
+"Start Time" : "2022-Apr-25 14:57:26.968317",
+"End Time" : "2022-Apr-25 14:57:30.572609"
+}
+,{
+"Algorithm Name": "VectorVectorContainer",
+"Type": "Sequential",
+"Graph Name": "test",
+"Test Times": [
+10.89, 0.072, 0.018, 0.017, 0.017],
+"Test Memories": [
+0, 0, 0, 0, 0],
+"Start Time" : "2022-Apr-25 14:57:30.572715",
+"End Time" : "2022-Apr-25 14:57:30.583747"
+}
+,{
+"Algorithm Name": "VectorVectorContainer",
+"Type": "Sequential",
+"Graph Name": "bn-1.8M-166M.edges",
+"Test Times": [
+34579, 16886, 16748.4, 16717.9, 16679.5],
+"Test Memories": [
+1.00489e+09, 1.00489e+09, 1.00489e+09, 1.00489e+09, 1.00489e+09],
+"Start Time" : "2022-Apr-25 14:57:30.583914",
+"End Time" : "2022-Apr-25 14:59:12.460717"
+}
+,{
+"Algorithm Name": "VectorVectorContainer",
+"Type": "Sequential",
+"Graph Name": "sample",
+"Test Times": [
+1.169, 0.02, 0.006, 0.006, 0.006],
+"Test Memories": [
+0, 0, 0, 0, 0],
+"Start Time" : "2022-Apr-25 14:59:12.460830",
+"End Time" : "2022-Apr-25 14:59:12.462049"
+}
+,{
+"Algorithm Name": "VectorVectorContainer",
+"Type": "Sequential",
+"Graph Name": "description",
+"Test Times": [
+0.352, 0.008, 0.006, 0.006, 0.006],
+"Test Memories": [
+0, 0, 0, 0, 0],
+"Start Time" : "2022-Apr-25 14:59:12.462099",
+"End Time" : "2022-Apr-25 14:59:12.462487"
+}
+,{
+"Algorithm Name": "VectorVectorContainer",
+"Type": "Sequential",
+"Graph Name": "parallel",
+"Test Times": [
+0.532, 0.008, 0.006, 0.006, 0.006],
+"Test Memories": [
+0, 0, 0, 0, 0],
+"Start Time" : "2022-Apr-25 14:59:12.462525",
+"End Time" : "2022-Apr-25 14:59:12.463093"
+}
+]

@@ -17,20 +17,22 @@ void Tester::printAvgTestResult(std::string type, double avg){
 
 
 AlgorithmTest::AlgorithmTest(std::string name, std::string type, std::string graphName, int numberOfTrials, std::vector<double> timeResults,
-                             std::vector<double> memoryResults) : name(std::move(name)), type(std::move(type)),
-                                                                  numberOfTrials(numberOfTrials),
-                                                                  timeResults(std::move(timeResults)),
-                                                                  memoryResults(std::move(memoryResults)),
-                                                                  graphName(std::move(graphName)){}
+                             std::vector<double> memoryResults,boost::posix_time::ptime startTime) :
+                                name(std::move(name)), type(std::move(type)),numberOfTrials(numberOfTrials),timeResults(std::move(timeResults)),
+                                memoryResults(std::move(memoryResults)),graphName(std::move(graphName)),
+                                startTime(startTime),endTime(boost::posix_time::microsec_clock::local_time()){}
 
 AlgorithmTest::AlgorithmTest(std::string name, std::string type, std::string graphName, int numberOfTrials,
-                             const std::vector<std::pair<double,double>>& timeMemoryResults): name(std::move(name)), type(std::move(type)),
-                                                                                     numberOfTrials(numberOfTrials),
-                                                                                     graphName(std::move(graphName)){
-for(auto&& [time,memory] : timeMemoryResults){
-    this->timeResults.push_back(time);
-    this->memoryResults.push_back(memory);
-}
+                             const std::vector<std::pair<double,double>>& timeMemoryResults,
+                             boost::posix_time::ptime startTime):
+                                name(std::move(name)), type(std::move(type)),numberOfTrials(numberOfTrials),
+                                graphName(std::move(graphName)),startTime(startTime),endTime(boost::posix_time::microsec_clock::local_time())
+{
+    for(auto&& [time,memory] : timeMemoryResults)
+    {
+        this->timeResults.push_back(time);
+        this->memoryResults.push_back(memory);
+    }
 }
 
 

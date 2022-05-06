@@ -41,9 +41,7 @@ namespace PFA {
         std::exception_ptr thread_exception;
         Graph<Container> read_chunk(int id)
         {
-            size_t chunk_size=pos[id+1]-pos[id];
             size_t current_pos=pos[id];
-            constexpr int line_size_upper_bound=18;
             Graph<Container> G;
             int a,b;
             try {

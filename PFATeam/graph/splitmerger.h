@@ -111,12 +111,16 @@ namespace PFA
 //            std::unordered_map<int,std::vector<int,Allocator<int>>,
 //                    std::hash<int>,std::equal_to<int>,
 //                            Allocator<std::pair<const int,std::vector<int,Allocator<int>>>>> mapper;
-            for(int graphId=graphs.size()-1;graphId>=0;graphId--)
+            graphs[0].adjacencyList.swap(graphs[graphRepresentative].adjacencyList);
+            for(int graphId=graphs.size()-1;graphId>0;graphId--)
             {
-                if(graphId == graphRepresentative) // don't go through the representative graph
-                    continue;
-                for(auto &&outwardAdjacent:graphs[graphId].adjacencyList) for(auto &&adjacent:outwardAdjacent.second)
-                    graphs[graphRepresentative].addEdge(outwardAdjacent.first,adjacent);
+                for(auto outwardAdjacent:graphs[graphId].adjacencyList)
+                    if constexpr (std::is_same_v<Container,std::list<int,Allocator<int>>>)
+                        graphs[graphRepresentative].adjacencyList[outwardAdjacent.first].splice(
+                                graphs[graphRepresentative].adjacencyList[outwardAdjacent.first].begin(),
+                                outwardAdjacent.second);
+                    else for(auto adjacent:outwardAdjacent.second)
+                        graphs.front().addEdge(outwardAdjacent.first,adjacent);
                 graphs.pop_back();
             }
 
@@ -132,7 +136,7 @@ namespace PFA
 //                    graphs[graphNumber].clearVertex(vertex);
 //                }
 //            }
-            return graphs[graphRepresentative];
+            return graphs.front();
         }
     };
 
