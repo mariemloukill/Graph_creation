@@ -17,7 +17,8 @@ endif()
 add_executable(PFAProject main.cpp tester.cpp writer/writer.cpp writer/writer.h memory/cmemory.h memory/MemoryProfiler.cpp memory/MemoryProfiler.h memory/ProfilableAllocator.h graph/graphsplit.h graph/splitcreator.h graph/splitmerger.h utils/types.h utils/utils.h)
 add_executable(PFAProjectParallel parallel_main.cpp tester.cpp writer/writer.cpp writer/writer.h memory/cmemory.h memory/MemoryProfiler.cpp memory/MemoryProfiler.h memory/ProfilableAllocator.h graph/splitcreator.h graph/splitmerger.h reader/ParallelReader.h utils/types.h utils/utils.h)
 add_executable(PFAProjectCFG main_cfg.cpp tester.cpp writer/writer.cpp writer/writer.h memory/cmemory.h memory/MemoryProfiler.cpp memory/MemoryProfiler.h memory/ProfilableAllocator.h graph/splitcreator.h graph/splitmerger.h reader/ParallelReader.h utils/types.h utils/utils.h)
-target_link_libraries(PFAProjectParallel ${Boost_LIBRARIES})
-target_link_libraries(PFAProjectCFG ${Boost_LIBRARIES})
 target_link_libraries(PFAProject PRIVATE TBB::tbb)
+target_link_libraries(PFAProjectParallel PRIVATE ${Boost_LIBRARIES} TBB::tbb)
+target_link_libraries(PFAProjectCFG ${Boost_LIBRARIES} TBB::tbb)
+
 
