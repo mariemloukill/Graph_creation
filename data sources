@@ -1,72 +1,73 @@
-name
-bn-65-1K.edges
-bn-100k-662k.edges
-bn-7k-50k.edges
-bn-800-19k.edges
-bn-1.8M-166M.edges
-bn-34k-181k.edges
-bn-434k-16M.edges
-bn-449k-3.3M.edges
-bn-human-BNU_1_0025868_session_1-bg_150M.edges
-bn-human-BNU_1_0025869_session_2-bg_150M.edges
-bn-human-BNU_1_0025871_session_1-bg_170M.edges
-bn-human-BNU_1_0025876_session_2-bg_140M.edges
-bn-human-BNU_1_0025889_session_2_130M.edges
-bn-human-BNU_1_0025913_session_2_180M.edges
-bn-human-BNU_1_0025914_session_2_100M.edges
-bn-human-BNU_1_0025916_session_1_110M.edges
-bn-human-BNU_1_0025919_session_1_200M.edges
-bn-human-Jung2015_M7101234.edges
-bn-human-Jung2015_M8703600.edges
-bn-human-Jung2015_M87101049_190M.edges
-bn-human-Jung2015_M87101705_200M.edges
-bn-human-Jung2015_M87104201_190M.edges
-bn-human-Jung2015_M87104300_70M.edges
-bn-human-Jung2015_M87104509_50M.edges
-bn-human-Jung2015_M87107781_70M.edges
-bn-human-Jung2015_M87110148_140M.edges
-bn-human-Jung2015_M87110650_40M.edges
-bn-human-Jung2015_M87112427_170M.edges
-bn-human-Jung2015_M87113679_60M.edges
-bn-human-Jung2015_M87113878.edges
-bn-human-Jung2015_M87114342_90M.edges
-bn-human-Jung2015_M87116523_80M.edges
-bn-human-Jung2015_M87117093_120M.edges
-bn-human-Jung2015_M87118347_80M.edges
-bn-human-Jung2015_M87118465_180M.edges
-bn-human-Jung2015_M87119472_60M.edges
-bn-human-Jung2015_M87124563_160M.edges
-bn-human-Jung2015_M87125286_210M.edges
-bn-human-Jung2015_M87125334_40M.edges
-bn-human-Jung2015_M87127677_210M.edges
-C2000-9.edges
-ca-hollywood-2009.edges
-ca-IMDB.edges
-cit-patent1.edges
-delaunay_n24_50M.edges
-graph500-scale20-ef16_adj_30M.edges
-graph500-scale22-ef16_adj_130M.edges
-hugetric-00010_10M.mtx
-livejournal_160M.edges
-rgg_n_2_22_s0_30M.edges
-scc_fb-messages.mtx
-sc-ldoor_20M.edges
-socfb-B-anon_20M.edges
-socfb-Michigan23.mtx
-socfb-Texas84.mtx
-socfb-uci-uni_90M.edges
-socfb-UIllinois20.mtx
-socf-konect.edges
-soc-google-plus.txt
-soc-livejournal.mtx
-soc-orkut_106M.edges
-soc-orkut-dir_120M.edges
-soc-pokec.mtx
-soc-wiki-Talk-dir.mtx
-tech-as-skitter_10M.mtx
-tech-ip.edges
-tech-p2p-gnutella.mtx
-web-Stanford.mtx
-web-uk-2005.mtx
-web-wikipedia2009.mtx
-soc-sinaweibo_260M.edges
+| name                                           | link                                                                  |
+|------------------------------------------------|-----------------------------------------------------------------------|
+| bn-65-1K.edges                                 | https://networkrepository.com/bn-cat-mixed-species-brain-1.php        |
+| bn-100k-662k.edges                             | https://networkrepository.com/fe-rotor.php                            |
+| bn-7k-50k.edges                                | https://networkrepository.com/bio-grid-fruitfly.php                   |
+| bn-800-19k.edges                               |                                                                       |
+| bn-1.8M-166M.edges                             |                                                                       |
+| bn-34k-181k.edges                              | https://networkrepository.com/email-enron-large.php                   |
+| bn-434k-16M.edges                              | https://networkrepository.com/coPapersCiteseer.php                    |
+| bn-449k-3.3M.edges                             | https://networkrepository.com/auto.php                                |
+| bn-human-BNU_1_0025868_session_1-bg_150M.edges | https://networkrepository.com/bn-human-BNU-1-0025868-session-1-bg.php |
+| bn-human-BNU_1_0025869_session_2-bg_150M.edges | https://networkrepository.com/bn-human-BNU-1-0025868-session-2-bg.php |
+| bn-human-BNU_1_0025871_session_1-bg_170M.edges | https://networkrepository.com/bn-human-BNU-1-0025871-session-1-bg.php |
+| bn-human-BNU_1_0025876_session_2-bg_140M.edges | https://networkrepository.com/bn-human-BNU-1-0025876-session-2-bg.php |
+| bn-human-BNU_1_0025889_session_2_130M.edges    | https://networkrepository.com/bn-human-BNU-1-0025889-session-2.php    |
+| bn-human-BNU_1_0025913_session_2_180M.edges    | https://networkrepository.com/bn-human-BNU-1-0025913-session-2.php    |
+| bn-human-BNU_1_0025914_session_2_100M.edges    | https://networkrepository.com/bn-human-BNU-1-0025914-session-2.php    |
+| bn-human-BNU_1_0025916_session_1_110M.edges    | https://networkrepository.com/bn-human-BNU-1-0025916-session-1.php    |
+| bn-human-BNU_1_0025919_session_1_200M.edges    | https://networkrepository.com/bn-human-BNU-1-0025919-session-1.php    |
+| bn-human-Jung2015_M7101234.edges               | https://networkrepository.com/bn-human-Jung2015-M87101234.php         |
+| bn-human-Jung2015_M8703600.edges               |                                                                       |
+| bn-human-Jung2015_M87101049_190M.edges         | https://networkrepository.com/bn-human-Jung2015-M87101049.php         |
+| bn-human-Jung2015_M87101705_200M.edges         | https://networkrepository.com/bn-human-Jung2015-M87101705.php         |
+| bn-human-Jung2015_M87104201_190M.edges         | https://networkrepository.com/bn-human-Jung2015-M87104201.php         |
+| bn-human-Jung2015_M87104300_70M.edges          | https://networkrepository.com/bn-human-Jung2015-M87104300.php         |
+| bn-human-Jung2015_M87104509_50M.edges          | https://networkrepository.com/bn-human-Jung2015-M87104509.php         |
+| bn-human-Jung2015_M87107781_70M.edges          | https://networkrepository.com/bn-human-Jung2015-M87107781.php         |
+| bn-human-Jung2015_M87110148_140M.edges         | https://networkrepository.com/bn-human-Jung2015-M87110148.php         |
+| bn-human-Jung2015_M87110650_40M.edges          | https://networkrepository.com/bn-human-Jung2015-M87110650.php         |
+| bn-human-Jung2015_M87112427_170M.edges         | https://networkrepository.com/bn-human-Jung2015-M87112427.php         |
+| bn-human-Jung2015_M87113679_60M.edges          | https://networkrepository.com/bn-human-Jung2015-M87113679.php         |
+| bn-human-Jung2015_M87113878.edges              | https://networkrepository.com/bn-human-Jung2015-M87113878.php         |
+| bn-human-Jung2015_M87114342_90M.edges          | https://networkrepository.com/bn-human-Jung2015-M87114342.php         |
+| bn-human-Jung2015_M87116523_80M.edges          | https://networkrepository.com/bn-human-Jung2015-M87116523.php         |
+| bn-human-Jung2015_M87117093_120M.edges         | https://networkrepository.com/bn-human-Jung2015-M87117093.php         |
+| bn-human-Jung2015_M87118347_80M.edges          | https://networkrepository.com/bn-human-Jung2015-M87118347.php         |
+| bn-human-Jung2015_M87118465_180M.edges         | https://networkrepository.com/bn-human-Jung2015-M87118465.php         |
+| bn-human-Jung2015_M87119472_60M.edges          | https://networkrepository.com/bn-human-Jung2015-M87119472.php         |
+| bn-human-Jung2015_M87124563_160M.edges         | https://networkrepository.com/bn-human-Jung2015-M87124563.php         |
+| bn-human-Jung2015_M87125286_210M.edges         | https://networkrepository.com/bn-human-Jung2015-M87125286.php         |
+| bn-human-Jung2015_M87125334_40M.edges          | https://networkrepository.com/bn-human-Jung2015-M87125334.php         |
+| bn-human-Jung2015_M87127677_210M.edges         | https://networkrepository.com/bn-human-Jung2015-M87127677.php         |
+| C2000-9.edges                                  | https://networkrepository.com/C2000-9.php                             |
+| ca-hollywood-2009.edges                        | https://networkrepository.com/ca-hollywood-2009.php                   |
+| ca-IMDB.edges                                  | https://networkrepository.com/ca-IMDB.php                             |
+| cit-patent1.edges                              | https://networkrepository.com/cit-patent.php                          |
+| delaunay_n24_50M.edges                         | https://networkrepository.com/delaunay-n24.php                        |
+| graph500-scale20-ef16_adj_30M.edges            | https://networkrepository.com/graph500-scale18-ef16-adj.php           |
+| graph500-scale22-ef16_adj_130M.edges           | https://networkrepository.com/graph500-scale22-ef16-adj.php           |
+| hugetric-00010_10M.mtx                         | https://networkrepository.com/hugetric-00010.php                      |
+| livejournal_160M.edges                         | https://networkrepository.com/livejournal.php                         |
+| rgg_n_2_22_s0_30M.edges                        | https://networkrepository.com/rgg-n-2-22-s0.php                       |
+| scc_fb-messages.mtx                            | https://networkrepository.com/scc-fb-messages.php                     |
+| sc-ldoor_20M.edges                             | https://networkrepository.com/sc-ldoor.php                            |
+| socfb-B-anon_20M.edges                         | https://networkrepository.com/socfb-B-anon.php                        |
+| socfb-Michigan23.mtx                           | https://networkrepository.com/socfb-Michigan23.php                    |
+| socfb-Texas84.mtx                              | https://networkrepository.com/socfb-Texas84.php                       |
+| socfb-uci-uni_90M.edges                        | https://networkrepository.com/socfb-uci-uni.php                       |
+| socfb-UIllinois20.mtx                          | https://networkrepository.com/socfb-UIllinois20.php                   |
+| socf-konect.edges                              | https://networkrepository.com/socfb-konect.php                        |
+| soc-google-plus.txt                            | https://networkrepository.com/soc-google-plus.php                     |
+| soc-livejournal.mtx                            | https://networkrepository.com/soc-livejournal.php                     |
+| soc-orkut_106M.edges                           | https://networkrepository.com/soc-orkut.php                           |
+| soc-orkut-dir_120M.edges                       | https://networkrepository.com/soc-orkut-dir.php                       |
+| soc-pokec.mtx                                  | https://networkrepository.com/soc-pokec.php                           |
+| soc-wiki-Talk-dir.mtx                          | https://networkrepository.com/soc-wiki-Talk-dir.php                   |
+| tech-as-skitter_10M.mtx                        | https://networkrepository.com/tech-as-skitter.php                     |
+| tech-ip.edges                                  | https://networkrepository.com/tech-ip.php                             |
+| tech-p2p-gnutella.mtx                          | https://networkrepository.com/tech-p2p-gnutella.php                   |
+| web-Stanford.mtx                               | https://networkrepository.com/web-Stanford.php                        |
+| web-uk-2005.mtx                                | https://networkrepository.com/web-uk-2005.php                         |
+| web-wikipedia2009.mtx                          | https://networkrepository.com/web-wikipedia2009.php                   |
+| soc-sinaweibo_260M.edges                       | https://networkrepository.com/soc-sinaweibo.php                       |
