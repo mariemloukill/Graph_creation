@@ -19,9 +19,9 @@ The entire project was written in `c++`. And can be divided to two main parts
 
 Each of the strategies has its respective `cmake` project, making it simpler to test them individually
 
-`Parallel` : the parallel creation strategy
-`Sequential` : The sequential creation Strategy
-`Strategy3` : a third *experimental* creation strategy
+- `Parallel` : the parallel creation strategy
+- `Sequential` : The sequential creation Strategy
+- `Strategy3` : The sequential split creation strategy
 
 Each of these projects will run the underlying strategy on the provided input. And then will produce some metrics ( based on the system status) 
 
@@ -34,6 +34,7 @@ This implementation provides a couple of improvements to the initial one. Can be
 
 We can now test multiple *Graph data structures* for each implementation. 
 
+> To Finish...
 
 ## Building the Project
 
