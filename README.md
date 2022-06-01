@@ -98,16 +98,6 @@ The `tester` class uses a `clock` to calculate the total time each trial has tak
 
 The `tester` class calculates the `memory` used by each trial. Most of the time, the `tester` will average these results on multiple trials.
 
----
-
-**Note : Memory Profiling**
-
-In order to monitor the system in Real time a `Memory profiler` has been. It takes a snapshots of the current state of system within fixed interval. This can be used to draw graphs later on to observe the behaviour of the system
-
-More information in [MemoryProfiler.h](./PFATeam/memory/MemoryProfiler.h)
-
----
-
 Two main methods have been used to monitor Ram usage :
 
 #### The platform dependant method 
@@ -123,6 +113,8 @@ This method uses an **allocator** to allocate the exact memory space needed by t
 
 More information in [ProfilableAllocator.h](./PFATeam/memory/ProfilableAllocator.h)
 
+> **Note - Memory Profiling: ** In order to monitor the system in Real time a `Memory profiler` has been implemented . It takes a snapshots of the current state of system within fixed interval. This can be used to draw graphs later on to observe the behaviour of the system. More information in [MemoryProfiler.h](./PFATeam/memory/MemoryProfiler.h)
+
 #### Writing the Output
 
 a generic [writer](./PFATeam/writer/writer.h) class has been implemented to encapsulate all write operations ( `csv`, `json`, `stdout`)
@@ -133,8 +125,40 @@ This project is built using `cmake`. Prerequisites depend on the module you want
 
 - `C++ 20` or higher : The initial implementation only requires `C++ 14`
 - `Boost C++ 1.7` or higher : required by the new implementation
-  - `boost/chrono` : Used to calculate usage time
+  - `boost/chrono` : Used in monitoring
+  - `boost/date_time` : Used also in monitoring
+  - `boost/mp11` : Used for template meta programming
+  - `boost/program_options` : Used to pass arguments to the program
+
+To build the project, start by pointing to your module ( for example `cd /PFATeam`) 
+
+Generate build files with cmake 
+
+```bash
+cmake -DCMAKE_BUILD_TYPE=Release -B build .
+```
+
+This will generate some build files. Based on your system and on the available **Build system Generator** the next command might differ. If you're using `make` as a build generator ( changed in the cmake config ) then simply run
+
+```bash
+cd build
+make
+```
 
 
 ## Usage
+
+After the build phase, 3 Executables will be generated :
+
+- `PFAProject` : Tests the sequential strategy on multiple graphs
+- `PFAProjectParallel` : Tests the parallel strategy on multiple graphs
+- `PFAProjectCFG` : This is the recommended way to run the program. It's takes input arguments ( and a configuration file if needed ), runs the different tests and saves the results in the specified location
+
+### Executing the Configurable program
+
+while still in the `build` directory , run 
+
+```bash
+./PFAProjectCFG
+```
 
