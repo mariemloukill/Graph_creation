@@ -78,16 +78,50 @@ We can now test multiple *Graph data structures* for each implementation ( which
 - `unordered map of sets`
 - `unordered map of unordered sets`
 
-Note that These different structures can be used interchangebly since they share the same high level API. Which is described more in details in [graph_container.h](./PFATeam/graph/graph_container.h)
+Note that These different structures can be used interchangeably since they share the same high level API. Which is described more in details in [graph_container.h](./PFATeam/graph/graph_container.h)
+
+A `tester` class has been implemented, which encapsulates all the testing operations based on the strategies and the data structures provided. More info in [tester.h](./PFATeam/tester.h)
+
 
 ### Monitoring
 
-Monitoring the performance of the tests takes into considerations 2 main aspects : 
+We monitor mainly two aspects 
 
 - Ram consumed
 - Time the algorithm has taken
 
+### Monitoring Time Usage
 
+The `tester` class uses a `clock` to calculate the total time each trial has taken. Most of the time, the `tester` will average these results on multiple trials.
+
+### Monitoring Memory Usage
+
+The `tester` class calculates the `memory` used by each trial. Most of the time, the `tester` will average these results on multiple trials.
+
+---
+
+**Note : Memory Profiling**
+
+In order to monitor the system in Real time a `Memory profiler` has been. It takes a snapshots of the current state of system within fixed interval. This can be used to draw graphs later on to observe the behaviour of the system
+
+More information in [MemoryProfiler.h](./PFATeam/memory/MemoryProfiler.h)
+
+---
+
+Two main methods have been used to monitor Ram usage :
+
+#### The platform dependant method 
+
+In this method we get the Ram usage directly from the system. It's compatible with linux, windows or any unix compatible system. More information in [cmemory.h](./PFATeam/memory/cmemory.h)
+
+#### The Memory Allocator method
+
+This method uses an **allocator** to allocate the exact memory space needed by the graphs. It has a few advantages over the other method : 
+
+- It's platform independent. Meaning it works with any system that can compile `c++` code
+- Results are more accurate
+
+More information in [ProfilableAllocator.h](./PFATeam/memory/ProfilableAllocator.h)
 
 #### Writing the Output
 
@@ -99,7 +133,7 @@ This project is built using `cmake`. Prerequisites depend on the module you want
 
 - `C++ 20` or higher : The initial implementation only requires `C++ 14`
 - `Boost C++ 1.7` or higher : required by the new implementation
-  - `boost/chrono` : Used to calculate time
+  - `boost/chrono` : Used to calculate usage time
 
 
 ## Usage
