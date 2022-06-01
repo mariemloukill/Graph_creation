@@ -1,0 +1,9 @@
+type: SSD
+model: Micron MTFDHBA512QFD (0011P6LN)
+serial-number: 2144325B71DA
+size: 512GB
+speed: At least 2 Gb / sec
+
+sample_size: 10.0 MiB (10,485,760 bytes)
+average_read_rate: 1.4 GB/s (1000 samples)
+average_access_time: 0.12 msec (1000 samples)

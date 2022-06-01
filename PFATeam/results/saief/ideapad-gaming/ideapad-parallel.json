@@ -1,0 +1,4323 @@
+[
+{
+"Algorithm Name": "VectorVectorContainer",
+"Type": "ParallelInplace#2",
+"Graph Name": "bn-human-BNU_1_0025889_session_2_130M.edges",
+"Test Times": [
+9098.96, 8866.06, 8746.5],
+"Test Memories": [
+9.68121e+08, 9.68121e+08, 9.68121e+08],
+"Start Time" : "2022-May-31 20:00:59.177919",
+"End Time" : "2022-May-31 20:01:26.088708"
+}
+,{
+"Algorithm Name": "VectorVectorContainer",
+"Type": "ParallelInplace#2",
+"Graph Name": "graph500-scale20-ef16_adj_30M.edges",
+"Test Times": [
+3897.04, 3837.05, 3775.34],
+"Test Memories": [
+2.28144e+08, 2.28144e+08, 2.28144e+08],
+"Start Time" : "2022-May-31 20:01:26.088804",
+"End Time" : "2022-May-31 20:01:37.812226"
+}
+,{
+"Algorithm Name": "VectorVectorContainer",
+"Type": "ParallelInplace#2",
+"Graph Name": "bn-human-Jung2015_M87118347_80M.edges",
+"Test Times": [
+3138.8, 3068.61, 3061.68],
+"Test Memories": [
+5.19473e+08, 5.19473e+08, 5.19473e+08],
+"Start Time" : "2022-May-31 20:01:37.812323",
+"End Time" : "2022-May-31 20:01:47.160038"
+}
+,{
+"Algorithm Name": "VectorVectorContainer",
+"Type": "ParallelInplace#2",
+"Graph Name": "socf-konect.edges",
+"Test Times": [
+6924.32, 7273.99, 7251.51],
+"Test Memories": [
+5.02862e+09, 5.02862e+09, 5.02862e+09],
+"Start Time" : "2022-May-31 20:01:47.160114",
+"End Time" : "2022-May-31 20:02:10.779075"
+}
+,{
+"Algorithm Name": "VectorVectorContainer",
+"Type": "ParallelInplace#2",
+"Graph Name": "socfb-UIllinois20.mtx",
+"Test Times": [
+668.248, 62.734, 53.061],
+"Test Memories": [
+9.31808e+06, 9.31808e+06, 9.31808e+06],
+"Start Time" : "2022-May-31 20:02:10.779167",
+"End Time" : "2022-May-31 20:02:11.571668"
+}
+,{
+"Algorithm Name": "VectorVectorContainer",
+"Type": "ParallelInplace#2",
+"Graph Name": "bn-human-BNU_1_0025913_session_2_180M.edges",
+"Test Times": [
+7870.59, 7730.95, 7658.97],
+"Test Memories": [
+1.20509e+09, 1.20509e+09, 1.20509e+09],
+"Start Time" : "2022-May-31 20:02:11.571843",
+"End Time" : "2022-May-31 20:02:35.055865"
+}
+,{
+"Algorithm Name": "VectorVectorContainer",
+"Type": "ParallelInplace#2",
+"Graph Name": "bn-human-BNU_1_0025916_session_1_110M.edges",
+"Test Times": [
+4878.25, 4725.49, 4709.54],
+"Test Memories": [
+7.91512e+08, 7.91512e+08, 7.91512e+08],
+"Start Time" : "2022-May-31 20:02:35.055942",
+"End Time" : "2022-May-31 20:02:49.520748"
+}
+,{
+"Algorithm Name": "VectorVectorContainer",
+"Type": "ParallelInplace#2",
+"Graph Name": "livejournal_160M.edges",
+"Test Times": [
+7445.82, 7288.52, 7214.1],
+"Test Memories": [
+1.20569e+09, 1.20569e+09, 1.20569e+09],
+"Start Time" : "2022-May-31 20:02:49.521006",
+"End Time" : "2022-May-31 20:03:12.319424"
+}
+,{
+"Algorithm Name": "VectorVectorContainer",
+"Type": "ParallelInplace#2",
+"Graph Name": "tech-ip.edges",
+"Test Times": [
+1098.96, 955.519, 960.445],
+"Test Memories": [
+3.39018e+08, 3.45609e+08, 3.46976e+08],
+"Start Time" : "2022-May-31 20:03:12.319504",
+"End Time" : "2022-May-31 20:03:15.544024"
+}
+,{
+"Algorithm Name": "VectorVectorContainer",
+"Type": "ParallelInplace#2",
+"Graph Name": "bn-800-19k.edges",
+"Test Times": [
+5.888, 1.577, 1.036],
+"Test Memories": [
+158724, 158724, 158724],
+"Start Time" : "2022-May-31 20:03:15.544094",
+"End Time" : "2022-May-31 20:03:15.552695"
+}
+,{
+"Algorithm Name": "VectorVectorContainer",
+"Type": "ParallelInplace#2",
+"Graph Name": "soc-wiki-Talk-dir.mtx",
+"Test Times": [
+285.633, 278.971, 281.269],
+"Test Memories": [
+1.97629e+08, 1.97629e+08, 1.97844e+08],
+"Start Time" : "2022-May-31 20:03:15.552766",
+"End Time" : "2022-May-31 20:03:16.439018"
+}
+,{
+"Algorithm Name": "VectorVectorContainer",
+"Type": "ParallelInplace#2",
+"Graph Name": "bn-human-Jung2015_M87101049_190M.edges",
+"Test Times": [
+8268.35, 8146.52, 7935.29],
+"Test Memories": [
+1.26237e+09, 1.26237e+09, 1.26237e+09],
+"Start Time" : "2022-May-31 20:03:16.439098",
+"End Time" : "2022-May-31 20:03:40.997680"
+}
+,{
+"Algorithm Name": "VectorVectorContainer",
+"Type": "ParallelInplace#2",
+"Graph Name": "soc-orkut_106M.edges",
+"Test Times": [
+15575.8, 15193.8, 18738.7],
+"Test Memories": [
+8.15405e+08, 8.15405e+08, 8.15405e+08],
+"Start Time" : "2022-May-31 20:03:40.997758",
+"End Time" : "2022-May-31 20:04:33.277317"
+}
+,{
+"Algorithm Name": "VectorVectorContainer",
+"Type": "ParallelInplace#2",
+"Graph Name": "socfb-uci-uni_90M.edges",
+"Test Times": [
+17019.7, 19359.3, 18373.3],
+"Test Memories": [
+7.26437e+09, 7.26437e+09, 7.26437e+09],
+"Start Time" : "2022-May-31 20:04:33.280428",
+"End Time" : "2022-May-31 20:05:35.785161"
+}
+,{
+"Algorithm Name": "VectorVectorContainer",
+"Type": "ParallelInplace#2",
+"Graph Name": "soc-sinaweibo_260M.edges",
+"Test Times": [
+70504.7, 72880.1, 72057.7],
+"Test Memories": [
+7.8951e+09, 7.8951e+09, 7.8951e+09],
+"Start Time" : "2022-May-31 20:05:35.787672",
+"End Time" : "2022-May-31 20:09:28.476994"
+}
+,{
+"Algorithm Name": "VectorVectorContainer",
+"Type": "ParallelInplace#2",
+"Graph Name": "bn-7k-50k.edges",
+"Test Times": [
+7495.17, 16.707, 3.601],
+"Test Memories": [
+734524, 734524, 734524],
+"Start Time" : "2022-May-31 20:09:28.479255",
+"End Time" : "2022-May-31 20:09:36.007206"
+}
+,{
+"Algorithm Name": "VectorVectorContainer",
+"Type": "ParallelInplace#2",
+"Graph Name": "scc_fb-messages.mtx",
+"Test Times": [
+32.449, 42.594, 52.065],
+"Test Memories": [
+3.17818e+06, 3.17818e+06, 3.17818e+06],
+"Start Time" : "2022-May-31 20:09:36.007421",
+"End Time" : "2022-May-31 20:09:36.146958"
+}
+,{
+"Algorithm Name": "VectorVectorContainer",
+"Type": "ParallelInplace#2",
+"Graph Name": "soc-orkut.edges",
+"Test Times": [
+5093.1, 4927.38, 4905.86],
+"Test Memories": [
+7.99624e+08, 8.0272e+08, 8.0272e+08],
+"Start Time" : "2022-May-31 20:09:36.147079",
+"End Time" : "2022-May-31 20:09:51.842053"
+}
+,{
+"Algorithm Name": "VectorVectorContainer",
+"Type": "ParallelInplace#2",
+"Graph Name": "bn-human-Jung2015_M87104509_50M.edges",
+"Test Times": [
+2225.88, 2109.82, 2185.88],
+"Test Memories": [
+4.37708e+08, 4.37708e+08, 4.37708e+08],
+"Start Time" : "2022-May-31 20:09:51.842147",
+"End Time" : "2022-May-31 20:09:58.504768"
+}
+,{
+"Algorithm Name": "VectorVectorContainer",
+"Type": "ParallelInplace#2",
+"Graph Name": "cit-patent1.edges",
+"Test Times": [
+1031.05, 1016.38, 983.956],
+"Test Memories": [
+3.26323e+08, 3.26323e+08, 3.26323e+08],
+"Start Time" : "2022-May-31 20:09:58.504879",
+"End Time" : "2022-May-31 20:10:01.757860"
+}
+,{
+"Algorithm Name": "VectorVectorContainer",
+"Type": "ParallelInplace#2",
+"Graph Name": "bn-human-Jung2015_M87107781_70M.edges",
+"Test Times": [
+3116.75, 3021.66, 3016.23],
+"Test Memories": [
+5.73607e+08, 5.73607e+08, 5.73607e+08],
+"Start Time" : "2022-May-31 20:10:01.757970",
+"End Time" : "2022-May-31 20:10:11.047743"
+}
+,{
+"Algorithm Name": "VectorVectorContainer",
+"Type": "ParallelInplace#2",
+"Graph Name": "web-Stanford.mtx",
+"Test Times": [
+169.418, 172.754, 176.153],
+"Test Memories": [
+3.53549e+07, 3.57332e+07, 3.57332e+07],
+"Start Time" : "2022-May-31 20:10:11.047852",
+"End Time" : "2022-May-31 20:10:11.624515"
+}
+,{
+"Algorithm Name": "VectorVectorContainer",
+"Type": "ParallelInplace#2",
+"Graph Name": "bn-human-BNU_1_0025871_session_1-bg_170M.edges",
+"Test Times": [
+7339.34, 7157.51, 7083.86],
+"Test Memories": [
+1.11158e+09, 1.11158e+09, 1.11158e+09],
+"Start Time" : "2022-May-31 20:10:11.624739",
+"End Time" : "2022-May-31 20:10:33.419714"
+}
+,{
+"Algorithm Name": "VectorVectorContainer",
+"Type": "ParallelInplace#2",
+"Graph Name": "bn-human-BNU_1_0025876_session_2-bg_140M.edges",
+"Test Times": [
+6040.89, 5908.13, 5829.66],
+"Test Memories": [
+9.87e+08, 9.87e+08, 9.87e+08],
+"Start Time" : "2022-May-31 20:10:33.419809",
+"End Time" : "2022-May-31 20:10:51.396666"
+}
+,{
+"Algorithm Name": "VectorVectorContainer",
+"Type": "ParallelInplace#2",
+"Graph Name": "bn-human-Jung2015_M87117093_120M.edges",
+"Test Times": [
+5417.08, 5244.74, 5223.39],
+"Test Memories": [
+8.72591e+08, 8.72591e+08, 8.72591e+08],
+"Start Time" : "2022-May-31 20:10:51.396758",
+"End Time" : "2022-May-31 20:11:07.461188"
+}
+,{
+"Algorithm Name": "VectorVectorContainer",
+"Type": "ParallelInplace#2",
+"Graph Name": "data_files.txt",
+"Test Times": [
+2.684, 0.299, 0.243],
+"Test Memories": [
+1200, 1200, 1200],
+"Start Time" : "2022-May-31 20:11:07.461286",
+"End Time" : "2022-May-31 20:11:07.464522"
+}
+,{
+"Algorithm Name": "VectorVectorContainer",
+"Type": "ParallelInplace#2",
+"Graph Name": "hugetric-00010_10M.mtx",
+"Test Times": [
+1580.91, 1871.26, 1842.78],
+"Test Memories": [
+7.76008e+08, 7.76008e+08, 7.76008e+08],
+"Start Time" : "2022-May-31 20:11:07.464667",
+"End Time" : "2022-May-31 20:11:13.557748"
+}
+,{
+"Algorithm Name": "VectorVectorContainer",
+"Type": "ParallelInplace#2",
+"Graph Name": "datafiles_par.txt",
+"Test Times": [
+2.699, 0.325, 0.266],
+"Test Memories": [
+1200, 1200, 1200],
+"Start Time" : "2022-May-31 20:11:13.557851",
+"End Time" : "2022-May-31 20:11:13.561151"
+}
+,{
+"Algorithm Name": "VectorVectorContainer",
+"Type": "ParallelInplace#2",
+"Graph Name": "bn-human-Jung2015_M87101705_200M.edges",
+"Test Times": [
+9047.56, 8744.51, 8367.51],
+"Test Memories": [
+1.30709e+09, 1.30709e+09, 1.30709e+09],
+"Start Time" : "2022-May-31 20:11:13.561391",
+"End Time" : "2022-May-31 20:11:39.954377"
+}
+,{
+"Algorithm Name": "VectorVectorContainer",
+"Type": "ParallelInplace#2",
+"Graph Name": "tech-as-skitter.mtx",
+"Test Times": [
+669.165, 602.693, 668.363],
+"Test Memories": [
+1.40438e+08, 1.40438e+08, 1.40438e+08],
+"Start Time" : "2022-May-31 20:11:39.957422",
+"End Time" : "2022-May-31 20:11:42.059862"
+}
+,{
+"Algorithm Name": "VectorVectorContainer",
+"Type": "ParallelInplace#2",
+"Graph Name": "socfb-Texas84.mtx",
+"Test Times": [
+112.982, 72.428, 65.784],
+"Test Memories": [
+1.13914e+07, 1.13914e+07, 1.13914e+07],
+"Start Time" : "2022-May-31 20:11:42.059957",
+"End Time" : "2022-May-31 20:11:42.322248"
+}
+,{
+"Algorithm Name": "VectorVectorContainer",
+"Type": "ParallelInplace#2",
+"Graph Name": "soc-pokec.mtx",
+"Test Times": [
+1129.86, 1066.36, 1075.25],
+"Test Memories": [
+2.14956e+08, 2.16908e+08, 2.16908e+08],
+"Start Time" : "2022-May-31 20:11:42.322511",
+"End Time" : "2022-May-31 20:11:45.857987"
+}
+,{
+"Algorithm Name": "VectorVectorContainer",
+"Type": "ParallelInplace#2",
+"Graph Name": "web-wikipedia2009.mtx",
+"Test Times": [
+379.61, 388.253, 395.689],
+"Test Memories": [
+1.58422e+08, 1.58422e+08, 1.58422e+08],
+"Start Time" : "2022-May-31 20:11:45.858107",
+"End Time" : "2022-May-31 20:11:47.159410"
+}
+,{
+"Algorithm Name": "VectorVectorContainer",
+"Type": "ParallelInplace#2",
+"Graph Name": "ca-hollywood-2009.edges",
+"Test Times": [
+2482.15, 2415.27, 2356.57],
+"Test Memories": [
+3.99948e+08, 3.99948e+08, 3.99948e+08],
+"Start Time" : "2022-May-31 20:11:47.159519",
+"End Time" : "2022-May-31 20:11:54.573851"
+}
+,{
+"Algorithm Name": "VectorVectorContainer",
+"Type": "ParallelInplace#2",
+"Graph Name": "soc-google-plus.txt",
+"Test Times": [
+121.465, 122.659, 120.147],
+"Test Memories": [
+3.1789e+07, 3.1789e+07, 3.1789e+07],
+"Start Time" : "2022-May-31 20:11:54.573952",
+"End Time" : "2022-May-31 20:11:54.968984"
+}
+,{
+"Algorithm Name": "VectorVectorContainer",
+"Type": "ParallelInplace#2",
+"Graph Name": "tech-as-skitter_10M.mtx",
+"Test Times": [
+676.688, 609.223, 664.892],
+"Test Memories": [
+1.40438e+08, 1.40438e+08, 1.40438e+08],
+"Start Time" : "2022-May-31 20:11:54.969251",
+"End Time" : "2022-May-31 20:11:57.069386"
+}
+,{
+"Algorithm Name": "VectorVectorContainer",
+"Type": "ParallelInplace#2",
+"Graph Name": "soc-orkut-dir_120M.edges",
+"Test Times": [
+5377.27, 5166.19, 5070.54],
+"Test Memories": [
+8.7866e+08, 8.7866e+08, 8.7866e+08],
+"Start Time" : "2022-May-31 20:11:57.069498",
+"End Time" : "2022-May-31 20:12:13.204162"
+}
+,{
+"Algorithm Name": "VectorVectorContainer",
+"Type": "ParallelInplace#2",
+"Graph Name": "bn-human-Jung2015_M87110148_140M.edges",
+"Test Times": [
+6222.43, 6064.6, 6033.95],
+"Test Memories": [
+1.01847e+09, 1.01847e+09, 1.01847e+09],
+"Start Time" : "2022-May-31 20:12:13.204272",
+"End Time" : "2022-May-31 20:12:31.725959"
+}
+,{
+"Algorithm Name": "VectorVectorContainer",
+"Type": "ParallelInplace#2",
+"Graph Name": "bn-human-Jung2015_M87113878.edges",
+"Test Times": [
+4458.96, 4285.4, 4197.28],
+"Test Memories": [
+6.6032e+08, 6.6032e+08, 6.6032e+08],
+"Start Time" : "2022-May-31 20:12:31.726054",
+"End Time" : "2022-May-31 20:12:44.753731"
+}
+,{
+"Algorithm Name": "VectorVectorContainer",
+"Type": "ParallelInplace#2",
+"Graph Name": "bn-human-Jung2015_M87104201_190M.edges",
+"Test Times": [
+8339.08, 8206.12, 8012.12],
+"Test Memories": [
+1.2628e+09, 1.2628e+09, 1.2628e+09],
+"Start Time" : "2022-May-31 20:12:44.753826",
+"End Time" : "2022-May-31 20:13:09.523450"
+}
+,{
+"Algorithm Name": "VectorVectorContainer",
+"Type": "ParallelInplace#2",
+"Graph Name": "bn-100k-662k.edges",
+"Test Times": [
+49.281, 54.025, 53.249],
+"Test Memories": [
+1.2116e+07, 1.2116e+07, 1.2116e+07],
+"Start Time" : "2022-May-31 20:13:09.526128",
+"End Time" : "2022-May-31 20:13:09.689663"
+}
+,{
+"Algorithm Name": "VectorVectorContainer",
+"Type": "ParallelInplace#2",
+"Graph Name": "bn-human-Jung2015_M87113679_60M.edges",
+"Test Times": [
+2787.08, 2649.72, 2680.41],
+"Test Memories": [
+5.2938e+08, 5.2938e+08, 5.2938e+08],
+"Start Time" : "2022-May-31 20:13:09.689878",
+"End Time" : "2022-May-31 20:13:17.940564"
+}
+,{
+"Algorithm Name": "VectorVectorContainer",
+"Type": "ParallelInplace#2",
+"Graph Name": "bn-65-1K.edges",
+"Test Times": [
+3.748, 0.294, 0.655],
+"Test Memories": [
+11672, 11672, 11672],
+"Start Time" : "2022-May-31 20:13:17.940658",
+"End Time" : "2022-May-31 20:13:17.945388"
+}
+,{
+"Algorithm Name": "VectorVectorContainer",
+"Type": "ParallelInplace#2",
+"Graph Name": "bn-human-Jung2015_M87104300_70M.edges",
+"Test Times": [
+3049.21, 2840.55, 2881.57],
+"Test Memories": [
+5.85246e+08, 5.85246e+08, 5.85246e+08],
+"Start Time" : "2022-May-31 20:13:17.945570",
+"End Time" : "2022-May-31 20:13:26.862905"
+}
+,{
+"Algorithm Name": "VectorVectorContainer",
+"Type": "ParallelInplace#2",
+"Graph Name": "ca-IMDB.edges",
+"Test Times": [
+231.578, 240.911, 218.86],
+"Test Memories": [
+6.40467e+07, 6.40467e+07, 6.40467e+07],
+"Start Time" : "2022-May-31 20:13:26.862996",
+"End Time" : "2022-May-31 20:13:27.653016"
+}
+,{
+"Algorithm Name": "VectorVectorContainer",
+"Type": "ParallelInplace#2",
+"Graph Name": "bn-34k-181k.edges",
+"Test Times": [
+29.996, 15.73, 10.449],
+"Test Memories": [
+3.36048e+06, 3.36048e+06, 3.42313e+06],
+"Start Time" : "2022-May-31 20:13:27.653232",
+"End Time" : "2022-May-31 20:13:27.711321"
+}
+,{
+"Algorithm Name": "VectorVectorContainer",
+"Type": "ParallelInplace#2",
+"Graph Name": "data_files_test.txt",
+"Test Times": [
+0.681, 0.199, 0.175],
+"Test Memories": [
+1200, 1200, 1200],
+"Start Time" : "2022-May-31 20:13:27.711403",
+"End Time" : "2022-May-31 20:13:27.712468"
+}
+,{
+"Algorithm Name": "VectorVectorContainer",
+"Type": "ParallelInplace#2",
+"Graph Name": "bn-human-Jung2015_M87112427_170M.edges",
+"Test Times": [
+7391.06, 7288.05, 7046.32],
+"Test Memories": [
+1.13409e+09, 1.13409e+09, 1.13409e+09],
+"Start Time" : "2022-May-31 20:13:27.712560",
+"End Time" : "2022-May-31 20:13:49.637831"
+}
+,{
+"Algorithm Name": "VectorVectorContainer",
+"Type": "ParallelInplace#2",
+"Graph Name": "socfb-Michigan23.mtx",
+"Test Times": [
+66.468, 61.536, 58.118],
+"Test Memories": [
+8.81122e+06, 8.81122e+06, 8.81122e+06],
+"Start Time" : "2022-May-31 20:13:49.637926",
+"End Time" : "2022-May-31 20:13:49.832544"
+}
+,{
+"Algorithm Name": "VectorVectorContainer",
+"Type": "ParallelInplace#2",
+"Graph Name": "graph500-scale22-ef16_adj_130M.edges",
+"Test Times": [
+20435.6, 20034.7, 19850.5],
+"Test Memories": [
+9.17792e+08, 9.17792e+08, 9.17792e+08],
+"Start Time" : "2022-May-31 20:13:49.832770",
+"End Time" : "2022-May-31 20:14:51.234134"
+}
+,{
+"Algorithm Name": "VectorVectorContainer",
+"Type": "ParallelInplace#2",
+"Graph Name": "sc-ldoor_20M.edges",
+"Test Times": [
+1062.84, 1096.61, 1038.21],
+"Test Memories": [
+1.96527e+08, 1.96527e+08, 1.96527e+08],
+"Start Time" : "2022-May-31 20:14:51.236737",
+"End Time" : "2022-May-31 20:14:54.627079"
+}
+,{
+"Algorithm Name": "VectorVectorContainer",
+"Type": "ParallelInplace#2",
+"Graph Name": "bn-human-Jung2015_M7101234.edges",
+"Test Times": [
+2634.81, 2574.59, 2564.92],
+"Test Memories": [
+4.11658e+08, 4.11658e+08, 4.11658e+08],
+"Start Time" : "2022-May-31 20:14:54.627196",
+"End Time" : "2022-May-31 20:15:02.460003"
+}
+,{
+"Algorithm Name": "VectorVectorContainer",
+"Type": "ParallelInplace#2",
+"Graph Name": "delaunay_n24_50M.edges",
+"Test Times": [
+4556.21, 5011.86, 4952.48],
+"Test Memories": [
+1.58381e+09, 1.58381e+09, 1.58381e+09],
+"Start Time" : "2022-May-31 20:15:02.460097",
+"End Time" : "2022-May-31 20:15:18.255480"
+}
+,{
+"Algorithm Name": "VectorVectorContainer",
+"Type": "ParallelInplace#2",
+"Graph Name": "bn-human-Jung2015_M87118465_180M.edges",
+"Test Times": [
+8218.24, 7819.71, 7532.29],
+"Test Memories": [
+1.20304e+09, 1.20304e+09, 1.20304e+09],
+"Start Time" : "2022-May-31 20:15:18.257850",
+"End Time" : "2022-May-31 20:15:42.026125"
+}
+,{
+"Algorithm Name": "VectorVectorContainer",
+"Type": "ParallelInplace#2",
+"Graph Name": "bn-human-BNU_1_0025869_session_2-bg_150M.edges",
+"Test Times": [
+6556.06, 6342.64, 6319.33],
+"Test Memories": [
+1.02893e+09, 1.02893e+09, 1.02893e+09],
+"Start Time" : "2022-May-31 20:15:42.028238",
+"End Time" : "2022-May-31 20:16:01.430729"
+}
+,{
+"Algorithm Name": "VectorVectorContainer",
+"Type": "ParallelInplace#2",
+"Graph Name": "web-uk-2005.mtx",
+"Test Times": [
+502.437, 510.949, 490.172],
+"Test Memories": [
+7.67349e+07, 7.67349e+07, 7.67349e+07],
+"Start Time" : "2022-May-31 20:16:01.432876",
+"End Time" : "2022-May-31 20:16:02.963400"
+}
+,{
+"Algorithm Name": "VectorVectorContainer",
+"Type": "ParallelInplace#2",
+"Graph Name": "soc-livejournal.mtx",
+"Test Times": [
+1665.66, 1714.6, 1639.28],
+"Test Memories": [
+5.60416e+08, 5.60416e+08, 5.60416e+08],
+"Start Time" : "2022-May-31 20:16:02.963512",
+"End Time" : "2022-May-31 20:16:08.244147"
+}
+,{
+"Algorithm Name": "VectorVectorContainer",
+"Type": "ParallelInplace#2",
+"Graph Name": "bn-human-Jung2015_M8703600.edges",
+"Test Times": [
+2440.96, 2273.05, 2286.56],
+"Test Memories": [
+4.18059e+08, 4.18059e+08, 4.18059e+08],
+"Start Time" : "2022-May-31 20:16:08.244460",
+"End Time" : "2022-May-31 20:16:15.385321"
+}
+,{
+"Algorithm Name": "VectorVectorContainer",
+"Type": "ParallelInplace#2",
+"Graph Name": "bn-human-BNU_1_0025868_session_1-bg_150M.edges",
+"Test Times": [
+6551.53, 6559.74, 6329.01],
+"Test Memories": [
+1.02127e+09, 1.02127e+09, 1.02127e+09],
+"Start Time" : "2022-May-31 20:16:15.385425",
+"End Time" : "2022-May-31 20:16:35.009884"
+}
+,{
+"Algorithm Name": "VectorVectorContainer",
+"Type": "ParallelInplace#2",
+"Graph Name": "bn-human-Jung2015_M87125334_40M.edges",
+"Test Times": [
+1844.65, 1796.86, 1777.3],
+"Test Memories": [
+3.9585e+08, 3.9585e+08, 3.9585e+08],
+"Start Time" : "2022-May-31 20:16:35.009988",
+"End Time" : "2022-May-31 20:16:40.547140"
+}
+,{
+"Algorithm Name": "VectorVectorContainer",
+"Type": "ParallelInplace#2",
+"Graph Name": "bn-human-Jung2015_M87116523_80M.edges",
+"Test Times": [
+3182.89, 3152.53, 3099],
+"Test Memories": [
+4.80498e+08, 4.80498e+08, 4.80498e+08],
+"Start Time" : "2022-May-31 20:16:40.547246",
+"End Time" : "2022-May-31 20:16:50.044632"
+}
+,{
+"Algorithm Name": "VectorVectorContainer",
+"Type": "ParallelInplace#2",
+"Graph Name": "bn-human-Jung2015_M87127677_210M.edges",
+"Test Times": [
+9246.52, 8785.12, 8687.38],
+"Test Memories": [
+1.37187e+09, 1.37187e+09, 1.37187e+09],
+"Start Time" : "2022-May-31 20:16:50.044723",
+"End Time" : "2022-May-31 20:17:16.972460"
+}
+,{
+"Algorithm Name": "VectorVectorContainer",
+"Type": "ParallelInplace#2",
+"Graph Name": "bn-449k-3.3M.edges",
+"Test Times": [
+209.707, 199.919, 190.705],
+"Test Memories": [
+6.10743e+07, 6.10743e+07, 6.10743e+07],
+"Start Time" : "2022-May-31 20:17:16.972570",
+"End Time" : "2022-May-31 20:17:17.603985"
+}
+,{
+"Algorithm Name": "VectorVectorContainer",
+"Type": "ParallelInplace#2",
+"Graph Name": "bn-human-BNU_1_0025919_session_1.edges",
+"Test Times": [
+8716.85, 8767.58, 8439.32],
+"Test Memories": [
+1.32208e+09, 1.32208e+09, 1.32208e+09],
+"Start Time" : "2022-May-31 20:17:17.604123",
+"End Time" : "2022-May-31 20:17:43.745654"
+}
+,{
+"Algorithm Name": "VectorVectorContainer",
+"Type": "ParallelInplace#2",
+"Graph Name": "testfile.txt",
+"Test Times": [
+0.993, 0.398, 0.407],
+"Test Memories": [
+1200, 1200, 1200],
+"Start Time" : "2022-May-31 20:17:43.747936",
+"End Time" : "2022-May-31 20:17:43.749749"
+}
+,{
+"Algorithm Name": "VectorVectorContainer",
+"Type": "ParallelInplace#2",
+"Graph Name": "C2000-9.edges",
+"Test Times": [
+88.713, 62.357, 63.263],
+"Test Memories": [
+1.03272e+07, 1.03272e+07, 1.03272e+07],
+"Start Time" : "2022-May-31 20:17:43.749867",
+"End Time" : "2022-May-31 20:17:43.964562"
+}
+,{
+"Algorithm Name": "VectorVectorContainer",
+"Type": "ParallelInplace#2",
+"Graph Name": "datafiles_seq.txt",
+"Test Times": [
+3.288, 0.326, 0.333],
+"Test Memories": [
+1200, 1200, 1200],
+"Start Time" : "2022-May-31 20:17:43.964771",
+"End Time" : "2022-May-31 20:17:43.968731"
+}
+,{
+"Algorithm Name": "VectorVectorContainer",
+"Type": "ParallelInplace#2",
+"Graph Name": "bn-human-Jung2015_M87114342_90M.edges",
+"Test Times": [
+4069.29, 3922.31, 3893.43],
+"Test Memories": [
+6.55023e+08, 6.55023e+08, 6.55023e+08],
+"Start Time" : "2022-May-31 20:17:43.969007",
+"End Time" : "2022-May-31 20:17:56.012841"
+}
+,{
+"Algorithm Name": "VectorVectorContainer",
+"Type": "ParallelInplace#2",
+"Graph Name": "bn-human-BNU_1_0025919_session_1_200M.edges",
+"Test Times": [
+8712.96, 8475.11, 8433.65],
+"Test Memories": [
+1.32208e+09, 1.32208e+09, 1.32208e+09],
+"Start Time" : "2022-May-31 20:17:56.012936",
+"End Time" : "2022-May-31 20:18:21.866468"
+}
+,{
+"Algorithm Name": "VectorVectorContainer",
+"Type": "ParallelInplace#2",
+"Graph Name": "socfb-B-anon_20M.edges",
+"Test Times": [
+3109.92, 3102.87, 3121.63],
+"Test Memories": [
+3.11516e+08, 3.11516e+08, 3.11516e+08],
+"Start Time" : "2022-May-31 20:18:21.866562",
+"End Time" : "2022-May-31 20:18:31.845624"
+}
+,{
+"Algorithm Name": "VectorVectorContainer",
+"Type": "ParallelInplace#2",
+"Graph Name": "bn-human-Jung2015_M87110650_40M.edges",
+"Test Times": [
+1954.36, 1787.75, 1784.62],
+"Test Memories": [
+4.14864e+08, 4.14864e+08, 4.14864e+08],
+"Start Time" : "2022-May-31 20:18:31.845733",
+"End Time" : "2022-May-31 20:18:37.473715"
+}
+,{
+"Algorithm Name": "VectorVectorContainer",
+"Type": "ParallelInplace#2",
+"Graph Name": "bn-human-Jung2015_M87125286_210M.edges",
+"Test Times": [
+9077.41, 9225.02, 8798.52],
+"Test Memories": [
+1.36386e+09, 1.36386e+09, 1.36386e+09],
+"Start Time" : "2022-May-31 20:18:37.473808",
+"End Time" : "2022-May-31 20:19:04.817947"
+}
+,{
+"Algorithm Name": "VectorVectorContainer",
+"Type": "ParallelInplace#2",
+"Graph Name": "bn-human-Jung2015_M87124563_160M.edges",
+"Test Times": [
+6968.27, 6791.22, 6717.48],
+"Test Memories": [
+1.10504e+09, 1.10504e+09, 1.10504e+09],
+"Start Time" : "2022-May-31 20:19:04.820680",
+"End Time" : "2022-May-31 20:19:25.485620"
+}
+,{
+"Algorithm Name": "VectorVectorContainer",
+"Type": "ParallelInplace#2",
+"Graph Name": "bn-human-BNU_1_0025914_session_2_100M.edges",
+"Test Times": [
+4507.13, 4424.41, 4366.49],
+"Test Memories": [
+7.84465e+08, 7.84465e+08, 7.84465e+08],
+"Start Time" : "2022-May-31 20:19:25.485724",
+"End Time" : "2022-May-31 20:19:38.942658"
+}
+,{
+"Algorithm Name": "VectorVectorContainer",
+"Type": "ParallelInplace#2",
+"Graph Name": "bn-434k-16M.edges",
+"Test Times": [
+779.262, 757.417, 753.277],
+"Test Memories": [
+1.32191e+08, 1.32191e+08, 1.32191e+08],
+"Start Time" : "2022-May-31 20:19:38.942751",
+"End Time" : "2022-May-31 20:19:41.297500"
+}
+,{
+"Algorithm Name": "VectorVectorContainer",
+"Type": "ParallelInplace#2",
+"Graph Name": "tech-p2p-gnutella.mtx",
+"Test Times": [
+20.304, 20.456, 21.857],
+"Test Memories": [
+5.54739e+06, 5.54739e+06, 5.54739e+06],
+"Start Time" : "2022-May-31 20:19:41.297617",
+"End Time" : "2022-May-31 20:19:41.363951"
+}
+,{
+"Algorithm Name": "VectorVectorContainer",
+"Type": "ParallelInplace#2",
+"Graph Name": "bn-1.8M-166M.edges",
+"Test Times": [
+7221.84, 7039.27, 6969.32],
+"Test Memories": [
+1.02975e+09, 1.02975e+09, 1.02975e+09],
+"Start Time" : "2022-May-31 20:19:41.364060",
+"End Time" : "2022-May-31 20:20:02.798851"
+}
+,{
+"Algorithm Name": "VectorVectorContainer",
+"Type": "ParallelInplace#2",
+"Graph Name": "bn-human-Jung2015_M87119472_60M.edges",
+"Test Times": [
+2690.52, 2600.61, 2576.95],
+"Test Memories": [
+4.72964e+08, 4.72964e+08, 4.72964e+08],
+"Start Time" : "2022-May-31 20:20:02.801516",
+"End Time" : "2022-May-31 20:20:10.809219"
+}
+,{
+"Algorithm Name": "VectorVectorContainer",
+"Type": "ParallelInplace#2",
+"Graph Name": "rgg_n_2_22_s0_30M.edges",
+"Test Times": [
+2109.17, 2064.91, 2098.45],
+"Test Memories": [
+3.68672e+08, 3.68672e+08, 3.68672e+08],
+"Start Time" : "2022-May-31 20:20:10.809311",
+"End Time" : "2022-May-31 20:20:17.650458"
+}
+,{
+"Algorithm Name": "VectorVectorContainer",
+"Type": "ParallelInplace#4",
+"Graph Name": "bn-human-BNU_1_0025889_session_2_130M.edges",
+"Test Times": [
+3728.83, 3621.37, 3463.02],
+"Test Memories": [
+9.6648e+08, 9.6648e+08, 9.6648e+08],
+"Start Time" : "2022-May-31 20:20:17.655531",
+"End Time" : "2022-May-31 20:20:28.687636"
+}
+,{
+"Algorithm Name": "VectorVectorContainer",
+"Type": "ParallelInplace#4",
+"Graph Name": "graph500-scale20-ef16_adj_30M.edges",
+"Test Times": [
+2431.5, 3036.98, 3059.89],
+"Test Memories": [
+2.68936e+08, 2.68936e+08, 2.68936e+08],
+"Start Time" : "2022-May-31 20:20:28.690255",
+"End Time" : "2022-May-31 20:20:37.505048"
+}
+,{
+"Algorithm Name": "VectorVectorContainer",
+"Type": "ParallelInplace#4",
+"Graph Name": "bn-human-Jung2015_M87118347_80M.edges",
+"Test Times": [
+3942.5, 2006.59, 1969.76],
+"Test Memories": [
+5.45672e+08, 5.45672e+08, 5.45672e+08],
+"Start Time" : "2022-May-31 20:20:37.505150",
+"End Time" : "2022-May-31 20:20:45.513515"
+}
+,{
+"Algorithm Name": "VectorVectorContainer",
+"Type": "ParallelInplace#4",
+"Graph Name": "socf-konect.edges",
+"Test Times": [
+7091.41, 7031.55, 6759.71],
+"Test Memories": [
+8.93165e+09, 8.93165e+09, 8.93165e+09],
+"Start Time" : "2022-May-31 20:20:45.513606",
+"End Time" : "2022-May-31 20:21:09.205671"
+}
+,{
+"Algorithm Name": "VectorVectorContainer",
+"Type": "ParallelInplace#4",
+"Graph Name": "socfb-UIllinois20.mtx",
+"Test Times": [
+399.036, 72.365, 75.326],
+"Test Memories": [
+1.24292e+07, 1.24292e+07, 1.24292e+07],
+"Start Time" : "2022-May-31 20:21:09.205813",
+"End Time" : "2022-May-31 20:21:09.759831"
+}
+,{
+"Algorithm Name": "VectorVectorContainer",
+"Type": "ParallelInplace#4",
+"Graph Name": "bn-human-BNU_1_0025913_session_2_180M.edges",
+"Test Times": [
+4989.56, 4848.63, 4788.21],
+"Test Memories": [
+1.25052e+09, 1.25052e+09, 1.25052e+09],
+"Start Time" : "2022-May-31 20:21:09.759936",
+"End Time" : "2022-May-31 20:21:24.630740"
+}
+,{
+"Algorithm Name": "VectorVectorContainer",
+"Type": "ParallelInplace#4",
+"Graph Name": "bn-human-BNU_1_0025916_session_1_110M.edges",
+"Test Times": [
+3036.18, 2974.15, 2942.88],
+"Test Memories": [
+8.31093e+08, 8.31093e+08, 8.31093e+08],
+"Start Time" : "2022-May-31 20:21:24.630841",
+"End Time" : "2022-May-31 20:21:33.756213"
+}
+,{
+"Algorithm Name": "VectorVectorContainer",
+"Type": "ParallelInplace#4",
+"Graph Name": "livejournal_160M.edges",
+"Test Times": [
+4967.88, 4905.35, 4836.63],
+"Test Memories": [
+1.413e+09, 1.48461e+09, 1.48461e+09],
+"Start Time" : "2022-May-31 20:21:33.756301",
+"End Time" : "2022-May-31 20:21:49.408928"
+}
+,{
+"Algorithm Name": "VectorVectorContainer",
+"Type": "ParallelInplace#4",
+"Graph Name": "tech-ip.edges",
+"Test Times": [
+771.636, 684.624, 684.094],
+"Test Memories": [
+4.30036e+08, 4.30036e+08, 4.30036e+08],
+"Start Time" : "2022-May-31 20:21:49.409018",
+"End Time" : "2022-May-31 20:21:51.777914"
+}
+,{
+"Algorithm Name": "VectorVectorContainer",
+"Type": "ParallelInplace#4",
+"Graph Name": "bn-800-19k.edges",
+"Test Times": [
+4.351, 0.817, 0.84],
+"Test Memories": [
+213328, 220684, 220684],
+"Start Time" : "2022-May-31 20:21:51.778004",
+"End Time" : "2022-May-31 20:21:51.784089"
+}
+,{
+"Algorithm Name": "VectorVectorContainer",
+"Type": "ParallelInplace#4",
+"Graph Name": "soc-wiki-Talk-dir.mtx",
+"Test Times": [
+215.534, 268.237, 258.019],
+"Test Memories": [
+2.45848e+08, 2.45848e+08, 2.45848e+08],
+"Start Time" : "2022-May-31 20:21:51.784178",
+"End Time" : "2022-May-31 20:21:52.566786"
+}
+,{
+"Algorithm Name": "VectorVectorContainer",
+"Type": "ParallelInplace#4",
+"Graph Name": "bn-human-Jung2015_M87101049_190M.edges",
+"Test Times": [
+5247.38, 5058.94, 4990.36],
+"Test Memories": [
+1.28889e+09, 1.28889e+09, 1.28889e+09],
+"Start Time" : "2022-May-31 20:21:52.566875",
+"End Time" : "2022-May-31 20:22:08.102879"
+}
+,{
+"Algorithm Name": "VectorVectorContainer",
+"Type": "ParallelInplace#4",
+"Graph Name": "soc-orkut_106M.edges",
+"Test Times": [
+9120.88, 8861.65, 8843.18],
+"Test Memories": [
+1.05118e+09, 1.05118e+09, 1.05118e+09],
+"Start Time" : "2022-May-31 20:22:08.102974",
+"End Time" : "2022-May-31 20:22:37.702238"
+}
+,{
+"Algorithm Name": "VectorVectorContainer",
+"Type": "ParallelInplace#4",
+"Graph Name": "socfb-uci-uni_90M.edges",
+"Test Times": [
+13256.4, 14352, 14088.8],
+"Test Memories": [
+1.13778e+10, 1.13778e+10, 1.13855e+10],
+"Start Time" : "2022-May-31 20:22:37.702333",
+"End Time" : "2022-May-31 20:23:25.521764"
+}
+,{
+"Algorithm Name": "VectorVectorContainer",
+"Type": "ParallelInplace#4",
+"Graph Name": "soc-sinaweibo_260M.edges",
+"Test Times": [
+51729.6, 58335.6, 56367.1],
+"Test Memories": [
+1.1925e+10, 1.19286e+10, 1.19286e+10],
+"Start Time" : "2022-May-31 20:23:25.524758",
+"End Time" : "2022-May-31 20:26:29.683367"
+}
+,{
+"Algorithm Name": "VectorVectorContainer",
+"Type": "ParallelInplace#4",
+"Graph Name": "bn-7k-50k.edges",
+"Test Times": [
+6649.07, 5.85, 3.402],
+"Test Memories": [
+1.16876e+06, 1.16876e+06, 1.16876e+06],
+"Start Time" : "2022-May-31 20:26:29.686733",
+"End Time" : "2022-May-31 20:26:36.371305"
+}
+,{
+"Algorithm Name": "VectorVectorContainer",
+"Type": "ParallelInplace#4",
+"Graph Name": "scc_fb-messages.mtx",
+"Test Times": [
+18.973, 14.983, 14.492],
+"Test Memories": [
+3.3344e+06, 3.3344e+06, 3.3344e+06],
+"Start Time" : "2022-May-31 20:26:36.371394",
+"End Time" : "2022-May-31 20:26:36.420162"
+}
+,{
+"Algorithm Name": "VectorVectorContainer",
+"Type": "ParallelInplace#4",
+"Graph Name": "soc-orkut.edges",
+"Test Times": [
+3311.44, 3217.51, 3241.22],
+"Test Memories": [
+1.09022e+09, 1.09022e+09, 1.09022e+09],
+"Start Time" : "2022-May-31 20:26:36.420253",
+"End Time" : "2022-May-31 20:26:46.963397"
+}
+,{
+"Algorithm Name": "VectorVectorContainer",
+"Type": "ParallelInplace#4",
+"Graph Name": "bn-human-Jung2015_M87104509_50M.edges",
+"Test Times": [
+1383.84, 1389.8, 1361],
+"Test Memories": [
+4.88002e+08, 4.88002e+08, 4.88002e+08],
+"Start Time" : "2022-May-31 20:26:46.963511",
+"End Time" : "2022-May-31 20:26:51.213776"
+}
+,{
+"Algorithm Name": "VectorVectorContainer",
+"Type": "ParallelInplace#4",
+"Graph Name": "cit-patent1.edges",
+"Test Times": [
+1120.43, 1143.27, 1112.29],
+"Test Memories": [
+6.06908e+08, 6.0864e+08, 6.08955e+08],
+"Start Time" : "2022-May-31 20:26:51.213865",
+"End Time" : "2022-May-31 20:26:54.751482"
+}
+,{
+"Algorithm Name": "VectorVectorContainer",
+"Type": "ParallelInplace#4",
+"Graph Name": "bn-human-Jung2015_M87107781_70M.edges",
+"Test Times": [
+3631.09, 1906.88, 1912.65],
+"Test Memories": [
+5.60642e+08, 5.60642e+08, 5.60642e+08],
+"Start Time" : "2022-May-31 20:26:54.751582",
+"End Time" : "2022-May-31 20:27:02.346626"
+}
+,{
+"Algorithm Name": "VectorVectorContainer",
+"Type": "ParallelInplace#4",
+"Graph Name": "web-Stanford.mtx",
+"Test Times": [
+114.102, 134.8, 137.949],
+"Test Memories": [
+4.69962e+07, 4.69962e+07, 4.69962e+07],
+"Start Time" : "2022-May-31 20:27:02.346721",
+"End Time" : "2022-May-31 20:27:02.762199"
+}
+,{
+"Algorithm Name": "VectorVectorContainer",
+"Type": "ParallelInplace#4",
+"Graph Name": "bn-human-BNU_1_0025871_session_1-bg_170M.edges",
+"Test Times": [
+4649.06, 4436.61, 4438.89],
+"Test Memories": [
+1.17863e+09, 1.17863e+09, 1.17863e+09],
+"Start Time" : "2022-May-31 20:27:02.762405",
+"End Time" : "2022-May-31 20:27:16.499760"
+}
+,{
+"Algorithm Name": "VectorVectorContainer",
+"Type": "ParallelInplace#4",
+"Graph Name": "bn-human-BNU_1_0025876_session_2-bg_140M.edges",
+"Test Times": [
+3751.99, 3692.93, 3664.83],
+"Test Memories": [
+9.94362e+08, 9.94362e+08, 9.94362e+08],
+"Start Time" : "2022-May-31 20:27:16.499855",
+"End Time" : "2022-May-31 20:27:27.802164"
+}
+,{
+"Algorithm Name": "VectorVectorContainer",
+"Type": "ParallelInplace#4",
+"Graph Name": "bn-human-Jung2015_M87117093_120M.edges",
+"Test Times": [
+3378.38, 3328.09, 3280.94],
+"Test Memories": [
+9.00024e+08, 9.00024e+08, 9.00024e+08],
+"Start Time" : "2022-May-31 20:27:27.802256",
+"End Time" : "2022-May-31 20:27:37.997883"
+}
+,{
+"Algorithm Name": "VectorVectorContainer",
+"Type": "ParallelInplace#4",
+"Graph Name": "data_files.txt",
+"Test Times": [
+2.364, 0.22, 0.241],
+"Test Memories": [
+2400, 2400, 2400],
+"Start Time" : "2022-May-31 20:27:37.997968",
+"End Time" : "2022-May-31 20:27:38.000804"
+}
+,{
+"Algorithm Name": "VectorVectorContainer",
+"Type": "ParallelInplace#4",
+"Graph Name": "hugetric-00010_10M.mtx",
+"Test Times": [
+1557.31, 1757.92, 1735.64],
+"Test Memories": [
+1.36479e+09, 1.36659e+09, 1.36659e+09],
+"Start Time" : "2022-May-31 20:27:38.000931",
+"End Time" : "2022-May-31 20:27:43.799036"
+}
+,{
+"Algorithm Name": "VectorVectorContainer",
+"Type": "ParallelInplace#4",
+"Graph Name": "datafiles_par.txt",
+"Test Times": [
+0.453, 0.195, 0.183],
+"Test Memories": [
+2400, 2400, 2400],
+"Start Time" : "2022-May-31 20:27:43.802025",
+"End Time" : "2022-May-31 20:27:43.802869"
+}
+,{
+"Algorithm Name": "VectorVectorContainer",
+"Type": "ParallelInplace#4",
+"Graph Name": "bn-human-Jung2015_M87101705_200M.edges",
+"Test Times": [
+5653.4, 5296.48, 5288.79],
+"Test Memories": [
+1.34673e+09, 1.34673e+09, 1.34673e+09],
+"Start Time" : "2022-May-31 20:27:43.803026",
+"End Time" : "2022-May-31 20:28:00.311841"
+}
+,{
+"Algorithm Name": "VectorVectorContainer",
+"Type": "ParallelInplace#4",
+"Graph Name": "tech-as-skitter.mtx",
+"Test Times": [
+535.962, 474.887, 471.51],
+"Test Memories": [
+2.33501e+08, 2.33501e+08, 2.33501e+08],
+"Start Time" : "2022-May-31 20:28:00.311938",
+"End Time" : "2022-May-31 20:28:01.910446"
+}
+,{
+"Algorithm Name": "VectorVectorContainer",
+"Type": "ParallelInplace#4",
+"Graph Name": "socfb-Texas84.mtx",
+"Test Times": [
+81.191, 44.788, 62.616],
+"Test Memories": [
+1.42038e+07, 1.42038e+07, 1.42038e+07],
+"Start Time" : "2022-May-31 20:28:01.910549",
+"End Time" : "2022-May-31 20:28:02.109621"
+}
+,{
+"Algorithm Name": "VectorVectorContainer",
+"Type": "ParallelInplace#4",
+"Graph Name": "soc-pokec.mtx",
+"Test Times": [
+829.856, 777.953, 775.397],
+"Test Memories": [
+2.44824e+08, 2.44824e+08, 2.44824e+08],
+"Start Time" : "2022-May-31 20:28:02.109878",
+"End Time" : "2022-May-31 20:28:04.712279"
+}
+,{
+"Algorithm Name": "VectorVectorContainer",
+"Type": "ParallelInplace#4",
+"Graph Name": "web-wikipedia2009.mtx",
+"Test Times": [
+315.472, 360.363, 317.359],
+"Test Memories": [
+2.53611e+08, 2.53611e+08, 2.53611e+08],
+"Start Time" : "2022-May-31 20:28:04.712396",
+"End Time" : "2022-May-31 20:28:05.799091"
+}
+,{
+"Algorithm Name": "VectorVectorContainer",
+"Type": "ParallelInplace#4",
+"Graph Name": "ca-hollywood-2009.edges",
+"Test Times": [
+1600, 1547.31, 1515.62],
+"Test Memories": [
+4.5581e+08, 4.5581e+08, 4.5581e+08],
+"Start Time" : "2022-May-31 20:28:05.799193",
+"End Time" : "2022-May-31 20:28:10.635443"
+}
+,{
+"Algorithm Name": "VectorVectorContainer",
+"Type": "ParallelInplace#4",
+"Graph Name": "soc-google-plus.txt",
+"Test Times": [
+68.426, 83.646, 90.294],
+"Test Memories": [
+3.87097e+07, 3.87097e+07, 3.87097e+07],
+"Start Time" : "2022-May-31 20:28:10.635536",
+"End Time" : "2022-May-31 20:28:10.897740"
+}
+,{
+"Algorithm Name": "VectorVectorContainer",
+"Type": "ParallelInplace#4",
+"Graph Name": "tech-as-skitter_10M.mtx",
+"Test Times": [
+478.396, 480.592, 452.293],
+"Test Memories": [
+2.33501e+08, 2.33501e+08, 2.33501e+08],
+"Start Time" : "2022-May-31 20:28:10.898279",
+"End Time" : "2022-May-31 20:28:12.441127"
+}
+,{
+"Algorithm Name": "VectorVectorContainer",
+"Type": "ParallelInplace#4",
+"Graph Name": "soc-orkut-dir_120M.edges",
+"Test Times": [
+3469.22, 3592.74, 3381.72],
+"Test Memories": [
+1.07584e+09, 1.07584e+09, 1.07584e+09],
+"Start Time" : "2022-May-31 20:28:12.441246",
+"End Time" : "2022-May-31 20:28:23.418652"
+}
+,{
+"Algorithm Name": "VectorVectorContainer",
+"Type": "ParallelInplace#4",
+"Graph Name": "bn-human-Jung2015_M87110148_140M.edges",
+"Test Times": [
+3959.73, 3849.79, 3822.9],
+"Test Memories": [
+1.03071e+09, 1.03071e+09, 1.03071e+09],
+"Start Time" : "2022-May-31 20:28:23.421741",
+"End Time" : "2022-May-31 20:28:35.276570"
+}
+,{
+"Algorithm Name": "VectorVectorContainer",
+"Type": "ParallelInplace#4",
+"Graph Name": "bn-human-Jung2015_M87113878.edges",
+"Test Times": [
+2782.48, 2682.74, 2676.75],
+"Test Memories": [
+6.95432e+08, 6.95432e+08, 6.95432e+08],
+"Start Time" : "2022-May-31 20:28:35.276662",
+"End Time" : "2022-May-31 20:28:43.529217"
+}
+,{
+"Algorithm Name": "VectorVectorContainer",
+"Type": "ParallelInplace#4",
+"Graph Name": "bn-human-Jung2015_M87104201_190M.edges",
+"Test Times": [
+5166.84, 5178.49, 4992.37],
+"Test Memories": [
+1.29406e+09, 1.29406e+09, 1.29406e+09],
+"Start Time" : "2022-May-31 20:28:43.529304",
+"End Time" : "2022-May-31 20:28:59.108500"
+}
+,{
+"Algorithm Name": "VectorVectorContainer",
+"Type": "ParallelInplace#4",
+"Graph Name": "bn-100k-662k.edges",
+"Test Times": [
+40.459, 34.038, 42.339],
+"Test Memories": [
+1.66743e+07, 1.66743e+07, 1.66743e+07],
+"Start Time" : "2022-May-31 20:28:59.111082",
+"End Time" : "2022-May-31 20:28:59.234404"
+}
+,{
+"Algorithm Name": "VectorVectorContainer",
+"Type": "ParallelInplace#4",
+"Graph Name": "bn-human-Jung2015_M87113679_60M.edges",
+"Test Times": [
+1794.07, 1732.72, 1764.74],
+"Test Memories": [
+5.72056e+08, 5.72056e+08, 5.72056e+08],
+"Start Time" : "2022-May-31 20:28:59.234617",
+"End Time" : "2022-May-31 20:29:04.672539"
+}
+,{
+"Algorithm Name": "VectorVectorContainer",
+"Type": "ParallelInplace#4",
+"Graph Name": "bn-65-1K.edges",
+"Test Times": [
+4.215, 0.275, 0.248],
+"Test Memories": [
+16124, 16124, 16124],
+"Start Time" : "2022-May-31 20:29:04.672677",
+"End Time" : "2022-May-31 20:29:04.677454"
+}
+,{
+"Algorithm Name": "VectorVectorContainer",
+"Type": "ParallelInplace#4",
+"Graph Name": "bn-human-Jung2015_M87104300_70M.edges",
+"Test Times": [
+1908.45, 1835.72, 1863],
+"Test Memories": [
+5.77165e+08, 5.77165e+08, 5.77165e+08],
+"Start Time" : "2022-May-31 20:29:04.677583",
+"End Time" : "2022-May-31 20:29:10.430558"
+}
+,{
+"Algorithm Name": "VectorVectorContainer",
+"Type": "ParallelInplace#4",
+"Graph Name": "ca-IMDB.edges",
+"Test Times": [
+147.554, 183.802, 166.18],
+"Test Memories": [
+8.72667e+07, 8.72667e+07, 8.72667e+07],
+"Start Time" : "2022-May-31 20:29:10.430662",
+"End Time" : "2022-May-31 20:29:10.965484"
+}
+,{
+"Algorithm Name": "VectorVectorContainer",
+"Type": "ParallelInplace#4",
+"Graph Name": "bn-34k-181k.edges",
+"Test Times": [
+20.039, 18.675, 16.548],
+"Test Memories": [
+4.78862e+06, 4.78862e+06, 4.78862e+06],
+"Start Time" : "2022-May-31 20:29:10.965884",
+"End Time" : "2022-May-31 20:29:11.023029"
+}
+,{
+"Algorithm Name": "VectorVectorContainer",
+"Type": "ParallelInplace#4",
+"Graph Name": "data_files_test.txt",
+"Test Times": [
+0.603, 0.186, 0.166],
+"Test Memories": [
+2400, 2400, 2400],
+"Start Time" : "2022-May-31 20:29:11.023155",
+"End Time" : "2022-May-31 20:29:11.024119"
+}
+,{
+"Algorithm Name": "VectorVectorContainer",
+"Type": "ParallelInplace#4",
+"Graph Name": "bn-human-Jung2015_M87112427_170M.edges",
+"Test Times": [
+4712.86, 4522.62, 4562.74],
+"Test Memories": [
+1.17943e+09, 1.17943e+09, 1.17943e+09],
+"Start Time" : "2022-May-31 20:29:11.024267",
+"End Time" : "2022-May-31 20:29:25.044421"
+}
+,{
+"Algorithm Name": "VectorVectorContainer",
+"Type": "ParallelInplace#4",
+"Graph Name": "socfb-Michigan23.mtx",
+"Test Times": [
+47.167, 45.163, 68.211],
+"Test Memories": [
+1.18488e+07, 1.18488e+07, 1.18488e+07],
+"Start Time" : "2022-May-31 20:29:25.047280",
+"End Time" : "2022-May-31 20:29:25.214728"
+}
+,{
+"Algorithm Name": "VectorVectorContainer",
+"Type": "ParallelInplace#4",
+"Graph Name": "graph500-scale22-ef16_adj_130M.edges",
+"Test Times": [
+12327.5, 12168.9, 11748.9],
+"Test Memories": [
+1.1054e+09, 1.1054e+09, 1.1054e+09],
+"Start Time" : "2022-May-31 20:29:25.215040",
+"End Time" : "2022-May-31 20:30:02.708368"
+}
+,{
+"Algorithm Name": "VectorVectorContainer",
+"Type": "ParallelInplace#4",
+"Graph Name": "sc-ldoor_20M.edges",
+"Test Times": [
+808.646, 813.497, 834.236],
+"Test Memories": [
+2.83907e+08, 2.83907e+08, 2.83907e+08],
+"Start Time" : "2022-May-31 20:30:02.710708",
+"End Time" : "2022-May-31 20:30:05.356826"
+}
+,{
+"Algorithm Name": "VectorVectorContainer",
+"Type": "ParallelInplace#4",
+"Graph Name": "bn-human-Jung2015_M7101234.edges",
+"Test Times": [
+1641.3, 1628.48, 1617.88],
+"Test Memories": [
+4.35662e+08, 4.35662e+08, 4.35662e+08],
+"Start Time" : "2022-May-31 20:30:05.357116",
+"End Time" : "2022-May-31 20:30:10.317468"
+}
+,{
+"Algorithm Name": "VectorVectorContainer",
+"Type": "ParallelInplace#4",
+"Graph Name": "delaunay_n24_50M.edges",
+"Test Times": [
+4327.59, 4521.69, 4579.07],
+"Test Memories": [
+2.7346e+09, 2.7346e+09, 2.7346e+09],
+"Start Time" : "2022-May-31 20:30:10.317649",
+"End Time" : "2022-May-31 20:30:24.962969"
+}
+,{
+"Algorithm Name": "VectorVectorContainer",
+"Type": "ParallelInplace#4",
+"Graph Name": "bn-human-Jung2015_M87118465_180M.edges",
+"Test Times": [
+5231.86, 4765.44, 4749.49],
+"Test Memories": [
+1.2256e+09, 1.2256e+09, 1.2256e+09],
+"Start Time" : "2022-May-31 20:30:24.965529",
+"End Time" : "2022-May-31 20:30:39.934933"
+}
+,{
+"Algorithm Name": "VectorVectorContainer",
+"Type": "ParallelInplace#4",
+"Graph Name": "bn-human-BNU_1_0025869_session_2-bg_150M.edges",
+"Test Times": [
+4051.14, 4095.1, 4044.95],
+"Test Memories": [
+1.0591e+09, 1.0591e+09, 1.0591e+09],
+"Start Time" : "2022-May-31 20:30:39.935024",
+"End Time" : "2022-May-31 20:30:52.346227"
+}
+,{
+"Algorithm Name": "VectorVectorContainer",
+"Type": "ParallelInplace#4",
+"Graph Name": "web-uk-2005.mtx",
+"Test Times": [
+322.941, 333.608, 321.704],
+"Test Memories": [
+8.42428e+07, 8.42428e+07, 8.42428e+07],
+"Start Time" : "2022-May-31 20:30:52.348443",
+"End Time" : "2022-May-31 20:30:53.381166"
+}
+,{
+"Algorithm Name": "VectorVectorContainer",
+"Type": "ParallelInplace#4",
+"Graph Name": "soc-livejournal.mtx",
+"Test Times": [
+1348.85, 1363.26, 1364.95],
+"Test Memories": [
+7.71845e+08, 7.71845e+08, 7.71845e+08],
+"Start Time" : "2022-May-31 20:30:53.381260",
+"End Time" : "2022-May-31 20:30:57.773278"
+}
+,{
+"Algorithm Name": "VectorVectorContainer",
+"Type": "ParallelInplace#4",
+"Graph Name": "bn-human-Jung2015_M8703600.edges",
+"Test Times": [
+1604.56, 1510.16, 1497.74],
+"Test Memories": [
+5.24125e+08, 5.24125e+08, 5.24125e+08],
+"Start Time" : "2022-May-31 20:30:57.773390",
+"End Time" : "2022-May-31 20:31:02.534309"
+}
+,{
+"Algorithm Name": "VectorVectorContainer",
+"Type": "ParallelInplace#4",
+"Graph Name": "bn-human-BNU_1_0025868_session_1-bg_150M.edges",
+"Test Times": [
+4115.84, 4258.7, 3926.32],
+"Test Memories": [
+1.05534e+09, 1.05534e+09, 1.05534e+09],
+"Start Time" : "2022-May-31 20:31:02.534398",
+"End Time" : "2022-May-31 20:31:15.037315"
+}
+,{
+"Algorithm Name": "VectorVectorContainer",
+"Type": "ParallelInplace#4",
+"Graph Name": "bn-human-Jung2015_M87125334_40M.edges",
+"Test Times": [
+1233.4, 1212.31, 1170.28],
+"Test Memories": [
+4.72529e+08, 4.72529e+08, 4.72529e+08],
+"Start Time" : "2022-May-31 20:31:15.039899",
+"End Time" : "2022-May-31 20:31:18.787031"
+}
+,{
+"Algorithm Name": "VectorVectorContainer",
+"Type": "ParallelInplace#4",
+"Graph Name": "bn-human-Jung2015_M87116523_80M.edges",
+"Test Times": [
+2008.48, 1947.8, 1909.87],
+"Test Memories": [
+5.29912e+08, 5.29912e+08, 5.29912e+08],
+"Start Time" : "2022-May-31 20:31:18.787137",
+"End Time" : "2022-May-31 20:31:24.728353"
+}
+,{
+"Algorithm Name": "VectorVectorContainer",
+"Type": "ParallelInplace#4",
+"Graph Name": "bn-human-Jung2015_M87127677_210M.edges",
+"Test Times": [
+5692.76, 5471.83, 5412.91],
+"Test Memories": [
+1.39976e+09, 1.39976e+09, 1.39976e+09],
+"Start Time" : "2022-May-31 20:31:24.728432",
+"End Time" : "2022-May-31 20:31:41.549598"
+}
+,{
+"Algorithm Name": "VectorVectorContainer",
+"Type": "ParallelInplace#4",
+"Graph Name": "bn-449k-3.3M.edges",
+"Test Times": [
+160.259, 200.342, 143.562],
+"Test Memories": [
+8.61294e+07, 8.61294e+07, 8.61294e+07],
+"Start Time" : "2022-May-31 20:31:41.549680",
+"End Time" : "2022-May-31 20:31:42.073430"
+}
+,{
+"Algorithm Name": "VectorVectorContainer",
+"Type": "ParallelInplace#4",
+"Graph Name": "bn-human-BNU_1_0025919_session_1.edges",
+"Test Times": [
+5438.49, 5410.91, 5192.41],
+"Test Memories": [
+1.34687e+09, 1.34687e+09, 1.34687e+09],
+"Start Time" : "2022-May-31 20:31:42.073518",
+"End Time" : "2022-May-31 20:31:58.360962"
+}
+,{
+"Algorithm Name": "VectorVectorContainer",
+"Type": "ParallelInplace#4",
+"Graph Name": "testfile.txt",
+"Test Times": [
+0.736, 0.179, 0.197],
+"Test Memories": [
+2400, 2400, 2400],
+"Start Time" : "2022-May-31 20:31:58.361064",
+"End Time" : "2022-May-31 20:31:58.362183"
+}
+,{
+"Algorithm Name": "VectorVectorContainer",
+"Type": "ParallelInplace#4",
+"Graph Name": "C2000-9.edges",
+"Test Times": [
+50.422, 61.624, 45.801],
+"Test Memories": [
+1.04911e+07, 1.04911e+07, 1.04911e+07],
+"Start Time" : "2022-May-31 20:31:58.362269",
+"End Time" : "2022-May-31 20:31:58.520599"
+}
+,{
+"Algorithm Name": "VectorVectorContainer",
+"Type": "ParallelInplace#4",
+"Graph Name": "datafiles_seq.txt",
+"Test Times": [
+2.618, 0.476, 0.445],
+"Test Memories": [
+2400, 2400, 2400],
+"Start Time" : "2022-May-31 20:31:58.520782",
+"End Time" : "2022-May-31 20:31:58.524341"
+}
+,{
+"Algorithm Name": "VectorVectorContainer",
+"Type": "ParallelInplace#4",
+"Graph Name": "bn-human-Jung2015_M87114342_90M.edges",
+"Test Times": [
+2593.3, 2448.78, 2465.36],
+"Test Memories": [
+7.5719e+08, 7.5719e+08, 7.5719e+08],
+"Start Time" : "2022-May-31 20:31:58.524566",
+"End Time" : "2022-May-31 20:32:06.215623"
+}
+,{
+"Algorithm Name": "VectorVectorContainer",
+"Type": "ParallelInplace#4",
+"Graph Name": "bn-human-BNU_1_0025919_session_1_200M.edges",
+"Test Times": [
+5399.86, 5233.98, 5212.06],
+"Test Memories": [
+1.34687e+09, 1.34687e+09, 1.34687e+09],
+"Start Time" : "2022-May-31 20:32:06.215702",
+"End Time" : "2022-May-31 20:32:22.319030"
+}
+,{
+"Algorithm Name": "VectorVectorContainer",
+"Type": "ParallelInplace#4",
+"Graph Name": "socfb-B-anon_20M.edges",
+"Test Times": [
+2157.72, 2202.86, 2222.65],
+"Test Memories": [
+5.33588e+08, 5.33588e+08, 5.33588e+08],
+"Start Time" : "2022-May-31 20:32:22.319316",
+"End Time" : "2022-May-31 20:32:29.640850"
+}
+,{
+"Algorithm Name": "VectorVectorContainer",
+"Type": "ParallelInplace#4",
+"Graph Name": "bn-human-Jung2015_M87110650_40M.edges",
+"Test Times": [
+1300.45, 1183.42, 1178.82],
+"Test Memories": [
+4.55018e+08, 4.55018e+08, 4.55018e+08],
+"Start Time" : "2022-May-31 20:32:29.640927",
+"End Time" : "2022-May-31 20:32:33.407914"
+}
+,{
+"Algorithm Name": "VectorVectorContainer",
+"Type": "ParallelInplace#4",
+"Graph Name": "bn-human-Jung2015_M87125286_210M.edges",
+"Test Times": [
+5636.56, 5641.55, 5427.12],
+"Test Memories": [
+1.39791e+09, 1.39791e+09, 1.39791e+09],
+"Start Time" : "2022-May-31 20:32:33.407991",
+"End Time" : "2022-May-31 20:32:50.366301"
+}
+,{
+"Algorithm Name": "VectorVectorContainer",
+"Type": "ParallelInplace#4",
+"Graph Name": "bn-human-Jung2015_M87124563_160M.edges",
+"Test Times": [
+4404.14, 4163.85, 4195.15],
+"Test Memories": [
+1.11633e+09, 1.11633e+09, 1.11633e+09],
+"Start Time" : "2022-May-31 20:32:50.366382",
+"End Time" : "2022-May-31 20:33:03.324082"
+}
+,{
+"Algorithm Name": "VectorVectorContainer",
+"Type": "ParallelInplace#4",
+"Graph Name": "bn-human-BNU_1_0025914_session_2_100M.edges",
+"Test Times": [
+2776.38, 2734.26, 2707.34],
+"Test Memories": [
+7.92722e+08, 7.92722e+08, 7.92722e+08],
+"Start Time" : "2022-May-31 20:33:03.326492",
+"End Time" : "2022-May-31 20:33:11.708395"
+}
+,{
+"Algorithm Name": "VectorVectorContainer",
+"Type": "ParallelInplace#4",
+"Graph Name": "bn-434k-16M.edges",
+"Test Times": [
+533.259, 517.904, 447.326],
+"Test Memories": [
+1.55237e+08, 1.55237e+08, 1.55237e+08],
+"Start Time" : "2022-May-31 20:33:11.708477",
+"End Time" : "2022-May-31 20:33:13.271722"
+}
+,{
+"Algorithm Name": "VectorVectorContainer",
+"Type": "ParallelInplace#4",
+"Graph Name": "tech-p2p-gnutella.mtx",
+"Test Times": [
+25.078, 9.409, 9.463],
+"Test Memories": [
+1.00366e+07, 1.00366e+07, 1.00366e+07],
+"Start Time" : "2022-May-31 20:33:13.271824",
+"End Time" : "2022-May-31 20:33:13.318353"
+}
+,{
+"Algorithm Name": "VectorVectorContainer",
+"Type": "ParallelInplace#4",
+"Graph Name": "bn-1.8M-166M.edges",
+"Test Times": [
+4592.35, 4453.54, 4371.1],
+"Test Memories": [
+1.12095e+09, 1.12095e+09, 1.12095e+09],
+"Start Time" : "2022-May-31 20:33:13.318433",
+"End Time" : "2022-May-31 20:33:26.951610"
+}
+,{
+"Algorithm Name": "VectorVectorContainer",
+"Type": "ParallelInplace#4",
+"Graph Name": "bn-human-Jung2015_M87119472_60M.edges",
+"Test Times": [
+1705.99, 1699.69, 1685.91],
+"Test Memories": [
+5.70099e+08, 5.70099e+08, 5.70099e+08],
+"Start Time" : "2022-May-31 20:33:26.951696",
+"End Time" : "2022-May-31 20:33:32.182561"
+}
+,{
+"Algorithm Name": "VectorVectorContainer",
+"Type": "ParallelInplace#4",
+"Graph Name": "rgg_n_2_22_s0_30M.edges",
+"Test Times": [
+1794.05, 1694.16, 1793.08],
+"Test Memories": [
+6.77325e+08, 6.77325e+08, 6.77325e+08],
+"Start Time" : "2022-May-31 20:33:32.182638",
+"End Time" : "2022-May-31 20:33:37.977237"
+}
+,{
+"Algorithm Name": "VectorVectorContainer",
+"Type": "ParallelInplace#8",
+"Graph Name": "bn-human-BNU_1_0025889_session_2_130M.edges",
+"Test Times": [
+4041.11, 4024.74, 3929.65],
+"Test Memories": [
+1.13125e+09, 1.13125e+09, 1.13125e+09],
+"Start Time" : "2022-May-31 20:33:37.982300",
+"End Time" : "2022-May-31 20:33:50.222414"
+}
+,{
+"Algorithm Name": "VectorVectorContainer",
+"Type": "ParallelInplace#8",
+"Graph Name": "graph500-scale20-ef16_adj_30M.edges",
+"Test Times": [
+2205.07, 2240.11, 2054.61],
+"Test Memories": [
+3.67539e+08, 3.67539e+08, 3.67539e+08],
+"Start Time" : "2022-May-31 20:33:50.225164",
+"End Time" : "2022-May-31 20:33:57.006981"
+}
+,{
+"Algorithm Name": "VectorVectorContainer",
+"Type": "ParallelInplace#8",
+"Graph Name": "bn-human-Jung2015_M87118347_80M.edges",
+"Test Times": [
+2357.74, 2317.57, 2243.18],
+"Test Memories": [
+6.17357e+08, 6.17357e+08, 6.17357e+08],
+"Start Time" : "2022-May-31 20:33:57.007063",
+"End Time" : "2022-May-31 20:34:04.032799"
+}
+,{
+"Algorithm Name": "VectorVectorContainer",
+"Type": "ParallelInplace#8",
+"Graph Name": "socf-konect.edges",
+"Test Times": [
+9982.33, 9570.12, 9512.28],
+"Test Memories": [
+1.5725e+10, 1.5725e+10, 1.5725e+10],
+"Start Time" : "2022-May-31 20:34:04.032879",
+"End Time" : "2022-May-31 20:34:35.742378"
+}
+,{
+"Algorithm Name": "VectorVectorContainer",
+"Type": "ParallelInplace#8",
+"Graph Name": "socfb-UIllinois20.mtx",
+"Test Times": [
+383.509, 44.168, 58.372],
+"Test Memories": [
+1.69643e+07, 1.69643e+07, 1.69643e+07],
+"Start Time" : "2022-May-31 20:34:35.745876",
+"End Time" : "2022-May-31 20:34:36.238764"
+}
+,{
+"Algorithm Name": "VectorVectorContainer",
+"Type": "ParallelInplace#8",
+"Graph Name": "bn-human-BNU_1_0025913_session_2_180M.edges",
+"Test Times": [
+5425.56, 5243.32, 5235.02],
+"Test Memories": [
+1.42128e+09, 1.42128e+09, 1.42128e+09],
+"Start Time" : "2022-May-31 20:34:36.238843",
+"End Time" : "2022-May-31 20:34:52.434458"
+}
+,{
+"Algorithm Name": "VectorVectorContainer",
+"Type": "ParallelInplace#8",
+"Graph Name": "bn-human-BNU_1_0025916_session_1_110M.edges",
+"Test Times": [
+3323.69, 3321.67, 3315.01],
+"Test Memories": [
+9.91029e+08, 9.91029e+08, 9.91029e+08],
+"Start Time" : "2022-May-31 20:34:52.434536",
+"End Time" : "2022-May-31 20:35:02.576179"
+}
+,{
+"Algorithm Name": "VectorVectorContainer",
+"Type": "ParallelInplace#8",
+"Graph Name": "livejournal_160M.edges",
+"Test Times": [
+5343.33, 5323.87, 5274.38],
+"Test Memories": [
+1.62749e+09, 1.62749e+09, 1.62749e+09],
+"Start Time" : "2022-May-31 20:35:02.576259",
+"End Time" : "2022-May-31 20:35:19.400953"
+}
+,{
+"Algorithm Name": "VectorVectorContainer",
+"Type": "ParallelInplace#8",
+"Graph Name": "tech-ip.edges",
+"Test Times": [
+854.11, 831.063, 836.996],
+"Test Memories": [
+5.75686e+08, 5.75686e+08, 5.75686e+08],
+"Start Time" : "2022-May-31 20:35:19.401041",
+"End Time" : "2022-May-31 20:35:22.143689"
+}
+,{
+"Algorithm Name": "VectorVectorContainer",
+"Type": "ParallelInplace#8",
+"Graph Name": "bn-800-19k.edges",
+"Test Times": [
+12.444, 1.323, 3.738],
+"Test Memories": [
+343052, 343052, 343052],
+"Start Time" : "2022-May-31 20:35:22.143782",
+"End Time" : "2022-May-31 20:35:22.161387"
+}
+,{
+"Algorithm Name": "VectorVectorContainer",
+"Type": "ParallelInplace#8",
+"Graph Name": "soc-wiki-Talk-dir.mtx",
+"Test Times": [
+299.694, 295.869, 298.037],
+"Test Memories": [
+3.92877e+08, 3.92877e+08, 3.92877e+08],
+"Start Time" : "2022-May-31 20:35:22.161461",
+"End Time" : "2022-May-31 20:35:23.095887"
+}
+,{
+"Algorithm Name": "VectorVectorContainer",
+"Type": "ParallelInplace#8",
+"Graph Name": "bn-human-Jung2015_M87101049_190M.edges",
+"Test Times": [
+5672.02, 5581.43, 5488.41],
+"Test Memories": [
+1.44383e+09, 1.44383e+09, 1.44383e+09],
+"Start Time" : "2022-May-31 20:35:23.095978",
+"End Time" : "2022-May-31 20:35:40.073475"
+}
+,{
+"Algorithm Name": "VectorVectorContainer",
+"Type": "ParallelInplace#8",
+"Graph Name": "soc-orkut_106M.edges",
+"Test Times": [
+7933.21, 7703.65, 7665.78],
+"Test Memories": [
+1.54386e+09, 1.54386e+09, 1.54386e+09],
+"Start Time" : "2022-May-31 20:35:40.073554",
+"End Time" : "2022-May-31 20:36:06.921418"
+}
+,{
+"Algorithm Name": "VectorVectorContainer",
+"Type": "ParallelInplace#8",
+"Graph Name": "socfb-uci-uni_90M.edges",
+"Test Times": ["CRASHED"],
+"Test Memories": ["CRASHED"]
+"Error": "std::bad_alloc"
+}
+,{
+"Algorithm Name": "VectorVectorContainer",
+"Type": "ParallelInplace#8",
+"Graph Name": "soc-sinaweibo_260M.edges",
+"Test Times": ["CRASHED"],
+"Test Memories": ["CRASHED"]
+"Error": "std::bad_alloc"
+}
+,{
+"Algorithm Name": "VectorVectorContainer",
+"Type": "ParallelInplace#8",
+"Graph Name": "bn-7k-50k.edges",
+"Test Times": [
+7.089, 2.487, 2.555],
+"Test Memories": [
+1.93551e+06, 1.93551e+06, 1.93551e+06],
+"Start Time" : "2022-May-31 20:36:13.078263",
+"End Time" : "2022-May-31 20:36:13.090736"
+}
+,{
+"Algorithm Name": "VectorVectorContainer",
+"Type": "ParallelInplace#8",
+"Graph Name": "scc_fb-messages.mtx",
+"Test Times": [
+16.385, 13.71, 17.263],
+"Test Memories": [
+3.57908e+06, 3.57908e+06, 3.5794e+06],
+"Start Time" : "2022-May-31 20:36:13.090818",
+"End Time" : "2022-May-31 20:36:13.138406"
+}
+,{
+"Algorithm Name": "VectorVectorContainer",
+"Type": "ParallelInplace#8",
+"Graph Name": "soc-orkut.edges",
+"Test Times": [
+3652.3, 3542.02, 3573.78],
+"Test Memories": [
+1.34827e+09, 1.34827e+09, 1.34827e+09],
+"Start Time" : "2022-May-31 20:36:13.138578",
+"End Time" : "2022-May-31 20:36:24.555614"
+}
+,{
+"Algorithm Name": "VectorVectorContainer",
+"Type": "ParallelInplace#8",
+"Graph Name": "bn-human-Jung2015_M87104509_50M.edges",
+"Test Times": [
+1597.56, 1554.69, 1536.22],
+"Test Memories": [
+6.62195e+08, 6.62195e+08, 6.62195e+08],
+"Start Time" : "2022-May-31 20:36:24.555691",
+"End Time" : "2022-May-31 20:36:29.384775"
+}
+,{
+"Algorithm Name": "VectorVectorContainer",
+"Type": "ParallelInplace#8",
+"Graph Name": "cit-patent1.edges",
+"Test Times": [
+1048.43, 996.604, 1041.55],
+"Test Memories": [
+1.26303e+09, 1.26303e+09, 1.26303e+09],
+"Start Time" : "2022-May-31 20:36:29.384854",
+"End Time" : "2022-May-31 20:36:32.677956"
+}
+,{
+"Algorithm Name": "VectorVectorContainer",
+"Type": "ParallelInplace#8",
+"Graph Name": "bn-human-Jung2015_M87107781_70M.edges",
+"Test Times": [
+2155.16, 2154.01, 2131.5],
+"Test Memories": [
+7.04729e+08, 7.04729e+08, 7.04729e+08],
+"Start Time" : "2022-May-31 20:36:32.678054",
+"End Time" : "2022-May-31 20:36:39.260600"
+}
+,{
+"Algorithm Name": "VectorVectorContainer",
+"Type": "ParallelInplace#8",
+"Graph Name": "web-Stanford.mtx",
+"Test Times": [
+116.911, 148.5, 108.279],
+"Test Memories": [
+7.62828e+07, 7.62828e+07, 7.62828e+07],
+"Start Time" : "2022-May-31 20:36:39.260777",
+"End Time" : "2022-May-31 20:36:39.660261"
+}
+,{
+"Algorithm Name": "VectorVectorContainer",
+"Type": "ParallelInplace#8",
+"Graph Name": "bn-human-BNU_1_0025871_session_1-bg_170M.edges",
+"Test Times": [
+5052.39, 4908.66, 4891.6],
+"Test Memories": [
+1.34746e+09, 1.34746e+09, 1.34746e+09],
+"Start Time" : "2022-May-31 20:36:39.660342",
+"End Time" : "2022-May-31 20:36:54.744814"
+}
+,{
+"Algorithm Name": "VectorVectorContainer",
+"Type": "ParallelInplace#8",
+"Graph Name": "bn-human-BNU_1_0025876_session_2-bg_140M.edges",
+"Test Times": [
+4167.13, 4101.15, 4075.73],
+"Test Memories": [
+1.14787e+09, 1.14787e+09, 1.14787e+09],
+"Start Time" : "2022-May-31 20:36:54.744897",
+"End Time" : "2022-May-31 20:37:07.323246"
+}
+,{
+"Algorithm Name": "VectorVectorContainer",
+"Type": "ParallelInplace#8",
+"Graph Name": "bn-human-Jung2015_M87117093_120M.edges",
+"Test Times": [
+3779.38, 3631.19, 3628.67],
+"Test Memories": [
+1.05984e+09, 1.05984e+09, 1.05984e+09],
+"Start Time" : "2022-May-31 20:37:07.323327",
+"End Time" : "2022-May-31 20:37:18.575333"
+}
+,{
+"Algorithm Name": "VectorVectorContainer",
+"Type": "ParallelInplace#8",
+"Graph Name": "data_files.txt",
+"Test Times": [
+3.459, 0.264, 0.282],
+"Test Memories": [
+4800, 4800, 4800],
+"Start Time" : "2022-May-31 20:37:18.575464",
+"End Time" : "2022-May-31 20:37:18.579487"
+}
+,{
+"Algorithm Name": "VectorVectorContainer",
+"Type": "ParallelInplace#8",
+"Graph Name": "hugetric-00010_10M.mtx",
+"Test Times": [
+1926.24, 2120.48, 1977.89],
+"Test Memories": [
+2.44484e+09, 2.44484e+09, 2.44747e+09],
+"Start Time" : "2022-May-31 20:37:18.579566",
+"End Time" : "2022-May-31 20:37:25.300547"
+}
+,{
+"Algorithm Name": "VectorVectorContainer",
+"Type": "ParallelInplace#8",
+"Graph Name": "datafiles_par.txt",
+"Test Times": [
+1.04, 0.384, 0.3],
+"Test Memories": [
+4800, 4800, 4800],
+"Start Time" : "2022-May-31 20:37:25.303415",
+"End Time" : "2022-May-31 20:37:25.305155"
+}
+,{
+"Algorithm Name": "VectorVectorContainer",
+"Type": "ParallelInplace#8",
+"Graph Name": "bn-human-Jung2015_M87101705_200M.edges",
+"Test Times": [
+6087.29, 5945.32, 5912.15],
+"Test Memories": [
+1.51766e+09, 1.51766e+09, 1.51766e+09],
+"Start Time" : "2022-May-31 20:37:25.305236",
+"End Time" : "2022-May-31 20:37:43.527132"
+}
+,{
+"Algorithm Name": "VectorVectorContainer",
+"Type": "ParallelInplace#8",
+"Graph Name": "tech-as-skitter.mtx",
+"Test Times": [
+588.108, 568.964, 524.388],
+"Test Memories": [
+3.66436e+08, 3.66436e+08, 3.66436e+08],
+"Start Time" : "2022-May-31 20:37:43.529764",
+"End Time" : "2022-May-31 20:37:45.346870"
+}
+,{
+"Algorithm Name": "VectorVectorContainer",
+"Type": "ParallelInplace#8",
+"Graph Name": "socfb-Texas84.mtx",
+"Test Times": [
+66.132, 54.228, 65.908],
+"Test Memories": [
+2.02183e+07, 2.02183e+07, 2.02183e+07],
+"Start Time" : "2022-May-31 20:37:45.346950",
+"End Time" : "2022-May-31 20:37:45.539446"
+}
+,{
+"Algorithm Name": "VectorVectorContainer",
+"Type": "ParallelInplace#8",
+"Graph Name": "soc-pokec.mtx",
+"Test Times": [
+872.41, 888.927, 868.249],
+"Test Memories": [
+3.77002e+08, 3.77002e+08, 3.77002e+08],
+"Start Time" : "2022-May-31 20:37:45.539523",
+"End Time" : "2022-May-31 20:37:48.383728"
+}
+,{
+"Algorithm Name": "VectorVectorContainer",
+"Type": "ParallelInplace#8",
+"Graph Name": "web-wikipedia2009.mtx",
+"Test Times": [
+412.322, 404.817, 361.774],
+"Test Memories": [
+4.44364e+08, 4.44364e+08, 4.44364e+08],
+"Start Time" : "2022-May-31 20:37:48.383804",
+"End Time" : "2022-May-31 20:37:49.647661"
+}
+,{
+"Algorithm Name": "VectorVectorContainer",
+"Type": "ParallelInplace#8",
+"Graph Name": "ca-hollywood-2009.edges",
+"Test Times": [
+1782.89, 1774.35, 1727.53],
+"Test Memories": [
+5.8085e+08, 5.8085e+08, 5.8085e+08],
+"Start Time" : "2022-May-31 20:37:49.647740",
+"End Time" : "2022-May-31 20:37:55.092267"
+}
+,{
+"Algorithm Name": "VectorVectorContainer",
+"Type": "ParallelInplace#8",
+"Graph Name": "soc-google-plus.txt",
+"Test Times": [
+75.394, 79.207, 65.565],
+"Test Memories": [
+5.2625e+07, 5.2625e+07, 5.2625e+07],
+"Start Time" : "2022-May-31 20:37:55.092407",
+"End Time" : "2022-May-31 20:37:55.332248"
+}
+,{
+"Algorithm Name": "VectorVectorContainer",
+"Type": "ParallelInplace#8",
+"Graph Name": "tech-as-skitter_10M.mtx",
+"Test Times": [
+576.594, 563.212, 516.123],
+"Test Memories": [
+3.66436e+08, 3.66436e+08, 3.66436e+08],
+"Start Time" : "2022-May-31 20:37:55.332327",
+"End Time" : "2022-May-31 20:37:57.094764"
+}
+,{
+"Algorithm Name": "VectorVectorContainer",
+"Type": "ParallelInplace#8",
+"Graph Name": "soc-orkut-dir_120M.edges",
+"Test Times": [
+3728.12, 3748.68, 3645.81],
+"Test Memories": [
+1.07101e+09, 1.07101e+09, 1.07101e+09],
+"Start Time" : "2022-May-31 20:37:57.094859",
+"End Time" : "2022-May-31 20:38:08.699611"
+}
+,{
+"Algorithm Name": "VectorVectorContainer",
+"Type": "ParallelInplace#8",
+"Graph Name": "bn-human-Jung2015_M87110148_140M.edges",
+"Test Times": [
+4258.63, 4162.8, 4183.63],
+"Test Memories": [
+1.19806e+09, 1.19806e+09, 1.19806e+09],
+"Start Time" : "2022-May-31 20:38:08.702599",
+"End Time" : "2022-May-31 20:38:21.539730"
+}
+,{
+"Algorithm Name": "VectorVectorContainer",
+"Type": "ParallelInplace#8",
+"Graph Name": "bn-human-Jung2015_M87113878.edges",
+"Test Times": [
+3138.42, 2972.61, 3065.08],
+"Test Memories": [
+7.56908e+08, 7.56908e+08, 7.56908e+08],
+"Start Time" : "2022-May-31 20:38:21.539805",
+"End Time" : "2022-May-31 20:38:30.849353"
+}
+,{
+"Algorithm Name": "VectorVectorContainer",
+"Type": "ParallelInplace#8",
+"Graph Name": "bn-human-Jung2015_M87104201_190M.edges",
+"Test Times": [
+5641.58, 5604.38, 5516.38],
+"Test Memories": [
+1.46065e+09, 1.46065e+09, 1.46065e+09],
+"Start Time" : "2022-May-31 20:38:30.849429",
+"End Time" : "2022-May-31 20:38:47.883993"
+}
+,{
+"Algorithm Name": "VectorVectorContainer",
+"Type": "ParallelInplace#8",
+"Graph Name": "bn-100k-662k.edges",
+"Test Times": [
+47.485, 47.594, 46.34],
+"Test Memories": [
+2.80778e+07, 2.80778e+07, 2.80778e+07],
+"Start Time" : "2022-May-31 20:38:47.886430",
+"End Time" : "2022-May-31 20:38:48.031996"
+}
+,{
+"Algorithm Name": "VectorVectorContainer",
+"Type": "ParallelInplace#8",
+"Graph Name": "bn-human-Jung2015_M87113679_60M.edges",
+"Test Times": [
+1927.47, 1855.2, 1865.68],
+"Test Memories": [
+7.16385e+08, 7.16385e+08, 7.16385e+08],
+"Start Time" : "2022-May-31 20:38:48.032086",
+"End Time" : "2022-May-31 20:38:53.834846"
+}
+,{
+"Algorithm Name": "VectorVectorContainer",
+"Type": "ParallelInplace#8",
+"Graph Name": "bn-65-1K.edges",
+"Test Times": [
+3.379, 13.576, 0.932],
+"Test Memories": [
+25840, 25840, 25840],
+"Start Time" : "2022-May-31 20:38:53.834926",
+"End Time" : "2022-May-31 20:38:53.855561"
+}
+,{
+"Algorithm Name": "VectorVectorContainer",
+"Type": "ParallelInplace#8",
+"Graph Name": "bn-human-Jung2015_M87104300_70M.edges",
+"Test Times": [
+2016.25, 2087.93, 2085.96],
+"Test Memories": [
+7.12536e+08, 7.12536e+08, 7.12536e+08],
+"Start Time" : "2022-May-31 20:38:53.855714",
+"End Time" : "2022-May-31 20:39:00.211130"
+}
+,{
+"Algorithm Name": "VectorVectorContainer",
+"Type": "ParallelInplace#8",
+"Graph Name": "ca-IMDB.edges",
+"Test Times": [
+167.302, 203.274, 200.371],
+"Test Memories": [
+1.22749e+08, 1.22749e+08, 1.22749e+08],
+"Start Time" : "2022-May-31 20:39:00.211208",
+"End Time" : "2022-May-31 20:39:00.815222"
+}
+,{
+"Algorithm Name": "VectorVectorContainer",
+"Type": "ParallelInplace#8",
+"Graph Name": "bn-34k-181k.edges",
+"Test Times": [
+21.132, 9.414, 10.04],
+"Test Memories": [
+8.26045e+06, 8.26045e+06, 8.26045e+06],
+"Start Time" : "2022-May-31 20:39:00.815322",
+"End Time" : "2022-May-31 20:39:00.857494"
+}
+,{
+"Algorithm Name": "VectorVectorContainer",
+"Type": "ParallelInplace#8",
+"Graph Name": "data_files_test.txt",
+"Test Times": [
+0.901, 0.314, 0.297],
+"Test Memories": [
+4800, 4800, 4800],
+"Start Time" : "2022-May-31 20:39:00.857572",
+"End Time" : "2022-May-31 20:39:00.859092"
+}
+,{
+"Algorithm Name": "VectorVectorContainer",
+"Type": "ParallelInplace#8",
+"Graph Name": "bn-human-Jung2015_M87112427_170M.edges",
+"Test Times": [
+5119.01, 4922.58, 4966.87],
+"Test Memories": [
+1.354e+09, 1.354e+09, 1.354e+09],
+"Start Time" : "2022-May-31 20:39:00.859176",
+"End Time" : "2022-May-31 20:39:16.107755"
+}
+,{
+"Algorithm Name": "VectorVectorContainer",
+"Type": "ParallelInplace#8",
+"Graph Name": "socfb-Michigan23.mtx",
+"Test Times": [
+40.64, 34.136, 41.564],
+"Test Memories": [
+1.63022e+07, 1.63022e+07, 1.63022e+07],
+"Start Time" : "2022-May-31 20:39:16.107846",
+"End Time" : "2022-May-31 20:39:16.230679"
+}
+,{
+"Algorithm Name": "VectorVectorContainer",
+"Type": "ParallelInplace#8",
+"Graph Name": "graph500-scale22-ef16_adj_130M.edges",
+"Test Times": [
+10060.8, 10101.6, 9794.81],
+"Test Memories": [
+1.46244e+09, 1.46244e+09, 1.46244e+09],
+"Start Time" : "2022-May-31 20:39:16.230911",
+"End Time" : "2022-May-31 20:39:47.517769"
+}
+,{
+"Algorithm Name": "VectorVectorContainer",
+"Type": "ParallelInplace#8",
+"Graph Name": "sc-ldoor_20M.edges",
+"Test Times": [
+933.986, 912.429, 883.485],
+"Test Memories": [
+4.08731e+08, 4.08731e+08, 4.08731e+08],
+"Start Time" : "2022-May-31 20:39:47.520460",
+"End Time" : "2022-May-31 20:39:50.442907"
+}
+,{
+"Algorithm Name": "VectorVectorContainer",
+"Type": "ParallelInplace#8",
+"Graph Name": "bn-human-Jung2015_M7101234.edges",
+"Test Times": [
+1921.45, 1943.98, 1909.79],
+"Test Memories": [
+4.93363e+08, 4.93363e+08, 4.93363e+08],
+"Start Time" : "2022-May-31 20:39:50.443006",
+"End Time" : "2022-May-31 20:39:56.287903"
+}
+,{
+"Algorithm Name": "VectorVectorContainer",
+"Type": "ParallelInplace#8",
+"Graph Name": "delaunay_n24_50M.edges",
+"Test Times": [
+5404.89, 5585.01, 5537.17],
+"Test Memories": [
+5.54944e+09, 5.54944e+09, 5.54944e+09],
+"Start Time" : "2022-May-31 20:39:56.287991",
+"End Time" : "2022-May-31 20:40:13.987959"
+}
+,{
+"Algorithm Name": "VectorVectorContainer",
+"Type": "ParallelInplace#8",
+"Graph Name": "bn-human-Jung2015_M87118465_180M.edges",
+"Test Times": [
+5642.3, 5238.01, 5263.55],
+"Test Memories": [
+1.37308e+09, 1.37308e+09, 1.37308e+09],
+"Start Time" : "2022-May-31 20:40:13.991226",
+"End Time" : "2022-May-31 20:40:30.376950"
+}
+,{
+"Algorithm Name": "VectorVectorContainer",
+"Type": "ParallelInplace#8",
+"Graph Name": "bn-human-BNU_1_0025869_session_2-bg_150M.edges",
+"Test Times": [
+4565.19, 4422.94, 4355.66],
+"Test Memories": [
+1.22612e+09, 1.22612e+09, 1.22612e+09],
+"Start Time" : "2022-May-31 20:40:30.377040",
+"End Time" : "2022-May-31 20:40:43.951308"
+}
+,{
+"Algorithm Name": "VectorVectorContainer",
+"Type": "ParallelInplace#8",
+"Graph Name": "web-uk-2005.mtx",
+"Test Times": [
+386.143, 376.168, 375.878],
+"Test Memories": [
+9.75694e+07, 9.75694e+07, 9.75694e+07],
+"Start Time" : "2022-May-31 20:40:43.954145",
+"End Time" : "2022-May-31 20:40:45.112710"
+}
+,{
+"Algorithm Name": "VectorVectorContainer",
+"Type": "ParallelInplace#8",
+"Graph Name": "soc-livejournal.mtx",
+"Test Times": [
+1512.47, 1493.75, 1512.89],
+"Test Memories": [
+1.08753e+09, 1.08753e+09, 1.08753e+09],
+"Start Time" : "2022-May-31 20:40:45.112796",
+"End Time" : "2022-May-31 20:40:49.942787"
+}
+,{
+"Algorithm Name": "VectorVectorContainer",
+"Type": "ParallelInplace#8",
+"Graph Name": "bn-human-Jung2015_M8703600.edges",
+"Test Times": [
+1700.28, 1669.54, 1697.61],
+"Test Memories": [
+6.76805e+08, 6.76805e+08, 6.76805e+08],
+"Start Time" : "2022-May-31 20:40:49.942876",
+"End Time" : "2022-May-31 20:40:55.162808"
+}
+,{
+"Algorithm Name": "VectorVectorContainer",
+"Type": "ParallelInplace#8",
+"Graph Name": "bn-human-BNU_1_0025868_session_1-bg_150M.edges",
+"Test Times": [
+4438.96, 4441.03, 4321.4],
+"Test Memories": [
+1.21701e+09, 1.21701e+09, 1.21701e+09],
+"Start Time" : "2022-May-31 20:40:55.162897",
+"End Time" : "2022-May-31 20:41:08.602237"
+}
+,{
+"Algorithm Name": "VectorVectorContainer",
+"Type": "ParallelInplace#8",
+"Graph Name": "bn-human-Jung2015_M87125334_40M.edges",
+"Test Times": [
+1324.89, 1280.44, 1276.17],
+"Test Memories": [
+6.23119e+08, 6.23119e+08, 6.23119e+08],
+"Start Time" : "2022-May-31 20:41:08.602312",
+"End Time" : "2022-May-31 20:41:12.614129"
+}
+,{
+"Algorithm Name": "VectorVectorContainer",
+"Type": "ParallelInplace#8",
+"Graph Name": "bn-human-Jung2015_M87116523_80M.edges",
+"Test Times": [
+2271.21, 2210.97, 2247.2],
+"Test Memories": [
+5.9731e+08, 5.9731e+08, 5.9731e+08],
+"Start Time" : "2022-May-31 20:41:12.614224",
+"End Time" : "2022-May-31 20:41:19.435565"
+}
+,{
+"Algorithm Name": "VectorVectorContainer",
+"Type": "ParallelInplace#8",
+"Graph Name": "bn-human-Jung2015_M87127677_210M.edges",
+"Test Times": [
+6143.66, 6003.57, 6129.39],
+"Test Memories": [
+1.57413e+09, 1.57413e+09, 1.57413e+09],
+"Start Time" : "2022-May-31 20:41:19.435635",
+"End Time" : "2022-May-31 20:41:38.029197"
+}
+,{
+"Algorithm Name": "VectorVectorContainer",
+"Type": "ParallelInplace#8",
+"Graph Name": "bn-449k-3.3M.edges",
+"Test Times": [
+211.472, 204.402, 205.061],
+"Test Memories": [
+1.46607e+08, 1.46607e+08, 1.46607e+08],
+"Start Time" : "2022-May-31 20:41:38.031757",
+"End Time" : "2022-May-31 20:41:38.676851"
+}
+,{
+"Algorithm Name": "VectorVectorContainer",
+"Type": "ParallelInplace#8",
+"Graph Name": "bn-human-BNU_1_0025919_session_1.edges",
+"Test Times": [
+5984.6, 6007.73, 5845.84],
+"Test Memories": [
+1.50406e+09, 1.50406e+09, 1.50406e+09],
+"Start Time" : "2022-May-31 20:41:38.676940",
+"End Time" : "2022-May-31 20:41:56.798851"
+}
+,{
+"Algorithm Name": "VectorVectorContainer",
+"Type": "ParallelInplace#8",
+"Graph Name": "testfile.txt",
+"Test Times": [
+0.8, 0.439, 0.341],
+"Test Memories": [
+4800, 4800, 4800],
+"Start Time" : "2022-May-31 20:41:56.801390",
+"End Time" : "2022-May-31 20:41:56.802989"
+}
+,{
+"Algorithm Name": "VectorVectorContainer",
+"Type": "ParallelInplace#8",
+"Graph Name": "C2000-9.edges",
+"Test Times": [
+59.214, 56.142, 44.068],
+"Test Memories": [
+1.07392e+07, 1.07392e+07, 1.07392e+07],
+"Start Time" : "2022-May-31 20:41:56.803112",
+"End Time" : "2022-May-31 20:41:56.965844"
+}
+,{
+"Algorithm Name": "VectorVectorContainer",
+"Type": "ParallelInplace#8",
+"Graph Name": "datafiles_seq.txt",
+"Test Times": [
+3.689, 0.695, 0.574],
+"Test Memories": [
+4800, 4800, 4800],
+"Start Time" : "2022-May-31 20:41:56.965920",
+"End Time" : "2022-May-31 20:41:56.970895"
+}
+,{
+"Algorithm Name": "VectorVectorContainer",
+"Type": "ParallelInplace#8",
+"Graph Name": "bn-human-Jung2015_M87114342_90M.edges",
+"Test Times": [
+2819.86, 2727.21, 2755.12],
+"Test Memories": [
+9.49331e+08, 9.49331e+08, 9.49331e+08],
+"Start Time" : "2022-May-31 20:41:56.971111",
+"End Time" : "2022-May-31 20:42:05.470794"
+}
+,{
+"Algorithm Name": "VectorVectorContainer",
+"Type": "ParallelInplace#8",
+"Graph Name": "bn-human-BNU_1_0025919_session_1_200M.edges",
+"Test Times": [
+6046.07, 5903.64, 5826.65],
+"Test Memories": [
+1.50406e+09, 1.50406e+09, 1.50406e+09],
+"Start Time" : "2022-May-31 20:42:05.470872",
+"End Time" : "2022-May-31 20:42:23.530014"
+}
+,{
+"Algorithm Name": "VectorVectorContainer",
+"Type": "ParallelInplace#8",
+"Graph Name": "socfb-B-anon_20M.edges",
+"Test Times": [
+2158.53, 2126.24, 2199.18],
+"Test Memories": [
+1.04798e+09, 1.04798e+09, 1.04798e+09],
+"Start Time" : "2022-May-31 20:42:23.530179",
+"End Time" : "2022-May-31 20:42:30.602917"
+}
+,{
+"Algorithm Name": "VectorVectorContainer",
+"Type": "ParallelInplace#8",
+"Graph Name": "bn-human-Jung2015_M87110650_40M.edges",
+"Test Times": [
+1376.48, 1305.1, 1341.55],
+"Test Memories": [
+5.98129e+08, 5.98129e+08, 5.98129e+08],
+"Start Time" : "2022-May-31 20:42:30.603009",
+"End Time" : "2022-May-31 20:42:34.765693"
+}
+,{
+"Algorithm Name": "VectorVectorContainer",
+"Type": "ParallelInplace#8",
+"Graph Name": "bn-human-Jung2015_M87125286_210M.edges",
+"Test Times": [
+6370.33, 6248.39, 6199.42],
+"Test Memories": [
+1.57048e+09, 1.57048e+09, 1.57048e+09],
+"Start Time" : "2022-May-31 20:42:34.765780",
+"End Time" : "2022-May-31 20:42:53.871438"
+}
+,{
+"Algorithm Name": "VectorVectorContainer",
+"Type": "ParallelInplace#8",
+"Graph Name": "bn-human-Jung2015_M87124563_160M.edges",
+"Test Times": [
+4749.21, 4659.28, 4792.23],
+"Test Memories": [
+1.27626e+09, 1.27626e+09, 1.27626e+09],
+"Start Time" : "2022-May-31 20:42:53.874066",
+"End Time" : "2022-May-31 20:43:08.311380"
+}
+,{
+"Algorithm Name": "VectorVectorContainer",
+"Type": "ParallelInplace#8",
+"Graph Name": "bn-human-BNU_1_0025914_session_2_100M.edges",
+"Test Times": [
+3137.55, 3121.31, 3043.87],
+"Test Memories": [
+9.53186e+08, 9.53186e+08, 9.53186e+08],
+"Start Time" : "2022-May-31 20:43:08.311461",
+"End Time" : "2022-May-31 20:43:17.809959"
+}
+,{
+"Algorithm Name": "VectorVectorContainer",
+"Type": "ParallelInplace#8",
+"Graph Name": "bn-434k-16M.edges",
+"Test Times": [
+566.883, 551.736, 552.885],
+"Test Memories": [
+1.86107e+08, 1.86107e+08, 1.86107e+08],
+"Start Time" : "2022-May-31 20:43:17.810040",
+"End Time" : "2022-May-31 20:43:19.545089"
+}
+,{
+"Algorithm Name": "VectorVectorContainer",
+"Type": "ParallelInplace#8",
+"Graph Name": "tech-p2p-gnutella.mtx",
+"Test Times": [
+19.425, 11.805, 12.1],
+"Test Memories": [
+1.7477e+07, 1.7477e+07, 1.7477e+07],
+"Start Time" : "2022-May-31 20:43:19.545188",
+"End Time" : "2022-May-31 20:43:19.591088"
+}
+,{
+"Algorithm Name": "VectorVectorContainer",
+"Type": "ParallelInplace#8",
+"Graph Name": "bn-1.8M-166M.edges",
+"Test Times": [
+5153.68, 5032.37, 5062.82],
+"Test Memories": [
+1.29084e+09, 1.29084e+09, 1.29084e+09],
+"Start Time" : "2022-May-31 20:43:19.591167",
+"End Time" : "2022-May-31 20:43:35.078770"
+}
+,{
+"Algorithm Name": "VectorVectorContainer",
+"Type": "ParallelInplace#8",
+"Graph Name": "bn-human-Jung2015_M87119472_60M.edges",
+"Test Times": [
+1907.4, 1776.1, 1792.11],
+"Test Memories": [
+7.25013e+08, 7.25013e+08, 7.25013e+08],
+"Start Time" : "2022-May-31 20:43:35.081321",
+"End Time" : "2022-May-31 20:43:40.721186"
+}
+,{
+"Algorithm Name": "VectorVectorContainer",
+"Type": "ParallelInplace#8",
+"Graph Name": "rgg_n_2_22_s0_30M.edges",
+"Test Times": [
+2107.31, 2197.34, 2137.59],
+"Test Memories": [
+1.29374e+09, 1.29587e+09, 1.29587e+09],
+"Start Time" : "2022-May-31 20:43:40.721278",
+"End Time" : "2022-May-31 20:43:47.629722"
+}
+,{
+"Algorithm Name": "VectorVectorContainer",
+"Type": "ParallelInplace#12",
+"Graph Name": "bn-human-BNU_1_0025889_session_2_130M.edges",
+"Test Times": [
+3482.01, 3173.08, 3242.68],
+"Test Memories": [
+1.29539e+09, 1.29539e+09, 1.29539e+09],
+"Start Time" : "2022-May-31 20:43:47.634455",
+"End Time" : "2022-May-31 20:43:57.773843"
+}
+,{
+"Algorithm Name": "VectorVectorContainer",
+"Type": "ParallelInplace#12",
+"Graph Name": "graph500-scale20-ef16_adj_30M.edges",
+"Test Times": [
+2034.04, 2135.17, 2116.75],
+"Test Memories": [
+4.34716e+08, 4.34716e+08, 4.34716e+08],
+"Start Time" : "2022-May-31 20:43:57.773950",
+"End Time" : "2022-May-31 20:44:04.315040"
+}
+,{
+"Algorithm Name": "VectorVectorContainer",
+"Type": "ParallelInplace#12",
+"Graph Name": "bn-human-Jung2015_M87118347_80M.edges",
+"Test Times": [
+2091.89, 1888.77, 1931.37],
+"Test Memories": [
+6.90654e+08, 6.90654e+08, 6.90654e+08],
+"Start Time" : "2022-May-31 20:44:04.315124",
+"End Time" : "2022-May-31 20:44:10.331847"
+}
+,{
+"Algorithm Name": "VectorVectorContainer",
+"Type": "ParallelInplace#12",
+"Graph Name": "socf-konect.edges",
+"Test Times": ["CRASHED"],
+"Test Memories": ["CRASHED"]
+"Error": "std::bad_alloc"
+}
+,{
+"Algorithm Name": "VectorVectorContainer",
+"Type": "ParallelInplace#12",
+"Graph Name": "socfb-UIllinois20.mtx",
+"Test Times": [
+43.734, 42.476, 39.901],
+"Test Memories": [
+1.98906e+07, 1.98906e+07, 1.98906e+07],
+"Start Time" : "2022-May-31 20:44:13.195545",
+"End Time" : "2022-May-31 20:44:13.329293"
+}
+,{
+"Algorithm Name": "VectorVectorContainer",
+"Type": "ParallelInplace#12",
+"Graph Name": "bn-human-BNU_1_0025913_session_2_180M.edges",
+"Test Times": [
+4576.25, 4382.06, 4460.2],
+"Test Memories": [
+1.58014e+09, 1.58014e+09, 1.58014e+09],
+"Start Time" : "2022-May-31 20:44:13.330319",
+"End Time" : "2022-May-31 20:44:27.053913"
+}
+,{
+"Algorithm Name": "VectorVectorContainer",
+"Type": "ParallelInplace#12",
+"Graph Name": "bn-human-BNU_1_0025916_session_1_110M.edges",
+"Test Times": [
+2789.34, 2901.84, 2863.07],
+"Test Memories": [
+1.15026e+09, 1.15026e+09, 1.15026e+09],
+"Start Time" : "2022-May-31 20:44:27.054007",
+"End Time" : "2022-May-31 20:44:35.831164"
+}
+,{
+"Algorithm Name": "VectorVectorContainer",
+"Type": "ParallelInplace#12",
+"Graph Name": "livejournal_160M.edges",
+"Test Times": [
+4594.18, 4484.32, 4483.06],
+"Test Memories": [
+1.79617e+09, 1.79617e+09, 1.79617e+09],
+"Start Time" : "2022-May-31 20:44:35.831245",
+"End Time" : "2022-May-31 20:44:50.282458"
+}
+,{
+"Algorithm Name": "VectorVectorContainer",
+"Type": "ParallelInplace#12",
+"Graph Name": "tech-ip.edges",
+"Test Times": [
+826.399, 806.231, 806.684],
+"Test Memories": [
+8.32726e+08, 8.32726e+08, 8.32726e+08],
+"Start Time" : "2022-May-31 20:44:50.282554",
+"End Time" : "2022-May-31 20:44:52.949074"
+}
+,{
+"Algorithm Name": "VectorVectorContainer",
+"Type": "ParallelInplace#12",
+"Graph Name": "bn-800-19k.edges",
+"Test Times": [
+12.598, 1.402, 0.787],
+"Test Memories": [
+449012, 449012, 449012],
+"Start Time" : "2022-May-31 20:44:52.949151",
+"End Time" : "2022-May-31 20:44:52.964033"
+}
+,{
+"Algorithm Name": "VectorVectorContainer",
+"Type": "ParallelInplace#12",
+"Graph Name": "soc-wiki-Talk-dir.mtx",
+"Test Times": [
+287.77, 307.435, 316.984],
+"Test Memories": [
+6.11206e+08, 6.11732e+08, 6.11732e+08],
+"Start Time" : "2022-May-31 20:44:52.964107",
+"End Time" : "2022-May-31 20:44:53.922017"
+}
+,{
+"Algorithm Name": "VectorVectorContainer",
+"Type": "ParallelInplace#12",
+"Graph Name": "bn-human-Jung2015_M87101049_190M.edges",
+"Test Times": [
+4765.43, 4618.87, 4572.1],
+"Test Memories": [
+1.59473e+09, 1.59473e+09, 1.59473e+09],
+"Start Time" : "2022-May-31 20:44:53.922097",
+"End Time" : "2022-May-31 20:45:08.139132"
+}
+,{
+"Algorithm Name": "VectorVectorContainer",
+"Type": "ParallelInplace#12",
+"Graph Name": "soc-orkut_106M.edges",
+"Test Times": [
+7689.12, 7505.05, 7442.28],
+"Test Memories": [
+1.88506e+09, 1.88506e+09, 1.88506e+09],
+"Start Time" : "2022-May-31 20:45:08.142368",
+"End Time" : "2022-May-31 20:45:33.902489"
+}
+,{
+"Algorithm Name": "VectorVectorContainer",
+"Type": "ParallelInplace#12",
+"Graph Name": "socfb-uci-uni_90M.edges",
+"Test Times": ["CRASHED"],
+"Test Memories": ["CRASHED"]
+"Error": "std::bad_alloc"
+}
+,{
+"Algorithm Name": "VectorVectorContainer",
+"Type": "ParallelInplace#12",
+"Graph Name": "soc-sinaweibo_260M.edges",
+"Test Times": ["CRASHED"],
+"Test Memories": ["CRASHED"]
+"Error": "std::bad_alloc"
+}
+,{
+"Algorithm Name": "VectorVectorContainer",
+"Type": "ParallelInplace#12",
+"Graph Name": "bn-7k-50k.edges",
+"Test Times": [
+10.799, 2.885, 2.936],
+"Test Memories": [
+2.70587e+06, 2.70587e+06, 2.70587e+06],
+"Start Time" : "2022-May-31 20:45:39.190182",
+"End Time" : "2022-May-31 20:45:39.207198"
+}
+,{
+"Algorithm Name": "VectorVectorContainer",
+"Type": "ParallelInplace#12",
+"Graph Name": "scc_fb-messages.mtx",
+"Test Times": [
+16.822, 13.111, 13.847],
+"Test Memories": [
+3.83066e+06, 3.83066e+06, 3.83066e+06],
+"Start Time" : "2022-May-31 20:45:39.207292",
+"End Time" : "2022-May-31 20:45:39.251357"
+}
+,{
+"Algorithm Name": "VectorVectorContainer",
+"Type": "ParallelInplace#12",
+"Graph Name": "soc-orkut.edges",
+"Test Times": [
+3051.97, 2902.46, 2965.99],
+"Test Memories": [
+1.6068e+09, 1.6068e+09, 1.6068e+09],
+"Start Time" : "2022-May-31 20:45:39.251477",
+"End Time" : "2022-May-31 20:45:48.807763"
+}
+,{
+"Algorithm Name": "VectorVectorContainer",
+"Type": "ParallelInplace#12",
+"Graph Name": "bn-human-Jung2015_M87104509_50M.edges",
+"Test Times": [
+1358.65, 1360.65, 1353.11],
+"Test Memories": [
+8.24705e+08, 8.24705e+08, 8.24705e+08],
+"Start Time" : "2022-May-31 20:45:48.807848",
+"End Time" : "2022-May-31 20:45:53.048723"
+}
+,{
+"Algorithm Name": "VectorVectorContainer",
+"Type": "ParallelInplace#12",
+"Graph Name": "cit-patent1.edges",
+"Test Times": [
+1127.51, 1119.19, 1128.41],
+"Test Memories": [
+1.80215e+09, 1.80215e+09, 1.80215e+09],
+"Start Time" : "2022-May-31 20:45:53.048803",
+"End Time" : "2022-May-31 20:45:56.581846"
+}
+,{
+"Algorithm Name": "VectorVectorContainer",
+"Type": "ParallelInplace#12",
+"Graph Name": "bn-human-Jung2015_M87107781_70M.edges",
+"Test Times": [
+1889.73, 1821.6, 1800.49],
+"Test Memories": [
+8.44069e+08, 8.44069e+08, 8.44069e+08],
+"Start Time" : "2022-May-31 20:45:56.581924",
+"End Time" : "2022-May-31 20:46:02.256330"
+}
+,{
+"Algorithm Name": "VectorVectorContainer",
+"Type": "ParallelInplace#12",
+"Graph Name": "web-Stanford.mtx",
+"Test Times": [
+144.649, 105.459, 131.031],
+"Test Memories": [
+1.04553e+08, 1.04553e+08, 1.04553e+08],
+"Start Time" : "2022-May-31 20:46:02.256409",
+"End Time" : "2022-May-31 20:46:02.668866"
+}
+,{
+"Algorithm Name": "VectorVectorContainer",
+"Type": "ParallelInplace#12",
+"Graph Name": "bn-human-BNU_1_0025871_session_1-bg_170M.edges",
+"Test Times": [
+4141.24, 4179.2, 4040.23],
+"Test Memories": [
+1.52069e+09, 1.52069e+09, 1.52069e+09],
+"Start Time" : "2022-May-31 20:46:02.669046",
+"End Time" : "2022-May-31 20:46:15.273956"
+}
+,{
+"Algorithm Name": "VectorVectorContainer",
+"Type": "ParallelInplace#12",
+"Graph Name": "bn-human-BNU_1_0025876_session_2-bg_140M.edges",
+"Test Times": [
+3459.18, 3481.46, 3560.16],
+"Test Memories": [
+1.30212e+09, 1.30212e+09, 1.30212e+09],
+"Start Time" : "2022-May-31 20:46:15.274031",
+"End Time" : "2022-May-31 20:46:25.999803"
+}
+,{
+"Algorithm Name": "VectorVectorContainer",
+"Type": "ParallelInplace#12",
+"Graph Name": "bn-human-Jung2015_M87117093_120M.edges",
+"Test Times": [
+3111.49, 3018.47, 3063.11],
+"Test Memories": [
+1.22116e+09, 1.22116e+09, 1.22116e+09],
+"Start Time" : "2022-May-31 20:46:25.999897",
+"End Time" : "2022-May-31 20:46:35.408721"
+}
+,{
+"Algorithm Name": "VectorVectorContainer",
+"Type": "ParallelInplace#12",
+"Graph Name": "data_files.txt",
+"Test Times": [
+3.444, 0.418, 0.293],
+"Test Memories": [
+7456, 7456, 7456],
+"Start Time" : "2022-May-31 20:46:35.408817",
+"End Time" : "2022-May-31 20:46:35.412979"
+}
+,{
+"Algorithm Name": "VectorVectorContainer",
+"Type": "ParallelInplace#12",
+"Graph Name": "hugetric-00010_10M.mtx",
+"Test Times": [
+2468.24, 2596.67, 2549.58],
+"Test Memories": [
+3.59182e+09, 3.59182e+09, 3.59182e+09],
+"Start Time" : "2022-May-31 20:46:35.413051",
+"End Time" : "2022-May-31 20:46:43.704598"
+}
+,{
+"Algorithm Name": "VectorVectorContainer",
+"Type": "ParallelInplace#12",
+"Graph Name": "datafiles_par.txt",
+"Test Times": [
+3.286, 0.439, 0.277],
+"Test Memories": [
+7456, 7456, 7456],
+"Start Time" : "2022-May-31 20:46:43.704690",
+"End Time" : "2022-May-31 20:46:43.708699"
+}
+,{
+"Algorithm Name": "VectorVectorContainer",
+"Type": "ParallelInplace#12",
+"Graph Name": "bn-human-Jung2015_M87101705_200M.edges",
+"Test Times": [
+5056.63, 4922.12, 4889.03],
+"Test Memories": [
+1.67414e+09, 1.67414e+09, 1.67414e+09],
+"Start Time" : "2022-May-31 20:46:43.708768",
+"End Time" : "2022-May-31 20:46:58.889660"
+}
+,{
+"Algorithm Name": "VectorVectorContainer",
+"Type": "ParallelInplace#12",
+"Graph Name": "tech-as-skitter.mtx",
+"Test Times": [
+535.999, 557.724, 565.336],
+"Test Memories": [
+4.99595e+08, 4.99595e+08, 4.99595e+08],
+"Start Time" : "2022-May-31 20:46:58.892232",
+"End Time" : "2022-May-31 20:47:00.664367"
+}
+,{
+"Algorithm Name": "VectorVectorContainer",
+"Type": "ParallelInplace#12",
+"Graph Name": "socfb-Texas84.mtx",
+"Test Times": [
+79.063, 63.763, 58.038],
+"Test Memories": [
+2.53337e+07, 2.53337e+07, 2.53337e+07],
+"Start Time" : "2022-May-31 20:47:00.664439",
+"End Time" : "2022-May-31 20:47:00.877647"
+}
+,{
+"Algorithm Name": "VectorVectorContainer",
+"Type": "ParallelInplace#12",
+"Graph Name": "soc-pokec.mtx",
+"Test Times": [
+802.066, 782.236, 795.486],
+"Test Memories": [
+5.20068e+08, 5.20068e+08, 5.20068e+08],
+"Start Time" : "2022-May-31 20:47:00.877880",
+"End Time" : "2022-May-31 20:47:03.434575"
+}
+,{
+"Algorithm Name": "VectorVectorContainer",
+"Type": "ParallelInplace#12",
+"Graph Name": "web-wikipedia2009.mtx",
+"Test Times": [
+478.008, 443.987, 411.525],
+"Test Memories": [
+6.35725e+08, 6.35725e+08, 6.35725e+08],
+"Start Time" : "2022-May-31 20:47:03.434656",
+"End Time" : "2022-May-31 20:47:04.852183"
+}
+,{
+"Algorithm Name": "VectorVectorContainer",
+"Type": "ParallelInplace#12",
+"Graph Name": "ca-hollywood-2009.edges",
+"Test Times": [
+1545.78, 1539.69, 1493.49],
+"Test Memories": [
+7.31946e+08, 7.31946e+08, 7.31946e+08],
+"Start Time" : "2022-May-31 20:47:04.852262",
+"End Time" : "2022-May-31 20:47:09.608177"
+}
+,{
+"Algorithm Name": "VectorVectorContainer",
+"Type": "ParallelInplace#12",
+"Graph Name": "soc-google-plus.txt",
+"Test Times": [
+78.441, 62.513, 66.569],
+"Test Memories": [
+7.80255e+07, 7.80255e+07, 7.80255e+07],
+"Start Time" : "2022-May-31 20:47:09.608258",
+"End Time" : "2022-May-31 20:47:09.830627"
+}
+,{
+"Algorithm Name": "VectorVectorContainer",
+"Type": "ParallelInplace#12",
+"Graph Name": "tech-as-skitter_10M.mtx",
+"Test Times": [
+572.621, 561.586, 556.996],
+"Test Memories": [
+4.99595e+08, 4.99595e+08, 4.99595e+08],
+"Start Time" : "2022-May-31 20:47:09.830709",
+"End Time" : "2022-May-31 20:47:11.641760"
+}
+,{
+"Algorithm Name": "VectorVectorContainer",
+"Type": "ParallelInplace#12",
+"Graph Name": "soc-orkut-dir_120M.edges",
+"Test Times": [
+3132.51, 3052.03, 2943.6],
+"Test Memories": [
+1.26162e+09, 1.26162e+09, 1.26162e+09],
+"Start Time" : "2022-May-31 20:47:11.641842",
+"End Time" : "2022-May-31 20:47:21.226727"
+}
+,{
+"Algorithm Name": "VectorVectorContainer",
+"Type": "ParallelInplace#12",
+"Graph Name": "bn-human-Jung2015_M87110148_140M.edges",
+"Test Times": [
+3505.08, 3391.72, 3378.57],
+"Test Memories": [
+1.37017e+09, 1.37017e+09, 1.37017e+09],
+"Start Time" : "2022-May-31 20:47:21.229012",
+"End Time" : "2022-May-31 20:47:31.756929"
+}
+,{
+"Algorithm Name": "VectorVectorContainer",
+"Type": "ParallelInplace#12",
+"Graph Name": "bn-human-Jung2015_M87113878.edges",
+"Test Times": [
+2454.67, 2439.75, 2467.41],
+"Test Memories": [
+8.19053e+08, 8.19053e+08, 8.19053e+08],
+"Start Time" : "2022-May-31 20:47:31.757023",
+"End Time" : "2022-May-31 20:47:39.269941"
+}
+,{
+"Algorithm Name": "VectorVectorContainer",
+"Type": "ParallelInplace#12",
+"Graph Name": "bn-human-Jung2015_M87104201_190M.edges",
+"Test Times": [
+4656.87, 4803.98, 4564.58],
+"Test Memories": [
+1.62791e+09, 1.62791e+09, 1.62791e+09],
+"Start Time" : "2022-May-31 20:47:39.272434",
+"End Time" : "2022-May-31 20:47:53.519213"
+}
+,{
+"Algorithm Name": "VectorVectorContainer",
+"Type": "ParallelInplace#12",
+"Graph Name": "bn-100k-662k.edges",
+"Test Times": [
+72.163, 52.571, 54.889],
+"Test Memories": [
+3.88026e+07, 3.88026e+07, 3.88026e+07],
+"Start Time" : "2022-May-31 20:47:53.521760",
+"End Time" : "2022-May-31 20:47:53.708615"
+}
+,{
+"Algorithm Name": "VectorVectorContainer",
+"Type": "ParallelInplace#12",
+"Graph Name": "bn-human-Jung2015_M87113679_60M.edges",
+"Test Times": [
+1688.69, 1545.56, 1591.49],
+"Test Memories": [
+8.81408e+08, 8.81408e+08, 8.81408e+08],
+"Start Time" : "2022-May-31 20:47:53.708798",
+"End Time" : "2022-May-31 20:47:58.691564"
+}
+,{
+"Algorithm Name": "VectorVectorContainer",
+"Type": "ParallelInplace#12",
+"Graph Name": "bn-65-1K.edges",
+"Test Times": [
+1.163, 0.409, 0.349],
+"Test Memories": [
+36496, 36496, 36496],
+"Start Time" : "2022-May-31 20:47:58.694088",
+"End Time" : "2022-May-31 20:47:58.696030"
+}
+,{
+"Algorithm Name": "VectorVectorContainer",
+"Type": "ParallelInplace#12",
+"Graph Name": "bn-human-Jung2015_M87104300_70M.edges",
+"Test Times": [
+1746.43, 1673.28, 1690.52],
+"Test Memories": [
+8.6267e+08, 8.6267e+08, 8.6267e+08],
+"Start Time" : "2022-May-31 20:47:58.696096",
+"End Time" : "2022-May-31 20:48:03.959528"
+}
+,{
+"Algorithm Name": "VectorVectorContainer",
+"Type": "ParallelInplace#12",
+"Graph Name": "ca-IMDB.edges",
+"Test Times": [
+161.523, 158.105, 152.932],
+"Test Memories": [
+1.7976e+08, 1.7976e+08, 1.7976e+08],
+"Start Time" : "2022-May-31 20:48:03.959621",
+"End Time" : "2022-May-31 20:48:04.462723"
+}
+,{
+"Algorithm Name": "VectorVectorContainer",
+"Type": "ParallelInplace#12",
+"Graph Name": "bn-34k-181k.edges",
+"Test Times": [
+17.698, 9.458, 9.126],
+"Test Memories": [
+9.71107e+06, 9.71107e+06, 9.71107e+06],
+"Start Time" : "2022-May-31 20:48:04.462802",
+"End Time" : "2022-May-31 20:48:04.500439"
+}
+,{
+"Algorithm Name": "VectorVectorContainer",
+"Type": "ParallelInplace#12",
+"Graph Name": "data_files_test.txt",
+"Test Times": [
+1.55, 0.503, 0.368],
+"Test Memories": [
+7456, 7456, 7456],
+"Start Time" : "2022-May-31 20:48:04.500511",
+"End Time" : "2022-May-31 20:48:04.502939"
+}
+,{
+"Algorithm Name": "VectorVectorContainer",
+"Type": "ParallelInplace#12",
+"Graph Name": "bn-human-Jung2015_M87112427_170M.edges",
+"Test Times": [
+4312.54, 4096.72, 4067.45],
+"Test Memories": [
+1.51572e+09, 1.51572e+09, 1.51572e+09],
+"Start Time" : "2022-May-31 20:48:04.503007",
+"End Time" : "2022-May-31 20:48:17.246537"
+}
+,{
+"Algorithm Name": "VectorVectorContainer",
+"Type": "ParallelInplace#12",
+"Graph Name": "socfb-Michigan23.mtx",
+"Test Times": [
+37.344, 27.767, 31.819],
+"Test Memories": [
+1.91772e+07, 1.91772e+07, 1.91772e+07],
+"Start Time" : "2022-May-31 20:48:17.246634",
+"End Time" : "2022-May-31 20:48:17.355248"
+}
+,{
+"Algorithm Name": "VectorVectorContainer",
+"Type": "ParallelInplace#12",
+"Graph Name": "graph500-scale22-ef16_adj_130M.edges",
+"Test Times": [
+9676.42, 9035.5, 9082.6],
+"Test Memories": [
+1.83449e+09, 1.83449e+09, 1.83449e+09],
+"Start Time" : "2022-May-31 20:48:17.355341",
+"End Time" : "2022-May-31 20:48:46.691425"
+}
+,{
+"Algorithm Name": "VectorVectorContainer",
+"Type": "ParallelInplace#12",
+"Graph Name": "sc-ldoor_20M.edges",
+"Test Times": [
+901.302, 832.878, 876.889],
+"Test Memories": [
+5.268e+08, 5.268e+08, 5.268e+08],
+"Start Time" : "2022-May-31 20:48:46.693956",
+"End Time" : "2022-May-31 20:48:49.500057"
+}
+,{
+"Algorithm Name": "VectorVectorContainer",
+"Type": "ParallelInplace#12",
+"Graph Name": "bn-human-Jung2015_M7101234.edges",
+"Test Times": [
+1547.59, 1551.68, 1533.76],
+"Test Memories": [
+5.46886e+08, 5.46886e+08, 5.46886e+08],
+"Start Time" : "2022-May-31 20:48:49.500154",
+"End Time" : "2022-May-31 20:48:54.212738"
+}
+,{
+"Algorithm Name": "VectorVectorContainer",
+"Type": "ParallelInplace#12",
+"Graph Name": "delaunay_n24_50M.edges",
+"Test Times": [
+5999.81, 5814.22, 5790.37],
+"Test Memories": [
+7.29925e+09, 7.29925e+09, 7.29925e+09],
+"Start Time" : "2022-May-31 20:48:54.212814",
+"End Time" : "2022-May-31 20:49:12.987733"
+}
+,{
+"Algorithm Name": "VectorVectorContainer",
+"Type": "ParallelInplace#12",
+"Graph Name": "bn-human-Jung2015_M87118465_180M.edges",
+"Test Times": [
+4610.34, 4342.22, 4393.24],
+"Test Memories": [
+1.52437e+09, 1.52437e+09, 1.52437e+09],
+"Start Time" : "2022-May-31 20:49:12.990959",
+"End Time" : "2022-May-31 20:49:26.631421"
+}
+,{
+"Algorithm Name": "VectorVectorContainer",
+"Type": "ParallelInplace#12",
+"Graph Name": "bn-human-BNU_1_0025869_session_2-bg_150M.edges",
+"Test Times": [
+3873, 3693.56, 3680.82],
+"Test Memories": [
+1.37695e+09, 1.37695e+09, 1.37695e+09],
+"Start Time" : "2022-May-31 20:49:26.631500",
+"End Time" : "2022-May-31 20:49:38.114351"
+}
+,{
+"Algorithm Name": "VectorVectorContainer",
+"Type": "ParallelInplace#12",
+"Graph Name": "web-uk-2005.mtx",
+"Test Times": [
+328.48, 265.549, 314.119],
+"Test Memories": [
+1.10872e+08, 1.10872e+08, 1.10872e+08],
+"Start Time" : "2022-May-31 20:49:38.114441",
+"End Time" : "2022-May-31 20:49:39.045919"
+}
+,{
+"Algorithm Name": "VectorVectorContainer",
+"Type": "ParallelInplace#12",
+"Graph Name": "soc-livejournal.mtx",
+"Test Times": [
+1506.73, 1507.63, 1493.17],
+"Test Memories": [
+1.40419e+09, 1.40419e+09, 1.40419e+09],
+"Start Time" : "2022-May-31 20:49:39.046016",
+"End Time" : "2022-May-31 20:49:43.854677"
+}
+,{
+"Algorithm Name": "VectorVectorContainer",
+"Type": "ParallelInplace#12",
+"Graph Name": "bn-human-Jung2015_M8703600.edges",
+"Test Times": [
+1451.57, 1392.85, 1384.06],
+"Test Memories": [
+8.50458e+08, 8.50458e+08, 8.50458e+08],
+"Start Time" : "2022-May-31 20:49:43.854774",
+"End Time" : "2022-May-31 20:49:48.242028"
+}
+,{
+"Algorithm Name": "VectorVectorContainer",
+"Type": "ParallelInplace#12",
+"Graph Name": "bn-human-BNU_1_0025868_session_1-bg_150M.edges",
+"Test Times": [
+3701.05, 3684.39, 3611.13],
+"Test Memories": [
+1.38065e+09, 1.38065e+09, 1.38065e+09],
+"Start Time" : "2022-May-31 20:49:48.242123",
+"End Time" : "2022-May-31 20:49:59.493324"
+}
+,{
+"Algorithm Name": "VectorVectorContainer",
+"Type": "ParallelInplace#12",
+"Graph Name": "bn-human-Jung2015_M87125334_40M.edges",
+"Test Times": [
+1173.22, 1157.24, 1139.06],
+"Test Memories": [
+8.02705e+08, 8.02705e+08, 8.02705e+08],
+"Start Time" : "2022-May-31 20:49:59.493405",
+"End Time" : "2022-May-31 20:50:03.083891"
+}
+,{
+"Algorithm Name": "VectorVectorContainer",
+"Type": "ParallelInplace#12",
+"Graph Name": "bn-human-Jung2015_M87116523_80M.edges",
+"Test Times": [
+1902.41, 1883.77, 1860.74],
+"Test Memories": [
+6.66767e+08, 6.66767e+08, 6.66767e+08],
+"Start Time" : "2022-May-31 20:50:03.083984",
+"End Time" : "2022-May-31 20:50:08.813022"
+}
+,{
+"Algorithm Name": "VectorVectorContainer",
+"Type": "ParallelInplace#12",
+"Graph Name": "bn-human-Jung2015_M87127677_210M.edges",
+"Test Times": [
+5172.51, 5367.04, 5074.3],
+"Test Memories": [
+1.73454e+09, 1.73454e+09, 1.73454e+09],
+"Start Time" : "2022-May-31 20:50:08.813102",
+"End Time" : "2022-May-31 20:50:24.761718"
+}
+,{
+"Algorithm Name": "VectorVectorContainer",
+"Type": "ParallelInplace#12",
+"Graph Name": "bn-449k-3.3M.edges",
+"Test Times": [
+172.012, 174.025, 214.469],
+"Test Memories": [
+1.82991e+08, 1.82991e+08, 1.82991e+08],
+"Start Time" : "2022-May-31 20:50:24.764274",
+"End Time" : "2022-May-31 20:50:25.344551"
+}
+,{
+"Algorithm Name": "VectorVectorContainer",
+"Type": "ParallelInplace#12",
+"Graph Name": "bn-human-BNU_1_0025919_session_1.edges",
+"Test Times": [
+4932.79, 4945.62, 4784.28],
+"Test Memories": [
+1.65763e+09, 1.65763e+09, 1.65763e+09],
+"Start Time" : "2022-May-31 20:50:25.344640",
+"End Time" : "2022-May-31 20:50:40.309062"
+}
+,{
+"Algorithm Name": "VectorVectorContainer",
+"Type": "ParallelInplace#12",
+"Graph Name": "testfile.txt",
+"Test Times": [
+3.209, 0.658, 0.333],
+"Test Memories": [
+7456, 7456, 7456],
+"Start Time" : "2022-May-31 20:50:40.309142",
+"End Time" : "2022-May-31 20:50:40.313349"
+}
+,{
+"Algorithm Name": "VectorVectorContainer",
+"Type": "ParallelInplace#12",
+"Graph Name": "C2000-9.edges",
+"Test Times": [
+53.451, 43.816, 48.216],
+"Test Memories": [
+1.0996e+07, 1.0996e+07, 1.0996e+07],
+"Start Time" : "2022-May-31 20:50:40.313417",
+"End Time" : "2022-May-31 20:50:40.476677"
+}
+,{
+"Algorithm Name": "VectorVectorContainer",
+"Type": "ParallelInplace#12",
+"Graph Name": "datafiles_seq.txt",
+"Test Times": [
+3.693, 0.96, 0.753],
+"Test Memories": [
+7456, 7456, 7456],
+"Start Time" : "2022-May-31 20:50:40.476860",
+"End Time" : "2022-May-31 20:50:40.482279"
+}
+,{
+"Algorithm Name": "VectorVectorContainer",
+"Type": "ParallelInplace#12",
+"Graph Name": "bn-human-Jung2015_M87114342_90M.edges",
+"Test Times": [
+2373.01, 2309.14, 2294.57],
+"Test Memories": [
+1.12114e+09, 1.12114e+09, 1.12114e+09],
+"Start Time" : "2022-May-31 20:50:40.482502",
+"End Time" : "2022-May-31 20:50:47.660681"
+}
+,{
+"Algorithm Name": "VectorVectorContainer",
+"Type": "ParallelInplace#12",
+"Graph Name": "bn-human-BNU_1_0025919_session_1_200M.edges",
+"Test Times": [
+4969.64, 5120.11, 5011.06],
+"Test Memories": [
+1.65763e+09, 1.65763e+09, 1.65763e+09],
+"Start Time" : "2022-May-31 20:50:47.660770",
+"End Time" : "2022-May-31 20:51:03.062614"
+}
+,{
+"Algorithm Name": "VectorVectorContainer",
+"Type": "ParallelInplace#12",
+"Graph Name": "socfb-B-anon_20M.edges",
+"Test Times": [
+2406.46, 2414.33, 2375.65],
+"Test Memories": [
+1.73119e+09, 1.73119e+09, 1.73119e+09],
+"Start Time" : "2022-May-31 20:51:03.062693",
+"End Time" : "2022-May-31 20:51:11.035962"
+}
+,{
+"Algorithm Name": "VectorVectorContainer",
+"Type": "ParallelInplace#12",
+"Graph Name": "bn-human-Jung2015_M87110650_40M.edges",
+"Test Times": [
+1186.21, 1145.36, 1139.4],
+"Test Memories": [
+7.64922e+08, 7.64922e+08, 7.64922e+08],
+"Start Time" : "2022-May-31 20:51:11.038528",
+"End Time" : "2022-May-31 20:51:14.636021"
+}
+,{
+"Algorithm Name": "VectorVectorContainer",
+"Type": "ParallelInplace#12",
+"Graph Name": "bn-human-Jung2015_M87125286_210M.edges",
+"Test Times": [
+5094.71, 5049.22, 5065.76],
+"Test Memories": [
+1.72852e+09, 1.72852e+09, 1.72852e+09],
+"Start Time" : "2022-May-31 20:51:14.636103",
+"End Time" : "2022-May-31 20:51:30.198973"
+}
+,{
+"Algorithm Name": "VectorVectorContainer",
+"Type": "ParallelInplace#12",
+"Graph Name": "bn-human-Jung2015_M87124563_160M.edges",
+"Test Times": [
+3955.86, 4021.11, 3946.47],
+"Test Memories": [
+1.43264e+09, 1.43264e+09, 1.43264e+09],
+"Start Time" : "2022-May-31 20:51:30.199077",
+"End Time" : "2022-May-31 20:51:42.393162"
+}
+,{
+"Algorithm Name": "VectorVectorContainer",
+"Type": "ParallelInplace#12",
+"Graph Name": "bn-human-BNU_1_0025914_session_2_100M.edges",
+"Test Times": [
+2647.57, 2581.51, 2586.35],
+"Test Memories": [
+1.11361e+09, 1.11361e+09, 1.11361e+09],
+"Start Time" : "2022-May-31 20:51:42.393242",
+"End Time" : "2022-May-31 20:51:50.412488"
+}
+,{
+"Algorithm Name": "VectorVectorContainer",
+"Type": "ParallelInplace#12",
+"Graph Name": "bn-434k-16M.edges",
+"Test Times": [
+461.039, 453.959, 449.84],
+"Test Memories": [
+2.17092e+08, 2.17092e+08, 2.17092e+08],
+"Start Time" : "2022-May-31 20:51:50.415107",
+"End Time" : "2022-May-31 20:51:51.843318"
+}
+,{
+"Algorithm Name": "VectorVectorContainer",
+"Type": "ParallelInplace#12",
+"Graph Name": "tech-p2p-gnutella.mtx",
+"Test Times": [
+17.632, 12.939, 11.937],
+"Test Memories": [
+2.51937e+07, 2.51937e+07, 2.51937e+07],
+"Start Time" : "2022-May-31 20:51:51.843412",
+"End Time" : "2022-May-31 20:51:51.888720"
+}
+,{
+"Algorithm Name": "VectorVectorContainer",
+"Type": "ParallelInplace#12",
+"Graph Name": "bn-1.8M-166M.edges",
+"Test Times": [
+4194.23, 4115.3, 4113.77],
+"Test Memories": [
+1.4758e+09, 1.4758e+09, 1.4758e+09],
+"Start Time" : "2022-May-31 20:51:51.888798",
+"End Time" : "2022-May-31 20:52:04.586983"
+}
+,{
+"Algorithm Name": "VectorVectorContainer",
+"Type": "ParallelInplace#12",
+"Graph Name": "bn-human-Jung2015_M87119472_60M.edges",
+"Test Times": [
+1581.05, 1596.13, 1582.17],
+"Test Memories": [
+8.91063e+08, 8.91063e+08, 8.91063e+08],
+"Start Time" : "2022-May-31 20:52:04.587056",
+"End Time" : "2022-May-31 20:52:09.509847"
+}
+,{
+"Algorithm Name": "VectorVectorContainer",
+"Type": "ParallelInplace#12",
+"Graph Name": "rgg_n_2_22_s0_30M.edges",
+"Test Times": [
+2114.72, 2120.89, 2100.62],
+"Test Memories": [
+2.01942e+09, 2.01942e+09, 2.01942e+09],
+"Start Time" : "2022-May-31 20:52:09.509938",
+"End Time" : "2022-May-31 20:52:16.310505"
+}
+,{
+"Algorithm Name": "VectorVectorContainer",
+"Type": "ParallelInplace#16",
+"Graph Name": "bn-human-BNU_1_0025889_session_2_130M.edges",
+"Test Times": [
+3343.33, 3145.3, 3145.09],
+"Test Memories": [
+1.46433e+09, 1.46433e+09, 1.46433e+09],
+"Start Time" : "2022-May-31 20:52:16.315117",
+"End Time" : "2022-May-31 20:52:26.215502"
+}
+,{
+"Algorithm Name": "VectorVectorContainer",
+"Type": "ParallelInplace#16",
+"Graph Name": "graph500-scale20-ef16_adj_30M.edges",
+"Test Times": [
+1991.66, 1916.76, 1865.48],
+"Test Memories": [
+5.56655e+08, 5.56655e+08, 5.56655e+08],
+"Start Time" : "2022-May-31 20:52:26.215583",
+"End Time" : "2022-May-31 20:52:32.230289"
+}
+,{
+"Algorithm Name": "VectorVectorContainer",
+"Type": "ParallelInplace#16",
+"Graph Name": "bn-human-Jung2015_M87118347_80M.edges",
+"Test Times": [
+1831.88, 1830.83, 1760.67],
+"Test Memories": [
+7.64022e+08, 7.64022e+08, 7.64022e+08],
+"Start Time" : "2022-May-31 20:52:32.233316",
+"End Time" : "2022-May-31 20:52:37.763679"
+}
+,{
+"Algorithm Name": "VectorVectorContainer",
+"Type": "ParallelInplace#16",
+"Graph Name": "socf-konect.edges",
+"Test Times": ["CRASHED"],
+"Test Memories": ["CRASHED"]
+"Error": "std::bad_alloc"
+}
+,{
+"Algorithm Name": "VectorVectorContainer",
+"Type": "ParallelInplace#16",
+"Graph Name": "socfb-UIllinois20.mtx",
+"Test Times": [
+37.448, 33.625, 54.46],
+"Test Memories": [
+2.43329e+07, 2.43329e+07, 2.43329e+07],
+"Start Time" : "2022-May-31 20:52:41.107018",
+"End Time" : "2022-May-31 20:52:41.240948"
+}
+,{
+"Algorithm Name": "VectorVectorContainer",
+"Type": "ParallelInplace#16",
+"Graph Name": "bn-human-BNU_1_0025913_session_2_180M.edges",
+"Test Times": [
+4457.4, 4329.64, 4358.95],
+"Test Memories": [
+1.74369e+09, 1.74369e+09, 1.74369e+09],
+"Start Time" : "2022-May-31 20:52:41.242179",
+"End Time" : "2022-May-31 20:52:54.705931"
+}
+,{
+"Algorithm Name": "VectorVectorContainer",
+"Type": "ParallelInplace#16",
+"Graph Name": "bn-human-BNU_1_0025916_session_1_110M.edges",
+"Test Times": [
+2779.41, 2744.41, 2701.22],
+"Test Memories": [
+1.30684e+09, 1.30684e+09, 1.30684e+09],
+"Start Time" : "2022-May-31 20:52:54.706029",
+"End Time" : "2022-May-31 20:53:03.153911"
+}
+,{
+"Algorithm Name": "VectorVectorContainer",
+"Type": "ParallelInplace#16",
+"Graph Name": "livejournal_160M.edges",
+"Test Times": [
+4413.14, 4351.89, 4289.45],
+"Test Memories": [
+2.03239e+09, 2.03239e+09, 2.03239e+09],
+"Start Time" : "2022-May-31 20:53:03.153990",
+"End Time" : "2022-May-31 20:53:17.156524"
+}
+,{
+"Algorithm Name": "VectorVectorContainer",
+"Type": "ParallelInplace#16",
+"Graph Name": "tech-ip.edges",
+"Test Times": [
+869.387, 854.711, 794.679],
+"Test Memories": [
+1.01533e+09, 1.01533e+09, 1.01533e+09],
+"Start Time" : "2022-May-31 20:53:17.156606",
+"End Time" : "2022-May-31 20:53:19.901178"
+}
+,{
+"Algorithm Name": "VectorVectorContainer",
+"Type": "ParallelInplace#16",
+"Graph Name": "bn-800-19k.edges",
+"Test Times": [
+12.704, 0.936, 0.95],
+"Test Memories": [
+554116, 554116, 554116],
+"Start Time" : "2022-May-31 20:53:19.901278",
+"End Time" : "2022-May-31 20:53:19.915942"
+}
+,{
+"Algorithm Name": "VectorVectorContainer",
+"Type": "ParallelInplace#16",
+"Graph Name": "soc-wiki-Talk-dir.mtx",
+"Test Times": [
+403.445, 388.294, 385.121],
+"Test Memories": [
+8.2784e+08, 8.29423e+08, 8.29423e+08],
+"Start Time" : "2022-May-31 20:53:19.916026",
+"End Time" : "2022-May-31 20:53:21.133655"
+}
+,{
+"Algorithm Name": "VectorVectorContainer",
+"Type": "ParallelInplace#16",
+"Graph Name": "bn-human-Jung2015_M87101049_190M.edges",
+"Test Times": [
+4599.41, 4507.87, 4450.05],
+"Test Memories": [
+1.74363e+09, 1.74363e+09, 1.74363e+09],
+"Start Time" : "2022-May-31 20:53:21.133750",
+"End Time" : "2022-May-31 20:53:34.996007"
+}
+,{
+"Algorithm Name": "VectorVectorContainer",
+"Type": "ParallelInplace#16",
+"Graph Name": "soc-orkut_106M.edges",
+"Test Times": [
+7706.42, 7891.85, 7704.57],
+"Test Memories": [
+2.39407e+09, 2.39407e+09, 2.40858e+09],
+"Start Time" : "2022-May-31 20:53:34.996089",
+"End Time" : "2022-May-31 20:54:00.592828"
+}
+,{
+"Algorithm Name": "VectorVectorContainer",
+"Type": "ParallelInplace#16",
+"Graph Name": "socfb-uci-uni_90M.edges",
+"Test Times": ["CRASHED"],
+"Test Memories": ["CRASHED"]
+"Error": "std::bad_alloc"
+}
+,{
+"Algorithm Name": "VectorVectorContainer",
+"Type": "ParallelInplace#16",
+"Graph Name": "soc-sinaweibo_260M.edges",
+"Test Times": ["CRASHED"],
+"Test Memories": ["CRASHED"]
+"Error": "std::bad_alloc"
+}
+,{
+"Algorithm Name": "VectorVectorContainer",
+"Type": "ParallelInplace#16",
+"Graph Name": "bn-7k-50k.edges",
+"Test Times": [
+10.738, 26.669, 3.89],
+"Test Memories": [
+3.46504e+06, 3.46504e+06, 3.46504e+06],
+"Start Time" : "2022-May-31 20:54:06.047795",
+"End Time" : "2022-May-31 20:54:06.089795"
+}
+,{
+"Algorithm Name": "VectorVectorContainer",
+"Type": "ParallelInplace#16",
+"Graph Name": "scc_fb-messages.mtx",
+"Test Times": [
+17.718, 12.941, 12.875],
+"Test Memories": [
+4.07789e+06, 4.07789e+06, 4.07789e+06],
+"Start Time" : "2022-May-31 20:54:06.089907",
+"End Time" : "2022-May-31 20:54:06.133580"
+}
+,{
+"Algorithm Name": "VectorVectorContainer",
+"Type": "ParallelInplace#16",
+"Graph Name": "soc-orkut.edges",
+"Test Times": [
+3014.39, 3036.2, 2913.14],
+"Test Memories": [
+1.86558e+09, 1.86558e+09, 1.86558e+09],
+"Start Time" : "2022-May-31 20:54:06.133653",
+"End Time" : "2022-May-31 20:54:15.716025"
+}
+,{
+"Algorithm Name": "VectorVectorContainer",
+"Type": "ParallelInplace#16",
+"Graph Name": "bn-human-Jung2015_M87104509_50M.edges",
+"Test Times": [
+1343.13, 1312.12, 1294.2],
+"Test Memories": [
+9.92214e+08, 9.92214e+08, 9.92214e+08],
+"Start Time" : "2022-May-31 20:54:15.716103",
+"End Time" : "2022-May-31 20:54:19.807689"
+}
+,{
+"Algorithm Name": "VectorVectorContainer",
+"Type": "ParallelInplace#16",
+"Graph Name": "cit-patent1.edges",
+"Test Times": [
+1206.37, 1277.82, 1261.72],
+"Test Memories": [
+2.33907e+09, 2.33907e+09, 2.33907e+09],
+"Start Time" : "2022-May-31 20:54:19.807769",
+"End Time" : "2022-May-31 20:54:23.700266"
+}
+,{
+"Algorithm Name": "VectorVectorContainer",
+"Type": "ParallelInplace#16",
+"Graph Name": "bn-human-Jung2015_M87107781_70M.edges",
+"Test Times": [
+1813.59, 1774.81, 1761.28],
+"Test Memories": [
+9.79444e+08, 9.79444e+08, 9.79444e+08],
+"Start Time" : "2022-May-31 20:54:23.700360",
+"End Time" : "2022-May-31 20:54:29.212862"
+}
+,{
+"Algorithm Name": "VectorVectorContainer",
+"Type": "ParallelInplace#16",
+"Graph Name": "web-Stanford.mtx",
+"Test Times": [
+118.639, 107.017, 106.515],
+"Test Memories": [
+1.32595e+08, 1.32595e+08, 1.32595e+08],
+"Start Time" : "2022-May-31 20:54:29.212940",
+"End Time" : "2022-May-31 20:54:29.565317"
+}
+,{
+"Algorithm Name": "VectorVectorContainer",
+"Type": "ParallelInplace#16",
+"Graph Name": "bn-human-BNU_1_0025871_session_1-bg_170M.edges",
+"Test Times": [
+4037.28, 3943.2, 3900.12],
+"Test Memories": [
+1.69384e+09, 1.69384e+09, 1.69384e+09],
+"Start Time" : "2022-May-31 20:54:29.565414",
+"End Time" : "2022-May-31 20:54:41.713725"
+}
+,{
+"Algorithm Name": "VectorVectorContainer",
+"Type": "ParallelInplace#16",
+"Graph Name": "bn-human-BNU_1_0025876_session_2-bg_140M.edges",
+"Test Times": [
+3349.46, 3285.61, 3315.02],
+"Test Memories": [
+1.45401e+09, 1.45401e+09, 1.45401e+09],
+"Start Time" : "2022-May-31 20:54:41.713803",
+"End Time" : "2022-May-31 20:54:51.917964"
+}
+,{
+"Algorithm Name": "VectorVectorContainer",
+"Type": "ParallelInplace#16",
+"Graph Name": "bn-human-Jung2015_M87117093_120M.edges",
+"Test Times": [
+3032.69, 2974.54, 2978.32],
+"Test Memories": [
+1.37926e+09, 1.37926e+09, 1.37926e+09],
+"Start Time" : "2022-May-31 20:54:51.918043",
+"End Time" : "2022-May-31 20:55:01.153911"
+}
+,{
+"Algorithm Name": "VectorVectorContainer",
+"Type": "ParallelInplace#16",
+"Graph Name": "data_files.txt",
+"Test Times": [
+3.597, 0.491, 0.426],
+"Test Memories": [
+9600, 9600, 9600],
+"Start Time" : "2022-May-31 20:55:01.153992",
+"End Time" : "2022-May-31 20:55:01.158515"
+}
+,{
+"Algorithm Name": "VectorVectorContainer",
+"Type": "ParallelInplace#16",
+"Graph Name": "hugetric-00010_10M.mtx",
+"Test Times": [
+2692.27, 2847.39, 2817.24],
+"Test Memories": [
+4.5578e+09, 4.56082e+09, 4.56082e+09],
+"Start Time" : "2022-May-31 20:55:01.158586",
+"End Time" : "2022-May-31 20:55:10.180013"
+}
+,{
+"Algorithm Name": "VectorVectorContainer",
+"Type": "ParallelInplace#16",
+"Graph Name": "datafiles_par.txt",
+"Test Times": [
+3.865, 0.486, 0.367],
+"Test Memories": [
+9600, 9600, 9600],
+"Start Time" : "2022-May-31 20:55:10.180115",
+"End Time" : "2022-May-31 20:55:10.184843"
+}
+,{
+"Algorithm Name": "VectorVectorContainer",
+"Type": "ParallelInplace#16",
+"Graph Name": "bn-human-Jung2015_M87101705_200M.edges",
+"Test Times": [
+4869.82, 4797.1, 4655.15],
+"Test Memories": [
+1.8363e+09, 1.8363e+09, 1.8363e+09],
+"Start Time" : "2022-May-31 20:55:10.184913",
+"End Time" : "2022-May-31 20:55:24.832281"
+}
+,{
+"Algorithm Name": "VectorVectorContainer",
+"Type": "ParallelInplace#16",
+"Graph Name": "tech-as-skitter.mtx",
+"Test Times": [
+566.43, 544.932, 576.644],
+"Test Memories": [
+6.34202e+08, 6.34202e+08, 6.34202e+08],
+"Start Time" : "2022-May-31 20:55:24.834878",
+"End Time" : "2022-May-31 20:55:26.648564"
+}
+,{
+"Algorithm Name": "VectorVectorContainer",
+"Type": "ParallelInplace#16",
+"Graph Name": "socfb-Texas84.mtx",
+"Test Times": [
+53.424, 46.48, 44.016],
+"Test Memories": [
+3.04206e+07, 3.04206e+07, 3.04206e+07],
+"Start Time" : "2022-May-31 20:55:26.648645",
+"End Time" : "2022-May-31 20:55:26.805259"
+}
+,{
+"Algorithm Name": "VectorVectorContainer",
+"Type": "ParallelInplace#16",
+"Graph Name": "soc-pokec.mtx",
+"Test Times": [
+800.743, 824.244, 814.513],
+"Test Memories": [
+6.63682e+08, 6.63682e+08, 6.63682e+08],
+"Start Time" : "2022-May-31 20:55:26.805390",
+"End Time" : "2022-May-31 20:55:29.433710"
+}
+,{
+"Algorithm Name": "VectorVectorContainer",
+"Type": "ParallelInplace#16",
+"Graph Name": "web-wikipedia2009.mtx",
+"Test Times": [
+481.842, 511.041, 494.299],
+"Test Memories": [
+8.26221e+08, 8.26221e+08, 8.26221e+08],
+"Start Time" : "2022-May-31 20:55:29.433790",
+"End Time" : "2022-May-31 20:55:31.002408"
+}
+,{
+"Algorithm Name": "VectorVectorContainer",
+"Type": "ParallelInplace#16",
+"Graph Name": "ca-hollywood-2009.edges",
+"Test Times": [
+1510.75, 1473.8, 1480.49],
+"Test Memories": [
+8.47225e+08, 8.47225e+08, 8.47225e+08],
+"Start Time" : "2022-May-31 20:55:31.002500",
+"End Time" : "2022-May-31 20:55:35.660984"
+}
+,{
+"Algorithm Name": "VectorVectorContainer",
+"Type": "ParallelInplace#16",
+"Graph Name": "soc-google-plus.txt",
+"Test Times": [
+83.137, 98.901, 95.733],
+"Test Memories": [
+9.67754e+07, 9.67754e+07, 9.67754e+07],
+"Start Time" : "2022-May-31 20:55:35.661071",
+"End Time" : "2022-May-31 20:55:35.961347"
+}
+,{
+"Algorithm Name": "VectorVectorContainer",
+"Type": "ParallelInplace#16",
+"Graph Name": "tech-as-skitter_10M.mtx",
+"Test Times": [
+603.691, 587.971, 544.277],
+"Test Memories": [
+6.34202e+08, 6.34202e+08, 6.34202e+08],
+"Start Time" : "2022-May-31 20:55:35.961437",
+"End Time" : "2022-May-31 20:55:37.827004"
+}
+,{
+"Algorithm Name": "VectorVectorContainer",
+"Type": "ParallelInplace#16",
+"Graph Name": "soc-orkut-dir_120M.edges",
+"Test Times": [
+3078.17, 2970.16, 2951.7],
+"Test Memories": [
+1.44929e+09, 1.44929e+09, 1.44929e+09],
+"Start Time" : "2022-May-31 20:55:37.827093",
+"End Time" : "2022-May-31 20:55:47.338095"
+}
+,{
+"Algorithm Name": "VectorVectorContainer",
+"Type": "ParallelInplace#16",
+"Graph Name": "bn-human-Jung2015_M87110148_140M.edges",
+"Test Times": [
+3522.66, 3341.01, 3299.66],
+"Test Memories": [
+1.54088e+09, 1.54088e+09, 1.54088e+09],
+"Start Time" : "2022-May-31 20:55:47.340677",
+"End Time" : "2022-May-31 20:55:57.780335"
+}
+,{
+"Algorithm Name": "VectorVectorContainer",
+"Type": "ParallelInplace#16",
+"Graph Name": "bn-human-Jung2015_M87113878.edges",
+"Test Times": [
+2451.95, 2440.26, 2420.8],
+"Test Memories": [
+8.82843e+08, 8.82843e+08, 8.82843e+08],
+"Start Time" : "2022-May-31 20:55:57.780461",
+"End Time" : "2022-May-31 20:56:05.203621"
+}
+,{
+"Algorithm Name": "VectorVectorContainer",
+"Type": "ParallelInplace#16",
+"Graph Name": "bn-human-Jung2015_M87104201_190M.edges",
+"Test Times": [
+4555.36, 4413.39, 4491.87],
+"Test Memories": [
+1.79336e+09, 1.79336e+09, 1.79336e+09],
+"Start Time" : "2022-May-31 20:56:05.203701",
+"End Time" : "2022-May-31 20:56:18.982286"
+}
+,{
+"Algorithm Name": "VectorVectorContainer",
+"Type": "ParallelInplace#16",
+"Graph Name": "bn-100k-662k.edges",
+"Test Times": [
+42.602, 36.701, 49.929],
+"Test Memories": [
+4.98389e+07, 4.98389e+07, 4.98389e+07],
+"Start Time" : "2022-May-31 20:56:18.982390",
+"End Time" : "2022-May-31 20:56:19.118070"
+}
+,{
+"Algorithm Name": "VectorVectorContainer",
+"Type": "ParallelInplace#16",
+"Graph Name": "bn-human-Jung2015_M87113679_60M.edges",
+"Test Times": [
+1664.52, 1613.76, 1582.24],
+"Test Memories": [
+1.04086e+09, 1.04086e+09, 1.04086e+09],
+"Start Time" : "2022-May-31 20:56:19.118258",
+"End Time" : "2022-May-31 20:56:24.131571"
+}
+,{
+"Algorithm Name": "VectorVectorContainer",
+"Type": "ParallelInplace#16",
+"Graph Name": "bn-65-1K.edges",
+"Test Times": [
+3.406, 0.765, 0.44],
+"Test Memories": [
+46788, 46788, 46788],
+"Start Time" : "2022-May-31 20:56:24.131652",
+"End Time" : "2022-May-31 20:56:24.136280"
+}
+,{
+"Algorithm Name": "VectorVectorContainer",
+"Type": "ParallelInplace#16",
+"Graph Name": "bn-human-Jung2015_M87104300_70M.edges",
+"Test Times": [
+1718.37, 1692.68, 1644.15],
+"Test Memories": [
+1.01026e+09, 1.01026e+09, 1.01026e+09],
+"Start Time" : "2022-May-31 20:56:24.136355",
+"End Time" : "2022-May-31 20:56:29.354005"
+}
+,{
+"Algorithm Name": "VectorVectorContainer",
+"Type": "ParallelInplace#16",
+"Graph Name": "ca-IMDB.edges",
+"Test Times": [
+211.471, 158.4, 154.312],
+"Test Memories": [
+2.14691e+08, 2.14691e+08, 2.14691e+08],
+"Start Time" : "2022-May-31 20:56:29.354082",
+"End Time" : "2022-May-31 20:56:29.910035"
+}
+,{
+"Algorithm Name": "VectorVectorContainer",
+"Type": "ParallelInplace#16",
+"Graph Name": "bn-34k-181k.edges",
+"Test Times": [
+16.899, 12.427, 9.903],
+"Test Memories": [
+1.29794e+07, 1.29794e+07, 1.29794e+07],
+"Start Time" : "2022-May-31 20:56:29.910115",
+"End Time" : "2022-May-31 20:56:29.950910"
+}
+,{
+"Algorithm Name": "VectorVectorContainer",
+"Type": "ParallelInplace#16",
+"Graph Name": "data_files_test.txt",
+"Test Times": [
+1.427, 0.584, 0.329],
+"Test Memories": [
+9600, 9600, 9600],
+"Start Time" : "2022-May-31 20:56:29.950985",
+"End Time" : "2022-May-31 20:56:29.953334"
+}
+,{
+"Algorithm Name": "VectorVectorContainer",
+"Type": "ParallelInplace#16",
+"Graph Name": "bn-human-Jung2015_M87112427_170M.edges",
+"Test Times": [
+4173.46, 4054.3, 4023.17],
+"Test Memories": [
+1.68182e+09, 1.68182e+09, 1.68182e+09],
+"Start Time" : "2022-May-31 20:56:29.953403",
+"End Time" : "2022-May-31 20:56:42.476478"
+}
+,{
+"Algorithm Name": "VectorVectorContainer",
+"Type": "ParallelInplace#16",
+"Graph Name": "socfb-Michigan23.mtx",
+"Test Times": [
+44.005, 36.341, 47.436],
+"Test Memories": [
+2.35461e+07, 2.35461e+07, 2.35461e+07],
+"Start Time" : "2022-May-31 20:56:42.478689",
+"End Time" : "2022-May-31 20:56:42.614634"
+}
+,{
+"Algorithm Name": "VectorVectorContainer",
+"Type": "ParallelInplace#16",
+"Graph Name": "graph500-scale22-ef16_adj_130M.edges",
+"Test Times": [
+8783.72, 8631.68, 8176.51],
+"Test Memories": [
+2.16854e+09, 2.16854e+09, 2.16854e+09],
+"Start Time" : "2022-May-31 20:56:42.614819",
+"End Time" : "2022-May-31 20:57:09.478319"
+}
+,{
+"Algorithm Name": "VectorVectorContainer",
+"Type": "ParallelInplace#16",
+"Graph Name": "sc-ldoor_20M.edges",
+"Test Times": [
+898.664, 825.522, 873.532],
+"Test Memories": [
+6.5759e+08, 6.5759e+08, 6.5759e+08],
+"Start Time" : "2022-May-31 20:57:09.480831",
+"End Time" : "2022-May-31 20:57:12.293253"
+}
+,{
+"Algorithm Name": "VectorVectorContainer",
+"Type": "ParallelInplace#16",
+"Graph Name": "bn-human-Jung2015_M7101234.edges",
+"Test Times": [
+1442.19, 1479.98, 1495.73],
+"Test Memories": [
+6.02639e+08, 6.02639e+08, 6.02639e+08],
+"Start Time" : "2022-May-31 20:57:12.293353",
+"End Time" : "2022-May-31 20:57:16.790159"
+}
+,{
+"Algorithm Name": "VectorVectorContainer",
+"Type": "ParallelInplace#16",
+"Graph Name": "delaunay_n24_50M.edges",
+"Test Times": [
+6767.1, 6675.17, 6616.66],
+"Test Memories": [
+1.01682e+10, 1.01682e+10, 1.01948e+10],
+"Start Time" : "2022-May-31 20:57:16.790235",
+"End Time" : "2022-May-31 20:57:38.021913"
+}
+,{
+"Algorithm Name": "VectorVectorContainer",
+"Type": "ParallelInplace#16",
+"Graph Name": "bn-human-Jung2015_M87118465_180M.edges",
+"Test Times": [
+4558.65, 4241.81, 4092.13],
+"Test Memories": [
+1.67206e+09, 1.67206e+09, 1.67206e+09],
+"Start Time" : "2022-May-31 20:57:38.024966",
+"End Time" : "2022-May-31 20:57:51.225509"
+}
+,{
+"Algorithm Name": "VectorVectorContainer",
+"Type": "ParallelInplace#16",
+"Graph Name": "bn-human-BNU_1_0025869_session_2-bg_150M.edges",
+"Test Times": [
+3618.9, 3517.56, 3579.08],
+"Test Memories": [
+1.53628e+09, 1.53628e+09, 1.53628e+09],
+"Start Time" : "2022-May-31 20:57:51.225608",
+"End Time" : "2022-May-31 20:58:02.206698"
+}
+,{
+"Algorithm Name": "VectorVectorContainer",
+"Type": "ParallelInplace#16",
+"Graph Name": "web-uk-2005.mtx",
+"Test Times": [
+284.321, 324.927, 322.207],
+"Test Memories": [
+1.24183e+08, 1.24183e+08, 1.24183e+08],
+"Start Time" : "2022-May-31 20:58:02.206777",
+"End Time" : "2022-May-31 20:58:03.174996"
+}
+,{
+"Algorithm Name": "VectorVectorContainer",
+"Type": "ParallelInplace#16",
+"Graph Name": "soc-livejournal.mtx",
+"Test Times": [
+1463.44, 1450.31, 1461.27],
+"Test Memories": [
+1.7206e+09, 1.7206e+09, 1.7206e+09],
+"Start Time" : "2022-May-31 20:58:03.175096",
+"End Time" : "2022-May-31 20:58:07.844907"
+}
+,{
+"Algorithm Name": "VectorVectorContainer",
+"Type": "ParallelInplace#16",
+"Graph Name": "bn-human-Jung2015_M8703600.edges",
+"Test Times": [
+1465.22, 1389.8, 1392.95],
+"Test Memories": [
+1.02398e+09, 1.02398e+09, 1.02398e+09],
+"Start Time" : "2022-May-31 20:58:07.845004",
+"End Time" : "2022-May-31 20:58:12.246692"
+}
+,{
+"Algorithm Name": "VectorVectorContainer",
+"Type": "ParallelInplace#16",
+"Graph Name": "bn-human-BNU_1_0025868_session_1-bg_150M.edges",
+"Test Times": [
+3687.75, 3617.43, 3501.32],
+"Test Memories": [
+1.54243e+09, 1.54243e+09, 1.54243e+09],
+"Start Time" : "2022-May-31 20:58:12.246774",
+"End Time" : "2022-May-31 20:58:23.323254"
+}
+,{
+"Algorithm Name": "VectorVectorContainer",
+"Type": "ParallelInplace#16",
+"Graph Name": "bn-human-Jung2015_M87125334_40M.edges",
+"Test Times": [
+1191.43, 1139.96, 1169.19],
+"Test Memories": [
+9.80407e+08, 9.80407e+08, 9.80407e+08],
+"Start Time" : "2022-May-31 20:58:23.323333",
+"End Time" : "2022-May-31 20:58:26.950320"
+}
+,{
+"Algorithm Name": "VectorVectorContainer",
+"Type": "ParallelInplace#16",
+"Graph Name": "bn-human-Jung2015_M87116523_80M.edges",
+"Test Times": [
+1877.12, 1797.17, 1757.94],
+"Test Memories": [
+7.34833e+08, 7.34833e+08, 7.34833e+08],
+"Start Time" : "2022-May-31 20:58:26.950398",
+"End Time" : "2022-May-31 20:58:32.460510"
+}
+,{
+"Algorithm Name": "VectorVectorContainer",
+"Type": "ParallelInplace#16",
+"Graph Name": "bn-human-Jung2015_M87127677_210M.edges",
+"Test Times": [
+4984.67, 5002.7, 4868.33],
+"Test Memories": [
+1.90174e+09, 1.90174e+09, 1.90174e+09],
+"Start Time" : "2022-May-31 20:58:32.460592",
+"End Time" : "2022-May-31 20:58:47.667133"
+}
+,{
+"Algorithm Name": "VectorVectorContainer",
+"Type": "ParallelInplace#16",
+"Graph Name": "bn-449k-3.3M.edges",
+"Test Times": [
+224.123, 222.064, 209.85],
+"Test Memories": [
+2.42017e+08, 2.42017e+08, 2.42017e+08],
+"Start Time" : "2022-May-31 20:58:47.669970",
+"End Time" : "2022-May-31 20:58:48.344739"
+}
+,{
+"Algorithm Name": "VectorVectorContainer",
+"Type": "ParallelInplace#16",
+"Graph Name": "bn-human-BNU_1_0025919_session_1.edges",
+"Test Times": [
+4748.01, 4796.6, 4666.06],
+"Test Memories": [
+1.81333e+09, 1.81333e+09, 1.81333e+09],
+"Start Time" : "2022-May-31 20:58:48.344844",
+"End Time" : "2022-May-31 20:59:02.905594"
+}
+,{
+"Algorithm Name": "VectorVectorContainer",
+"Type": "ParallelInplace#16",
+"Graph Name": "testfile.txt",
+"Test Times": [
+3.849, 0.453, 0.326],
+"Test Memories": [
+9600, 9600, 9600],
+"Start Time" : "2022-May-31 20:59:02.905680",
+"End Time" : "2022-May-31 20:59:02.910314"
+}
+,{
+"Algorithm Name": "VectorVectorContainer",
+"Type": "ParallelInplace#16",
+"Graph Name": "C2000-9.edges",
+"Test Times": [
+90.42, 58.349, 54.056],
+"Test Memories": [
+1.12526e+07, 1.12526e+07, 1.12526e+07],
+"Start Time" : "2022-May-31 20:59:02.910383",
+"End Time" : "2022-May-31 20:59:03.123753"
+}
+,{
+"Algorithm Name": "VectorVectorContainer",
+"Type": "ParallelInplace#16",
+"Graph Name": "datafiles_seq.txt",
+"Test Times": [
+3.655, 0.656, 0.334],
+"Test Memories": [
+9600, 9600, 9600],
+"Start Time" : "2022-May-31 20:59:03.123862",
+"End Time" : "2022-May-31 20:59:03.128516"
+}
+,{
+"Algorithm Name": "VectorVectorContainer",
+"Type": "ParallelInplace#16",
+"Graph Name": "bn-human-Jung2015_M87114342_90M.edges",
+"Test Times": [
+2265.37, 2296.92, 2218.9],
+"Test Memories": [
+1.30183e+09, 1.30183e+09, 1.30183e+09],
+"Start Time" : "2022-May-31 20:59:03.128593",
+"End Time" : "2022-May-31 20:59:10.110636"
+}
+,{
+"Algorithm Name": "VectorVectorContainer",
+"Type": "ParallelInplace#16",
+"Graph Name": "bn-human-BNU_1_0025919_session_1_200M.edges",
+"Test Times": [
+4722.49, 4863.45, 4741.44],
+"Test Memories": [
+1.81333e+09, 1.81333e+09, 1.81333e+09],
+"Start Time" : "2022-May-31 20:59:10.110715",
+"End Time" : "2022-May-31 20:59:24.762755"
+}
+,{
+"Algorithm Name": "VectorVectorContainer",
+"Type": "ParallelInplace#16",
+"Graph Name": "socfb-B-anon_20M.edges",
+"Test Times": [
+2468.81, 2497.91, 2489.66],
+"Test Memories": [
+1.99273e+09, 1.99273e+09, 1.99273e+09],
+"Start Time" : "2022-May-31 20:59:24.762841",
+"End Time" : "2022-May-31 20:59:33.186038"
+}
+,{
+"Algorithm Name": "VectorVectorContainer",
+"Type": "ParallelInplace#16",
+"Graph Name": "bn-human-Jung2015_M87110650_40M.edges",
+"Test Times": [
+1223.54, 1157.52, 1131.78],
+"Test Memories": [
+9.31665e+08, 9.31665e+08, 9.31665e+08],
+"Start Time" : "2022-May-31 20:59:33.186119",
+"End Time" : "2022-May-31 20:59:36.824633"
+}
+,{
+"Algorithm Name": "VectorVectorContainer",
+"Type": "ParallelInplace#16",
+"Graph Name": "bn-human-Jung2015_M87125286_210M.edges",
+"Test Times": [
+5082.21, 4920.35, 4842.93],
+"Test Memories": [
+1.88983e+09, 1.88983e+09, 1.88983e+09],
+"Start Time" : "2022-May-31 20:59:36.824713",
+"End Time" : "2022-May-31 20:59:51.998015"
+}
+,{
+"Algorithm Name": "VectorVectorContainer",
+"Type": "ParallelInplace#16",
+"Graph Name": "bn-human-Jung2015_M87124563_160M.edges",
+"Test Times": [
+3870.53, 3787, 3765.53],
+"Test Memories": [
+1.58816e+09, 1.58816e+09, 1.58816e+09],
+"Start Time" : "2022-May-31 20:59:52.000216",
+"End Time" : "2022-May-31 21:00:03.699824"
+}
+,{
+"Algorithm Name": "VectorVectorContainer",
+"Type": "ParallelInplace#16",
+"Graph Name": "bn-human-BNU_1_0025914_session_2_100M.edges",
+"Test Times": [
+2555.85, 2495.82, 2455.52],
+"Test Memories": [
+1.27652e+09, 1.27652e+09, 1.27652e+09],
+"Start Time" : "2022-May-31 21:00:03.702333",
+"End Time" : "2022-May-31 21:00:11.447794"
+}
+,{
+"Algorithm Name": "VectorVectorContainer",
+"Type": "ParallelInplace#16",
+"Graph Name": "bn-434k-16M.edges",
+"Test Times": [
+480.42, 419.431, 409.811],
+"Test Memories": [
+2.48364e+08, 2.48364e+08, 2.48364e+08],
+"Start Time" : "2022-May-31 21:00:11.447876",
+"End Time" : "2022-May-31 21:00:12.823572"
+}
+,{
+"Algorithm Name": "VectorVectorContainer",
+"Type": "ParallelInplace#16",
+"Graph Name": "tech-p2p-gnutella.mtx",
+"Test Times": [
+24.582, 13.197, 12.607],
+"Test Memories": [
+3.28688e+07, 3.28688e+07, 3.28688e+07],
+"Start Time" : "2022-May-31 21:00:12.823672",
+"End Time" : "2022-May-31 21:00:12.876957"
+}
+,{
+"Algorithm Name": "VectorVectorContainer",
+"Type": "ParallelInplace#16",
+"Graph Name": "bn-1.8M-166M.edges",
+"Test Times": [
+4013.54, 3971.08, 3938.15],
+"Test Memories": [
+1.66125e+09, 1.66125e+09, 1.66125e+09],
+"Start Time" : "2022-May-31 21:00:12.877044",
+"End Time" : "2022-May-31 21:00:25.064329"
+}
+,{
+"Algorithm Name": "VectorVectorContainer",
+"Type": "ParallelInplace#16",
+"Graph Name": "bn-human-Jung2015_M87119472_60M.edges",
+"Test Times": [
+1582.39, 1552.97, 1531.38],
+"Test Memories": [
+1.06239e+09, 1.06239e+09, 1.06239e+09],
+"Start Time" : "2022-May-31 21:00:25.064410",
+"End Time" : "2022-May-31 21:00:29.892569"
+}
+,{
+"Algorithm Name": "VectorVectorContainer",
+"Type": "ParallelInplace#16",
+"Graph Name": "rgg_n_2_22_s0_30M.edges",
+"Test Times": [
+2343.21, 2285.8, 2276.45],
+"Test Memories": [
+2.74018e+09, 2.74184e+09, 2.74184e+09],
+"Start Time" : "2022-May-31 21:00:29.895118",
+"End Time" : "2022-May-31 21:00:37.266854"
+}
+]
