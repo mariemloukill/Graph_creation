@@ -159,6 +159,13 @@ After the build phase, 3 Executables will be generated :
 while still in the `build` directory , run 
 
 ```bash
-./PFAProjectCFG
+./PFAProjectCFG -c /path/to/config.cfg
 ```
 
+a config file format has been provided in [test.cfg](./PFATeam/test.cfg)
+
+To see all possible arguments you can run 
+
+```bash
+./PFAProjectCFG --help
+```
