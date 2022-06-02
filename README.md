@@ -51,8 +51,8 @@ The entire project was written in `c++`. And can be divided to two main parts
 
 Each of the strategies has its respective `cmake` project, making it simpler to test them individually
 
-- `Parallel` : the parallel creation strategy
-- `Sequential` : The sequential creation Strategy
+- `Parallel` : The parallel creation strategy
+- `Sequential` : The sequential creation strategy
 - `Strategy3` : The sequential split creation strategy
 
 Each of these projects will run the underlying strategy on the provided input. And then will calculate performance based on certain metrics.
