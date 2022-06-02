@@ -1,0 +1,10 @@
+{
+  "cpu_cores": 2,
+  "cpu_threads": 4,
+  "cpu_speed": 2499.998,
+  "cpu_cache": 36608,
+  "cpu_bogomips": 5000,
+  "ram": 16197044 ,
+  "disk_cache_speed": 8384.10,
+  "disk_speed": 151.80
+}

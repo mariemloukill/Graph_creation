@@ -17,6 +17,7 @@ namespace PFA {
     class Graph
     {
     public:
+        using AdjacentNeighboursContainer=typename Container::AdjacentNeighboursContainer;
         int numberOfVertices;
         Container adjacencyList;
         Graph():numberOfVertices(0){}
@@ -102,7 +103,7 @@ namespace PFA {
          * @param a vertex
          * @return auto& neighbors of the vertex
          */
-        auto& getAdjacentNeighbors(int a)
+        AdjacentNeighboursContainer& getAdjacentNeighbors(int a)
         {
             return adjacencyList[a];
         }

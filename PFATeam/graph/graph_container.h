@@ -77,6 +77,7 @@ namespace PFA
         C.addEdge(a, b);
         C.removeEdge(a, b);
         C.clearVertex(a);
+        typename Container::AdjacentNeighboursContainer;
     };
 
     template<typename T>
@@ -144,6 +145,7 @@ class VectorVectorContainer: public std::vector<std::vector<int,Allocator<int>>,
     {
         using val_type=std::vector<int,Allocator<int>>;
     public:
+        using AdjacentNeighboursContainer=std::vector<int,Allocator<int>>;
         using std::vector<std::vector<int,Allocator<int>>,Allocator<std::vector<int,Allocator<int>>>>::vector;
         void addEdge(int a,int b)
         {
@@ -201,6 +203,7 @@ class VectorSetContainer: public std::vector<std::set<int,std::less<int>,Allocat
     {
     using val_type=std::set<int,std::less<int>,Allocator<int>>;
 public:
+        using AdjacentNeighboursContainer=val_type;
         using std::vector<std::set<int,std::less<int>,Allocator<int>>,Allocator<std::set<int,std::less<int>,Allocator<int>>>>::vector;
         void addEdge(int a,int b)
         {
@@ -266,7 +269,8 @@ class VectorUnorderedSetContainer: public std::vector<std::unordered_set<int,std
     {
     using val_type=std::unordered_set<int,std::hash<int>,std::equal_to<int>,Allocator<int>>;
 public:
-        using std::vector<std::unordered_set<int,std::hash<int>,std::equal_to<int>,Allocator<int>>,
+    using AdjacentNeighboursContainer=val_type;
+    using std::vector<std::unordered_set<int,std::hash<int>,std::equal_to<int>,Allocator<int>>,
                 Allocator<std::unordered_set<int,std::hash<int>,std::equal_to<int>,Allocator<int>>>>::vector;
         void addEdge(int a,int b)
         {
@@ -323,6 +327,7 @@ public:
     {
         using val_type=std::vector<std::list<int,Allocator<int>>,Allocator<std::list<int,Allocator<int>>>>;
     public:
+        using AdjacentNeighboursContainer=val_type;
         using std::vector<std::list<int,Allocator<int>>,Allocator<std::list<int,Allocator<int>>>>::vector;
         void addEdge(int a,int b)
         {
@@ -382,8 +387,10 @@ template<template <typename > typename Allocator=std::allocator>
 class MapVectorContainer: public std::map<int,std::vector<int,Allocator<int>>,std::less<int>,
         Allocator<std::pair<const int,std::vector<int,Allocator<int>>>>>
     {
+    using val_type=std::vector<int,Allocator<int>>;
     public:
-        using std::map<int,std::vector<int,Allocator<int>>,std::less<int>,
+    using AdjacentNeighboursContainer=val_type;
+    using std::map<int,std::vector<int,Allocator<int>>,std::less<int>,
                 Allocator<std::pair<const int,std::vector<int,Allocator<int>>>>>::map;
         void addEdge(int a,int b)
         {
@@ -415,7 +422,9 @@ template<template <typename > typename Allocator=std::allocator>
 class MapSetContainer: public std::map<int,std::set<int,std::less<int>,Allocator<int>>,std::less<int>,
         Allocator<std::pair<const int,std::set<int,std::less<int>,Allocator<int>>>>>
     {
+        using val_type=std::set<int,std::less<int>,Allocator<int>>;
     public:
+        using AdjacentNeighboursContainer=std::set<int,std::less<int>,Allocator<int>>;
         using std::map<int,std::set<int,std::less<int>,Allocator<int>>,std::less<int>,
         Allocator<std::pair<const int,std::set<int,std::less<int>,Allocator<int>>>>>::map;
         void addEdge(int a,int b)
@@ -445,8 +454,10 @@ template<template <typename > typename Allocator=std::allocator>
 class MapUnorderedSetContainer: public std::map<int,std::unordered_set<int,std::hash<int>,std::equal_to<int>,Allocator<int>>,std::less<int>,
         Allocator<std::pair<const int,std::unordered_set<int,std::hash<int>,std::equal_to<int>,Allocator<int>>>>>
     {
+        using val_type=std::unordered_set<int,std::hash<int>,std::equal_to<int>,Allocator<int>>;
     public:
-        using std::map<int,std::unordered_set<int,std::hash<int>,std::equal_to<int>,Allocator<int>>,std::less<int>,
+        using AdjacentNeighboursContainer=val_type;
+    using std::map<int,std::unordered_set<int,std::hash<int>,std::equal_to<int>,Allocator<int>>,std::less<int>,
                 Allocator<std::pair<const int,std::unordered_set<int,std::hash<int>,std::equal_to<int>,Allocator<int>>>>>::map;
         void addEdge(int a,int b)
         {
@@ -476,7 +487,9 @@ class MapUnorderedSetContainer: public std::map<int,std::unordered_set<int,std::
     class UnorderedMapVectorContainer: public std::unordered_map<int,std::vector<int,Allocator<int>>,std::hash<int>,std::equal_to<int>,
             Allocator<std::pair<const int,std::vector<int,Allocator<int>>>>>
     {
+        using val_type=std::vector<int,Allocator<int>>;
     public:
+        using AdjacentNeighboursContainer=val_type;
         using std::unordered_map<int,std::vector<int,Allocator<int>>,std::hash<int>,std::equal_to<int>,
                 Allocator<std::pair<const int,std::vector<int,Allocator<int>>>>>::unordered_map;
         void addEdge(int a,int b)
@@ -511,7 +524,9 @@ class MapUnorderedSetContainer: public std::map<int,std::unordered_set<int,std::
     class UnorderedMapSetContainer: public std::unordered_map<int,std::set<int,std::less<int>,Allocator<int>>,std::hash<int>,std::equal_to<int>,
             Allocator<std::pair<const int,std::set<int,std::less<int>,Allocator<int>>>>>
     {
+        using val_type=std::set<int,std::less<int>,Allocator<int>>;
     public:
+        using AdjacentNeighboursContainer=val_type;
         using std::unordered_map<int,std::set<int,std::less<int>,Allocator<int>>,std::hash<int>,std::equal_to<int>,
                 Allocator<std::pair<const int,std::set<int,std::less<int>,Allocator<int>>>>>::unordered_map;
         void addEdge(int a,int b)
@@ -542,7 +557,9 @@ class MapUnorderedSetContainer: public std::map<int,std::unordered_set<int,std::
     class UnorderedMapUnorderedSetContainer: public std::unordered_map<int,std::unordered_set<int,std::hash<int>,std::equal_to<int>,Allocator<int>>,std::hash<int>,
             std::equal_to<int>,Allocator<std::pair<const int,std::unordered_set<int,std::hash<int>,std::equal_to<int>,Allocator<int>>>>>
     {
+        using val_type=std::unordered_set<int,std::hash<int>,std::equal_to<int>,Allocator<int>>;
     public:
+        using AdjacentNeighboursContainer=val_type;
         using std::unordered_map<int,std::unordered_set<int,std::hash<int>,std::equal_to<int>,Allocator<int>>,std::hash<int>,
                 std::equal_to<int>,Allocator<std::pair<const int,std::unordered_set<int,std::hash<int>,std::equal_to<int>,Allocator<int>>>>>::unordered_map;
         void addEdge(int a,int b)

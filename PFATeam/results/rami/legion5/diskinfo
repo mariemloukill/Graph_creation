@@ -1,0 +1,6 @@
+type: SSD
+size: 512GB
+speed: At least 2 Gb / sec
+
+Timing cached reads:   21566 MB in  1.99 seconds = 10845.50 MB/sec
+Timing buffered disk reads: 464 MB in  3.04 seconds = 152.79 MB/sec
