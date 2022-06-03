@@ -47,7 +47,7 @@ namespace PFA {
             try {
                 while ((files[id] >> a >> b) && current_pos < pos[id + 1] && !thread_exception) {
                     current_pos += fast_digit_count(a) + fast_digit_count(b) + 2;
-                    G.adjacencyList.addEdge(a, b);
+                    G.adjacencyLists.addEdge(a, b);
                 }
                 if(thread_exception)
                     return {};
