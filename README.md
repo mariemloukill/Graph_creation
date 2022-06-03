@@ -71,10 +71,10 @@ We can now test multiple *Graph data structures* for each implementation ( which
 - `vector of vectors` : each vector representing the ajcent elements of 1 `vertex`
 - `vector of sets`
 - `vector of unordered sets` : Uses a hash function to index adjacent elements of each `vertex`
-- `vector of lists`
 - `map of vectors`
 - `map of sets`
 - `map of unordered sets`
+- `unordered map of vectors`
 - `unordered map of sets`
 - `unordered map of unordered sets`
 
