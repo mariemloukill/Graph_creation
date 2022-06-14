@@ -13,6 +13,7 @@
 #include "utils/utils.h"
 
 
+
 enum Mode
 {
     DISCARD,RESUME,AUTO
@@ -57,15 +58,28 @@ int main(int argc, char** argv)
             ("csv.separator",po::value<std::string>()->default_value(","),"Separator of the csv file")
             ("json.enable",po::value<bool>()->default_value(false),"Enable json output")
             ("json.path",po::value<std::filesystem::path>(),"Path to the json file")
+            ("json.finalize",po::value<bool>()->default_value(true),"After successful execution, marks the json file as finished")
             ("profile.enable",po::value<bool>()->default_value(false),"Periodically get memory usage")
-             ("profile.path",po::value<std::filesystem::path>(),"Path to the memory profile file")
+            ("profile.path",po::value<std::filesystem::path>(),"Path to the memory profile file")
             ("profile.interval",po::value<std::string>()->default_value("200ms"),"The interval between two profiling operations")
             ("sequential.enable",po::value<bool>()->default_value(true),"Enable sequential execution tests")
             ("parallel.enable",po::value<bool>()->default_value(false),"Enable parallel execution tests, ignored if the tests for sequential execution is enabled")
-            ("parallel.splits",po::value<std::vector<std::string>>()->multitoken(),"Splits to perform in parallel")
+            ("parallel.splits",po::value<std::vector<std::string>>(),"Splits to perform in parallel")
             ("parallel.inplace",po::value<bool>()->default_value(true),"Read file inplace without doing any file split");
+
     po::variables_map vm;
+
     po::store(parse_command_line(argc, argv, desc), vm);
+
+
+    if(vm.contains("help"))
+    {
+        std::cout << "Usage: PFAProject graphs_path [options]\n";
+        std::cout << desc << std::endl;
+        std::cout << cfg_desc << std::endl;
+        return 0;
+    }
+
     try {
         po::store(parse_config_file(vm["config"].as<std::string>().c_str(), cfg_desc,true), vm);
         po::notify(vm);
@@ -79,13 +93,7 @@ int main(int argc, char** argv)
     std::unique_ptr<PFA::Writer> stdWriter,csvWriter,jsonWriter;
     std::ofstream JSONFile, CSVFile, profileFile;
     std::unique_ptr<PFA::MemoryProfiler> profiler;
-    if(vm.contains("help"))
-    {
-        std::cout << "Usage: PFAProject graphs_path [options]\n";
-        std::cout << desc << std::endl;
-        std::cout << cfg_desc << std::endl;
-        return 0;
-    }
+
     if(vm["human-output.enable"].as<bool>())
     {
         if(vm.contains("human-output.path"))
@@ -222,23 +230,23 @@ int main(int argc, char** argv)
      * Configuring Memory Profiler
      * */
     if(vm["profile.enable"].as<bool>()) try
-    {
-        profileFile.open(vm["profile.path"].as<std::filesystem::path>(),openMode);
-        auto interval=parse_duration(vm["profile.interval"].as<std::string>());
-        profiler=std::make_unique<StandardMemoryProfiler>(profileFile,interval,!skip);
-    }
-    catch(std::exception& e)
-    {
-        using  namespace std::chrono_literals;
-        profiler=std::make_unique<StandardMemoryProfiler>(profileFile,200ms,!skip);
-        std::cerr << "Error: " << e.what() << ". Defaulting to a 200ms interval"<< std::endl;
-    }
+        {
+            profileFile.open(vm["profile.path"].as<std::filesystem::path>(),openMode);
+            auto interval=parse_duration(vm["profile.interval"].as<std::string>());
+            profiler=std::make_unique<StandardMemoryProfiler>(profileFile,interval,!skip);
+        }
+        catch(std::exception& e)
+        {
+            using  namespace std::chrono_literals;
+            profiler=std::make_unique<StandardMemoryProfiler>(profileFile,200ms,!skip);
+            std::cerr << "Error: " << e.what() << ". Defaulting to a 200ms interval"<< std::endl;
+        }
 
     if(vm["sequential.enable"].as<bool>())
     {
         if(vm["test-types"].as<std::string>()=="one")
             tester.writeGraphCreationAllImplementationsSequential<CurrentType>(
-                vm["graphs-folder"].as<std::filesystem::path>(), writers, skip);
+                    vm["graphs-folder"].as<std::filesystem::path>(), writers, skip);
         else tester.writeGraphCreationAllImplementationsSequential<TestTypes>(
                     vm["graphs-folder"].as<std::filesystem::path>(), writers, skip);
     }
@@ -246,16 +254,22 @@ int main(int argc, char** argv)
     {
         if(vm["parallel.inplace"].as<bool>())
         {
-            if(vm["test-types"].as<std::string>()=="one")
-                tester.writeGraphCreationAllImplementationsParallelInplace<CurrentType>(
-                    vm["graphs-folder"].as<std::filesystem::path>(), writers, 3, skip);
-            else tester.writeGraphCreationAllImplementationsParallelInplace<TestTypes>(
-                    vm["graphs-folder"].as<std::filesystem::path>(), writers, 3, skip);
+            auto splitsStr= split_regex(vm["parallel.splits"].as<std::vector<std::string>>().front(),R"([\n\r\t ]+)");
+            bool finalize=vm["json.finalize"].as<bool>();
+            for(int i=0;i<splitsStr.size();i++)
+                if(vm["test-types"].as<std::string>()=="one")
+                    skip=tester.writeGraphCreationAllImplementationsParallelInplace<CurrentType>(
+                            vm["graphs-folder"].as<std::filesystem::path>(), writers, std::stoi(splitsStr[i]), skip, i==splitsStr.size()-1 && finalize);
+                else if(vm["test-types"].as<std::string>()=="alt")
+                    skip=tester.writeGraphCreationAllImplementationsParallelInplace<CurrentType>(
+                            vm["graphs-folder"].as<std::filesystem::path>(), writers, std::stoi(splitsStr[i]), skip, i==splitsStr.size()-1 && finalize);
+                else skip=tester.writeGraphCreationAllImplementationsParallelInplace<TestTypes>(
+                            vm["graphs-folder"].as<std::filesystem::path>(), writers, std::stoi(splitsStr[i]),skip, i==splitsStr.size()-1 && finalize);
         }
         else {
             if(vm["test-types"].as<std::string>()=="one")
                 tester.writeGraphCreationAllImplementationsParallel<CurrentType>(
-                    vm["graphs-folder"].as<std::filesystem::path>(), writers, skip);
+                        vm["graphs-folder"].as<std::filesystem::path>(), writers, skip);
             else tester.writeGraphCreationAllImplementationsParallel<TestTypes>(
                         vm["graphs-folder"].as<std::filesystem::path>(), writers, skip);
         }
