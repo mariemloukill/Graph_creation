@@ -11,7 +11,7 @@
 #include "utils/types.h"
 #include "boost/program_options.hpp"
 #include "utils/utils.h"
-#include "graph/Edge_centric.h"
+
 
 
 enum Mode
@@ -60,22 +60,18 @@ int main(int argc, char** argv)
             ("json.path",po::value<std::filesystem::path>(),"Path to the json file")
             ("json.finalize",po::value<bool>()->default_value(true),"After successful execution, marks the json file as finished")
             ("profile.enable",po::value<bool>()->default_value(false),"Periodically get memory usage")
-            ("profile.memory",po::value<std::string>(),"memory profiling Standard or Exterior")
             ("profile.path",po::value<std::filesystem::path>(),"Path to the memory profile file")
             ("profile.interval",po::value<std::string>()->default_value("200ms"),"The interval between two profiling operations")
             ("sequential.enable",po::value<bool>()->default_value(true),"Enable sequential execution tests")
             ("parallel.enable",po::value<bool>()->default_value(false),"Enable parallel execution tests, ignored if the tests for sequential execution is enabled")
             ("parallel.splits",po::value<std::vector<std::string>>(),"Splits to perform in parallel")
-            ("parallel.inplace",po::value<bool>()->default_value(true),"Read file inplace without doing any file split")
-            ("edge_centric.enable",po::value<bool>()->default_value(false),"Enable edge centric execution tests, ignored if the tests for sequential or parallel execution are enabled")
-            ("edge_centric_parallel.enable",po::value<bool>()->default_value(false),"Enable edge centric parallel execution tests, ignored if the tests for sequential or parallel execution are enabled")
-            ("edge_centric_parallel.splits",po::value<std::vector<std::string>>(),"Splits to perform in parallel")
-            ("edge_centric_parallel.inplace",po::value<bool>()->default_value(true),"Read file inplace without doing any file split");
+            ("parallel.inplace",po::value<bool>()->default_value(true),"Read file inplace without doing any file split");
+
     po::variables_map vm;
 
     po::store(parse_command_line(argc, argv, desc), vm);
 
-    // config with help
+
     if(vm.contains("help"))
     {
         std::cout << "Usage: PFAProject graphs_path [options]\n";
@@ -83,7 +79,7 @@ int main(int argc, char** argv)
         std::cout << cfg_desc << std::endl;
         return 0;
     }
-    // parsing config file
+
     try {
         po::store(parse_config_file(vm["config"].as<std::string>().c_str(), cfg_desc,true), vm);
         po::notify(vm);
@@ -92,16 +88,12 @@ int main(int argc, char** argv)
         std::cerr << "Configuration error: " << e.what() << ". Exiting..." << std::endl;
         return 1;
     }
-
-    //get umber of test from config file
     PFA::Tester tester(vm["tests-per-implementation"].as<int>());
-    // initializing writers
     PFA::MultipleWriter writers;
     std::unique_ptr<PFA::Writer> stdWriter,csvWriter,jsonWriter;
     std::ofstream JSONFile, CSVFile, profileFile;
     std::unique_ptr<PFA::MemoryProfiler> profiler;
 
-    // human output options
     if(vm["human-output.enable"].as<bool>())
     {
         if(vm.contains("human-output.path"))
@@ -116,7 +108,7 @@ int main(int argc, char** argv)
             stdWriter = std::make_unique<StandardWriter>(std::cout);
         writers.addWriter(stdWriter.get());
     }
-    // mode discard ,resume or auto
+
     Mode mode = DISCARD;
     if(vm["mode"].as<std::string>() == "resume")
         mode = RESUME;
@@ -128,8 +120,6 @@ int main(int argc, char** argv)
      * */
     int skip=0;
     std::ios::openmode openMode=std::ios::out;
-
-
     /*
      * Configuring CSV output
      * */
@@ -243,29 +233,20 @@ int main(int argc, char** argv)
         {
             profileFile.open(vm["profile.path"].as<std::filesystem::path>(),openMode);
             auto interval=parse_duration(vm["profile.interval"].as<std::string>());
-            if (vm["profile.memory"].as<std::string>()=="Standard")
             profiler=std::make_unique<StandardMemoryProfiler>(profileFile,interval,!skip);
-            else
-                profiler=std::make_unique<ExteriorMemoryProfiler>(profileFile,interval,!skip);
         }
         catch(std::exception& e)
         {
             using  namespace std::chrono_literals;
-            if (vm["profile.memory"].as<std::string>()=="Standard")
             profiler=std::make_unique<StandardMemoryProfiler>(profileFile,200ms,!skip);
-            else profiler=std::make_unique<ExteriorMemoryProfiler>(profileFile,200ms,!skip);
-
             std::cerr << "Error: " << e.what() << ". Defaulting to a 200ms interval"<< std::endl;
         }
 
-    //configuring creation strategy  (sequential or parallel)
-    // I need to add strategy 3
     if(vm["sequential.enable"].as<bool>())
     {
-        if(vm["test-types"].as<std::string>()=="one") //if only vector of vectors
+        if(vm["test-types"].as<std::string>()=="one")
             tester.writeGraphCreationAllImplementationsSequential<CurrentType>(
                     vm["graphs-folder"].as<std::filesystem::path>(), writers, skip);
-            // if testing with all containers
         else tester.writeGraphCreationAllImplementationsSequential<TestTypes>(
                     vm["graphs-folder"].as<std::filesystem::path>(), writers, skip);
     }
@@ -280,47 +261,19 @@ int main(int argc, char** argv)
                     skip=tester.writeGraphCreationAllImplementationsParallelInplace<CurrentType>(
                             vm["graphs-folder"].as<std::filesystem::path>(), writers, std::stoi(splitsStr[i]), skip, i==splitsStr.size()-1 && finalize);
                 else if(vm["test-types"].as<std::string>()=="alt")
-                    skip=tester.writeGraphCreationAllImplementationsParallelInplace<AlternativeType>(
+                    skip=tester.writeGraphCreationAllImplementationsParallelInplace<CurrentType>(
                             vm["graphs-folder"].as<std::filesystem::path>(), writers, std::stoi(splitsStr[i]), skip, i==splitsStr.size()-1 && finalize);
                 else skip=tester.writeGraphCreationAllImplementationsParallelInplace<TestTypes>(
                             vm["graphs-folder"].as<std::filesystem::path>(), writers, std::stoi(splitsStr[i]),skip, i==splitsStr.size()-1 && finalize);
         }
-        /*else {
+        else {
             if(vm["test-types"].as<std::string>()=="one")
                 tester.writeGraphCreationAllImplementationsParallel<CurrentType>(
-                    vm["graphs-folder"].as<std::filesystem::path>(), writers, skip);
+                        vm["graphs-folder"].as<std::filesystem::path>(), writers, skip);
             else tester.writeGraphCreationAllImplementationsParallel<TestTypes>(
                         vm["graphs-folder"].as<std::filesystem::path>(), writers, skip);
-        }*/
-    }
-    else  if(vm["edge_centric.enable"].as<bool>())
-
-    {
-        std::cout<< "welcome to edge centric"<<std::endl;
-
-        tester.writeGraphCreationAllImplementationsEdgeCentric(
-                vm["graphs-folder"].as<std::filesystem::path>(), writers, skip);
-
-    }
-    else  if(vm["edge_centric_parallel.enable"].as<bool>())
-
-    {
-        if(vm["edge_centric_parallel.inplace"].as<bool>())
-        {
-            auto splitsStr= split_regex(vm["edge_centric_parallel.splits"].as<std::vector<std::string>>().front(),R"([\n\r\t ]+)");
-            bool finalize=vm["json.finalize"].as<bool>();
-            for(int i=0;i<splitsStr.size();i++)
-                if(vm["test-types"].as<std::string>()=="one")
-                    skip=tester.writeGraphCreationAllImplementationsParallelEdgeCentric(
-                            vm["graphs-folder"].as<std::filesystem::path>(), writers, std::stoi(splitsStr[i]), skip, i==splitsStr.size()-1 && finalize);
-
-                else skip=tester.writeGraphCreationAllImplementationsParallelEdgeCentric(
-                            vm["graphs-folder"].as<std::filesystem::path>(), writers, std::stoi(splitsStr[i]),skip, i==splitsStr.size()-1 && finalize);
         }
-
     }
-
-    //configuring profiler
     if(profiler) {
         profiler->endProfiler = true;
         profiler->join();

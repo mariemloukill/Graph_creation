@@ -16,7 +16,7 @@ CSVWriter::CSVWriter(std::ostream &out, char sep): StreamWriter(out), separator(
 
 void CSVWriter::initialize() {
     out << "\"Algorithm Name\"" << separator << "Type" << separator << "\"Graph Name\"" << separator
-    << "\"Average Time\"" << separator << "\"Average Memory\"" << separator << "\"Start Time\"" << separator << "\"End Time\"" <<  std::endl;
+    << "\"Average Time\"" << separator << "\"Average Memory\"" << std::endl;
 
 }
 
@@ -26,11 +26,11 @@ void CSVWriter::initialize() {
 void CSVWriter::write(const AlgorithmTest &test)
 {
     double timeAvg= std::reduce(test.timeResults.begin(), test.timeResults.end()) / test.timeResults.size();
-    double memoryAvg= *std::max_element(test.memoryResults.begin(), test.memoryResults.end()) /1;
+    double memoryAvg= std::reduce(test.memoryResults.begin(), test.memoryResults.end()) / test.memoryResults.size();
     out << '"' << test.name << '"'
     << separator << test.type << separator
     << '"' << test.graphName << '"'
-    << separator << timeAvg/1000 << separator << memoryAvg/(1024*1024) << separator << test.startTime << separator << test.endTime << std::endl;
+    << separator << timeAvg/1000 << separator << memoryAvg/(1024*1024) << std::endl;
 }
 
 void CSVWriter::write(const AlgorithmTestError &testError) {
@@ -41,11 +41,10 @@ void CSVWriter::write(const AlgorithmTestError &testError) {
 }
 
 void StandardWriter::write(const AlgorithmTest &test) {
-    double timeAvg= std::reduce(test.timeResults.begin(), test.timeResults.end(), 0.0) / test.timeResults.size();
-    double memoryAvg= *std::max_element(test.memoryResults.begin(), test.memoryResults.end()) /1;
+    double timeAvg= std::reduce(test.timeResults.begin(), test.timeResults.end(), 0.0) / (test.timeResults.size()*1000);
     out << std::left << std::setfill('.') << std::setw(40) << test.name
-    << std::right << std::setfill('.') << std::setw(40) << timeAvg/1000 << " s" << std::endl;
-    out << "Memory usage: " << memoryAvg/(1024*1024) << " MB" << std::endl;
+    << std::right << std::setfill('.') << std::setw(40) << timeAvg << " s" << std::endl;
+    out << "Memory usage: " << GlobalAllocator::max_memory/(1024*1024)<< " MB" << std::endl;
 
 }
 
@@ -74,7 +73,7 @@ void JSONWriter::write(const AlgorithmTest &test)
     for (auto time : test.timeResults) {
         if(!firstWriteTime)
             out << ", ";
-        out << time/1000;
+        out << time;
         firstWriteTime=false;
     }
     out << "]," << std::endl;
@@ -83,12 +82,10 @@ void JSONWriter::write(const AlgorithmTest &test)
     for (auto memory : test.memoryResults) {
         if(!firstWriteTime)
             out << ", ";
-        out << memory/(1024*1024);
+        out << memory;
         firstWriteTime=false;
     }
-    out << "]," << std::endl;
-    out << R"("Start Time" : ")" << test.startTime << "\"," << std::endl;
-    out << R"("End Time" : ")" << test.endTime << "\"" << std::endl;
+    out << "]" << std::endl;
     out << "}" << std::endl;
 }
 
