@@ -133,7 +133,7 @@ namespace PFA
  */
         template<typename Container>
         double testGraphCreationParallelInplace(std::string path,int count,SplitCreator<Container,ProfilableAllocator>& splitCreator,
-                                                SplitMerger<Container,ProfilableAllocator>& splitMerger)
+                                         SplitMerger<Container,ProfilableAllocator>& splitMerger)
         {
             std::ios_base::sync_with_stdio(false);
             auto start = std::chrono::system_clock::now();
@@ -240,7 +240,7 @@ namespace PFA
 
         template<typename Container>
         std::vector<std::pair<double,double>> testMultipleGraphCreationParallelInplace(std::string path,int count,SplitCreator<Container,ProfilableAllocator>& splitCreator,
-                                                                                       SplitMerger<Container,ProfilableAllocator>& splitMerger) {
+                                                                                SplitMerger<Container,ProfilableAllocator>& splitMerger) {
             std::vector<std::pair<double,double>> avg;
             for (int i=0 ; i<numberOfTrials ; i++) {
                 double time=testGraphCreationParallelInplace<Container>(path,count,splitCreator,splitMerger);
@@ -278,31 +278,31 @@ namespace PFA
                 else
                     writer.write(dirEntry.path().filename().string());
                 boost::mp11::mp_for_each<TestTypes>([&](auto type)
-                                                    {
-                                                        using Container = decltype(type);
-                                                        if (skip) {
-                                                            skip--;
-                                                            return;
-                                                        }
-                                                        try
-                                                        {
-                                                            boost::posix_time::ptime start = boost::posix_time::microsec_clock::local_time();
-                                                            writer.write(
-                                                                    AlgorithmTest(testTypeName<Container>, "Sequential", dirEntry.path().filename(),
-                                                                                  numberOfTrials,
-                                                                                  this->testMultipleGraphCreation<Container>(
-                                                                                          dirEntry.path().string()),start));
-                                                        }
-                                                        catch (std::exception &e) {
-                                                            AlgorithmTestError testError(testTypeName<Container>, "Sequential", dirEntry.path().filename(), e);
-                                                            std::cerr << "Error while creating " << testError.name << "with strategy " << testError.type
-                                                                      << " on graph" << testError.graphName << ". Algorithm crashed." << std::endl;
-                                                            std::cerr << "Reason: " << e.what() << std::endl;
-                                                            writer.write(testError);
-                                                        }
-                                                        GlobalAllocator::resetMax();
-                                                    });
-            }
+                    {
+                        using Container = decltype(type);
+                        if (skip) {
+                            skip--;
+                            return;
+                        }
+                        try
+                        {
+                            boost::posix_time::ptime start = boost::posix_time::microsec_clock::local_time();
+                            writer.write(
+                                AlgorithmTest(testTypeName<Container>, "Sequential", dirEntry.path().filename(),
+                                              numberOfTrials,
+                                              this->testMultipleGraphCreation<Container>(
+                                                      dirEntry.path().string()),start));
+                        }
+                        catch (std::exception &e) {
+                            AlgorithmTestError testError(testTypeName<Container>, "Sequential", dirEntry.path().filename(), e);
+                            std::cerr << "Error while creating " << testError.name << "with strategy " << testError.type
+                                      << " on graph" << testError.graphName << ". Algorithm crashed." << std::endl;
+                            std::cerr << "Reason: " << e.what() << std::endl;
+                            writer.write(testError);
+                        }
+                         GlobalAllocator::resetMax();
+                        });
+                }
             if(finalize)
                 writer.finalize();
             return skip+1;
@@ -354,7 +354,7 @@ namespace PFA
                             {
                                 AlgorithmTestError testError(testTypeName<Container>, "Parallel", dirEntry.path().filename(), e);
                                 std::cerr << "Error while creating " << testError.name << "with strategy " << testError.type
-                                          << " on graph" << testError.graphName << ". Algorithm crashed." << std::endl;
+                                    << " on graph" << testError.graphName << ". Algorithm crashed." << std::endl;
                                 std::cerr << "Reason: " << e.what() << std::endl;
                                 writer.write(testError);
                             }
@@ -386,33 +386,33 @@ namespace PFA
                 else
                     writer.write(dirEntry.path().filename().string());
                 boost::mp11::mp_for_each<TestTypes>([&](auto type)
-                                                    {
-                                                        if(skip)
-                                                        {
-                                                            skip--;
-                                                            return;
-                                                        }
-                                                        using Container = decltype(type);
-                                                        try {
-                                                            OneGraphSplitMerger<Container, ProfilableAllocator> oneGraphSplitMerger;
-                                                            boost::posix_time::ptime start = boost::posix_time::microsec_clock::local_time();
-                                                            writer.write(AlgorithmTest(testTypeName<Container>, strategyName,
-                                                                                       dirEntry.path().filename(), numberOfTrials,
-                                                                                       this->testMultipleGraphCreationParallelInplace<Container>(
-                                                                                               dirEntry.path().string(), count,
-                                                                                               parallelSplitCreator<Container, ProfilableAllocator>,
-                                                                                               oneGraphSplitMerger),start));
-                                                        }
-                                                        catch(std::exception &e)
-                                                        {
-                                                            AlgorithmTestError testError(testTypeName<Container>, strategyName, dirEntry.path().filename(), e);
-                                                            std::cerr << "Error while creating " << testError.name << "with strategy " << testError.type
-                                                                      << " on graph" << testError.graphName << ". Algorithm crashed." << std::endl;
-                                                            std::cerr << "Reason: " << e.what() << std::endl;
-                                                            writer.write(testError);
-                                                        }
-                                                        GlobalAllocator::resetMax();
-                                                    });
+                    {
+                        if(skip)
+                        {
+                            skip--;
+                            return;
+                        }
+                        using Container = decltype(type);
+                        try {
+                            OneGraphSplitMerger<Container, ProfilableAllocator> oneGraphSplitMerger;
+                            boost::posix_time::ptime start = boost::posix_time::microsec_clock::local_time();
+                            writer.write(AlgorithmTest(testTypeName<Container>, strategyName,
+                                                       dirEntry.path().filename(), numberOfTrials,
+                                                       this->testMultipleGraphCreationParallelInplace<Container>(
+                                                               dirEntry.path().string(), count,
+                                                               parallelSplitCreator<Container, ProfilableAllocator>,
+                                                               oneGraphSplitMerger),start));
+                        }
+                        catch(std::exception &e)
+                        {
+                            AlgorithmTestError testError(testTypeName<Container>, strategyName, dirEntry.path().filename(), e);
+                            std::cerr << "Error while creating " << testError.name << "with strategy " << testError.type
+                                      << " on graph" << testError.graphName << ". Algorithm crashed." << std::endl;
+                            std::cerr << "Reason: " << e.what() << std::endl;
+                            writer.write(testError);
+                        }
+                        GlobalAllocator::resetMax();
+                    });
             }
             if(finalize)
                 writer.finalize();

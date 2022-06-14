@@ -1,0 +1,4 @@
+"Algorithm Name"	Type	"Graph Name"	"Average Time"	"Average Memory"	"Start Time"	"End Time"
+"VectorVectorContainer"	ParallelInplace#2	"1soc-sinaweibo_260M.edges"	73644.3	7.8951e+09	2022-Apr-24 22:11:28.829086	2022-Apr-24 22:12:48.093858
+"VectorVectorContainer"	ParallelInplace#4	"1soc-sinaweibo_260M.edges"	57663.7	1.10602e+10	2022-Apr-24 22:12:48.103010	2022-Apr-24 22:13:51.469627
+"VectorVectorContainer"	ParallelInplace#8	"1soc-sinaweibo_260M.edges"	48345.1	1.911e+10	2022-Apr-24 22:13:51.469798	2022-Apr-24 22:14:45.526097

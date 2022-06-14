@@ -1,0 +1,34 @@
+[
+{
+"Algorithm Name": "VectorVectorContainer",
+"Type": "ParallelInplace#2",
+"Graph Name": "1soc-sinaweibo_260M.edges",
+"Test Times": [
+73644.3],
+"Test Memories": [
+7.8951e+09],
+"Start Time" : "2022-Apr-24 22:11:28.829086",
+"End Time" : "2022-Apr-24 22:12:48.093858"
+}
+,{
+"Algorithm Name": "VectorVectorContainer",
+"Type": "ParallelInplace#4",
+"Graph Name": "1soc-sinaweibo_260M.edges",
+"Test Times": [
+57663.7],
+"Test Memories": [
+1.10602e+10],
+"Start Time" : "2022-Apr-24 22:12:48.103010",
+"End Time" : "2022-Apr-24 22:13:51.469627"
+}
+,{
+"Algorithm Name": "VectorVectorContainer",
+"Type": "ParallelInplace#8",
+"Graph Name": "1soc-sinaweibo_260M.edges",
+"Test Times": [
+48345.1],
+"Test Memories": [
+1.911e+10],
+"Start Time" : "2022-Apr-24 22:13:51.469798",
+"End Time" : "2022-Apr-24 22:14:45.526097"
+}

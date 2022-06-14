@@ -60,7 +60,7 @@ int main(int argc, char** argv)
             ("json.path",po::value<std::filesystem::path>(),"Path to the json file")
             ("json.finalize",po::value<bool>()->default_value(true),"After successful execution, marks the json file as finished")
             ("profile.enable",po::value<bool>()->default_value(false),"Periodically get memory usage")
-            ("profile.path",po::value<std::filesystem::path>(),"Path to the memory profile file")
+             ("profile.path",po::value<std::filesystem::path>(),"Path to the memory profile file")
             ("profile.interval",po::value<std::string>()->default_value("200ms"),"The interval between two profiling operations")
             ("sequential.enable",po::value<bool>()->default_value(true),"Enable sequential execution tests")
             ("parallel.enable",po::value<bool>()->default_value(false),"Enable parallel execution tests, ignored if the tests for sequential execution is enabled")
@@ -230,23 +230,23 @@ int main(int argc, char** argv)
      * Configuring Memory Profiler
      * */
     if(vm["profile.enable"].as<bool>()) try
-        {
-            profileFile.open(vm["profile.path"].as<std::filesystem::path>(),openMode);
-            auto interval=parse_duration(vm["profile.interval"].as<std::string>());
-            profiler=std::make_unique<StandardMemoryProfiler>(profileFile,interval,!skip);
-        }
-        catch(std::exception& e)
-        {
-            using  namespace std::chrono_literals;
-            profiler=std::make_unique<StandardMemoryProfiler>(profileFile,200ms,!skip);
-            std::cerr << "Error: " << e.what() << ". Defaulting to a 200ms interval"<< std::endl;
-        }
+    {
+        profileFile.open(vm["profile.path"].as<std::filesystem::path>(),openMode);
+        auto interval=parse_duration(vm["profile.interval"].as<std::string>());
+        profiler=std::make_unique<StandardMemoryProfiler>(profileFile,interval,!skip);
+    }
+    catch(std::exception& e)
+    {
+        using  namespace std::chrono_literals;
+        profiler=std::make_unique<StandardMemoryProfiler>(profileFile,200ms,!skip);
+        std::cerr << "Error: " << e.what() << ". Defaulting to a 200ms interval"<< std::endl;
+    }
 
     if(vm["sequential.enable"].as<bool>())
     {
         if(vm["test-types"].as<std::string>()=="one")
             tester.writeGraphCreationAllImplementationsSequential<CurrentType>(
-                    vm["graphs-folder"].as<std::filesystem::path>(), writers, skip);
+                vm["graphs-folder"].as<std::filesystem::path>(), writers, skip);
         else tester.writeGraphCreationAllImplementationsSequential<TestTypes>(
                     vm["graphs-folder"].as<std::filesystem::path>(), writers, skip);
     }
@@ -259,17 +259,17 @@ int main(int argc, char** argv)
             for(int i=0;i<splitsStr.size();i++)
                 if(vm["test-types"].as<std::string>()=="one")
                     skip=tester.writeGraphCreationAllImplementationsParallelInplace<CurrentType>(
-                            vm["graphs-folder"].as<std::filesystem::path>(), writers, std::stoi(splitsStr[i]), skip, i==splitsStr.size()-1 && finalize);
+                        vm["graphs-folder"].as<std::filesystem::path>(), writers, std::stoi(splitsStr[i]), skip, i==splitsStr.size()-1 && finalize);
                 else if(vm["test-types"].as<std::string>()=="alt")
-                    skip=tester.writeGraphCreationAllImplementationsParallelInplace<CurrentType>(
+                    skip=tester.writeGraphCreationAllImplementationsParallelInplace<AlternativeType>(
                             vm["graphs-folder"].as<std::filesystem::path>(), writers, std::stoi(splitsStr[i]), skip, i==splitsStr.size()-1 && finalize);
                 else skip=tester.writeGraphCreationAllImplementationsParallelInplace<TestTypes>(
-                            vm["graphs-folder"].as<std::filesystem::path>(), writers, std::stoi(splitsStr[i]),skip, i==splitsStr.size()-1 && finalize);
+                        vm["graphs-folder"].as<std::filesystem::path>(), writers, std::stoi(splitsStr[i]),skip, i==splitsStr.size()-1 && finalize);
         }
         else {
             if(vm["test-types"].as<std::string>()=="one")
                 tester.writeGraphCreationAllImplementationsParallel<CurrentType>(
-                        vm["graphs-folder"].as<std::filesystem::path>(), writers, skip);
+                    vm["graphs-folder"].as<std::filesystem::path>(), writers, skip);
             else tester.writeGraphCreationAllImplementationsParallel<TestTypes>(
                         vm["graphs-folder"].as<std::filesystem::path>(), writers, skip);
         }

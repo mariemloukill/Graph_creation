@@ -1,64 +1,542 @@
 [
 {
 "Algorithm Name": "VectorVectorContainer",
-"Type": "ParallelInplace",
+"Type": "ParallelInplace#2",
 "Graph Name": "bn-7k-50k.edges",
 "Test Times": [
-13.699],
+10.308],
 "Test Memories": [
-998860]
+698708]
 }
 ,{
 "Algorithm Name": "VectorVectorContainer",
-"Type": "ParallelInplace",
+"Type": "ParallelInplace#2",
 "Graph Name": "bn-34k-181k.edges",
 "Test Times": [
-31.682],
+36.351],
 "Test Memories": [
-4.31811e+06]
+5.3858e+06]
 }
 ,{
 "Algorithm Name": "VectorVectorContainer",
-"Type": "ParallelInplace",
+"Type": "ParallelInplace#2",
 "Graph Name": "bn-65-1K.edges",
 "Test Times": [
-1.437],
+1.916],
 "Test Memories": [
-13332]
+10656]
 }
 ,{
 "Algorithm Name": "VectorVectorContainer",
-"Type": "ParallelInplace",
+"Type": "ParallelInplace#2",
 "Graph Name": "bn-100k-662k.edges",
 "Test Times": [
-121.55],
+109.606],
 "Test Memories": [
-1.63358e+07]
+1.16283e+07]
 }
 ,{
 "Algorithm Name": "VectorVectorContainer",
-"Type": "ParallelInplace",
+"Type": "ParallelInplace#2",
 "Graph Name": "bn-434k-16M.edges",
 "Test Times": [
-1237.96],
+1499.52],
 "Test Memories": [
-1.21666e+08]
+1.13221e+08]
 }
 ,{
 "Algorithm Name": "VectorVectorContainer",
-"Type": "ParallelInplace",
+"Type": "ParallelInplace#2",
 "Graph Name": "bn-449k-3.3M.edges",
 "Test Times": [
-647.694],
+563.011],
 "Test Memories": [
-9.24397e+07]
+5.76692e+07]
 }
 ,{
 "Algorithm Name": "VectorVectorContainer",
-"Type": "ParallelInplace",
+"Type": "ParallelInplace#2",
 "Graph Name": "bn-800-19k.edges",
 "Test Times": [
-7.228],
+3.085],
 "Test Memories": [
-194288]
+165708]
 }
+,{
+"Algorithm Name": "VectorVectorContainer",
+"Type": "ParallelInplace#2",
+"Graph Name": "bn-human-BNU_1_0025868_session_1-bg_150M.edges",
+"Test Times": [
+15971.8],
+"Test Memories": [
+9.66405e+08]
+}
+,{
+"Algorithm Name": "VectorVectorContainer",
+"Type": "ParallelInplace#2",
+"Graph Name": "bn-human-BNU_1_0025869_session_2-bg_150M.edges",
+"Test Times": [
+16079.8],
+"Test Memories": [
+9.71062e+08]
+}
+,{
+"Algorithm Name": "VectorVectorContainer",
+"Type": "ParallelInplace#2",
+"Graph Name": "web-wikipedia2009.mtx",
+"Test Times": [
+1190.56],
+"Test Memories": [
+3.54774e+08]
+}
+,{
+"Algorithm Name": "VectorVectorContainer",
+"Type": "ParallelInplace#2",
+"Graph Name": "ca-IMDB.edges",
+"Test Times": [
+656.599],
+"Test Memories": [
+5.84148e+07]
+}
+,{
+"Algorithm Name": "VectorVectorContainer",
+"Type": "ParallelInplace#2",
+"Graph Name": "zn-1.8M-166M.edges",
+"Test Times": [
+17116.9],
+"Test Memories": [
+1.03283e+09]
+}
+,{
+"Algorithm Name": "VectorVectorContainer",
+"Type": "ParallelInplace#4",
+"Graph Name": "bn-7k-50k.edges",
+"Test Times": [
+23.74],
+"Test Memories": [
+1.40669e+06]
+}
+,{
+"Algorithm Name": "VectorVectorContainer",
+"Type": "ParallelInplace#4",
+"Graph Name": "bn-34k-181k.edges",
+"Test Times": [
+39.267],
+"Test Memories": [
+6.58442e+06]
+}
+,{
+"Algorithm Name": "VectorVectorContainer",
+"Type": "ParallelInplace#4",
+"Graph Name": "bn-65-1K.edges",
+"Test Times": [
+0.455],
+"Test Memories": [
+15924]
+}
+,{
+"Algorithm Name": "VectorVectorContainer",
+"Type": "ParallelInplace#4",
+"Graph Name": "bn-100k-662k.edges",
+"Test Times": [
+105.325],
+"Test Memories": [
+1.8757e+07]
+}
+,{
+"Algorithm Name": "VectorVectorContainer",
+"Type": "ParallelInplace#4",
+"Graph Name": "bn-434k-16M.edges",
+"Test Times": [
+1280.65],
+"Test Memories": [
+1.36632e+08]
+}
+,{
+"Algorithm Name": "VectorVectorContainer",
+"Type": "ParallelInplace#4",
+"Graph Name": "bn-449k-3.3M.edges",
+"Test Times": [
+425.216],
+"Test Memories": [
+1.02732e+08]
+}
+,{
+"Algorithm Name": "VectorVectorContainer",
+"Type": "ParallelInplace#4",
+"Graph Name": "bn-800-19k.edges",
+"Test Times": [
+2.824],
+"Test Memories": [
+229776]
+}
+,{
+"Algorithm Name": "VectorVectorContainer",
+"Type": "ParallelInplace#4",
+"Graph Name": "bn-human-BNU_1_0025868_session_1-bg_150M.edges",
+"Test Times": [
+9469.3],
+"Test Memories": [
+9.96793e+08]
+}
+,{
+"Algorithm Name": "VectorVectorContainer",
+"Type": "ParallelInplace#4",
+"Graph Name": "bn-human-BNU_1_0025869_session_2-bg_150M.edges",
+"Test Times": [
+10835],
+"Test Memories": [
+1.00235e+09]
+}
+,{
+"Algorithm Name": "VectorVectorContainer",
+"Type": "ParallelInplace#4",
+"Graph Name": "web-wikipedia2009.mtx",
+"Test Times": [
+1100],
+"Test Memories": [
+4.74994e+08]
+}
+,{
+"Algorithm Name": "VectorVectorContainer",
+"Type": "ParallelInplace#4",
+"Graph Name": "ca-IMDB.edges",
+"Test Times": [
+596.117],
+"Test Memories": [
+1.01598e+08]
+}
+,{
+"Algorithm Name": "VectorVectorContainer",
+"Type": "ParallelInplace#4",
+"Graph Name": "zn-1.8M-166M.edges",
+"Test Times": [
+12284.8],
+"Test Memories": [
+1.16194e+09]
+}
+,{
+"Algorithm Name": "VectorVectorContainer",
+"Type": "ParallelInplace#8",
+"Graph Name": "bn-7k-50k.edges",
+"Test Times": [
+52.455],
+"Test Memories": [
+2.3107e+06]
+}
+,{
+"Algorithm Name": "VectorVectorContainer",
+"Type": "ParallelInplace#8",
+"Graph Name": "bn-34k-181k.edges",
+"Test Times": [
+56.927],
+"Test Memories": [
+1.10694e+07]
+}
+,{
+"Algorithm Name": "VectorVectorContainer",
+"Type": "ParallelInplace#8",
+"Graph Name": "bn-65-1K.edges",
+"Test Times": [
+0.771],
+"Test Memories": [
+25744]
+}
+,{
+"Algorithm Name": "VectorVectorContainer",
+"Type": "ParallelInplace#8",
+"Graph Name": "bn-100k-662k.edges",
+"Test Times": [
+119.598],
+"Test Memories": [
+3.53493e+07]
+}
+,{
+"Algorithm Name": "VectorVectorContainer",
+"Type": "ParallelInplace#8",
+"Graph Name": "bn-434k-16M.edges",
+"Test Times": [
+782.662],
+"Test Memories": [
+1.73894e+08]
+}
+,{
+"Algorithm Name": "VectorVectorContainer",
+"Type": "ParallelInplace#8",
+"Graph Name": "bn-449k-3.3M.edges",
+"Test Times": [
+469.685],
+"Test Memories": [
+1.75244e+08]
+}
+,{
+"Algorithm Name": "VectorVectorContainer",
+"Type": "ParallelInplace#8",
+"Graph Name": "bn-800-19k.edges",
+"Test Times": [
+1.948],
+"Test Memories": [
+331492]
+}
+,{
+"Algorithm Name": "VectorVectorContainer",
+"Type": "ParallelInplace#8",
+"Graph Name": "bn-human-BNU_1_0025868_session_1-bg_150M.edges",
+"Test Times": [
+5510],
+"Test Memories": [
+1.15011e+09]
+}
+,{
+"Algorithm Name": "VectorVectorContainer",
+"Type": "ParallelInplace#8",
+"Graph Name": "bn-human-BNU_1_0025869_session_2-bg_150M.edges",
+"Test Times": [
+6218.43],
+"Test Memories": [
+1.1597e+09]
+}
+,{
+"Algorithm Name": "VectorVectorContainer",
+"Type": "ParallelInplace#8",
+"Graph Name": "web-wikipedia2009.mtx",
+"Test Times": [
+1197.54],
+"Test Memories": [
+7.09035e+08]
+}
+,{
+"Algorithm Name": "VectorVectorContainer",
+"Type": "ParallelInplace#8",
+"Graph Name": "ca-IMDB.edges",
+"Test Times": [
+446.196],
+"Test Memories": [
+1.52856e+08]
+}
+,{
+"Algorithm Name": "VectorVectorContainer",
+"Type": "ParallelInplace#8",
+"Graph Name": "zn-1.8M-166M.edges",
+"Test Times": [
+6438.94],
+"Test Memories": [
+1.33941e+09]
+}
+,{
+"Algorithm Name": "VectorVectorContainer",
+"Type": "ParallelInplace#12",
+"Graph Name": "bn-7k-50k.edges",
+"Test Times": [
+25.709],
+"Test Memories": [
+3.30277e+06]
+}
+,{
+"Algorithm Name": "VectorVectorContainer",
+"Type": "ParallelInplace#12",
+"Graph Name": "bn-34k-181k.edges",
+"Test Times": [
+37.321],
+"Test Memories": [
+1.33126e+07]
+}
+,{
+"Algorithm Name": "VectorVectorContainer",
+"Type": "ParallelInplace#12",
+"Graph Name": "bn-65-1K.edges",
+"Test Times": [
+0.535],
+"Test Memories": [
+36496]
+}
+,{
+"Algorithm Name": "VectorVectorContainer",
+"Type": "ParallelInplace#12",
+"Graph Name": "bn-100k-662k.edges",
+"Test Times": [
+98.883],
+"Test Memories": [
+4.82824e+07]
+}
+,{
+"Algorithm Name": "VectorVectorContainer",
+"Type": "ParallelInplace#12",
+"Graph Name": "bn-434k-16M.edges",
+"Test Times": [
+717.952],
+"Test Memories": [
+2.0922e+08]
+}
+,{
+"Algorithm Name": "VectorVectorContainer",
+"Type": "ParallelInplace#12",
+"Graph Name": "bn-449k-3.3M.edges",
+"Test Times": [
+460.041],
+"Test Memories": [
+2.28578e+08]
+}
+,{
+"Algorithm Name": "VectorVectorContainer",
+"Type": "ParallelInplace#12",
+"Graph Name": "bn-800-19k.edges",
+"Test Times": [
+1.609],
+"Test Memories": [
+454004]
+}
+,{
+"Algorithm Name": "VectorVectorContainer",
+"Type": "ParallelInplace#12",
+"Graph Name": "bn-human-BNU_1_0025868_session_1-bg_150M.edges",
+"Test Times": [
+4957.42],
+"Test Memories": [
+1.31063e+09]
+}
+,{
+"Algorithm Name": "VectorVectorContainer",
+"Type": "ParallelInplace#12",
+"Graph Name": "bn-human-BNU_1_0025869_session_2-bg_150M.edges",
+"Test Times": [
+5035.06],
+"Test Memories": [
+1.30643e+09]
+}
+,{
+"Algorithm Name": "VectorVectorContainer",
+"Type": "ParallelInplace#12",
+"Graph Name": "web-wikipedia2009.mtx",
+"Test Times": [
+1432.01],
+"Test Memories": [
+9.48895e+08]
+}
+,{
+"Algorithm Name": "VectorVectorContainer",
+"Type": "ParallelInplace#12",
+"Graph Name": "ca-IMDB.edges",
+"Test Times": [
+562.388],
+"Test Memories": [
+2.21127e+08]
+}
+,{
+"Algorithm Name": "VectorVectorContainer",
+"Type": "ParallelInplace#12",
+"Graph Name": "zn-1.8M-166M.edges",
+"Test Times": [
+5121.73],
+"Test Memories": [
+1.52667e+09]
+}
+,{
+"Algorithm Name": "VectorVectorContainer",
+"Type": "ParallelInplace#16",
+"Graph Name": "bn-7k-50k.edges",
+"Test Times": [
+34.379],
+"Test Memories": [
+4.16977e+06]
+}
+,{
+"Algorithm Name": "VectorVectorContainer",
+"Type": "ParallelInplace#16",
+"Graph Name": "bn-34k-181k.edges",
+"Test Times": [
+33.71],
+"Test Memories": [
+1.79295e+07]
+}
+,{
+"Algorithm Name": "VectorVectorContainer",
+"Type": "ParallelInplace#16",
+"Graph Name": "bn-65-1K.edges",
+"Test Times": [
+0.652],
+"Test Memories": [
+46788]
+}
+,{
+"Algorithm Name": "VectorVectorContainer",
+"Type": "ParallelInplace#16",
+"Graph Name": "bn-100k-662k.edges",
+"Test Times": [
+114.748],
+"Test Memories": [
+6.10325e+07]
+}
+,{
+"Algorithm Name": "VectorVectorContainer",
+"Type": "ParallelInplace#16",
+"Graph Name": "bn-434k-16M.edges",
+"Test Times": [
+687.839],
+"Test Memories": [
+2.45009e+08]
+}
+,{
+"Algorithm Name": "VectorVectorContainer",
+"Type": "ParallelInplace#16",
+"Graph Name": "bn-449k-3.3M.edges",
+"Test Times": [
+483.285],
+"Test Memories": [
+2.9549e+08]
+}
+,{
+"Algorithm Name": "VectorVectorContainer",
+"Type": "ParallelInplace#16",
+"Graph Name": "bn-800-19k.edges",
+"Test Times": [
+1.842],
+"Test Memories": [
+569988]
+}
+,{
+"Algorithm Name": "VectorVectorContainer",
+"Type": "ParallelInplace#16",
+"Graph Name": "bn-human-BNU_1_0025868_session_1-bg_150M.edges",
+"Test Times": [
+4318.41],
+"Test Memories": [
+1.47032e+09]
+}
+,{
+"Algorithm Name": "VectorVectorContainer",
+"Type": "ParallelInplace#16",
+"Graph Name": "bn-human-BNU_1_0025869_session_2-bg_150M.edges",
+"Test Times": [
+4685.52],
+"Test Memories": [
+1.46313e+09]
+}
+,{
+"Algorithm Name": "VectorVectorContainer",
+"Type": "ParallelInplace#16",
+"Graph Name": "web-wikipedia2009.mtx",
+"Test Times": [
+1595.13],
+"Test Memories": [
+1.17402e+09]
+}
+,{
+"Algorithm Name": "VectorVectorContainer",
+"Type": "ParallelInplace#16",
+"Graph Name": "ca-IMDB.edges",
+"Test Times": [
+524.118],
+"Test Memories": [
+2.64028e+08]
+}
+,{
+"Algorithm Name": "VectorVectorContainer",
+"Type": "ParallelInplace#16",
+"Graph Name": "zn-1.8M-166M.edges",
+"Test Times": [
+5042.14],
+"Test Memories": [
+1.71792e+09]
+}
+]

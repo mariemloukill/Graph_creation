@@ -1,0 +1,1125 @@
+Testing on graph file 'C2000-9.edges':
+VectorVectorContainer....................................................421.382 ms
+Memory usage: 10327212 bytes
+Testing on graph file 'bn-1.8M-166M.edges':
+VectorVectorContainer....................................................37032.2 ms
+Memory usage: 1029750060 bytes
+Testing on graph file 'bn-100k-662k.edges':
+VectorVectorContainer......................................................276.2 ms
+Memory usage: 12116032 bytes
+Testing on graph file 'bn-34k-181k.edges':
+VectorVectorContainer....................................................69.5122 ms
+Memory usage: 3369556 bytes
+Testing on graph file 'bn-434k-16M.edges':
+VectorVectorContainer.....................................................4155.4 ms
+Memory usage: 132191196 bytes
+Testing on graph file 'bn-449k-3.3M.edges':
+VectorVectorContainer....................................................1325.18 ms
+Memory usage: 61074316 bytes
+Testing on graph file 'bn-65-1K.edges':
+VectorVectorContainer.....................................................1.3218 ms
+Memory usage: 11672 bytes
+Testing on graph file 'bn-7k-50k.edges':
+VectorVectorContainer....................................................18.0572 ms
+Memory usage: 734524 bytes
+Testing on graph file 'bn-800-19k.edges':
+VectorVectorContainer.....................................................5.3831 ms
+Memory usage: 158724 bytes
+Testing on graph file 'bn-human-BNU_1_0025868_session_1-bg_150M.edges':
+VectorVectorContainer....................................................33457.7 ms
+Memory usage: 1021267396 bytes
+Testing on graph file 'bn-human-BNU_1_0025869_session_2-bg_150M.edges':
+VectorVectorContainer....................................................33559.1 ms
+Memory usage: 1028927096 bytes
+Testing on graph file 'bn-human-BNU_1_0025871_session_1-bg_170M.edges':
+VectorVectorContainer....................................................37153.2 ms
+Memory usage: 1111582356 bytes
+Testing on graph file 'bn-human-BNU_1_0025876_session_2-bg_140M.edges':
+VectorVectorContainer....................................................31332.9 ms
+Memory usage: 987000268 bytes
+Testing on graph file 'bn-human-BNU_1_0025889_session_2_130M.edges':
+VectorVectorContainer....................................................29957.2 ms
+Memory usage: 968120844 bytes
+Testing on graph file 'bn-human-BNU_1_0025913_session_2_180M.edges':
+VectorVectorContainer......................................................40525 ms
+Memory usage: 1205090804 bytes
+Testing on graph file 'bn-human-BNU_1_0025914_session_2_100M.edges':
+VectorVectorContainer....................................................23815.4 ms
+Memory usage: 784464712 bytes
+Testing on graph file 'bn-human-BNU_1_0025916_session_1_110M.edges':
+VectorVectorContainer....................................................25517.1 ms
+Memory usage: 791511736 bytes
+Testing on graph file 'bn-human-BNU_1_0025919_session_1.edges':
+VectorVectorContainer....................................................44251.6 ms
+Memory usage: 1322083344 bytes
+Testing on graph file 'bn-human-BNU_1_0025919_session_1_200M.edges':
+VectorVectorContainer....................................................44319.9 ms
+Memory usage: 1322083344 bytes
+Testing on graph file 'bn-human-Jung2015_M7101234.edges':
+VectorVectorContainer....................................................13712.8 ms
+Memory usage: 411658108 bytes
+Testing on graph file 'bn-human-Jung2015_M8703600.edges':
+VectorVectorContainer....................................................12878.1 ms
+Memory usage: 418058992 bytes
+Testing on graph file 'bn-human-Jung2015_M87101049_190M.edges':
+VectorVectorContainer....................................................42284.4 ms
+Memory usage: 1262368816 bytes
+Testing on graph file 'bn-human-Jung2015_M87101705_200M.edges':
+VectorVectorContainer....................................................44298.5 ms
+Memory usage: 1307090688 bytes
+Testing on graph file 'bn-human-Jung2015_M87104201_190M.edges':
+VectorVectorContainer....................................................42073.1 ms
+Memory usage: 1262803708 bytes
+Testing on graph file 'bn-human-Jung2015_M87104300_70M.edges':
+VectorVectorContainer....................................................16491.3 ms
+Memory usage: 585245792 bytes
+Testing on graph file 'bn-human-Jung2015_M87104509_50M.edges':
+VectorVectorContainer....................................................12362.5 ms
+Memory usage: 437708000 bytes
+Testing on graph file 'bn-human-Jung2015_M87107781_70M.edges':
+VectorVectorContainer....................................................17123.7 ms
+Memory usage: 573607200 bytes
+Testing on graph file 'bn-human-Jung2015_M87110148_140M.edges':
+VectorVectorContainer....................................................32281.9 ms
+Memory usage: 1018470908 bytes
+Testing on graph file 'bn-human-Jung2015_M87110650_40M.edges':
+VectorVectorContainer....................................................10334.5 ms
+Memory usage: 414864412 bytes
+Testing on graph file 'bn-human-Jung2015_M87112427_170M.edges':
+VectorVectorContainer....................................................37943.8 ms
+Memory usage: 1134093540 bytes
+Testing on graph file 'bn-human-Jung2015_M87113679_60M.edges':
+VectorVectorContainer....................................................15329.7 ms
+Memory usage: 529379820 bytes
+Testing on graph file 'bn-human-Jung2015_M87113878.edges':
+VectorVectorContainer....................................................57828.1 ms
+Memory usage: 1663550028 bytes
+Testing on graph file 'bn-human-Jung2015_M87114342_90M.edges':
+VectorVectorContainer....................................................21625.4 ms
+Memory usage: 655023300 bytes
+Testing on graph file 'bn-human-Jung2015_M87116523_80M.edges':
+VectorVectorContainer....................................................16650.4 ms
+Memory usage: 480498444 bytes
+Testing on graph file 'bn-human-Jung2015_M87117093_120M.edges':
+VectorVectorContainer....................................................28376.1 ms
+Memory usage: 872591080 bytes
+Testing on graph file 'bn-human-Jung2015_M87118347_80M.edges':
+VectorVectorContainer....................................................17444.5 ms
+Memory usage: 519472600 bytes
+Testing on graph file 'bn-human-Jung2015_M87118465_180M.edges':
+VectorVectorContainer....................................................40065.6 ms
+Memory usage: 1203038556 bytes
+Testing on graph file 'bn-human-Jung2015_M87119472_60M.edges':
+VectorVectorContainer....................................................14625.7 ms
+Memory usage: 472963804 bytes
+Testing on graph file 'bn-human-Jung2015_M87124563_160M.edges':
+VectorVectorContainer....................................................36151.4 ms
+Memory usage: 1105040700 bytes
+Testing on graph file 'bn-human-Jung2015_M87125286_210M.edges':
+VectorVectorContainer....................................................45994.3 ms
+Memory usage: 1363858068 bytes
+Testing on graph file 'bn-human-Jung2015_M87125334_40M.edges':
+VectorVectorContainer....................................................10532.8 ms
+Memory usage: 395850408 bytes
+Testing on graph file 'bn-human-Jung2015_M87127677_210M.edges':
+VectorVectorContainer....................................................46274.3 ms
+Memory usage: 1371869724 bytes
+Testing on graph file 'ca-IMDB.edges':
+VectorVectorContainer....................................................1352.61 ms
+Memory usage: 64046668 bytes
+Testing on graph file 'ca-hollywood-2009.edges':
+VectorVectorContainer....................................................13582.8 ms
+Memory usage: 399948096 bytes
+Testing on graph file 'cit-patent1.edges':
+VectorVectorContainer.....................................................7212.1 ms
+Memory usage: 337048836 bytes
+Testing on graph file 'delaunay_n24_50M.edges':
+VectorVectorContainer....................................................28673.2 ms
+Memory usage: 1594173396 bytes
+Testing on graph file 'graph500-scale20-ef16_adj_30M.edges':
+VectorVectorContainer....................................................11232.1 ms
+Memory usage: 228143792 bytes
+Testing on graph file 'graph500-scale22-ef16_adj_130M.edges':
+VectorVectorContainer....................................................49994.2 ms
+Memory usage: 917792072 bytes
+Testing on graph file 'hugetric-00010_10M.mtx':
+VectorVectorContainer....................................................9056.34 ms
+Memory usage: 776007572 bytes
+Testing on graph file 'livejournal_160M.edges':
+VectorVectorContainer....................................................41686.8 ms
+Memory usage: 1205688512 bytes
+Testing on graph file 'rgg_n_2_22_s0_30M.edges':
+VectorVectorContainer....................................................12346.1 ms
+Memory usage: 368671556 bytes
+Testing on graph file 'sc-ldoor_20M.edges':
+VectorVectorContainer....................................................6424.15 ms
+Memory usage: 196527352 bytes
+Testing on graph file 'scc_fb-messages.mtx':
+VectorVectorContainer....................................................135.556 ms
+Memory usage: 3178180 bytes
+Testing on graph file 'soc-google-plus.txt':
+VectorVectorContainer....................................................531.854 ms
+Memory usage: 31789000 bytes
+Testing on graph file 'soc-livejournal.mtx':
+VectorVectorContainer....................................................11099.8 ms
+Memory usage: 560416132 bytes
+Testing on graph file 'soc-orkut-dir_120M.edges':
+VectorVectorContainer....................................................29964.9 ms
+Memory usage: 878660436 bytes
+Testing on graph file 'soc-orkut.edges':
+VectorVectorContainer....................................................28666.4 ms
+Memory usage: 808394772 bytes
+Testing on graph file 'soc-orkut_106M.edges':
+VectorVectorContainer......................................................42294 ms
+Memory usage: 815405468 bytes
+Testing on graph file 'soc-pokec.mtx':
+VectorVectorContainer....................................................6904.38 ms
+Memory usage: 217895996 bytes
+Testing on graph file 'soc-sinaweibo_260M.edges':
+VectorVectorContainer.....................................................207884 ms
+Memory usage: 7895100108 bytes
+Testing on graph file 'soc-wiki-Talk-dir.mtx':
+VectorVectorContainer....................................................3415.82 ms
+Memory usage: 198636308 bytes
+Testing on graph file 'socf-konect.edges':
+VectorVectorContainer....................................................54998.9 ms
+Memory usage: 5028624820 bytes
+Testing on graph file 'socfb-B-anon_20M.edges':
+VectorVectorContainer....................................................10068.5 ms
+Memory usage: 311515712 bytes
+Testing on graph file 'socfb-Michigan23.mtx':
+VectorVectorContainer....................................................322.237 ms
+Memory usage: 8811224 bytes
+Testing on graph file 'socfb-Texas84.mtx':
+VectorVectorContainer.....................................................380.66 ms
+Memory usage: 11391404 bytes
+Testing on graph file 'socfb-UIllinois20.mtx':
+VectorVectorContainer....................................................303.923 ms
+Memory usage: 9318084 bytes
+Testing on graph file 'socfb-uci-uni_90M.edges':
+VectorVectorContainer....................................................71886.5 ms
+Memory usage: 7264372688 bytes
+Testing on graph file 'tech-as-skitter.mtx':
+VectorVectorContainer....................................................4294.03 ms
+Memory usage: 140437580 bytes
+Testing on graph file 'tech-as-skitter_10M.mtx':
+VectorVectorContainer.....................................................4021.3 ms
+Memory usage: 140437580 bytes
+Testing on graph file 'tech-ip.edges':
+VectorVectorContainer....................................................6308.67 ms
+Memory usage: 350821204 bytes
+Testing on graph file 'tech-p2p-gnutella.mtx':
+VectorVectorContainer....................................................77.6918 ms
+Memory usage: 5547396 bytes
+Testing on graph file 'testfile.txt':
+VectorVectorContainer.....................................................0.1298 ms
+Memory usage: 1200 bytes
+Testing on graph file 'web-Stanford.mtx':
+VectorVectorContainer....................................................838.217 ms
+Memory usage: 35699420 bytes
+Testing on graph file 'web-uk-2005.mtx':
+VectorVectorContainer....................................................2764.51 ms
+Memory usage: 76734944 bytes
+Testing on graph file 'web-wikipedia2009.mtx':
+VectorVectorContainer....................................................2564.43 ms
+Memory usage: 158421728 bytes
+Testing on graph file 'C2000-9.edges':
+VectorVectorContainer....................................................395.959 ms
+Memory usage: 10491100 bytes
+Testing on graph file 'bn-1.8M-166M.edges':
+VectorVectorContainer....................................................41608.5 ms
+Memory usage: 1120951292 bytes
+Testing on graph file 'bn-100k-662k.edges':
+VectorVectorContainer....................................................328.369 ms
+Memory usage: 16674276 bytes
+Testing on graph file 'bn-34k-181k.edges':
+VectorVectorContainer....................................................84.5019 ms
+Memory usage: 4788620 bytes
+Testing on graph file 'bn-434k-16M.edges':
+VectorVectorContainer....................................................4812.62 ms
+Memory usage: 155237332 bytes
+Testing on graph file 'bn-449k-3.3M.edges':
+VectorVectorContainer....................................................1608.82 ms
+Memory usage: 86129420 bytes
+Testing on graph file 'bn-65-1K.edges':
+VectorVectorContainer.....................................................2.8004 ms
+Memory usage: 16124 bytes
+Testing on graph file 'bn-7k-50k.edges':
+VectorVectorContainer....................................................21.3743 ms
+Memory usage: 1168764 bytes
+Testing on graph file 'bn-800-19k.edges':
+VectorVectorContainer.....................................................8.3942 ms
+Memory usage: 221460 bytes
+Testing on graph file 'bn-human-BNU_1_0025868_session_1-bg_150M.edges':
+VectorVectorContainer....................................................36927.4 ms
+Memory usage: 1055342836 bytes
+Testing on graph file 'bn-human-BNU_1_0025869_session_2-bg_150M.edges':
+VectorVectorContainer....................................................37139.6 ms
+Memory usage: 1059099944 bytes
+Testing on graph file 'bn-human-BNU_1_0025871_session_1-bg_170M.edges':
+VectorVectorContainer....................................................41056.4 ms
+Memory usage: 1178629332 bytes
+Testing on graph file 'bn-human-BNU_1_0025876_session_2-bg_140M.edges':
+VectorVectorContainer....................................................34777.4 ms
+Memory usage: 994361900 bytes
+Testing on graph file 'bn-human-BNU_1_0025889_session_2_130M.edges':
+VectorVectorContainer....................................................32483.2 ms
+Memory usage: 966479772 bytes
+Testing on graph file 'bn-human-BNU_1_0025913_session_2_180M.edges':
+VectorVectorContainer....................................................44359.8 ms
+Memory usage: 1250519876 bytes
+Testing on graph file 'bn-human-BNU_1_0025914_session_2_100M.edges':
+VectorVectorContainer....................................................25898.7 ms
+Memory usage: 792722424 bytes
+Testing on graph file 'bn-human-BNU_1_0025916_session_1_110M.edges':
+VectorVectorContainer....................................................28234.4 ms
+Memory usage: 831092744 bytes
+Testing on graph file 'bn-human-BNU_1_0025919_session_1.edges':
+VectorVectorContainer....................................................49006.2 ms
+Memory usage: 1346866160 bytes
+Testing on graph file 'bn-human-BNU_1_0025919_session_1_200M.edges':
+VectorVectorContainer....................................................49040.9 ms
+Memory usage: 1346866160 bytes
+Testing on graph file 'bn-human-Jung2015_M7101234.edges':
+VectorVectorContainer....................................................15671.2 ms
+Memory usage: 435661756 bytes
+Testing on graph file 'bn-human-Jung2015_M8703600.edges':
+VectorVectorContainer....................................................14890.4 ms
+Memory usage: 524742972 bytes
+Testing on graph file 'bn-human-Jung2015_M87101049_190M.edges':
+VectorVectorContainer......................................................46683 ms
+Memory usage: 1288885392 bytes
+Testing on graph file 'bn-human-Jung2015_M87101705_200M.edges':
+VectorVectorContainer....................................................48973.1 ms
+Memory usage: 1346727280 bytes
+Testing on graph file 'bn-human-Jung2015_M87104201_190M.edges':
+VectorVectorContainer....................................................46389.2 ms
+Memory usage: 1294063148 bytes
+Testing on graph file 'bn-human-Jung2015_M87104300_70M.edges':
+VectorVectorContainer....................................................18159.8 ms
+Memory usage: 577165360 bytes
+Testing on graph file 'bn-human-Jung2015_M87104509_50M.edges':
+VectorVectorContainer....................................................13770.7 ms
+Memory usage: 488002440 bytes
+Testing on graph file 'bn-human-Jung2015_M87107781_70M.edges':
+VectorVectorContainer....................................................19181.2 ms
+Memory usage: 560641744 bytes
+Testing on graph file 'bn-human-Jung2015_M87110148_140M.edges':
+VectorVectorContainer....................................................35384.6 ms
+Memory usage: 1030707820 bytes
+Testing on graph file 'bn-human-Jung2015_M87110650_40M.edges':
+VectorVectorContainer......................................................11528 ms
+Memory usage: 455017708 bytes
+Testing on graph file 'bn-human-Jung2015_M87112427_170M.edges':
+VectorVectorContainer....................................................41637.7 ms
+Memory usage: 1179429716 bytes
+Testing on graph file 'bn-human-Jung2015_M87113679_60M.edges':
+VectorVectorContainer....................................................16877.2 ms
+Memory usage: 572055788 bytes
+Testing on graph file 'bn-human-Jung2015_M87113878.edges':
+VectorVectorContainer....................................................64624.1 ms
+Memory usage: 1729004172 bytes
+Testing on graph file 'bn-human-Jung2015_M87114342_90M.edges':
+VectorVectorContainer....................................................23741.8 ms
+Memory usage: 757189692 bytes
+Testing on graph file 'bn-human-Jung2015_M87116523_80M.edges':
+VectorVectorContainer....................................................18941.3 ms
+Memory usage: 529911532 bytes
+Testing on graph file 'bn-human-Jung2015_M87117093_120M.edges':
+VectorVectorContainer....................................................31538.6 ms
+Memory usage: 900024472 bytes
+Testing on graph file 'bn-human-Jung2015_M87118347_80M.edges':
+VectorVectorContainer....................................................19466.2 ms
+Memory usage: 545671656 bytes
+Testing on graph file 'bn-human-Jung2015_M87118465_180M.edges':
+VectorVectorContainer....................................................44624.5 ms
+Memory usage: 1225603708 bytes
+Testing on graph file 'bn-human-Jung2015_M87119472_60M.edges':
+VectorVectorContainer....................................................16387.1 ms
+Memory usage: 570098684 bytes
+Testing on graph file 'bn-human-Jung2015_M87124563_160M.edges':
+VectorVectorContainer....................................................40038.9 ms
+Memory usage: 1116326460 bytes
+Testing on graph file 'bn-human-Jung2015_M87125286_210M.edges':
+VectorVectorContainer....................................................51138.9 ms
+Memory usage: 1397909748 bytes
+Testing on graph file 'bn-human-Jung2015_M87125334_40M.edges':
+VectorVectorContainer....................................................11756.8 ms
+Memory usage: 472528832 bytes
+Testing on graph file 'bn-human-Jung2015_M87127677_210M.edges':
+VectorVectorContainer....................................................50584.8 ms
+Memory usage: 1399755900 bytes
+Testing on graph file 'ca-IMDB.edges':
+VectorVectorContainer....................................................1584.68 ms
+Memory usage: 87266732 bytes
+Testing on graph file 'ca-hollywood-2009.edges':
+VectorVectorContainer....................................................15340.2 ms
+Memory usage: 455809700 bytes
+Testing on graph file 'cit-patent1.edges':
+VectorVectorContainer....................................................8862.82 ms
+Memory usage: 632897228 bytes
+Testing on graph file 'delaunay_n24_50M.edges':
+VectorVectorContainer....................................................36652.9 ms
+Memory usage: 2740400276 bytes
+Testing on graph file 'graph500-scale20-ef16_adj_30M.edges':
+VectorVectorContainer....................................................10545.5 ms
+Memory usage: 268935900 bytes
+Testing on graph file 'graph500-scale22-ef16_adj_130M.edges':
+VectorVectorContainer....................................................44774.2 ms
+Memory usage: 1105399448 bytes
+Testing on graph file 'hugetric-00010_10M.mtx':
+VectorVectorContainer....................................................12158.6 ms
+Memory usage: 1367604908 bytes
+Testing on graph file 'livejournal_160M.edges':
+VectorVectorContainer....................................................47693.9 ms
+Memory usage: 1459944884 bytes
+Testing on graph file 'rgg_n_2_22_s0_30M.edges':
+VectorVectorContainer....................................................14876.9 ms
+Memory usage: 677325308 bytes
+Testing on graph file 'sc-ldoor_20M.edges':
+VectorVectorContainer....................................................7579.49 ms
+Memory usage: 283906592 bytes
+Testing on graph file 'scc_fb-messages.mtx':
+VectorVectorContainer....................................................133.501 ms
+Memory usage: 3334404 bytes
+Testing on graph file 'soc-google-plus.txt':
+VectorVectorContainer....................................................643.573 ms
+Memory usage: 38709656 bytes
+Testing on graph file 'soc-livejournal.mtx':
+VectorVectorContainer....................................................13498.7 ms
+Memory usage: 771844892 bytes
+Testing on graph file 'soc-orkut-dir_120M.edges':
+VectorVectorContainer......................................................34016 ms
+Memory usage: 1075836456 bytes
+Testing on graph file 'soc-orkut.edges':
+VectorVectorContainer....................................................33127.8 ms
+Memory usage: 1090218148 bytes
+Testing on graph file 'soc-orkut_106M.edges':
+VectorVectorContainer....................................................39479.8 ms
+Memory usage: 1051180892 bytes
+Testing on graph file 'soc-pokec.mtx':
+VectorVectorContainer....................................................7592.94 ms
+Memory usage: 244824272 bytes
+Testing on graph file 'soc-sinaweibo_260M.edges':
+VectorVectorContainer....................................................CRASHED
+Reason: std::bad_alloc
+Testing on graph file 'soc-wiki-Talk-dir.mtx':
+VectorVectorContainer....................................................2510.59 ms
+Memory usage: 245847672 bytes
+Testing on graph file 'socf-konect.edges':
+VectorVectorContainer....................................................79500.9 ms
+Memory usage: 8931648516 bytes
+Testing on graph file 'socfb-B-anon_20M.edges':
+VectorVectorContainer....................................................10783.1 ms
+Memory usage: 533587528 bytes
+Testing on graph file 'socfb-Michigan23.mtx':
+VectorVectorContainer....................................................356.312 ms
+Memory usage: 11848764 bytes
+Testing on graph file 'socfb-Texas84.mtx':
+VectorVectorContainer....................................................433.666 ms
+Memory usage: 13934200 bytes
+Testing on graph file 'socfb-UIllinois20.mtx':
+VectorVectorContainer....................................................351.793 ms
+Memory usage: 12429244 bytes
+Testing on graph file 'socfb-uci-uni_90M.edges':
+VectorVectorContainer......................................................90855 ms
+Memory usage: 11406591660 bytes
+Testing on graph file 'tech-as-skitter.mtx':
+VectorVectorContainer....................................................5013.79 ms
+Memory usage: 233500620 bytes
+Testing on graph file 'tech-as-skitter_10M.mtx':
+VectorVectorContainer....................................................4797.49 ms
+Memory usage: 233500620 bytes
+Testing on graph file 'tech-ip.edges':
+VectorVectorContainer....................................................7646.95 ms
+Memory usage: 430036084 bytes
+Testing on graph file 'tech-p2p-gnutella.mtx':
+VectorVectorContainer....................................................115.322 ms
+Memory usage: 10036600 bytes
+Testing on graph file 'testfile.txt':
+VectorVectorContainer.....................................................0.1811 ms
+Memory usage: 2400 bytes
+Testing on graph file 'web-Stanford.mtx':
+VectorVectorContainer....................................................985.032 ms
+Memory usage: 46996212 bytes
+Testing on graph file 'web-uk-2005.mtx':
+VectorVectorContainer....................................................3209.55 ms
+Memory usage: 84242752 bytes
+Testing on graph file 'web-wikipedia2009.mtx':
+VectorVectorContainer....................................................3258.83 ms
+Memory usage: 253610816 bytes
+Testing on graph file 'C2000-9.edges':
+VectorVectorContainer....................................................412.031 ms
+Memory usage: 10739180 bytes
+Testing on graph file 'bn-1.8M-166M.edges':
+VectorVectorContainer....................................................43350.4 ms
+Memory usage: 1290839596 bytes
+Testing on graph file 'bn-100k-662k.edges':
+VectorVectorContainer....................................................404.008 ms
+Memory usage: 28077800 bytes
+Testing on graph file 'bn-34k-181k.edges':
+VectorVectorContainer.....................................................110.59 ms
+Memory usage: 8260448 bytes
+Testing on graph file 'bn-434k-16M.edges':
+VectorVectorContainer....................................................5078.79 ms
+Memory usage: 186106732 bytes
+Testing on graph file 'bn-449k-3.3M.edges':
+VectorVectorContainer.....................................................2045.9 ms
+Memory usage: 146606572 bytes
+Testing on graph file 'bn-65-1K.edges':
+VectorVectorContainer.....................................................1.2261 ms
+Memory usage: 25840 bytes
+Testing on graph file 'bn-7k-50k.edges':
+VectorVectorContainer....................................................33.8057 ms
+Memory usage: 1935512 bytes
+Testing on graph file 'bn-800-19k.edges':
+VectorVectorContainer.....................................................9.4789 ms
+Memory usage: 343052 bytes
+Testing on graph file 'bn-human-BNU_1_0025868_session_1-bg_150M.edges':
+VectorVectorContainer....................................................39135.1 ms
+Memory usage: 1217012196 bytes
+Testing on graph file 'bn-human-BNU_1_0025869_session_2-bg_150M.edges':
+VectorVectorContainer....................................................39449.2 ms
+Memory usage: 1226120600 bytes
+Testing on graph file 'bn-human-BNU_1_0025871_session_1-bg_170M.edges':
+VectorVectorContainer....................................................44053.8 ms
+Memory usage: 1347460948 bytes
+Testing on graph file 'bn-human-BNU_1_0025876_session_2-bg_140M.edges':
+VectorVectorContainer....................................................36519.6 ms
+Memory usage: 1147873116 bytes
+Testing on graph file 'bn-human-BNU_1_0025889_session_2_130M.edges':
+VectorVectorContainer....................................................34770.4 ms
+Memory usage: 1131253612 bytes
+Testing on graph file 'bn-human-BNU_1_0025913_session_2_180M.edges':
+VectorVectorContainer....................................................46984.4 ms
+Memory usage: 1421280276 bytes
+Testing on graph file 'bn-human-BNU_1_0025914_session_2_100M.edges':
+VectorVectorContainer....................................................27756.6 ms
+Memory usage: 953185624 bytes
+Testing on graph file 'bn-human-BNU_1_0025916_session_1_110M.edges':
+VectorVectorContainer....................................................29937.8 ms
+Memory usage: 991029320 bytes
+Testing on graph file 'bn-human-BNU_1_0025919_session_1.edges':
+VectorVectorContainer....................................................51140.6 ms
+Memory usage: 1504058852 bytes
+Testing on graph file 'bn-human-BNU_1_0025919_session_1_200M.edges':
+VectorVectorContainer....................................................50978.1 ms
+Memory usage: 1504058852 bytes
+Testing on graph file 'bn-human-Jung2015_M7101234.edges':
+VectorVectorContainer......................................................16205 ms
+Memory usage: 493362668 bytes
+Testing on graph file 'bn-human-Jung2015_M8703600.edges':
+VectorVectorContainer....................................................15827.5 ms
+Memory usage: 676805320 bytes
+Testing on graph file 'bn-human-Jung2015_M87101049_190M.edges':
+VectorVectorContainer....................................................48939.6 ms
+Memory usage: 1443828928 bytes
+Testing on graph file 'bn-human-Jung2015_M87101705_200M.edges':
+VectorVectorContainer....................................................50956.6 ms
+Memory usage: 1517661872 bytes
+Testing on graph file 'bn-human-Jung2015_M87104201_190M.edges':
+VectorVectorContainer....................................................49049.6 ms
+Memory usage: 1460652316 bytes
+Testing on graph file 'bn-human-Jung2015_M87104300_70M.edges':
+VectorVectorContainer....................................................19330.7 ms
+Memory usage: 712536384 bytes
+Testing on graph file 'bn-human-Jung2015_M87104509_50M.edges':
+VectorVectorContainer....................................................15122.6 ms
+Memory usage: 662194764 bytes
+Testing on graph file 'bn-human-Jung2015_M87107781_70M.edges':
+VectorVectorContainer....................................................20214.8 ms
+Memory usage: 704728984 bytes
+Testing on graph file 'bn-human-Jung2015_M87110148_140M.edges':
+VectorVectorContainer....................................................37778.9 ms
+Memory usage: 1198059516 bytes
+Testing on graph file 'bn-human-Jung2015_M87110650_40M.edges':
+VectorVectorContainer....................................................12705.7 ms
+Memory usage: 598129116 bytes
+Testing on graph file 'bn-human-Jung2015_M87112427_170M.edges':
+VectorVectorContainer....................................................44217.9 ms
+Memory usage: 1353995092 bytes
+Testing on graph file 'bn-human-Jung2015_M87113679_60M.edges':
+VectorVectorContainer....................................................18281.6 ms
+Memory usage: 716384512 bytes
+Testing on graph file 'bn-human-Jung2015_M87113878.edges':
+VectorVectorContainer....................................................67037.3 ms
+Memory usage: 1884051132 bytes
+Testing on graph file 'bn-human-Jung2015_M87114342_90M.edges':
+VectorVectorContainer....................................................25735.5 ms
+Memory usage: 949331148 bytes
+Testing on graph file 'bn-human-Jung2015_M87116523_80M.edges':
+VectorVectorContainer....................................................19602.2 ms
+Memory usage: 597309516 bytes
+Testing on graph file 'bn-human-Jung2015_M87117093_120M.edges':
+VectorVectorContainer....................................................33008.3 ms
+Memory usage: 1059838440 bytes
+Testing on graph file 'bn-human-Jung2015_M87118347_80M.edges':
+VectorVectorContainer....................................................20198.4 ms
+Memory usage: 617357208 bytes
+Testing on graph file 'bn-human-Jung2015_M87118465_180M.edges':
+VectorVectorContainer....................................................46334.1 ms
+Memory usage: 1373083420 bytes
+Testing on graph file 'bn-human-Jung2015_M87119472_60M.edges':
+VectorVectorContainer....................................................17750.9 ms
+Memory usage: 725013120 bytes
+Testing on graph file 'bn-human-Jung2015_M87124563_160M.edges':
+VectorVectorContainer....................................................41661.6 ms
+Memory usage: 1276263964 bytes
+Testing on graph file 'bn-human-Jung2015_M87125286_210M.edges':
+VectorVectorContainer....................................................53510.4 ms
+Memory usage: 1570477412 bytes
+Testing on graph file 'bn-human-Jung2015_M87125334_40M.edges':
+VectorVectorContainer....................................................13069.3 ms
+Memory usage: 623118960 bytes
+Testing on graph file 'bn-human-Jung2015_M87127677_210M.edges':
+VectorVectorContainer....................................................53094.9 ms
+Memory usage: 1574126508 bytes
+Testing on graph file 'ca-IMDB.edges':
+VectorVectorContainer....................................................1860.71 ms
+Memory usage: 122749048 bytes
+Testing on graph file 'ca-hollywood-2009.edges':
+VectorVectorContainer....................................................16258.1 ms
+Memory usage: 580849644 bytes
+Testing on graph file 'cit-patent1.edges':
+VectorVectorContainer....................................................12913.8 ms
+Memory usage: 1263033136 bytes
+Testing on graph file 'delaunay_n24_50M.edges':
+VectorVectorContainer....................................................54693.9 ms
+Memory usage: 5559317504 bytes
+Testing on graph file 'graph500-scale20-ef16_adj_30M.edges':
+VectorVectorContainer....................................................12324.1 ms
+Memory usage: 367538800 bytes
+Testing on graph file 'graph500-scale22-ef16_adj_130M.edges':
+VectorVectorContainer....................................................51641.6 ms
+Memory usage: 1462439356 bytes
+Testing on graph file 'hugetric-00010_10M.mtx':
+VectorVectorContainer....................................................18542.7 ms
+Memory usage: 2453970696 bytes
+Testing on graph file 'livejournal_160M.edges':
+VectorVectorContainer....................................................50650.8 ms
+Memory usage: 1627487120 bytes
+Testing on graph file 'rgg_n_2_22_s0_30M.edges':
+VectorVectorContainer....................................................19635.7 ms
+Memory usage: 1300341560 bytes
+Testing on graph file 'sc-ldoor_20M.edges':
+VectorVectorContainer....................................................8559.82 ms
+Memory usage: 408730600 bytes
+Testing on graph file 'scc_fb-messages.mtx':
+VectorVectorContainer....................................................127.987 ms
+Memory usage: 3579396 bytes
+Testing on graph file 'soc-google-plus.txt':
+VectorVectorContainer.....................................................749.35 ms
+Memory usage: 52624976 bytes
+Testing on graph file 'soc-livejournal.mtx':
+VectorVectorContainer....................................................15654.6 ms
+Memory usage: 1087531144 bytes
+Testing on graph file 'soc-orkut-dir_120M.edges':
+VectorVectorContainer....................................................34437.9 ms
+Memory usage: 1071012552 bytes
+Testing on graph file 'soc-orkut.edges':
+VectorVectorContainer....................................................34996.7 ms
+Memory usage: 1348266324 bytes
+Testing on graph file 'soc-orkut_106M.edges':
+VectorVectorContainer......................................................47111 ms
+Memory usage: 1543855792 bytes
+Testing on graph file 'soc-pokec.mtx':
+VectorVectorContainer....................................................8659.02 ms
+Memory usage: 377001680 bytes
+Testing on graph file 'soc-sinaweibo_260M.edges':
+VectorVectorContainer....................................................CRASHED
+Reason: std::bad_alloc
+Testing on graph file 'soc-wiki-Talk-dir.mtx':
+VectorVectorContainer....................................................3706.55 ms
+Memory usage: 392877396 bytes
+Testing on graph file 'socf-konect.edges':
+VectorVectorContainer....................................................CRASHED
+Reason: std::bad_alloc
+Testing on graph file 'socfb-B-anon_20M.edges':
+VectorVectorContainer....................................................14339.4 ms
+Memory usage: 1047982496 bytes
+Testing on graph file 'socfb-Michigan23.mtx':
+VectorVectorContainer....................................................408.827 ms
+Memory usage: 16302240 bytes
+Testing on graph file 'socfb-Texas84.mtx':
+VectorVectorContainer....................................................482.371 ms
+Memory usage: 20218316 bytes
+Testing on graph file 'socfb-UIllinois20.mtx':
+VectorVectorContainer....................................................392.744 ms
+Memory usage: 16964272 bytes
+Testing on graph file 'socfb-uci-uni_90M.edges':
+VectorVectorContainer....................................................CRASHED
+Reason: std::bad_alloc
+Testing on graph file 'tech-as-skitter.mtx':
+VectorVectorContainer....................................................5789.32 ms
+Memory usage: 366435676 bytes
+Testing on graph file 'tech-as-skitter_10M.mtx':
+VectorVectorContainer....................................................5798.69 ms
+Memory usage: 366435676 bytes
+Testing on graph file 'tech-ip.edges':
+VectorVectorContainer....................................................8843.92 ms
+Memory usage: 575686004 bytes
+Testing on graph file 'tech-p2p-gnutella.mtx':
+VectorVectorContainer....................................................160.299 ms
+Memory usage: 17477048 bytes
+Testing on graph file 'testfile.txt':
+VectorVectorContainer.....................................................0.3577 ms
+Memory usage: 4800 bytes
+Testing on graph file 'web-Stanford.mtx':
+VectorVectorContainer....................................................1219.47 ms
+Memory usage: 76282800 bytes
+Testing on graph file 'web-uk-2005.mtx':
+VectorVectorContainer....................................................3224.84 ms
+Memory usage: 97569424 bytes
+Testing on graph file 'web-wikipedia2009.mtx':
+VectorVectorContainer....................................................4473.13 ms
+Memory usage: 444364072 bytes
+Testing on graph file 'C2000-9.edges':
+VectorVectorContainer....................................................415.558 ms
+Memory usage: 10996944 bytes
+Testing on graph file 'bn-1.8M-166M.edges':
+VectorVectorContainer......................................................44603 ms
+Memory usage: 1475801576 bytes
+Testing on graph file 'bn-100k-662k.edges':
+VectorVectorContainer....................................................475.597 ms
+Memory usage: 38802560 bytes
+Testing on graph file 'bn-34k-181k.edges':
+VectorVectorContainer.....................................................124.47 ms
+Memory usage: 9711068 bytes
+Testing on graph file 'bn-434k-16M.edges':
+VectorVectorContainer....................................................5252.86 ms
+Memory usage: 217091988 bytes
+Testing on graph file 'bn-449k-3.3M.edges':
+VectorVectorContainer....................................................2255.68 ms
+Memory usage: 182990692 bytes
+Testing on graph file 'bn-65-1K.edges':
+VectorVectorContainer.....................................................1.3241 ms
+Memory usage: 36496 bytes
+Testing on graph file 'bn-7k-50k.edges':
+VectorVectorContainer....................................................40.0595 ms
+Memory usage: 2705872 bytes
+Testing on graph file 'bn-800-19k.edges':
+VectorVectorContainer.....................................................10.038 ms
+Memory usage: 449012 bytes
+Testing on graph file 'bn-human-BNU_1_0025868_session_1-bg_150M.edges':
+VectorVectorContainer....................................................40439.2 ms
+Memory usage: 1380653060 bytes
+Testing on graph file 'bn-human-BNU_1_0025869_session_2-bg_150M.edges':
+VectorVectorContainer....................................................40481.4 ms
+Memory usage: 1376954552 bytes
+Testing on graph file 'bn-human-BNU_1_0025871_session_1-bg_170M.edges':
+VectorVectorContainer....................................................45069.5 ms
+Memory usage: 1520692548 bytes
+Testing on graph file 'bn-human-BNU_1_0025876_session_2-bg_140M.edges':
+VectorVectorContainer....................................................37870.9 ms
+Memory usage: 1302123500 bytes
+Testing on graph file 'bn-human-BNU_1_0025889_session_2_130M.edges':
+VectorVectorContainer....................................................36078.8 ms
+Memory usage: 1295391884 bytes
+Testing on graph file 'bn-human-BNU_1_0025913_session_2_180M.edges':
+VectorVectorContainer....................................................48616.3 ms
+Memory usage: 1580135076 bytes
+Testing on graph file 'bn-human-BNU_1_0025914_session_2_100M.edges':
+VectorVectorContainer......................................................29022 ms
+Memory usage: 1113612088 bytes
+Testing on graph file 'bn-human-BNU_1_0025916_session_1_110M.edges':
+VectorVectorContainer....................................................31316.4 ms
+Memory usage: 1150262232 bytes
+Testing on graph file 'bn-human-BNU_1_0025919_session_1.edges':
+VectorVectorContainer....................................................52604.1 ms
+Memory usage: 1657634180 bytes
+Testing on graph file 'bn-human-BNU_1_0025919_session_1_200M.edges':
+VectorVectorContainer....................................................52533.4 ms
+Memory usage: 1657634180 bytes
+Testing on graph file 'bn-human-Jung2015_M7101234.edges':
+VectorVectorContainer....................................................16574.3 ms
+Memory usage: 546885936 bytes
+Testing on graph file 'bn-human-Jung2015_M8703600.edges':
+VectorVectorContainer....................................................16902.4 ms
+Memory usage: 850458468 bytes
+Testing on graph file 'bn-human-Jung2015_M87101049_190M.edges':
+VectorVectorContainer....................................................50264.6 ms
+Memory usage: 1594728708 bytes
+Testing on graph file 'bn-human-Jung2015_M87101705_200M.edges':
+VectorVectorContainer......................................................52634 ms
+Memory usage: 1674144336 bytes
+Testing on graph file 'bn-human-Jung2015_M87104201_190M.edges':
+VectorVectorContainer....................................................50201.2 ms
+Memory usage: 1627907180 bytes
+Testing on graph file 'bn-human-Jung2015_M87104300_70M.edges':
+VectorVectorContainer....................................................20336.6 ms
+Memory usage: 862669712 bytes
+Testing on graph file 'bn-human-Jung2015_M87104509_50M.edges':
+VectorVectorContainer....................................................16282.1 ms
+Memory usage: 824704872 bytes
+Testing on graph file 'bn-human-Jung2015_M87107781_70M.edges':
+VectorVectorContainer....................................................21268.4 ms
+Memory usage: 844068660 bytes
+Testing on graph file 'bn-human-Jung2015_M87110148_140M.edges':
+VectorVectorContainer....................................................39011.8 ms
+Memory usage: 1370165220 bytes
+Testing on graph file 'bn-human-Jung2015_M87110650_40M.edges':
+VectorVectorContainer....................................................13866.9 ms
+Memory usage: 764921708 bytes
+Testing on graph file 'bn-human-Jung2015_M87112427_170M.edges':
+VectorVectorContainer....................................................45613.5 ms
+Memory usage: 1515719380 bytes
+Testing on graph file 'bn-human-Jung2015_M87113679_60M.edges':
+VectorVectorContainer....................................................19520.6 ms
+Memory usage: 881408252 bytes
+Testing on graph file 'bn-human-Jung2015_M87113878.edges':
+VectorVectorContainer....................................................68842.4 ms
+Memory usage: 2028272364 bytes
+Testing on graph file 'bn-human-Jung2015_M87114342_90M.edges':
+VectorVectorContainer....................................................27065.2 ms
+Memory usage: 1121141316 bytes
+Testing on graph file 'bn-human-Jung2015_M87116523_80M.edges':
+VectorVectorContainer....................................................20107.7 ms
+Memory usage: 666766764 bytes
+Testing on graph file 'bn-human-Jung2015_M87117093_120M.edges':
+VectorVectorContainer....................................................34337.2 ms
+Memory usage: 1221155528 bytes
+Testing on graph file 'bn-human-Jung2015_M87118347_80M.edges':
+VectorVectorContainer....................................................20718.8 ms
+Memory usage: 690654376 bytes
+Testing on graph file 'bn-human-Jung2015_M87118465_180M.edges':
+VectorVectorContainer....................................................47825.7 ms
+Memory usage: 1524365276 bytes
+Testing on graph file 'bn-human-Jung2015_M87119472_60M.edges':
+VectorVectorContainer....................................................18997.8 ms
+Memory usage: 891063452 bytes
+Testing on graph file 'bn-human-Jung2015_M87124563_160M.edges':
+VectorVectorContainer....................................................43030.7 ms
+Memory usage: 1432638396 bytes
+Testing on graph file 'bn-human-Jung2015_M87125286_210M.edges':
+VectorVectorContainer....................................................54693.4 ms
+Memory usage: 1728519524 bytes
+Testing on graph file 'bn-human-Jung2015_M87125334_40M.edges':
+VectorVectorContainer....................................................14174.4 ms
+Memory usage: 802704900 bytes
+Testing on graph file 'bn-human-Jung2015_M87127677_210M.edges':
+VectorVectorContainer....................................................54689.2 ms
+Memory usage: 1734538572 bytes
+Testing on graph file 'ca-IMDB.edges':
+VectorVectorContainer....................................................2212.55 ms
+Memory usage: 179760072 bytes
+Testing on graph file 'ca-hollywood-2009.edges':
+VectorVectorContainer......................................................17282 ms
+Memory usage: 731945872 bytes
+Testing on graph file 'cit-patent1.edges':
+VectorVectorContainer....................................................16307.4 ms
+Memory usage: 1802149212 bytes
+Testing on graph file 'delaunay_n24_50M.edges':
+VectorVectorContainer....................................................67528.8 ms
+Memory usage: 7321578492 bytes
+Testing on graph file 'graph500-scale20-ef16_adj_30M.edges':
+VectorVectorContainer....................................................13437.3 ms
+Memory usage: 434715600 bytes
+Testing on graph file 'graph500-scale22-ef16_adj_130M.edges':
+VectorVectorContainer....................................................57251.6 ms
+Memory usage: 1834485372 bytes
+Testing on graph file 'hugetric-00010_10M.mtx':
+VectorVectorContainer....................................................25827.3 ms
+Memory usage: 3599297120 bytes
+Testing on graph file 'livejournal_160M.edges':
+VectorVectorContainer....................................................53081.4 ms
+Memory usage: 1796174840 bytes
+Testing on graph file 'rgg_n_2_22_s0_30M.edges':
+VectorVectorContainer....................................................24048.1 ms
+Memory usage: 2019277264 bytes
+Testing on graph file 'sc-ldoor_20M.edges':
+VectorVectorContainer....................................................9464.66 ms
+Memory usage: 526800148 bytes
+Testing on graph file 'scc_fb-messages.mtx':
+VectorVectorContainer....................................................132.846 ms
+Memory usage: 3830912 bytes
+Testing on graph file 'soc-google-plus.txt':
+VectorVectorContainer....................................................928.025 ms
+Memory usage: 78025496 bytes
+Testing on graph file 'soc-livejournal.mtx':
+VectorVectorContainer....................................................18001.9 ms
+Memory usage: 1404194984 bytes
+Testing on graph file 'soc-orkut-dir_120M.edges':
+VectorVectorContainer......................................................36129 ms
+Memory usage: 1261621480 bytes
+Testing on graph file 'soc-orkut.edges':
+VectorVectorContainer....................................................37277.7 ms
+Memory usage: 1606803328 bytes
+Testing on graph file 'soc-orkut_106M.edges':
+VectorVectorContainer....................................................52386.6 ms
+Memory usage: 1885062956 bytes
+Testing on graph file 'soc-pokec.mtx':
+VectorVectorContainer....................................................9714.65 ms
+Memory usage: 520067872 bytes
+Testing on graph file 'soc-sinaweibo_260M.edges':
+VectorVectorContainer....................................................CRASHED
+Reason: std::bad_alloc
+Testing on graph file 'soc-wiki-Talk-dir.mtx':
+VectorVectorContainer....................................................5084.21 ms
+Memory usage: 612610784 bytes
+Testing on graph file 'socf-konect.edges':
+VectorVectorContainer....................................................CRASHED
+Reason: std::bad_alloc
+Testing on graph file 'socfb-B-anon_20M.edges':
+VectorVectorContainer....................................................18453.9 ms
+Memory usage: 1763956216 bytes
+Testing on graph file 'socfb-Michigan23.mtx':
+VectorVectorContainer....................................................414.776 ms
+Memory usage: 19177240 bytes
+Testing on graph file 'socfb-Texas84.mtx':
+VectorVectorContainer....................................................518.564 ms
+Memory usage: 25333716 bytes
+Testing on graph file 'socfb-UIllinois20.mtx':
+VectorVectorContainer....................................................416.601 ms
+Memory usage: 19890608 bytes
+Testing on graph file 'socfb-uci-uni_90M.edges':
+VectorVectorContainer....................................................CRASHED
+Reason: std::bad_alloc
+Testing on graph file 'tech-as-skitter.mtx':
+VectorVectorContainer....................................................6717.14 ms
+Memory usage: 499594816 bytes
+Testing on graph file 'tech-as-skitter_10M.mtx':
+VectorVectorContainer....................................................6778.23 ms
+Memory usage: 499594816 bytes
+Testing on graph file 'tech-ip.edges':
+VectorVectorContainer....................................................10730.9 ms
+Memory usage: 832726284 bytes
+Testing on graph file 'tech-p2p-gnutella.mtx':
+VectorVectorContainer....................................................212.802 ms
+Memory usage: 25193660 bytes
+Testing on graph file 'testfile.txt':
+VectorVectorContainer.....................................................0.5259 ms
+Memory usage: 7456 bytes
+Testing on graph file 'web-Stanford.mtx':
+VectorVectorContainer....................................................1436.74 ms
+Memory usage: 104553256 bytes
+Testing on graph file 'web-uk-2005.mtx':
+VectorVectorContainer....................................................3377.81 ms
+Memory usage: 110871644 bytes
+Testing on graph file 'web-wikipedia2009.mtx':
+VectorVectorContainer....................................................5712.92 ms
+Memory usage: 635725068 bytes
+Testing on graph file 'C2000-9.edges':
+VectorVectorContainer....................................................420.211 ms
+Memory usage: 11254928 bytes
+Testing on graph file 'bn-1.8M-166M.edges':
+VectorVectorContainer....................................................46050.5 ms
+Memory usage: 1661248396 bytes
+Testing on graph file 'bn-100k-662k.edges':
+VectorVectorContainer....................................................555.755 ms
+Memory usage: 49838896 bytes
+Testing on graph file 'bn-34k-181k.edges':
+VectorVectorContainer....................................................148.515 ms
+Memory usage: 12979388 bytes
+Testing on graph file 'bn-434k-16M.edges':
+VectorVectorContainer....................................................5604.86 ms
+Memory usage: 248364152 bytes
+Testing on graph file 'bn-449k-3.3M.edges':
+VectorVectorContainer....................................................2682.89 ms
+Memory usage: 242016516 bytes
+Testing on graph file 'bn-65-1K.edges':
+VectorVectorContainer.....................................................2.3802 ms
+Memory usage: 46788 bytes
+Testing on graph file 'bn-7k-50k.edges':
+VectorVectorContainer.....................................................41.518 ms
+Memory usage: 3465040 bytes
+Testing on graph file 'bn-800-19k.edges':
+VectorVectorContainer....................................................10.2469 ms
+Memory usage: 554116 bytes
+Testing on graph file 'bn-human-BNU_1_0025868_session_1-bg_150M.edges':
+VectorVectorContainer....................................................41625.9 ms
+Memory usage: 1542425784 bytes
+Testing on graph file 'bn-human-BNU_1_0025869_session_2-bg_150M.edges':
+VectorVectorContainer....................................................41773.7 ms
+Memory usage: 1536284776 bytes
+Testing on graph file 'bn-human-BNU_1_0025871_session_1-bg_170M.edges':
+VectorVectorContainer....................................................46428.1 ms
+Memory usage: 1693840452 bytes
+Testing on graph file 'bn-human-BNU_1_0025876_session_2-bg_140M.edges':
+VectorVectorContainer......................................................38915 ms
+Memory usage: 1454007148 bytes
+Testing on graph file 'bn-human-BNU_1_0025889_session_2_130M.edges':
+VectorVectorContainer....................................................37429.1 ms
+Memory usage: 1464331484 bytes
+Testing on graph file 'bn-human-BNU_1_0025913_session_2_180M.edges':
+VectorVectorContainer....................................................50013.9 ms
+Memory usage: 1743691268 bytes
+Testing on graph file 'bn-human-BNU_1_0025914_session_2_100M.edges':
+VectorVectorContainer....................................................30244.6 ms
+Memory usage: 1276518296 bytes
+Testing on graph file 'bn-human-BNU_1_0025916_session_1_110M.edges':
+VectorVectorContainer......................................................32411 ms
+Memory usage: 1306835048 bytes
+Testing on graph file 'bn-human-BNU_1_0025919_session_1.edges':
+VectorVectorContainer....................................................54024.2 ms
+Memory usage: 1813334260 bytes
+Testing on graph file 'bn-human-BNU_1_0025919_session_1_200M.edges':
+VectorVectorContainer....................................................54116.1 ms
+Memory usage: 1813334260 bytes
+Testing on graph file 'bn-human-Jung2015_M7101234.edges':
+VectorVectorContainer....................................................17055.3 ms
+Memory usage: 602638636 bytes
+Testing on graph file 'bn-human-Jung2015_M8703600.edges':
+VectorVectorContainer....................................................18094.8 ms
+Memory usage: 1023980616 bytes
+Testing on graph file 'bn-human-Jung2015_M87101049_190M.edges':
+VectorVectorContainer....................................................51838.9 ms
+Memory usage: 1743625252 bytes
+Testing on graph file 'bn-human-Jung2015_M87101705_200M.edges':
+VectorVectorContainer....................................................53986.2 ms
+Memory usage: 1836295360 bytes
+Testing on graph file 'bn-human-Jung2015_M87104201_190M.edges':
+VectorVectorContainer......................................................51624 ms
+Memory usage: 1793355564 bytes
+Testing on graph file 'bn-human-Jung2015_M87104300_70M.edges':
+VectorVectorContainer....................................................21461.1 ms
+Memory usage: 1010256704 bytes
+Testing on graph file 'bn-human-Jung2015_M87104509_50M.edges':
+VectorVectorContainer....................................................17503.5 ms
+Memory usage: 992214204 bytes
+Testing on graph file 'bn-human-Jung2015_M87107781_70M.edges':
+VectorVectorContainer....................................................22183.3 ms
+Memory usage: 979443800 bytes
+Testing on graph file 'bn-human-Jung2015_M87110148_140M.edges':
+VectorVectorContainer....................................................40368.4 ms
+Memory usage: 1540882860 bytes
+Testing on graph file 'bn-human-Jung2015_M87110650_40M.edges':
+VectorVectorContainer....................................................14923.5 ms
+Memory usage: 931665004 bytes
+Testing on graph file 'bn-human-Jung2015_M87112427_170M.edges':
+VectorVectorContainer....................................................46892.1 ms
+Memory usage: 1681815524 bytes
+Testing on graph file 'bn-human-Jung2015_M87113679_60M.edges':
+VectorVectorContainer....................................................20551.7 ms
+Memory usage: 1040856640 bytes
+Testing on graph file 'bn-human-Jung2015_M87113878.edges':
+VectorVectorContainer......................................................69843 ms
+Memory usage: 2181711276 bytes
+Testing on graph file 'bn-human-Jung2015_M87114342_90M.edges':
+VectorVectorContainer....................................................28453.5 ms
+Memory usage: 1301828508 bytes
+Testing on graph file 'bn-human-Jung2015_M87116523_80M.edges':
+VectorVectorContainer....................................................20661.3 ms
+Memory usage: 734833260 bytes
+Testing on graph file 'bn-human-Jung2015_M87117093_120M.edges':
+VectorVectorContainer....................................................35603.5 ms
+Memory usage: 1379261512 bytes
+Testing on graph file 'bn-human-Jung2015_M87118347_80M.edges':
+VectorVectorContainer....................................................21313.6 ms
+Memory usage: 764022424 bytes
+Testing on graph file 'bn-human-Jung2015_M87118465_180M.edges':
+VectorVectorContainer....................................................48882.8 ms
+Memory usage: 1672057692 bytes
+Testing on graph file 'bn-human-Jung2015_M87119472_60M.edges':
+VectorVectorContainer....................................................20108.2 ms
+Memory usage: 1062393728 bytes
+Testing on graph file 'bn-human-Jung2015_M87124563_160M.edges':
+VectorVectorContainer....................................................44373.7 ms
+Memory usage: 1588164300 bytes
+Testing on graph file 'bn-human-Jung2015_M87125286_210M.edges':
+VectorVectorContainer....................................................56197.4 ms
+Memory usage: 1889833092 bytes
+Testing on graph file 'bn-human-Jung2015_M87125334_40M.edges':
+VectorVectorContainer....................................................15418.1 ms
+Memory usage: 980407220 bytes
+Testing on graph file 'bn-human-Jung2015_M87127677_210M.edges':
+VectorVectorContainer....................................................56138.4 ms
+Memory usage: 1901738940 bytes
+Testing on graph file 'ca-IMDB.edges':
+VectorVectorContainer.....................................................2509.3 ms
+Memory usage: 214690736 bytes
+Testing on graph file 'ca-hollywood-2009.edges':
+VectorVectorContainer....................................................18174.5 ms
+Memory usage: 847225440 bytes
+Testing on graph file 'cit-patent1.edges':
+VectorVectorContainer......................................................19899 ms
+Memory usage: 2339069180 bytes
+Testing on graph file 'delaunay_n24_50M.edges':
+VectorVectorContainer....................................................83492.8 ms
+Memory usage: 10191919092 bytes
+Testing on graph file 'graph500-scale20-ef16_adj_30M.edges':
+VectorVectorContainer....................................................14651.4 ms
+Memory usage: 556655324 bytes
+Testing on graph file 'graph500-scale22-ef16_adj_130M.edges':
+VectorVectorContainer......................................................61200 ms
+Memory usage: 2168543396 bytes
+Testing on graph file 'hugetric-00010_10M.mtx':
+VectorVectorContainer....................................................31330.7 ms
+Memory usage: 4570192440 bytes
+Testing on graph file 'livejournal_160M.edges':
+VectorVectorContainer....................................................53951.5 ms
+Memory usage: 2032390184 bytes
+Testing on graph file 'rgg_n_2_22_s0_30M.edges':
+VectorVectorContainer....................................................28208.2 ms
+Memory usage: 2741173928 bytes
+Testing on graph file 'sc-ldoor_20M.edges':
+VectorVectorContainer....................................................10350.6 ms
+Memory usage: 657589540 bytes
+Testing on graph file 'scc_fb-messages.mtx':
+VectorVectorContainer....................................................132.163 ms
+Memory usage: 4077764 bytes
+Testing on graph file 'soc-google-plus.txt':
+VectorVectorContainer....................................................1040.82 ms
+Memory usage: 96775388 bytes
+Testing on graph file 'soc-livejournal.mtx':
+VectorVectorContainer....................................................20356.6 ms
+Memory usage: 1720598056 bytes
+Testing on graph file 'soc-orkut-dir_120M.edges':
+VectorVectorContainer....................................................37499.5 ms
+Memory usage: 1449292332 bytes
+Testing on graph file 'soc-orkut.edges':
+VectorVectorContainer......................................................39094 ms
+Memory usage: 1865576696 bytes
+Testing on graph file 'soc-orkut_106M.edges':
+VectorVectorContainer......................................................58193 ms
+Memory usage: 2437959856 bytes
+Testing on graph file 'soc-pokec.mtx':
+VectorVectorContainer....................................................10750.6 ms
+Memory usage: 663682584 bytes
+Testing on graph file 'soc-sinaweibo_260M.edges':
+VectorVectorContainer....................................................CRASHED
+Reason: std::bad_alloc
+Testing on graph file 'soc-wiki-Talk-dir.mtx':
+VectorVectorContainer....................................................6388.89 ms
+Memory usage: 830720008 bytes
+Testing on graph file 'socf-konect.edges':
+VectorVectorContainer....................................................CRASHED
+Reason: std::bad_alloc
+Testing on graph file 'socfb-B-anon_20M.edges':
+VectorVectorContainer......................................................20839 ms
+Memory usage: 2026152892 bytes
+Testing on graph file 'socfb-Michigan23.mtx':
+VectorVectorContainer....................................................444.644 ms
+Memory usage: 23546064 bytes
+Testing on graph file 'socfb-Texas84.mtx':
+VectorVectorContainer....................................................556.474 ms
+Memory usage: 30420552 bytes
+Testing on graph file 'socfb-UIllinois20.mtx':
+VectorVectorContainer....................................................447.835 ms
+Memory usage: 24332888 bytes
+Testing on graph file 'socfb-uci-uni_90M.edges':
+VectorVectorContainer....................................................CRASHED
+Reason: std::bad_alloc
+Testing on graph file 'tech-as-skitter.mtx':
+VectorVectorContainer....................................................7604.85 ms
+Memory usage: 634201856 bytes
+Testing on graph file 'tech-as-skitter_10M.mtx':
+VectorVectorContainer....................................................7665.81 ms
+Memory usage: 634201856 bytes
+Testing on graph file 'tech-ip.edges':
+VectorVectorContainer....................................................11877.8 ms
+Memory usage: 1015325428 bytes
+Testing on graph file 'tech-p2p-gnutella.mtx':
+VectorVectorContainer....................................................255.576 ms
+Memory usage: 32868772 bytes
+Testing on graph file 'testfile.txt':
+VectorVectorContainer.....................................................0.6832 ms
+Memory usage: 9600 bytes
+Testing on graph file 'web-Stanford.mtx':
+VectorVectorContainer....................................................1620.54 ms
+Memory usage: 132595184 bytes
+Testing on graph file 'web-uk-2005.mtx':
+VectorVectorContainer....................................................3436.08 ms
+Memory usage: 124182696 bytes
+Testing on graph file 'web-wikipedia2009.mtx':
+VectorVectorContainer....................................................6926.89 ms
+Memory usage: 828557916 bytes
