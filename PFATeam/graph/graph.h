@@ -19,7 +19,8 @@ namespace PFA {
     public:
         using AdjacentNeighboursContainer=typename Container::AdjacentNeighboursContainer;
         int numberOfVertices;
-        Container adjacencyLists;
+        int numberOfEdges;
+        Container adjacencyList;
         Graph():numberOfVertices(0){}
         explicit Graph(int numberOfVertices): numberOfVertices(numberOfVertices) {}
 
@@ -36,13 +37,18 @@ namespace PFA {
             std::ifstream file(path);
             Graph G;
             int a,b;
+            G.numberOfEdges=0;
             while(file >> a >> b)
             {
                 G.addEdge(a,b);
                 G.numberOfVertices=std::max(G.numberOfVertices,std::max(a,b));
+                G.numberOfEdges++;
             }
+            //std::cout<<"number of vertices= "<< G.numberOfVertices<<std::endl;
+            //std::cout<<"number of edges= "<< G.numberOfEdges<<std::endl;
             return G;
         }
+
 
         /**
          * @brief Save a graph to a file
@@ -54,7 +60,7 @@ namespace PFA {
             std::ofstream file(path);
             for(int i=0; i < numberOfVertices; i++)
             {
-                for(auto j: adjacencyLists[i])
+                for(auto j: adjacencyList[i])
                     file << i << " " << j << std::endl;
             }
         }
@@ -67,7 +73,7 @@ namespace PFA {
          */
         void addEdge(int a, int b)
         {
-            adjacencyLists.addEdge(a, b);
+            adjacencyList.addEdge(a,b);
         }
 
         /**
@@ -78,7 +84,7 @@ namespace PFA {
  */
         void removeEdge(int a, int b)
         {
-            adjacencyLists.removeEdge(a, b);
+            adjacencyList.removeEdge(a,b);
         }
 
         /**
@@ -87,13 +93,13 @@ namespace PFA {
      */
         void clearVertex(int a)
         {
-            adjacencyLists.clearVertex(a);
+            adjacencyList.clearVertex(a);
         }
 
         void clear()
         {
             numberOfVertices=0;
-            adjacencyLists.clear();
+            adjacencyList.clear();
         }
 
 
@@ -105,7 +111,7 @@ namespace PFA {
          */
         AdjacentNeighboursContainer& getAdjacentNeighbors(int a)
         {
-            return adjacencyLists[a];
+            return adjacencyList[a];
         }
     };
 };
