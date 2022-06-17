@@ -19,6 +19,7 @@ namespace PFA {
     public:
         using AdjacentNeighboursContainer=typename Container::AdjacentNeighboursContainer;
         int numberOfVertices;
+        int numberOfEdges;
         Container adjacencyList;
         Graph():numberOfVertices(0){}
         explicit Graph(int numberOfVertices): numberOfVertices(numberOfVertices) {}
@@ -36,13 +37,18 @@ namespace PFA {
             std::ifstream file(path);
             Graph G;
             int a,b;
+            G.numberOfEdges=0;
             while(file >> a >> b)
             {
                 G.addEdge(a,b);
                 G.numberOfVertices=std::max(G.numberOfVertices,std::max(a,b));
+                G.numberOfEdges++;
             }
+            //std::cout<<"number of vertices= "<< G.numberOfVertices<<std::endl;
+            //std::cout<<"number of edges= "<< G.numberOfEdges<<std::endl;
             return G;
         }
+
 
         /**
          * @brief Save a graph to a file
