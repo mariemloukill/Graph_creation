@@ -42,9 +42,12 @@ void CSVWriter::write(const AlgorithmTestError &testError) {
 
 void StandardWriter::write(const AlgorithmTest &test) {
     double timeAvg= std::reduce(test.timeResults.begin(), test.timeResults.end(), 0.0) / test.timeResults.size();
+    double memoryAvg= *std::max_element(test.memoryResults.begin(), test.memoryResults.end()) /1;
     out << std::left << std::setfill('.') << std::setw(40) << test.name
     << std::right << std::setfill('.') << std::setw(40) << timeAvg/1000 << " s" << std::endl;
+
     out << "Memory usage: " << GlobalAllocator::max_memory/(1024*1024) << " MB" << std::endl;
+
 
 }
 
