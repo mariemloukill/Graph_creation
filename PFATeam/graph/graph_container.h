@@ -6,6 +6,7 @@
 #include <set>
 #include <unordered_set>
 #include <list>
+#include <concepts>
 #include "memory/ProfilableAllocator.h"
 
 namespace PFA
@@ -74,10 +75,13 @@ namespace PFA
     template<typename Container>
     concept EdgeContainer = requires(Container &C,int a,int b)
     {
+        typename Container::AdjacentNeighboursContainer;
+        typename Container::iterator;
         C.addEdge(a, b);
         C.removeEdge(a, b);
         C.clearVertex(a);
-        typename Container::AdjacentNeighboursContainer;
+        {C.begin()} -> std::same_as<typename Container::iterator>;
+        {C.end()} -> std::same_as<typename Container::iterator>;
     };
 
     template<typename T>
@@ -146,7 +150,9 @@ class VectorVectorContainer: public std::vector<std::vector<int,Allocator<int>>,
         using val_type=std::vector<int,Allocator<int>>;
     public:
         using AdjacentNeighboursContainer=std::vector<int,Allocator<int>>;
-        using std::vector<std::vector<int,Allocator<int>>,Allocator<std::vector<int,Allocator<int>>>>::vector;
+        using iterator=VectorIterator<AdjacentNeighboursContainer>;
+        using Iterator=iterator;
+    using std::vector<std::vector<int,Allocator<int>>,Allocator<std::vector<int,Allocator<int>>>>::vector;
         void addEdge(int a,int b)
         {
             if(this->size()<a+1)
@@ -204,6 +210,8 @@ class VectorSetContainer: public std::vector<std::set<int,std::less<int>,Allocat
     using val_type=std::set<int,std::less<int>,Allocator<int>>;
 public:
         using AdjacentNeighboursContainer=val_type;
+        using iterator=VectorIterator<AdjacentNeighboursContainer>;
+        using Iterator=iterator;
         using std::vector<std::set<int,std::less<int>,Allocator<int>>,Allocator<std::set<int,std::less<int>,Allocator<int>>>>::vector;
         void addEdge(int a,int b)
         {
@@ -270,6 +278,8 @@ class VectorUnorderedSetContainer: public std::vector<std::unordered_set<int,std
     using val_type=std::unordered_set<int,std::hash<int>,std::equal_to<int>,Allocator<int>>;
 public:
     using AdjacentNeighboursContainer=val_type;
+    using iterator=VectorIterator<AdjacentNeighboursContainer>;
+    using Iterator=iterator;
     using std::vector<std::unordered_set<int,std::hash<int>,std::equal_to<int>,Allocator<int>>,
                 Allocator<std::unordered_set<int,std::hash<int>,std::equal_to<int>,Allocator<int>>>>::vector;
         void addEdge(int a,int b)
@@ -294,22 +304,22 @@ public:
                 return;
             this->operator[](a).clear();
         }
-        auto begin()
+    Iterator begin()
         {
             return VectorIterator<val_type>(this->data());
         }
 
-        auto end()
+    Iterator end()
         {
             return VectorIterator<val_type>(this->data(),this->size());
         }
 
-        auto begin() const
+    Iterator begin() const
         {
             return VectorIterator<val_type>(this->data());
         }
 
-        auto end() const
+    Iterator end() const
         {
             return VectorIterator<val_type>(this->data(),this->size());
         }

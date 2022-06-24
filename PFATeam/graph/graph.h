@@ -19,8 +19,9 @@ namespace PFA {
     public:
         using AdjacentNeighboursContainer=typename Container::AdjacentNeighboursContainer;
         int numberOfVertices;
-        int numberOfEdges;
-        Container adjacencyList;
+
+        Container adjacencyLists;
+
         Graph():numberOfVertices(0){}
         explicit Graph(int numberOfVertices): numberOfVertices(numberOfVertices) {}
 
@@ -60,7 +61,7 @@ namespace PFA {
             std::ofstream file(path);
             for(int i=0; i < numberOfVertices; i++)
             {
-                for(auto j: adjacencyList[i])
+                for(auto j: adjacencyLists[i])
                     file << i << " " << j << std::endl;
             }
         }
@@ -73,7 +74,7 @@ namespace PFA {
          */
         void addEdge(int a, int b)
         {
-            adjacencyList.addEdge(a,b);
+            adjacencyLists.addEdge(a, b);
         }
 
         /**
@@ -84,7 +85,7 @@ namespace PFA {
  */
         void removeEdge(int a, int b)
         {
-            adjacencyList.removeEdge(a,b);
+            adjacencyLists.removeEdge(a, b);
         }
 
         /**
@@ -93,13 +94,13 @@ namespace PFA {
      */
         void clearVertex(int a)
         {
-            adjacencyList.clearVertex(a);
+            adjacencyLists.clearVertex(a);
         }
 
         void clear()
         {
             numberOfVertices=0;
-            adjacencyList.clear();
+            adjacencyLists.clear();
         }
 
 
@@ -111,7 +112,7 @@ namespace PFA {
          */
         AdjacentNeighboursContainer& getAdjacentNeighbors(int a)
         {
-            return adjacencyList[a];
+            return adjacencyLists[a];
         }
     };
 };

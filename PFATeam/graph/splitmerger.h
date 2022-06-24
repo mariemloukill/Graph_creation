@@ -34,7 +34,7 @@ namespace PFA
         {
             std::unordered_map<int,std::vector<int,Allocator<int>>,std::hash<int>,std::equal_to<int>,Allocator<std::pair<const int,std::vector<int,Allocator<int>>>>> mapper;
             for(int graphId=0;graphId<graphs.size();graphId++)
-                for(auto &&outwardAdjacent:graphs[graphId].adjacencyList)
+                for(auto &&outwardAdjacent:graphs[graphId].adjacencyLists)
                     mapper[outwardAdjacent.first].push_back(graphId);
 
             for(auto &&[vertex,subGraphs]:mapper)
@@ -49,7 +49,7 @@ namespace PFA
                         isFirst=false;
                         continue;
                     }
-                    for(const auto &adjacenctVertex:graphs[graphNumber].adjacencyList[vertex])
+                    for(const auto &adjacenctVertex:graphs[graphNumber].adjacencyLists[vertex])
                         graphs[representative].addEdge(vertex,adjacenctVertex);
                     graphs[graphNumber].clearVertex(vertex);
                 }
@@ -77,7 +77,7 @@ namespace PFA
         {
             std::unordered_map<int,std::vector<int,Allocator<int>>,std::hash<int>,std::equal_to<int>,Allocator<std::pair<const int,std::vector<int,Allocator<int>>>>> mapper;
             for(int graphId=0;graphId<graphs.size();graphId++)
-                for(auto &&outwardAdjacent:graphs[graphId].adjacencyList)
+                for(auto &&outwardAdjacent:graphs[graphId].adjacencyLists)
                     mapper[outwardAdjacent.first].push_back(graphId);
 
             for(auto &&[vertex,subGraphs]:mapper)
@@ -91,7 +91,7 @@ namespace PFA
                 {
                     if(graphNumber == representative)
                         continue;
-                    for(const auto &adjacenctVertex:graphs[graphNumber].adjacencyList[vertex])
+                    for(const auto &adjacenctVertex:graphs[graphNumber].adjacencyLists[vertex])
                         graphs[representative].addEdge(vertex,adjacenctVertex);
                     graphs[graphNumber].clearVertex(vertex);
                 }
@@ -111,13 +111,13 @@ namespace PFA
 //            std::unordered_map<int,std::vector<int,Allocator<int>>,
 //                    std::hash<int>,std::equal_to<int>,
 //                            Allocator<std::pair<const int,std::vector<int,Allocator<int>>>>> mapper;
-            graphs[0].adjacencyList.swap(graphs[graphRepresentative].adjacencyList);
+            graphs[0].adjacencyLists.swap(graphs[graphRepresentative].adjacencyLists);
             for(int graphId=graphs.size()-1;graphId>0;graphId--)
             {
-                for(auto outwardAdjacent:graphs[graphId].adjacencyList)
+                for(auto outwardAdjacent:graphs[graphId].adjacencyLists)
                     if constexpr (std::is_same_v<Container,std::list<int,Allocator<int>>>)
-                        graphs[graphRepresentative].adjacencyList[outwardAdjacent.first].splice(
-                                graphs[graphRepresentative].adjacencyList[outwardAdjacent.first].begin(),
+                        graphs[graphRepresentative].adjacencyLists[outwardAdjacent.first].splice(
+                                graphs[graphRepresentative].adjacencyLists[outwardAdjacent.first].begin(),
                                 outwardAdjacent.second);
                     else for(auto adjacent:outwardAdjacent.second)
                         graphs.front().addEdge(outwardAdjacent.first,adjacent);
@@ -131,7 +131,7 @@ namespace PFA
 //                {
 //                    if(graphNumber == graphRepresentative)
 //                        continue;
-//                    for(const auto &adjacentVertex:graphs[graphNumber].adjacencyList[vertex])
+//                    for(const auto &adjacentVertex:graphs[graphNumber].adjacencyLists[vertex])
 //                        graphs[graphRepresentative].addEdge(vertex,adjacentVertex);
 //                    graphs[graphNumber].clearVertex(vertex);
 //                }
