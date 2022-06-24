@@ -1,0 +1,12 @@
+[
+{
+"Algorithm Name": "VectorVectorContainer",
+"Type": "ParallelInplace#2",
+"Graph Name": "soc-livejournal.mtx",
+"Test Times": [
+6.39455, 6.23653, 6.23645, 6.35326, 6.23776, 6.20641, 6.18626, 6.24757, 6.48998, 6.34188],
+"Test Memories": [
+534.454, 534.454, 534.454, 534.454, 534.454, 534.454, 534.454, 534.454, 534.454, 534.454],
+"Start Time" : "2022-Jun-17 10:02:11.362391",
+"End Time" : "2022-Jun-17 10:03:19.205412"
+}

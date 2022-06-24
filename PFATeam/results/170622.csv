@@ -1,0 +1,25 @@
+"Algorithm Name"	Type	"Graph Name"	"Average Time"	"Average Memory"	"Start Time"	"End Time"
+"edgeCentric"	Sequential	"soc-livejournal.mtx"	4.2401	154.693	2022-Jun-17 16:51:28.785075	2022-Jun-17 16:52:53.721195
+"edgeCentric"	Sequential	"bn-human-BNU_1_0025871_session_1-bg_170M.edges"	23.8547	649.051	2022-Jun-17 16:52:53.721411	2022-Jun-17 17:00:51.484112
+"edgeCentric"	Sequential	"bn-human-Jung2015_M87114342_90M.edges"	12.9274	354.945	2022-Jun-17 17:00:51.484318	2022-Jun-17 17:05:10.632083
+"edgeCentric"	Sequential	"bn-human-BNU_1_0025876_session_2-bg_140M.edges"	19.9203	539.351	2022-Jun-17 17:05:10.632337	2022-Jun-17 17:11:47.976723
+"edgeCentric"	Sequential	"rgg_n_2_22_s0_30M.edges"	5.3245	347.433	2022-Jun-17 17:11:47.977008	2022-Jun-17 17:13:34.231881
+"edgeCentric"	Sequential	"bn-7k-50k.edges"	0.0083284	0.28775	2022-Jun-17 17:13:34.232149	2022-Jun-17 17:13:34.383172
+"edgeCentric"	Sequential	"soc-orkut-dir_120M.edges"	16.653	467.81	2022-Jun-17 17:13:34.383372	2022-Jun-17 17:19:06.987048
+"edgeCentric"	Sequential	"bn-human-Jung2015_M87125334_40M.edges"	5.75729	159.23	2022-Jun-17 17:19:06.987281	2022-Jun-17 17:21:01.655388
+"edgeCentric"	Sequential	"socfb-Michigan23.mtx"	0.154711	4.82734	2022-Jun-17 17:21:01.655597	2022-Jun-17 17:21:04.720097
+"edgeCentric"	Sequential	"bn-human-Jung2015_M87101705_200M.edges"	28.6186	773.344	2022-Jun-17 17:21:04.720300	2022-Jun-17 17:30:34.316844
+"edgeCentric"	Sequential	"bn-human-Jung2015_M87116523_80M.edges"	10.8666	298.361	2022-Jun-17 17:30:34.334127	2022-Jun-17 17:34:10.742001
+"edgeCentric"	Sequential	"bn-human-BNU_1_0025889_session_2_130M.edges"	18.7994	508.779	2022-Jun-17 17:34:10.742219	2022-Jun-17 17:40:30.186912
+"edgeCentric"	Sequential	"bn-human-Jung2015_M87107781_70M.edges"	10.2488	282.791	2022-Jun-17 17:40:30.236552	2022-Jun-17 17:43:54.501840
+"edgeCentric"	Sequential	"bn-human-Jung2015_M87113878.edges"	37.8441	1027.26	2022-Jun-17 17:43:54.502113	2022-Jun-17 17:56:36.470407
+"edgeCentric"	Sequential	"bn-human-BNU_1_0025919_session_1.edges"	28.7192	776.731	2022-Jun-17 17:56:36.512376	2022-Jun-17 18:06:10.402460
+"edgeCentric"	Sequential	"bn-human-Jung2015_M87110148_140M.edges"	20.4616	552.866	2022-Jun-17 18:06:10.402728	2022-Jun-17 18:12:58.835082
+"edgeCentric"	Sequential	"bn-human-Jung2015_M87112427_170M.edges"	24.3331	658.656	2022-Jun-17 18:12:58.835345	2022-Jun-17 18:21:12.164797
+"edgeCentric"	Sequential	"bn-human-Jung2015_M87124563_160M.edges"	23.0864	620.008	2022-Jun-17 18:21:12.174169	2022-Jun-17 18:28:52.309586
+"edgeCentric"	Sequential	"bn-human-Jung2015_M87110650_40M.edges"	5.83835	159.914	2022-Jun-17 18:28:52.325427	2022-Jun-17 18:30:48.355525
+"edgeCentric"	Sequential	"data_files.txt"	0.0064921	0	2022-Jun-17 18:30:48.355789	2022-Jun-17 18:30:48.420762
+"edgeCentric"	Sequential	"ca-IMDB.edges"	0.546452	18.972	2022-Jun-17 18:30:48.420977	2022-Jun-17 18:30:59.316952
+"edgeCentric"	Sequential	"bn-449k-3.3M.edges"	0.47433	16.0682	2022-Jun-17 18:30:59.317171	2022-Jun-17 18:31:08.762388
+"edgeCentric"	Sequential	"bn-human-Jung2015_M87117093_120M.edges"	17.6463	480.235	2022-Jun-17 18:31:08.762660	2022-Jun-17 18:37:01.017671
+"edgeCentric"	Sequential	"bn-human-Jung2015_M87104509_50M.edges"	7.14304	196.355	2022-Jun-17 18:37:01.038188	2022-Jun-17 18:39:23.353115
