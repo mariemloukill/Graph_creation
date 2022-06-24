@@ -71,7 +71,7 @@ int main(int argc, char** argv)
 
     po::store(parse_command_line(argc, argv, desc), vm);
 
-
+    // config with help
     if(vm.contains("help"))
     {
         std::cout << "Usage: PFAProject graphs_path [options]\n";
@@ -79,7 +79,7 @@ int main(int argc, char** argv)
         std::cout << cfg_desc << std::endl;
         return 0;
     }
-
+    // parsing config file
     try {
         po::store(parse_config_file(vm["config"].as<std::string>().c_str(), cfg_desc,true), vm);
         po::notify(vm);
@@ -88,12 +88,16 @@ int main(int argc, char** argv)
         std::cerr << "Configuration error: " << e.what() << ". Exiting..." << std::endl;
         return 1;
     }
+
+    //get umber of test from config file
     PFA::Tester tester(vm["tests-per-implementation"].as<int>());
+    // initializing writers
     PFA::MultipleWriter writers;
     std::unique_ptr<PFA::Writer> stdWriter,csvWriter,jsonWriter;
     std::ofstream JSONFile, CSVFile, profileFile;
     std::unique_ptr<PFA::MemoryProfiler> profiler;
 
+    // human output options
     if(vm["human-output.enable"].as<bool>())
     {
         if(vm.contains("human-output.path"))
@@ -108,7 +112,7 @@ int main(int argc, char** argv)
             stdWriter = std::make_unique<StandardWriter>(std::cout);
         writers.addWriter(stdWriter.get());
     }
-
+    // mode discard ,resume or auto
     Mode mode = DISCARD;
     if(vm["mode"].as<std::string>() == "resume")
         mode = RESUME;
@@ -120,6 +124,8 @@ int main(int argc, char** argv)
      * */
     int skip=0;
     std::ios::openmode openMode=std::ios::out;
+
+
     /*
      * Configuring CSV output
      * */
@@ -242,11 +248,14 @@ int main(int argc, char** argv)
         std::cerr << "Error: " << e.what() << ". Defaulting to a 200ms interval"<< std::endl;
     }
 
+    //configuring creation strategy  (sequential or parallel)
+    // I need to add strategy 3
     if(vm["sequential.enable"].as<bool>())
     {
-        if(vm["test-types"].as<std::string>()=="one")
+        if(vm["test-types"].as<std::string>()=="one") //if only vector of vectors
             tester.writeGraphCreationAllImplementationsSequential<CurrentType>(
                 vm["graphs-folder"].as<std::filesystem::path>(), writers, skip);
+        // if testing with all containers
         else tester.writeGraphCreationAllImplementationsSequential<TestTypes>(
                     vm["graphs-folder"].as<std::filesystem::path>(), writers, skip);
     }
@@ -266,14 +275,15 @@ int main(int argc, char** argv)
                 else skip=tester.writeGraphCreationAllImplementationsParallelInplace<TestTypes>(
                         vm["graphs-folder"].as<std::filesystem::path>(), writers, std::stoi(splitsStr[i]),skip, i==splitsStr.size()-1 && finalize);
         }
-        else {
+        /*else {
             if(vm["test-types"].as<std::string>()=="one")
                 tester.writeGraphCreationAllImplementationsParallel<CurrentType>(
                     vm["graphs-folder"].as<std::filesystem::path>(), writers, skip);
             else tester.writeGraphCreationAllImplementationsParallel<TestTypes>(
                         vm["graphs-folder"].as<std::filesystem::path>(), writers, skip);
-        }
+        }*/
     }
+    //configuring profiler
     if(profiler) {
         profiler->endProfiler = true;
         profiler->join();
