@@ -1,53 +1,48 @@
 //
+// Created by user on 20/06/22.
+//
+
+#ifndef PFAPROJECT_PARALLELREADEREDGECENTRIC_H
+//
 // Created by ramizouari on 16/04/22.
 //
 
-#ifndef PFAPROJECT_PARALLELREADER_H
-#define PFAPROJECT_PARALLELREADER_H
 #include <fstream>
 #include <vector>
 #include <future>
 #include <filesystem>
 #include "graph/graphsplit.h"
+#include "graph/Edge_centric.h"
+
 namespace PFA {
 
-    constexpr unsigned int fast_digit_count(unsigned int n)
-    {
-        if(n<10)
-            return 1;
-        if(n<100)
-            return 2;
-        if(n<1000)
-            return 3;
-        if(n<10000)
-            return 4;
-        if(n<100000)
-            return 5;
-        if(n<1000000)
-            return 6;
-        if(n<10000000)
-            return 7;
-        if(n<100000000)
-            return 8;
-        return 9;
-    }
 
-    template<typename Container,template <typename > typename Allocator=std::allocator>
-    class ParallelReader {
-        std::vector<std::ifstream,Allocator<std::ifstream>> files;
+    class ParallelReaderEdgeCentric {
+        std::vector<std::ifstream> files;
         size_t file_size;
-        std::vector<size_t,Allocator<size_t>> pos;
+        std::vector<size_t> pos;
         std::launch strategy;
         std::exception_ptr thread_exception;
-        Graph<Container> read_chunk(int id)
+        Edge_centric read_chunk(int id)
         {
             size_t current_pos=pos[id];
-            Graph<Container> G;
+            Edge_centric G;
             int a,b;
             try {
                 while ((files[id] >> a >> b) && current_pos < pos[id + 1] && !thread_exception) {
                     current_pos += fast_digit_count(a) + fast_digit_count(b) + 2;
-                    G.adjacencyLists.addEdge(a, b);
+                    if ( (G.src.size()==0)|| (G.src.back()!=a))
+                    {
+                        G.src.push_back(a);
+                        G.count.push_back(1);
+                    }
+                    else
+                    {
+                        G.count.back()++;
+                    }
+
+                    G.dst.push_back(b);
+
                 }
                 if(thread_exception)
                     return {};
@@ -62,8 +57,8 @@ namespace PFA {
 
 
     public:
-        ParallelReader(const std::string &fileName, int nbThreads,std::launch strategy=std::launch::async):files(nbThreads),
-        file_size(std::filesystem::file_size(fileName)),pos(nbThreads),strategy(strategy)
+        ParallelReaderEdgeCentric(const std::string &fileName, int nbThreads,std::launch strategy=std::launch::async):files(nbThreads),
+                                                                                                           file_size(std::filesystem::file_size(fileName)),pos(nbThreads),strategy(strategy)
         {
             for(auto &file:files)
                 file.open(fileName);
@@ -78,14 +73,14 @@ namespace PFA {
             pos.push_back(file.tellg());
             file.close();
         };
-        virtual ~ParallelReader() = default;
+        virtual ~ParallelReaderEdgeCentric() = default;
         auto read()
         {
             thread_exception=nullptr;
             // Allocator<std::future<std::vector<Graph<Container>,Allocator<Graph<Container>>>>>
-            std::vector<std::future<Graph<Container>>,Allocator<std::future<Graph<Container>>>> futures;
+            std::vector<std::future<Edge_centric>> futures;
             for(int i=0;i<files.size();i++)
-                futures.emplace_back(std::async(strategy,&ParallelReader::read_chunk,this,i));
+                futures.emplace_back(std::async(strategy,&ParallelReaderEdgeCentric::read_chunk,this,i));
             if(thread_exception)
                 std::rethrow_exception(thread_exception);
             return futures;
@@ -94,4 +89,8 @@ namespace PFA {
 
 } // PFA
 
-#endif //PFAPROJECT_PARALLELREADER_H
+
+
+#define PFAPROJECT_PARALLELREADEREDGECENTRIC_H
+
+#endif //PFAPROJECT_PARALLELREADEREDGECENTRIC_H

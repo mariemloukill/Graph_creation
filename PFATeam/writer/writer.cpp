@@ -26,11 +26,11 @@ void CSVWriter::initialize() {
 void CSVWriter::write(const AlgorithmTest &test)
 {
     double timeAvg= std::reduce(test.timeResults.begin(), test.timeResults.end()) / test.timeResults.size();
-    double memoryAvg= std::reduce(test.memoryResults.begin(), test.memoryResults.end()) / test.memoryResults.size();
+    double memoryAvg= *std::max_element(test.memoryResults.begin(), test.memoryResults.end()) /1;
     out << '"' << test.name << '"'
     << separator << test.type << separator
     << '"' << test.graphName << '"'
-    << separator << timeAvg << separator << memoryAvg << separator << test.startTime << separator << test.endTime << std::endl;
+    << separator << timeAvg/1000 << separator << memoryAvg/(1024*1024) << separator << test.startTime << separator << test.endTime << std::endl;
 }
 
 void CSVWriter::write(const AlgorithmTestError &testError) {
@@ -42,9 +42,10 @@ void CSVWriter::write(const AlgorithmTestError &testError) {
 
 void StandardWriter::write(const AlgorithmTest &test) {
     double timeAvg= std::reduce(test.timeResults.begin(), test.timeResults.end(), 0.0) / test.timeResults.size();
+    double memoryAvg= *std::max_element(test.memoryResults.begin(), test.memoryResults.end()) /1;
     out << std::left << std::setfill('.') << std::setw(40) << test.name
-    << std::right << std::setfill('.') << std::setw(40) << timeAvg << " ms" << std::endl;
-    out << "Memory usage: " << GlobalAllocator::max_memory << " bytes" << std::endl;
+    << std::right << std::setfill('.') << std::setw(40) << timeAvg/1000 << " s" << std::endl;
+    out << "Memory usage: " << memoryAvg/(1024*1024) << " MB" << std::endl;
 
 }
 
@@ -73,7 +74,7 @@ void JSONWriter::write(const AlgorithmTest &test)
     for (auto time : test.timeResults) {
         if(!firstWriteTime)
             out << ", ";
-        out << time;
+        out << time/1000;
         firstWriteTime=false;
     }
     out << "]," << std::endl;
@@ -82,7 +83,7 @@ void JSONWriter::write(const AlgorithmTest &test)
     for (auto memory : test.memoryResults) {
         if(!firstWriteTime)
             out << ", ";
-        out << memory;
+        out << memory/(1024*1024);
         firstWriteTime=false;
     }
     out << "]," << std::endl;

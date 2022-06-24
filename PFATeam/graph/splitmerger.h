@@ -139,7 +139,32 @@ namespace PFA
             return graphs.front();
         }
     };
+    class OneGraphSplitMergerEdgeCentric
+    {
+        int graphRepresentative;
+    public:
+        OneGraphSplitMergerEdgeCentric(int representative=0):graphRepresentative(representative){}
+        Edge_centric merge(std::vector<Edge_centric> &graphs)
+        {
+         for (int i=1; i<graphs.size(); i++)
+            {
+                graphs[0].src.insert(graphs[0].src.end(), graphs[i].src.begin(), graphs[i].src.end());
+                graphs[0].count.insert(graphs[0].count.end(), graphs[i].count.begin(), graphs[i].count.end());
+                graphs[0].dst.insert(graphs[0].dst.end(), graphs[i].dst.begin(), graphs[i].dst.end());
+                graphs[i].src.clear();
+                graphs[i].dst.clear();
+                graphs[i].count.clear();
+                graphs[i].src.shrink_to_fit();
+                graphs[i].dst.shrink_to_fit();
+                graphs[i].count.shrink_to_fit();
+            }
+            Edge_centric G= graphs[0];
+            graphs.clear();
+            graphs.shrink_to_fit();
+            return G;
+            }
 
+    };
 }
 
 #endif //PFAPROJECT_SPLITMERGER_H
